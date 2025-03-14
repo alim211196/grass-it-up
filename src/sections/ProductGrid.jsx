@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../css/style.module.css";
+import "../App.css";
 
 const products = [
   {
@@ -54,21 +54,24 @@ const products = [
 
 const ProductGrid = () => {
   return (
-    <section className={styles.productSection}>
-      <h2 className={styles.sectionTitle}>Furniture Products</h2>
-      <div className={styles.productGrid}>
+    <section className="productSection">
+      <h2 className="sectionTitle">Furniture Products</h2>
+      <div className="productGrid">
         {products.map((product) => (
-          <div key={product.id} className={styles.productCard}>
-            <div className={styles.productImageWrapper}>
+          <div key={product.id} className="productCard">
+            <div className="productImageWrapper">
               <img
                 src={product.image}
                 alt={product.name}
-                className={styles.productImage}
+                className="productImage"
               />
-
-              <i className={`fas fa-shopping-bag ${styles.shoppingIcon}`}></i>
+              <div className="iconContainer">
+                <i className="fas fa-heart"></i>
+                <i className="fas fa-shopping-bag"></i>
+                <i className="fas fa-eye"></i>
+              </div>
             </div>
-            <p className={styles.productName}>{product.name}</p>
+            <p className="productName">{product.name}</p>
           </div>
         ))}
       </div>

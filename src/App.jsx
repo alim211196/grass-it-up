@@ -1,19 +1,23 @@
+// Import CSS Module
+import "bootstrap/dist/css/bootstrap.min.css";
 import HeroBanner from "./sections/HeroBanner";
 import Marquee from "./sections/Marquee";
-import styles from "./css/style.module.css";
+import "./App.css";
 import ProductGrid from "./sections/ProductGrid";
+import BreakerSection from "./sections/BreakerSection";
 function App() {
   return (
     <>
       <HeroBanner />
       <Marquee />
-      <section className={styles.placeholderSection}>
+      <section className={"placeholderSection"}>
         <h2>Coming Soon</h2>
       </section>
-      <section className={styles.placeholderSection}>
+      <section className={"placeholderSection"}>
         <h2>Coming Soon</h2>
       </section>
       <ProductGrid />
+      <BreakerSection />
     </>
   );
 }

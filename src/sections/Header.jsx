@@ -1,29 +1,28 @@
 import React, { useState } from "react";
-import styles from "../css/style.module.css"; // Import CSS Module
-import "bootstrap/dist/css/bootstrap.min.css";
+import "../App.css";
 const Header = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <header
-      className={`${styles.navbar} ${isHovered ? styles.navbarHover : ""}`}
+      className={`${"navbar"} ${isHovered ? "navbarHover" : ""}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className={styles.container}>
+      <div className={"container"}>
         {/* Logo */}
-        <div className={styles.logo}>
+        <div className={"logo"}>
           <a href="/">
             <img
               src="/grassitup.png"
               alt="Grass It Up"
-              className={styles.logoImage}
+              className={"logoImage"}
             />
           </a>
         </div>
 
         {/* Navigation Links */}
-        <nav className={styles.navContainer}>
-          <ul className={styles.navLinks}>
+        <nav className={"navContainer"}>
+          <ul className={"navLinks"}>
             <li>
               <a href="#">SHOP BY PRODUCT</a>
             </li>
@@ -37,7 +36,7 @@ const Header = () => {
         </nav>
 
         {/* Icons */}
-        <div className={styles.navIcons}>
+        <div className={"navIcons"}>
           <i className="fas fa-search"></i>
           <i className="fas fa-map-marker-alt"></i>
           <i className="fas fa-user"></i>

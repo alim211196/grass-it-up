@@ -1,10 +1,9 @@
 import React from "react";
-import styles from "../css/style.module.css"; // Import CSS Module
-import "bootstrap/dist/css/bootstrap.min.css";
+import "../App.css";
 const Marquee = () => {
   return (
-    <div className={styles.marqueeContainer}>
-      <div className={styles.marqueeContent}>
+    <div className={"marqueeContainer"}>
+      <div className={"marqueeContent"}>
         <span>⚡ Spring Clearance Event: Save Up to 70% &nbsp;</span>
         <span>⚡ Spring Clearance Event: Save Up to 70% &nbsp;</span>
         <span>⚡ Spring Clearance Event: Save Up to 70% &nbsp;</span>
