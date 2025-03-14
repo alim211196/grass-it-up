@@ -7,43 +7,40 @@ const testimonials = [
     name: "Jen S.",
     role: "Founder of XYZ",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nostrum labore dolor facilis.",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nostrum labore dolor facilis, nesciunt facere mollitia nam aspernatur esse!",
     image: "img1.jpg",
   },
   {
     id: 2,
     name: "Paul A.",
     role: "Founder of XYZ",
-    message: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    message:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nostrum labore dolor facilis, nesciunt facere mollitia nam aspernatur esse!",
     image: "img2.jpg",
   },
   {
     id: 3,
     name: "Cindy B.",
     role: "Founder of XYZ",
-    message: "Lorem ipsum dolor sit amet consectetur.",
+    message:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nostrum labore dolor facilis, nesciunt facere mollitia nam aspernatur esse!",
     image: "img3.jpg",
   },
   {
     id: 4,
     name: "Max Q.",
     role: "Founder of XYZ",
-    message: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    message:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nostrum labore dolor facilis, nesciunt facere mollitia nam aspernatur esse!",
     image: "img4.jpg",
   },
   {
     id: 5,
     name: "Jeff R.",
     role: "Founder of XYZ",
-    message: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    image: "img5.webp",
-  },
-  {
-    id: 6,
-    name: "John Doe.",
-    role: "Founder of Doe",
-    message: "Lorem ipsum dolor sit amet consectetur.",
-    image: "img6.png",
+    message:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nostrum labore dolor facilis, nesciunt facere mollitia nam aspernatur esse!",
+    image: "img2.jpg",
   },
 ];
 
