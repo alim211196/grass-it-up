@@ -1,54 +1,13 @@
 import React, { useState } from "react";
-import styles from "../css/HeroBanner.module.css"; // Import CSS Module
+import styles from "../css/style.module.css"; // Import CSS Module
 import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./Header";
 
 const HeroBanner = () => {
-  const [isHovered, setIsHovered] = useState(false);
   return (
     <div className={styles.heroContainer}>
       {/* Navbar */}
-      <header
-        className={`${styles.navbar} ${isHovered ? styles.navbarHover : ""}`}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        <div className={styles.container}>
-          {/* Logo */}
-          <div className={styles.logo}>
-            <a href="/">
-              <img
-                src="/grassitup.png"
-                alt="Grass It Up"
-                className={styles.logoImage}
-              />
-            </a>
-          </div>
-
-          {/* Navigation Links */}
-          <nav className={styles.navContainer}>
-            <ul className={styles.navLinks}>
-              <li>
-                <a href="#">SHOP BY PRODUCT</a>
-              </li>
-              <li>
-                <a href="#">SHOP BY MATERIAL</a>
-              </li>
-              <li>
-                <a href="#">SHOP BY COLLECTION</a>
-              </li>
-            </ul>
-          </nav>
-
-          {/* Icons */}
-          <div className={styles.navIcons}>
-            <i className="fas fa-search"></i>
-            <i className="fas fa-map-marker-alt"></i>
-            <i className="fas fa-user"></i>
-            <i className="fas fa-shopping-bag"></i>
-          </div>
-        </div>
-      </header>
-
+      <Header />
       {/* Video Background */}
       <div className={styles.hero}>
         <video autoPlay muted loop className={styles.heroVideo}>
