@@ -1,3 +1,5 @@
+/* Start Video Section */
+
 .heroContainer {
   position: relative;
   width: 100%;
@@ -90,6 +92,11 @@
     display: block;
   }
 }
+
+/* End Video Section */
+
+/* Start Header Section */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -216,6 +223,10 @@
   width: auto; /* Maintain aspect ratio */
 }
 
+/* End Header Section */
+
+/* Start Marquee Section */
+
 .marqueeContainer {
   width: 100%;
   overflow: hidden;
@@ -250,6 +261,9 @@
 .marqueeContainer:hover .marqueeContent {
   animation-play-state: paused;
 }
+
+/* End marquee Section */
+
 .placeholderSection {
   width: 100%;
   height: 100vh;
@@ -261,6 +275,8 @@
   font-size: 2rem;
   font-weight: bold;
 }
+
+/* start product grid Section */
 
 .productSection {
   padding: 40px;
@@ -416,6 +432,10 @@
   bottom: 10px; /* Icons move up and become visible */
 }
 
+/* End product grid Section */
+
+/* start break section Section */
+
 /* Hero Section */
 .breakSection {
   width: 100%;
@@ -533,3 +553,137 @@
 .backgroundImage.active {
   opacity: 1;
 }
+
+/* end break section Section */
+
+/* start informative and category section Section */
+
+.informative-category-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  overflow: hidden;
+  background: #f9f9f9;
+}
+
+/* Image Wrapper */
+.informative-category-section__image-container {
+  width: 60%;
+  overflow: hidden;
+}
+
+/* Image Styling */
+.informative-category-section__image {
+  width: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.informative-category-section__image--zoom-in {
+  transform: scale(1.1);
+}
+
+.informative-category-section__image--zoom-out {
+  transform: scale(1);
+}
+
+/* Text Content */
+.informative-category-section__text-container {
+  width: 40%;
+  padding: 60px 20px 60px 60px;
+}
+
+.informative-category-section__title {
+  font-size: 60px;
+  font-family: "canela" sans-serif;
+}
+
+.informative-category-section__description {
+  font-size: 14px;
+  color: #332f2c;
+}
+
+.informative-category-section__buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-custom {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: black;
+  background-color: transparent;
+  border: none; /* Removed border */
+  padding: 10px 24px; /* Adjust padding */
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  min-width: 120px;
+  text-align: center;
+}
+
+.btn-custom::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: black; /* Underline effect */
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.btn-custom:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.btn-custom:hover {
+  color: black;
+}
+
+/* Wrapper to position the image properly */
+.informative-category-section__bottom-image-container {
+  display: flex;
+  justify-content: end; /* Centers the image horizontally */
+  margin-top: 100px; /* Adds space after the buttons */
+}
+
+/* Styles for the last image */
+.informative-category-section__bottom-image {
+  width: 100%; /* Reduce width to make it vertical */
+  max-width: 440px; /* Prevents it from being too large */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures proper image cropping */
+}
+
+/* Zoom effects */
+.informative-category-section__bottom-image--zoom-in {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.informative-category-section__bottom-image--zoom-out {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-with-text {
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 350px; /* Adjust to position the text */
+  left: 100px; /* Adjust for alignment */
+  color: #332f2c;
+  padding: 10px 15px;
+  font-size: 14px;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* end informative and category section Section */

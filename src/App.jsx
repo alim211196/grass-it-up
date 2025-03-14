@@ -5,6 +5,7 @@ import Marquee from "./sections/Marquee";
 import "./App.css";
 import ProductGrid from "./sections/ProductGrid";
 import BreakerSection from "./sections/BreakerSection";
+import InformativeCategorySection from "./sections/InformativeCategorySection";
 function App() {
   return (
     <>
@@ -13,9 +14,7 @@ function App() {
       <section className={"placeholderSection"}>
         <h2>Coming Soon</h2>
       </section>
-      <section className={"placeholderSection"}>
-        <h2>Coming Soon</h2>
-      </section>
+      <InformativeCategorySection />
       <ProductGrid />
       <BreakerSection />
     </>
