@@ -714,3 +714,276 @@
 }
 
 /* end informative and category section Section */
+
+/* start horizontal scrolling*/
+
+.main {
+  overflow-x: hidden;
+}
+.horizontal-sliders {
+  display: flex;
+  flex-wrap: no-wrap;
+  width: 500%;
+  overflow-x: hidden;
+}
+.slide {
+  height: 80vh;
+  width: 100%;
+}
+.slide:nth-child(2n) {
+  background-color: aqua;
+}
+.next-block {
+  height: 100vh;
+  background: blue;
+}
+
+/*end horizontal scrolling*/
+
+/* Gallery Container */
+.gallery-container {
+  width: 100%;
+  margin-bottom: 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gallery Title */
+.gallery-title {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #172430;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Image Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  width: 50vw;
+  height: 50vh;
+  position: relative;
+}
+
+/* Individual Images */
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/*start partner section*/
+.partner-section {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #172430; /* Change to match image background */
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.marquee-wrapper {
+  display: flex;
+  gap: 40px;
+  margin: 3rem;
+  width: max-content;
+  color: black;
+  animation: marqueeScroll 10s linear infinite;
+  font-size: 24px;
+  line-height: 28.8px;
+}
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-20%);
+  }
+}
+.partner-section:hover .marquee-wrapper {
+  animation-play-state: paused;
+}
+
+.marquee-wrapper.animate {
+  transform: translateX(-20%); /* Moves fully to the left */
+}
+
+.partner-logo {
+  width: 150px; /* Adjust size */
+  height: auto;
+}
+/*end partner section*/
+
+/* start testimonial */
+/* General Styles */
+.testimonial-section {
+  background-color: #172430;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* Scrolling Wrapper */
+.testimonial-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.testimonial-slider {
+  display: flex;
+  gap: 20px;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Right to Left Animation */
+.rtl .testimonial-slider {
+  animation-name: scroll-rtl;
+}
+
+@keyframes scroll-rtl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Left to Right Animation */
+.ltr .testimonial-slider {
+  animation-name: scroll-ltr;
+}
+
+@keyframes scroll-ltr {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  width: 320px;
+  background-color: #1e2a38;
+  border-radius: 10px;
+  padding: 15px;
+  display: inline-block;
+  text-align: left;
+  white-space: normal;
+  overflow: hidden;
+}
+
+/* Content inside card */
+.testimonial-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Image */
+.testimonial-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+/* Text Content */
+.testimonial-text {
+  flex-grow: 1;
+}
+
+.testimonial-text h5 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.testimonial-text .role {
+  font-size: 14px;
+  color: #bbb;
+  margin: 2px 0;
+}
+
+.testimonial-text .message {
+  font-size: 14px;
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  max-height: 4.5em;
+  line-height: 1.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 280px;
+  }
+
+  .testimonial-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .testimonial-text h5 {
+    font-size: 16px;
+  }
+
+  .testimonial-text .message {
+    font-size: 13px;
+    max-height: 3.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+    width: 250px;
+    padding: 10px;
+  }
+
+  .testimonial-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonial-text h5 {
+    font-size: 14px;
+  }
+
+  .testimonial-text .message {
+    font-size: 12px;
+    max-height: 3em;
+  }
+}
+
+/* end testimonial section*/
