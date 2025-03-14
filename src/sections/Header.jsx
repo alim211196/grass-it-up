@@ -1,10 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../App.css";
+
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const videoHeight =
+        document.getElementById("videoSection")?.offsetHeight || 0;
+      setIsScrolled(window.scrollY > videoHeight);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <header
-      className={`${"navbar"} ${isHovered ? "navbarHover" : ""}`}
+      className={`navbar ${
+        isScrolled || isHovered ? "navbarHover" : "navbarTransparent"
+      }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

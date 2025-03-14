@@ -4,7 +4,7 @@ import Header from "./Header";
 
 const HeroBanner = () => {
   return (
-    <div className={"heroContainer"}>
+    <div className={"heroContainer"} id="videoSection">
       {/* Navbar */}
       <Header />
       {/* Video Background */}

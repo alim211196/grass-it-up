@@ -223,6 +223,33 @@
   width: auto; /* Maintain aspect ratio */
 }
 
+/* Initially Transparent Navbar */
+.navbarTransparent {
+  background: transparent;
+  box-shadow: none;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Navbar when hovered or scrolled past video */
+.navbarHover {
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Ensure Navbar items are visible in transparent mode */
+.navbarTransparent .navLinks li a,
+.navbarTransparent .logo a,
+.navbarTransparent .navIcons i {
+  color: white;
+}
+
+.navbarHover .navLinks li a,
+.navbarHover .logo a,
+.navbarHover .navIcons i {
+  color: black !important;
+}
+
 /* End Header Section */
 
 /* Start Marquee Section */
