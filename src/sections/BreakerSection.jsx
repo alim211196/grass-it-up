@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-
+import "../App.css";
 const images = [
   "https://furnixar.vercel.app/assets/banner-01-BByUH_7G.png",
   "https://furnixar.vercel.app/assets/banner-02-D_i8EOvA.png",

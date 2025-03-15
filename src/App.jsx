@@ -9,6 +9,8 @@ import GallerySection from "./sections/GallerySection";
 import HorizontalScroll from "./sections/HorizontalScroll";
 import PartnerMarquee from "./sections/PartnerMarquee";
 import Testimonial from "./sections/Testimonial";
+import VisitOurShowroom from "./sections/VisitOurShowroom";
+import SubscriptionSection from "./sections/SubscriptionSection";
 function App() {
   return (
     <>
@@ -19,7 +21,9 @@ function App() {
       <ProductGrid />
       <BreakerSection />
       {/* <GallerySection /> */}
+      <VisitOurShowroom />
       <PartnerMarquee />
+      <SubscriptionSection />
       <Testimonial />
     </>
   );

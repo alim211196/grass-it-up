@@ -1031,3 +1031,173 @@
 }
 
 /* end testimonial section*/
+
+/* start Visit our showroom */
+.lets-talk-container {
+  text-align: center;
+  background-color: #38373d;
+  color: white;
+  padding: 50px 0;
+}
+
+.lets-talk-text {
+  font-size: 4rem;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+}
+
+.rotating-image {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes rotateImage {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.rotating-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: rotateImage 4s linear infinite;
+}
+/*end visit our showroom*/
+
+/*start news letter */
+
+.newsletter-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f8f4ec;
+  text-align: center;
+}
+
+/* Background text */
+.background-text {
+  position: absolute;
+  font-size: 6vw;
+  font-weight: bold;
+  color: rgba(100, 80, 60, 0.3);
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.1;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Subscription box */
+.subscription-box {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  transition: transform 0.5s ease-out;
+  z-index: 2;
+}
+
+/* Subscription box text */
+.subscription-box p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Animated border container */
+.beam-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #38373d;
+  border-radius: 50px;
+  padding: 5px 10px;
+  width: 400px;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+/* Input field */
+.beam-container input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: white;
+  outline: none;
+  font-size: 16px;
+  padding: 12px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+}
+
+/* Placeholder styling */
+.beam-container input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Border animation effect */
+.beam-container::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  border-radius: 50px;
+  background: conic-gradient(#ff00ff, #00ffff, #ff4500, #ff00ff);
+  z-index: -1;
+  top: -25%;
+  left: -25%;
+  /* background: conic-gradient(#ff4500, #ff4500); */
+  animation: rotate-border 5s linear infinite;
+}
+
+.loading-box-container {
+  --size: 100%;
+  --radius: 50px;
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  /* padding: var(--radius); */
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+@keyframes rotate-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Button styling */
+.beam-container button {
+  background: linear-gradient(145deg, #e3e3e3, #c7c7c7);
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+/* Button hover effect */
+.beam-container button:hover {
+  background: linear-gradient(145deg, #f0f0f0, #d1d1d1);
+}
+
+/*end news letter */
