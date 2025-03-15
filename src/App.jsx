@@ -11,6 +11,7 @@ import PartnerMarquee from "./sections/PartnerMarquee";
 import Testimonial from "./sections/Testimonial";
 import VisitOurShowroom from "./sections/VisitOurShowroom";
 import SubscriptionSection from "./sections/SubscriptionSection";
+import HorizontalCarousel from "./sections/HorizontalCarousel";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
       <InformativeCategorySection />
       <ProductGrid />
       <BreakerSection />
+      <HorizontalCarousel />
       {/* <GallerySection /> */}
       <VisitOurShowroom />
       <PartnerMarquee />

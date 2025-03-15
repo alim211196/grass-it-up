@@ -1262,3 +1262,61 @@ body {
 }
 
 /*end horizontal scrolling*/
+
+/*start horizontal carousel*/
+.carousel-container {
+  overflow: hidden;
+  text-align: center;
+}
+.carousel-wrapper {
+  display: flex;
+  overflow: hidden;
+  cursor: grab;
+}
+.carousel-items {
+  display: flex;
+  gap: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.carousel-image {
+  width: 708px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+.carousel-image:hover {
+  transform: scale(1.1);
+}
+.image-title {
+  /* position: absolute;
+  bottom: 5%;
+  left: 2%; */
+}
+.tab-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  position: relative;
+  width: 90%;
+  height: 5px;
+  background: #ddd;
+  cursor: pointer;
+}
+.tab-section {
+  flex: 1;
+  height: 5px;
+  transition: background 0.3s ease-in-out;
+}
+.tab-section.active {
+  background: black;
+}
+.nav-buttons {
+  position: absolute;
+  right: -120px;
+  display: flex;
+  gap: 10px;
+  margin-top: 0px;
+}
+
+/*end horizontal carousel*/
