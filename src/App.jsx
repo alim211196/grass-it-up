@@ -16,7 +16,7 @@ function App() {
     <>
       <HeroBanner />
       <Marquee />
-      {/* <HorizontalScroll /> */}
+      <HorizontalScroll />
       <InformativeCategorySection />
       <ProductGrid />
       <BreakerSection />
