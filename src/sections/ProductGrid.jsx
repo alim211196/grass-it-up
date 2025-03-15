@@ -50,6 +50,18 @@ const products = [
     image:
       "https://maglin-1c124.kxcdn.com/app/uploads/2024/04/products-menu_sun-shades-380x240.png",
   },
+  {
+    id: 9,
+    name: "Planters",
+    image:
+      "https://maglin-1c124.kxcdn.com/app/uploads/2020/09/products-menu_planters-1-380x240.png",
+  },
+  {
+    id: 10,
+    name: "Bollards",
+    image:
+      "https://maglin-1c124.kxcdn.com/app/uploads/2020/09/products-menu_bollards-1-380x240.png",
+  },
 ];
 
 const ProductGrid = () => {

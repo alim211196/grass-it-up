@@ -62,9 +62,13 @@ const InformativeCategorySection = () => {
           From Sunrise to Stargazing
         </h2>
         <p className="informative-category-section__description">
-          Create a place to lounge. A place to dine. A place to connect. A place
-          to breathe. Whatever you envision for your outdoor space, make it
-          happen with furniture you love.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          facilisi. Suspendisse potenti. Vivamus interdum, sapien nec tincidunt
+          tincidunt, velit orci tempus odio, a feugiat ligula eros nec libero.
+          Fusce euismod, lorem vel scelerisque interdum, ligula urna interdum
+          turpis, at pellentesque purus lorem nec leo. Curabitur vel ex et erat
+          pellentesque luctus. Integer malesuada, ex ac malesuada vulputate,
+          urna purus vestibulum mauris, eget imperdiet dui turpis ac purus.
         </p>
         <div className="informative-category-section__buttons">
           <button className="btn-custom">Dining</button>

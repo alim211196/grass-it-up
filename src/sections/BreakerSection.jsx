@@ -9,6 +9,7 @@ const BreakerSection = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
@@ -24,7 +25,7 @@ const BreakerSection = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 } // Trigger when 20% is visible
+      { threshold: 0.2 }
     );
 
     if (sectionRef.current) {
@@ -40,41 +41,31 @@ const BreakerSection = () => {
 
   return (
     <div className="breakSection">
-      <div className="breakContainer">
-        {/* Left Side Content */}
-        <div
-          className={`textSection ${isVisible ? "visible" : ""}`}
-          ref={sectionRef}
-        >
-          <span className="subTitle">New Arrival</span>
-          <h2 className="mainTitle">Premium Lounge Sofa Chair</h2>
-          <p className="description">
-            We offer you an extremely comfortable lounge sofa chair. Taking the
-            time to relax at home or the office will be more appealing than ever
-            when you choose a modern lounge sofa chair.
-          </p>
-          <a href="#" className="shopButton">
-            Let's Shop Now
-          </a>
-        </div>
-
-        {/* Right Side Image Section */}
-        <div className="imageContainer">
-          {images.map((img, index) => (
-            <div
-              key={index}
-              className={`backgroundImage ${
-                index === currentImage ? "active" : ""
-              }`}
-              style={{
-                backgroundImage: `url(${img})`,
-                transform: `translateX(${
-                  index === currentImage ? "0" : "100%"
-                })`,
-              }}
-            ></div>
-          ))}
-        </div>
+      <div className="imageContainer">
+        {images.map((img, index) => (
+          <div
+            key={index}
+            className={`backgroundImage ${
+              index === currentImage ? "active" : ""
+            }`}
+            style={{ backgroundImage: `url(${img})` }}
+          ></div>
+        ))}
+      </div>
+      <div
+        className={`textSection ${isVisible ? "visible" : ""}`}
+        ref={sectionRef}
+      >
+        <span className="subTitle">New Arrival</span>
+        <h2 className="mainTitle">Premium Lounge Sofa Chair</h2>
+        <p className="description">
+          We offer you an extremely comfortable lounge sofa chair. Taking the
+          time to relax at home or the office will be more appealing than ever
+          when you choose a modern lounge sofa chair.
+        </p>
+        <a href="#" className="shopButton">
+          Let's Shop Now
+        </a>
       </div>
     </div>
   );

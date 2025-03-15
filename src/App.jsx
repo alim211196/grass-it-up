@@ -18,7 +18,7 @@ function App() {
       <InformativeCategorySection />
       <ProductGrid />
       <BreakerSection />
-      <GallerySection />
+      {/* <GallerySection /> */}
       <PartnerMarquee />
       <Testimonial />
     </>

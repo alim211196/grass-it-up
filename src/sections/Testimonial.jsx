@@ -68,7 +68,12 @@ const Testimonial = () => {
                   <div className="testimonial-text">
                     <h5>{testimonial.name}</h5>
                     <p className="role">{testimonial.role}</p>
-                    <p className="message">{testimonial.message}</p>
+                    <p className="message">
+                      {" "}
+                      {testimonial.message?.length > 150
+                        ? `${testimonial.message.substring(0, 150)}...`
+                        : testimonial.message}{" "}
+                    </p>
                   </div>
                 </div>
               </div>

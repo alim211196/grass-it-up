@@ -29,7 +29,11 @@ const Header = () => {
         <div className={"logo"}>
           <a href="/">
             <img
-              src="/grassitup.png"
+              src={
+                isScrolled || isHovered
+                  ? "/Master_Logo_RGB.png"
+                  : "/Master_Logo_WHITE.png"
+              }
               alt="Grass It Up"
               className={"logoImage"}
             />
