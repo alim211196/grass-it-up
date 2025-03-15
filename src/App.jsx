@@ -12,6 +12,7 @@ import Testimonial from "./sections/Testimonial";
 import VisitOurShowroom from "./sections/VisitOurShowroom";
 import SubscriptionSection from "./sections/SubscriptionSection";
 import HorizontalCarousel from "./sections/HorizontalCarousel";
+import CylindricalCarousel from "./sections/CylindricalCarousel";
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
       <VisitOurShowroom />
       <PartnerMarquee />
       <SubscriptionSection />
+      <CylindricalCarousel />
       <Testimonial />
     </>
   );
