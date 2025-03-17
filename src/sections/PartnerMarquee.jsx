@@ -34,6 +34,16 @@ const PartnerMarquee = () => {
           Discover the finest collections from top furniture brands.
         </p>
       </div>
+      <div className="d-flex align-items-center">
+        <div className="me-4"></div>
+        <div
+          style={{
+            height: "50px",
+            border: "1px solid rgba(255, 255, 255, 0.3)",
+          }}
+        ></div>
+        <div className="ms-4"></div>
+      </div>
 
       {/* Right Section - Marquee */}
       <div className="marquee-container">

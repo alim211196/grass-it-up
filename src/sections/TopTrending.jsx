@@ -6,6 +6,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import "../App.css"; // Import custom CSS
 import SectionHeading from "./SectionHeading";
+import { OverlayTrigger, Popover } from "react-bootstrap";
 
 const images = [
   {
@@ -31,6 +32,14 @@ const images = [
       { id: 3, x: "10%", y: "70%", text: "LAMP" },
     ],
   },
+
+  {
+    src: "https://grassitupshop.com/cdn/shop/files/ScreenShot2024-03-15at1.16.12PM_352x352.png?v=1710495261",
+    hotspots: [
+      { id: 1, x: "50%", y: "48%", text: "TABLE" },
+      { id: 2, x: "40%", y: "67%", text: "CHAIR" },
+    ],
+  },
   {
     src: "https://grassitupshop.com/cdn/shop/files/IMG_1655_352x352.jpg?v=1737641071",
     hotspots: [
@@ -39,26 +48,11 @@ const images = [
       { id: 3, x: "71%", y: "65%", text: "STILL" },
     ],
   },
-  {
-    src: "https://grassitupshop.com/cdn/shop/files/ScreenShot2024-03-15at1.16.12PM_352x352.png?v=1710495261",
-    hotspots: [
-      { id: 1, x: "50%", y: "48%", text: "TABLE" },
-      { id: 2, x: "40%", y: "67%", text: "CHAIR" },
-    ],
-  },
 ];
 
 const TopTrending = () => {
   const [swiperRef, setSwiperRef] = useState(null);
   const [activeIndex, setActiveIndex] = useState(1);
-  const [activeHotspots, setActiveHotspots] = useState({});
-
-  const handleHotspotToggle = (imageIndex, hotspotId) => {
-    setActiveHotspots((prev) => ({
-      ...prev,
-      [imageIndex]: prev[imageIndex] === hotspotId ? null : hotspotId,
-    }));
-  };
 
   return (
     <div className="marker-carousel-container">
@@ -91,26 +85,30 @@ const TopTrending = () => {
             >
               <img src={item.src} alt={`Slide ${index + 1}`} />
               {item.hotspots.map((spot) => (
-                <div
+                <OverlayTrigger
                   key={spot.id}
-                  className={`trending-hotspot ${
-                    activeHotspots[index] === spot.id ? "active" : ""
-                  }`}
-                  style={{ top: spot.y, left: spot.x }}
-                  onClick={() => handleHotspotToggle(index, spot.id)}
-                >
-                  <div className="trending-hotspot-dot">+</div>
-                  {activeHotspots[index] === spot.id && (
-                    <div className="trending-hotspot-label">
-                      <div>
-                        <p>{spot.text}</p>
-                        <div>
-                          <i className="fa fa-shopping-cart"></i> Add to Cart
+                  trigger="hover"
+                  placement="top"
+                  overlay={
+                    <Popover id={`popover-${spot.id}`}>
+                      <Popover.Header as="h6">{spot.text}</Popover.Header>
+                      <Popover.Body>
+                        <div className="d-flex align-items-center">
+                          <i className="fa fa-shopping-cart me-2"></i> Add to
+                          Cart
                         </div>
-                      </div>
-                    </div>
-                  )}
-                </div>
+                      </Popover.Body>
+                    </Popover>
+                  }
+                >
+                  <div
+                    className="trending-hotspot"
+                    style={{ top: spot.y, left: spot.x }}
+                  >
+                    <div className="trending-hotspot-dot">+</div>
+                    <div className="trending-pulse-effect"></div>
+                  </div>
+                </OverlayTrigger>
               ))}
             </div>
           </SwiperSlide>
