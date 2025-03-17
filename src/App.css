@@ -1379,22 +1379,22 @@ body {
   content: "";
   position: absolute;
   left: -5%;
-  top: 0;
+  top: 15px;
   width: 110%;
   height: 80px; /* Reduce height */
   background: white;
-  border-radius: 50%;
+  border-radius: 100%;
   z-index: 2;
 }
 .curved-carousel-container::after {
   content: "";
   position: absolute;
   left: -5%;
-  bottom: 0;
+  bottom: 15px;
   width: 110%;
   height: 80px; /* Reduce height */
   background: white;
-  border-radius: 50%;
+  border-radius: 100%;
   z-index: 2;
 }
 
