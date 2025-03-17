@@ -18,7 +18,7 @@ const CylindricalCarousel = () => {
   ];
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container-instagram">
       <h1 className="text-center">Instagram Feed</h1>
       <div className="curved-carousel-container">
         <Swiper
