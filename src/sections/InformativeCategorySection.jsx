@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import "../App.css";
+import SectionHeading from "./SectionHeading";
 
 const InformativeCategorySection = () => {
   const [isZoomed, setIsZoomed] = useState(false);
@@ -58,9 +59,8 @@ const InformativeCategorySection = () => {
       </div>
 
       <div className="informative-category-section__text-container">
-        <h2 className="informative-category-section__title">
-          From Sunrise to Stargazing
-        </h2>
+        <SectionHeading title=" From Sunrise to" subtitle="Stargazing" />
+
         <p className="informative-category-section__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
           facilisi. Suspendisse potenti. Vivamus interdum, sapien nec tincidunt

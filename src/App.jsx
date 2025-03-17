@@ -13,11 +13,15 @@ import VisitOurShowroom from "./sections/VisitOurShowroom";
 import SubscriptionSection from "./sections/SubscriptionSection";
 import HorizontalCarousel from "./sections/HorizontalCarousel";
 import CylindricalCarousel from "./sections/CylindricalCarousel";
+import HotspotImage from "./sections/HotspotImage";
+import Footer from "./sections/Footer";
+
 function App() {
   return (
     <>
       <HeroBanner />
       <Marquee />
+      {/* <SectionHeading title="Popular" subtitle="CATEGORY" /> */}
       <HorizontalScroll />
       <InformativeCategorySection />
       <ProductGrid />
@@ -25,10 +29,12 @@ function App() {
       <HorizontalCarousel />
       {/* <GallerySection /> */}
       <VisitOurShowroom />
+      <HotspotImage />
       <PartnerMarquee />
       <SubscriptionSection />
       <CylindricalCarousel />
       <Testimonial />
+      <Footer />
     </>
   );
 }

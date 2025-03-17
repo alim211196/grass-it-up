@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import SectionHeading from "./SectionHeading";
 
 const products = [
   {
@@ -67,7 +68,7 @@ const products = [
 const ProductGrid = () => {
   return (
     <section className="productSection">
-      <h2 className="sectionTitle">Furniture Products</h2>
+      <SectionHeading title="Furniture" subtitle="PRODUCTS" />
       <div className="productGrid">
         {products.map((product) => (
           <div key={product.id} className="productCard">

@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "../App.css"; // Ensure you have CSS for styling
 
 import { FreeMode, Autoplay } from "swiper/modules";
+import SectionHeading from "./SectionHeading";
 
 const CylindricalCarousel = () => {
   const images = [
@@ -19,7 +20,7 @@ const CylindricalCarousel = () => {
 
   return (
     <div className="carousel-container-instagram">
-      <h1 className="text-center">Instagram Feed</h1>
+      <SectionHeading title="Instagram" subtitle="Feed" />
       <div className="curved-carousel-container">
         <Swiper
           modules={[FreeMode, Autoplay]}

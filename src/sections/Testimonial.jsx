@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import SectionHeading from "./SectionHeading";
 
 const testimonials = [
   {
@@ -48,12 +49,7 @@ const Testimonial = () => {
   return (
     <section className="testimonial-section">
       <div className="container-fluid">
-        <h2 className="section-title">Testimonials</h2>
-        <p className="section-subtitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          consequatur reprehenderit.
-        </p>
-
+        <SectionHeading title="Testimonials" subtitle="List" />
         {/* First Row (Right to Left) */}
         <div className="testimonial-wrapper rtl">
           <div className="testimonial-slider">

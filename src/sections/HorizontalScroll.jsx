@@ -2,6 +2,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef, useState, useEffect } from "react";
 import "../App.css";
+import SectionHeading from "./SectionHeading";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -64,8 +65,8 @@ export default function HorizontalScroll() {
               />
             </div>
             <div className="hero-content">
-              <h1>CHAIRS</h1>
-              <button className="shop-button">SHOP CHAIRS →</button>
+              <h1 className="horizontal-scroll-title">CHAIRS</h1>
+              <button className="shopButton">SHOP CHAIRS</button>
             </div>
           </div>
         ))}

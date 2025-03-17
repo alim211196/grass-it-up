@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "July It";
+  src: url("../public/July\ it.ttf") format("truetype"); /* Adjust the path */
+  font-weight: normal;
+  font-style: normal;
+}
 /* Start Video Section */
 
 .heroContainer {
@@ -296,7 +302,7 @@
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  background-color: #7f9c90; /* Change to match image background */
+  background-color: #d6d2c4; /* Change to match image background */
   padding: 30px 0;
   position: relative;
   display: flex;
@@ -335,7 +341,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5f5f5;
+  background-color: #d6d2c4;
   color: #38373d;
   font-size: 2rem;
   font-weight: bold;
@@ -396,6 +402,7 @@
   margin-top: 10px;
   font-size: 16px;
   font-weight: 500;
+  color: #38373d;
 }
 
 .hero-section {
@@ -476,7 +483,7 @@
 
 .iconContainer i {
   font-size: 20px;
-  color: #38373d;
+  color: #7f9c90;
   cursor: pointer;
   transition: color 0.3s;
   text-align: center;
@@ -535,9 +542,10 @@
 }
 
 .subTitle {
-  font-size: 30px;
-  font-weight: 600;
-  color: #b38b59;
+  font-size: 40px;
+  font-family: "July it", sans-serif;
+  font-weight: 400;
+  color: rgb(127, 156, 144);
 }
 
 .mainTitle {
@@ -555,17 +563,18 @@
 .shopButton {
   display: inline-block;
   padding: 12px 24px;
-  margin-top: 20px;
-  border: 1px solid #38373d;
-  color: #38373d;
+  margin-top: 0px;
+  border: 1px solid rgb(127, 156, 144);
+  color: rgb(127, 156, 144);
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 50px;
   position: relative;
   overflow: hidden;
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
+  cursor: pointer;
 }
 
 /* Create the hover background effect */
@@ -576,7 +585,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: #38373d;
+  background: rgb(127, 156, 144);
   transition: transform 0.4s ease-in-out;
   z-index: -1;
 }
@@ -584,7 +593,7 @@
 /* On hover, slide background in from the left and change text color */
 .shopButton:hover {
   color: #fff;
-  border-color: #38373d;
+  border-color: rgb(127, 156, 144);
 }
 
 .shopButton:hover::before {
@@ -871,6 +880,7 @@
   display: flex;
   width: 100%;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .testimonial-slider {
@@ -1063,7 +1073,7 @@
   position: absolute;
   font-size: 6vw;
   font-weight: bold;
-  color: rgba(100, 80, 60, 0.3);
+  color: rgba(127, 156, 144, 0.3);
   text-transform: uppercase;
   text-align: center;
   line-height: 1.1;
@@ -1101,7 +1111,7 @@
   padding: 5px 10px;
   width: 400px;
   background-color: #38373d;
-  margin: 1px;
+  margin: 2px;
   overflow: hidden;
   border-radius: var(--radius);
 }
@@ -1131,12 +1141,11 @@
   position: absolute;
   width: calc(100% + 6px);
   height: calc(100% + 6px);
-  background: conic-gradient(#ff00ff, #00ffff, #ff4500, #ff00ff);
+  background: conic-gradient(#7f9c90, #7f9c90, #7f9c90, #7f9c90);
   z-index: -1;
   top: -25%;
   left: 0%;
   padding: 10px;
-  /* background: conic-gradient(#ff4500, #ff4500); */
   animation: rotate-border 5s linear infinite;
 }
 
@@ -1194,7 +1203,6 @@ body {
   height: 100vh;
   display: flex;
   gap: 20px; /* Space between cards */
-  padding: 0 5%;
 }
 
 /* Card Panels */
@@ -1215,27 +1223,10 @@ body {
   margin: 20px;
 }
 
-/* Hero Content */
-.hero-content h1 {
+.horizontal-scroll-title {
   font-size: 5rem;
-  color: #5a4231;
+  color: #7f9c90;
   margin-bottom: 15px;
-}
-
-.shop-button {
-  background: none;
-  border: 2px solid #5a4231;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  color: #5a4231;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.shop-button:hover {
-  background: #5a4231;
-  color: white;
 }
 
 /* Hero Images */
@@ -1282,16 +1273,19 @@ body {
 .carousel-image {
   width: 708px;
   height: auto;
+  padding-bottom: 10px;
   border-radius: 8px;
   transition: transform 0.3s ease-in-out;
 }
 .carousel-image:hover {
   transform: scale(1.1);
 }
-.image-title {
-  /* position: absolute;
-  bottom: 5%;
-  left: 2%; */
+.image-text {
+  width: 100%;
+  text-align: left; /* Centers text */
+  color: #38373d; /* Text color */
+  margin: 30px 0px 0px 30px;
+  font-size: 16px;
 }
 .tab-indicator {
   display: flex;
@@ -1409,3 +1403,146 @@ body {
 }
 
 /*end insta feed*/
+
+/*start hotspot*/
+
+.hotspot-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.hotspot-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hotspot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.hotspot-dot {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 5px solid #38373d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.hotspot.active .hotspot-dot {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(56, 55, 61, 0.4);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 6px;
+  border: none;
+}
+
+.hotspot-label {
+  position: absolute;
+  text-align: center;
+}
+/* end hotspot*/
+
+/*start heading*/
+.section-heading {
+  text-align: center;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 56px;
+  font-family: "July it", sans-serif;
+  font-weight: 400;
+  color: rgb(127, 156, 144);
+}
+
+.section-subtitle {
+  font-size: 22px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #38373d; /* Darker shade for contrast */
+}
+
+/*end heading*/
+
+/*start footer */
+.container11 {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 1200px) {
+  .container11 {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container11 {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container11 {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container11 {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.footer {
+  background-color: #38373d;
+  color: #d6d2c4;
+  padding: 40px 0;
+}
+
+.footer h4,
+.footer h5 {
+  color: #7f9c90;
+}
+
+.footer p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.social-links li {
+  list-style: none;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #9aab9e;
+  display: block;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #d6d2c4;
+}
+
+.footer-bottom {
+  border-top: 1px solid #7f9c90;
+  padding-top: 10px;
+  font-size: 14px;
+}
+/*end footer*/

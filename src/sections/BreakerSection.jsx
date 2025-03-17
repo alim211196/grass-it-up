@@ -63,9 +63,7 @@ const BreakerSection = () => {
           time to relax at home or the office will be more appealing than ever
           when you choose a modern lounge sofa chair.
         </p>
-        <a href="#" className="shopButton">
-          Let's Shop Now
-        </a>
+        <a className="shopButton">Let's Shop Now</a>
       </div>
     </div>
   );

@@ -93,21 +93,23 @@ const HorizontalCarousel = () => {
       <div
         className="carousel-wrapper"
         ref={carouselRef}
-        onMouseDown={handleMouseDown}
-        onMouseLeave={handleMouseLeave}
-        onMouseUp={handleMouseUp}
-        onMouseMove={handleMouseMove}
+        // onMouseDown={handleMouseDown}
+        // onMouseLeave={handleMouseLeave}
+        // onMouseUp={handleMouseUp}
+        // onMouseMove={handleMouseMove}
       >
         <div className="carousel-items">
           {images.map((image, index) => (
-            <img
-              key={index}
-              src={image.src}
-              alt={image.alt}
-              className={`carousel-image ${
-                activeIndex === index ? "active" : ""
-              }`}
-            />
+            <div key={index}>
+              <img
+                className={`carousel-image ${
+                  activeIndex === index ? "active" : ""
+                }`}
+                src={image.src}
+                alt={image.alt}
+              />
+              <h4 className="image-text">{image.name}</h4>
+            </div>
           ))}
         </div>
       </div>
