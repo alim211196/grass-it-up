@@ -31,7 +31,7 @@ const SubscriptionSection = () => {
         style={{ transform: `translateY(${offset}px)` }}
       >
         <p>Never miss out, Stay updated</p>
-        <div class="loading-box-container">
+        <div className="loading-box-container">
           <div className={`beam-container ${isFocused ? "focused" : ""}`}>
             <input
               type="email"
