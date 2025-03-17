@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Container, Button } from "react-bootstrap";
 import "../App.css";
+import SectionHeading from "./SectionHeading";
 const images = [
   {
     src: "https://cld.accentuate.io/447233851645/1740741955277/stinson-slide2.jpg?v=1740743025627&options=w_540",
@@ -90,6 +91,8 @@ const HorizontalCarousel = () => {
 
   return (
     <Container fluid className="carousel-container position-relative p-4">
+      <SectionHeading title="New" subtitle="Expanded Collections" />
+
       <div
         className="carousel-wrapper"
         ref={carouselRef}

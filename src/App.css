@@ -500,7 +500,7 @@
   cursor: pointer;
   transition: color 0.3s;
   text-align: center;
-  background: rgba(56, 55, 61, 0.8);
+  background: rgba(56, 55, 61, 0.4);
   padding: 10px;
   border-radius: 50%;
 }
@@ -511,7 +511,7 @@
   left: 120%; /* Ensures text is on the right side */
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(56, 55, 61, 0.9);
+  background: rgba(56, 55, 61, 0.4);
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
@@ -1349,6 +1349,7 @@ body {
   gap: 10px;
   transition: transform 0.3s ease-in-out;
 }
+
 .carousel-image {
   width: 550px;
   height: auto;
@@ -1362,7 +1363,7 @@ body {
   width: 100%;
   text-align: left; /* Centers text */
   color: #38373d; /* Text color */
-  margin: 30px 0px 0px 30px;
+  margin: 20px 0px 0px 20px;
   font-size: 16px;
 }
 .tab-indicator {
