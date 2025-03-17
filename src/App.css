@@ -1325,6 +1325,7 @@ body {
 /* Center the slider */
 .carousel-container {
   padding: 40px 2px;
+  background: #f3f2ee;
 }
 .curved-carousel-container {
   margin: auto;
@@ -1382,9 +1383,13 @@ body {
   top: 15px;
   width: 110%;
   height: 80px; /* Reduce height */
-  background: white;
+  /* background: white; */
   border-radius: 100%;
   z-index: 2;
+  background-image: url(../public/gallery-overlay-start-bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
 }
 .curved-carousel-container::after {
   content: "";
@@ -1393,9 +1398,13 @@ body {
   bottom: 15px;
   width: 110%;
   height: 80px; /* Reduce height */
-  background: white;
+  /* background: white; */
   border-radius: 100%;
   z-index: 2;
+  background-image: url(../public/gallery-overlay-end-bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
 }
 
 /*end insta feed*/
