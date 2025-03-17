@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "../App.css";
 
 const PartnerMarquee = () => {
@@ -6,47 +6,47 @@ const PartnerMarquee = () => {
     "partner-light-1.svg",
     "partner-light-2.svg",
     "partner-light-4.svg",
-
     "partner-light-6.svg",
     "partner-light-7.svg",
     "partner-light-1.svg",
     "partner-light-2.svg",
     "partner-light-4.svg",
-
-    "partner-light-6.svg",
-    "partner-light-7.svg",
-    "partner-light-1.svg",
-    "partner-light-2.svg",
-    "partner-light-4.svg",
-
     "partner-light-6.svg",
     "partner-light-7.svg",
   ];
 
-  const [isAnimating, setIsAnimating] = useState(false);
+  const marqueeRef = useRef(null);
 
   useEffect(() => {
-    const startAnimation = () => {
-      setIsAnimating(true);
-      setTimeout(() => setIsAnimating(false), 4000); // Animation runs for 4 seconds, then stops
-    };
-
-    const interval = setInterval(startAnimation, 8000); // Restarts every 7 seconds
-
-    return () => clearInterval(interval);
+    const marquee = marqueeRef.current;
+    if (marquee) {
+      const clone = marquee.innerHTML;
+      marquee.innerHTML += clone; // Duplicating logos for smooth infinite scrolling
+    }
   }, []);
 
   return (
     <div className="partner-section">
-      <div className={`marquee-wrapper ${isAnimating ? "animate" : ""}`}>
-        {partners.map((logo, index) => (
-          <img
-            key={index}
-            src={logo}
-            alt={`Partner ${index + 1}`}
-            className="partner-logo"
-          />
-        ))}
+      {/* Left Section - Title & Description */}
+      <div className="top-brands">
+        <h2 className="top-brands-title">Top Brands</h2>
+        <p className="top-brands-description">
+          Discover the finest collections from top furniture brands.
+        </p>
+      </div>
+
+      {/* Right Section - Marquee */}
+      <div className="marquee-container">
+        <div className="marquee" ref={marqueeRef}>
+          {partners.map((logo, index) => (
+            <img
+              key={index}
+              src={logo}
+              alt={`Partner ${index + 1}`}
+              className="partner-logo"
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

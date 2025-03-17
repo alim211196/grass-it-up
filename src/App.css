@@ -837,45 +837,77 @@
 
 /*start partner section*/
 .partner-section {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  background-color: #38373d; /* Change to match image background */
-  position: relative;
   display: flex;
   align-items: center;
+  background-color: #1a1d23; /* Dark background */
+  padding: 40px 20px;
+  color: #fff;
+  overflow: hidden; /* Prevents overlap */
 }
 
-.marquee-wrapper {
+/* Left Section: Top Brands Title */
+.top-brands {
+  width: 200px;
+  padding-left: 20px;
+  flex-shrink: 0;
+  border-right: 2px solid rgba(255, 255, 255, 0.3); /* Right border */
+  padding-right: 20px; /* Add padding to separate text from border */
+}
+
+.top-brands-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.top-brands-title::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.top-brands-description {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Right Section: Marquee Wrapper */
+.marquee-container {
+  flex-grow: 1;
+  overflow: hidden; /* Prevents overflow */
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee {
   display: flex;
   gap: 40px;
-  margin: 3rem;
   width: max-content;
-  color: #38373d;
-  animation: marqueeScroll 10s linear infinite;
-  font-size: 24px;
-  line-height: 28.8px;
+  animation: marqueeScroll 50s linear infinite;
 }
+
 @keyframes marqueeScroll {
   from {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(-20%);
+    transform: translateX(-50%);
   }
 }
-.partner-section:hover .marquee-wrapper {
-  animation-play-state: paused;
-}
 
-.marquee-wrapper.animate {
-  transform: translateX(-20%); /* Moves fully to the left */
-}
-
+/* Partner Logos */
 .partner-logo {
-  width: 150px; /* Adjust size */
+  width: 150px;
   height: auto;
+  filter: brightness(0) invert(1); /* White logo effect */
 }
+
 /*end partner section*/
 
 /* start testimonial */
