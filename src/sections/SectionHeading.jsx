@@ -7,7 +7,7 @@ const SectionHeading = ({ title, subtitle }) => {
       <span className="section-title">{title}</span>
       <h6
         className="section-subtitle"
-        style={{ color: subtitle === "List" && "white" }}
+        style={{ color: subtitle === "By our Client" && "white" }}
       >
         {subtitle}
       </h6>

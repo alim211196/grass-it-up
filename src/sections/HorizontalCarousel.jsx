@@ -109,6 +109,9 @@ const HorizontalCarousel = () => {
                 alt={image.alt}
               />
               <h4 className="image-text">{image.name}</h4>
+              <div className="add-to-cart">
+                <i className="fa fa-shopping-cart"></i> Add to Cart
+              </div>
             </div>
           ))}
         </div>

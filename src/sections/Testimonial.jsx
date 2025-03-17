@@ -35,21 +35,13 @@ const testimonials = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nostrum labore dolor facilis, nesciunt facere mollitia nam aspernatur esse!",
     image: "img4.jpg",
   },
-  {
-    id: 5,
-    name: "Jeff R.",
-    role: "Founder of XYZ",
-    message:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nostrum labore dolor facilis, nesciunt facere mollitia nam aspernatur esse!",
-    image: "img2.jpg",
-  },
 ];
 
 const Testimonial = () => {
   return (
     <section className="testimonial-section">
       <div className="container-fluid">
-        <SectionHeading title="Testimonials" subtitle="List" />
+        <SectionHeading title="Testimonials" subtitle="By our Client" />
         {/* First Row (Right to Left) */}
         <div className="testimonial-wrapper rtl">
           <div className="testimonial-slider">

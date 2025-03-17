@@ -472,16 +472,29 @@
 /* Icons container - initially hidden */
 .iconContainer {
   position: absolute;
-  bottom: -60px; /* Hide initially */
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: -60px;
+  right: 10%;
+  transform: translateY(40%);
   display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
   gap: 15px;
   padding: 15px;
   transition: bottom 0.3s ease-in-out;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden;
 }
 
+.productImageWrapper:hover .iconContainer {
+  bottom: 50px; /* Moves up */
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Icon styles */
 .iconContainer i {
+  position: relative; /* Ensures tooltip is positioned correctly */
   font-size: 20px;
   color: #ffffff;
   cursor: pointer;
@@ -492,14 +505,28 @@
   border-radius: 50%;
 }
 
-/* Hover effect */
-.productImageWrapper:hover::after {
-  /* background: rgba(255, 255, 255, 0.4); */
-  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+.iconContainer i::after {
+  content: attr(data-text); /* Use data-text attribute for dynamic text */
+  position: absolute;
+  left: 120%; /* Ensures text is on the right side */
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(56, 55, 61, 0.9);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  display: block; /* Ensures visibility */
 }
 
-.productImageWrapper:hover .iconContainer {
-  bottom: 20px; /* Icons move up and become visible */
+/* Show text when hovering over the icon */
+.iconContainer i:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(40%); /* Moves slightly left for smooth effect */
 }
 
 /* End product grid Section */
@@ -880,12 +907,13 @@
   width: 100%;
   margin-bottom: 20px;
   margin-top: 30px;
+  padding: 10px 0px;
 }
 
 .testimonial-slider {
   display: flex;
-  gap: 20px;
-  animation-duration: 30s;
+  gap: 30px;
+  animation-duration: 50s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -920,15 +948,14 @@
 
 /* Testimonial Card */
 .testimonial-card {
-  width: 400px;
+  width: 500px;
   background-color: #38373d;
   border-radius: 10px;
-  /* padding: 15px; */
   display: inline-block;
   text-align: left;
   white-space: normal;
   overflow: hidden;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
 /* Content inside card */
@@ -939,7 +966,7 @@
 
 /* Image */
 .testimonial-img {
-  width: 6rem;
+  width: 8rem;
   height: auto;
   /* border-radius: 50%; */
   object-fit: cover;
@@ -952,18 +979,18 @@
 }
 
 .testimonial-text h5 {
-  font-size: 18px;
+  font-size: 22px;
   margin: 0;
 }
 
 .testimonial-text .role {
-  font-size: 14px;
+  font-size: 16px;
   color: #bbb;
   margin: 2px 0;
 }
 
 .testimonial-text .message {
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1017,24 +1044,39 @@
 /* end testimonial section*/
 
 /* start Visit our showroom */
-.lets-talk-container {
-  text-align: center;
-  background-color: #38373d;
-  color: white;
-  padding: 50px 0;
+.visit-showroom-container {
+  display: flex;
+  height: 100vh;
 }
 
-.lets-talk-text {
-  font-size: 4rem;
+.showroom-left {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 50px;
+}
+
+.small-text {
+  font-size: 1.5rem;
   font-weight: 400;
+  color: #38373d;
+}
+
+.big-text {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #38373d;
   position: relative;
-  display: inline-block;
 }
 
 .rotating-image {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
 @keyframes rotateImage {
@@ -1052,6 +1094,22 @@
   object-fit: cover;
   animation: rotateImage 4s linear infinite;
 }
+
+/* Right Section */
+.showroom-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.right-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*end visit our showroom*/
 
 /*start news letter */
@@ -1097,7 +1155,7 @@
 /* Subscription box text */
 .subscription-box p {
   font-size: 1rem;
-  color: #444;
+  color: #38373d;
   margin-bottom: 20px;
 }
 
@@ -1109,7 +1167,7 @@
   border-radius: 50px;
   padding: 5px 10px;
   width: 400px;
-  background-color: #38373d;
+  background-color: #f8f4ec;
   margin: 2px;
   overflow: hidden;
   border-radius: var(--radius);
@@ -1131,7 +1189,7 @@
 
 /* Placeholder styling */
 .beam-container input::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(56, 55, 61, 0.5);
 }
 
 /* Border animation effect */
@@ -1167,22 +1225,44 @@
 
 /* Button styling */
 .beam-container button {
-  background: linear-gradient(145deg, #e3e3e3, #c7c7c7);
-  border: none;
   padding: 8px 16px;
   font-size: 14px;
   font-weight: bold;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  display: inline-block;
+  border: 1px solid rgb(127, 156, 144);
+  color: rgb(127, 156, 144);
+  text-decoration: none;
+  border-radius: 50px;
   position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 2;
+  cursor: pointer;
+}
+
+.beam-container button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgb(127, 156, 144);
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
+}
+
+/* On hover, slide background in from the left and change text color */
+.beam-container button:hover {
+  color: #fff;
+  border-color: rgb(127, 156, 144);
+}
+
+.beam-container button:hover::before {
+  transform: translateX(100%);
 }
 
 /* Button hover effect */
-.beam-container button:hover {
-  background: linear-gradient(145deg, #f0f0f0, #d1d1d1);
-}
 
 /*end news letter */
 
@@ -1270,7 +1350,7 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 .carousel-image {
-  width: 708px;
+  width: 550px;
   height: auto;
   padding-bottom: 10px;
   transition: transform 0.3s ease-in-out;
@@ -1311,7 +1391,32 @@ body {
   gap: 10px;
   margin-top: 0px;
 }
+.carousel-items div {
+  position: relative; /* Ensure each image container is the reference */
+}
 
+.add-to-cart {
+  background: rgba(56, 55, 61, 0.8);
+  color: white;
+  padding: 8px 12px;
+  width: 120px;
+  border-radius: 5px;
+  font-size: 14px;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  bottom: -40px; /* Initially hidden */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  opacity: 0;
+  transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.carousel-items div:hover .add-to-cart {
+  bottom: 50vh; /* Moves up only for the hovered image */
+  opacity: 1;
+}
 /*end horizontal carousel*/
 
 /*start insta feed*/
@@ -1426,7 +1531,7 @@ body {
   width: 20px;
   height: 20px;
   background-color: white;
-  border: 5px solid #38373d;
+  border: 5px solid #7f9c90;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1438,7 +1543,7 @@ body {
 .hotspot.active .hotspot-dot {
   width: 100px;
   height: 100px;
-  background-color: rgba(56, 55, 61, 0.4);
+  background-color: rgba(127, 156, 144, 0.4);
   color: white;
   font-weight: bold;
   font-size: 14px;
