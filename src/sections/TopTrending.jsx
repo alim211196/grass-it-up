@@ -31,14 +31,6 @@ const images = [
       { id: 3, x: "10%", y: "70%", text: "LAMP" },
     ],
   },
-
-  {
-    src: "https://grassitupshop.com/cdn/shop/files/ScreenShot2024-03-15at1.16.12PM_352x352.png?v=1710495261",
-    hotspots: [
-      { id: 1, x: "50%", y: "48%", text: "TABLE" },
-      { id: 2, x: "40%", y: "67%", text: "CHAIR" },
-    ],
-  },
   {
     src: "https://grassitupshop.com/cdn/shop/files/IMG_1655_352x352.jpg?v=1737641071",
     hotspots: [
@@ -47,18 +39,27 @@ const images = [
       { id: 3, x: "71%", y: "65%", text: "STILL" },
     ],
   },
+  {
+    src: "https://grassitupshop.com/cdn/shop/files/ScreenShot2024-03-15at1.16.12PM_352x352.png?v=1710495261",
+    hotspots: [
+      { id: 1, x: "50%", y: "48%", text: "TABLE" },
+      { id: 2, x: "40%", y: "67%", text: "CHAIR" },
+    ],
+  },
 ];
 
 const TopTrending = () => {
   const [swiperRef, setSwiperRef] = useState(null);
-  const [activeIndex, setActiveIndex] = useState(1); // Start at index 1
+  const [activeIndex, setActiveIndex] = useState(1);
   const [activeHotspots, setActiveHotspots] = useState({});
+
   const handleHotspotToggle = (imageIndex, hotspotId) => {
     setActiveHotspots((prev) => ({
       ...prev,
       [imageIndex]: prev[imageIndex] === hotspotId ? null : hotspotId,
     }));
   };
+
   return (
     <div className="marker-carousel-container">
       <SectionHeading title="Top" subtitle="Trending" />
@@ -69,8 +70,8 @@ const TopTrending = () => {
         centeredSlides={true}
         slidesPerView={3}
         spaceBetween={-50}
-        loop={true} // Enable loop
-        initialSlide={1} // Start from the second image
+        loop={true}
+        initialSlide={1}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         coverflowEffect={{
           rotate: 0,
@@ -88,22 +89,27 @@ const TopTrending = () => {
               className={`slide-item ${index === activeIndex ? "active" : ""}`}
               onClick={() => swiperRef && swiperRef.slideToLoop(index)}
             >
-              <img src={item?.src} alt={`Slide ${index + 1}`} />
-              {/* Hotspots for Each Image */}
+              <img src={item.src} alt={`Slide ${index + 1}`} />
               {item.hotspots.map((spot) => (
                 <div
                   key={spot.id}
-                  className={`hotspot ${
+                  className={`trending-hotspot ${
                     activeHotspots[index] === spot.id ? "active" : ""
                   }`}
                   style={{ top: spot.y, left: spot.x }}
                   onClick={() => handleHotspotToggle(index, spot.id)}
                 >
-                  <div className="hotspot-dot">
-                    {activeHotspots[index] === spot.id && (
-                      <span className="hotspot-label">{spot.text}</span>
-                    )}
-                  </div>
+                  <div className="trending-hotspot-dot">+</div>
+                  {activeHotspots[index] === spot.id && (
+                    <div className="trending-hotspot-label">
+                      <div>
+                        <p>{spot.text}</p>
+                        <div>
+                          <i className="fa fa-shopping-cart"></i> Add to Cart
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
