@@ -5,63 +5,73 @@ import SectionHeading from "./SectionHeading";
 const products = [
   {
     id: 1,
-    name: "Benches",
+    name: "Omer Tray Table Lava",
+    price: "AED 122.75",
     image:
-      "https://maglin-1c124.kxcdn.com/app/uploads/2020/09/products-menu_benches-1-380x240.png",
+      "https://grassitupshop.com/cdn/shop/products/photo_2882b7f0-c005-42d9-9ac1-f264629f018a_288x288.jpg?v=1630241105",
   },
   {
     id: 2,
-    name: "Tables & Seating",
+    name: "CUBIC COFFEE TABLE LAVA",
+    price: "AED 122.75",
     image:
-      "https://maglin-1c124.kxcdn.com/app/uploads/2020/09/products-menu_tables-seating-1-380x240.png",
+      "https://grassitupshop.com/cdn/shop/files/ScreenShot2024-10-21at3.47.56PM_352x352.png?v=1729511339",
   },
   {
     id: 3,
-    name: "Waste & Recycling",
+    name: "CUBIC SQUARE COFFEE TABLE WHITE",
+    price: "AED 122.75",
     image:
-      "https://maglin-1c124.kxcdn.com/app/uploads/2020/09/products-menu_waste-recycle-1-380x240.png",
+      "https://grassitupshop.com/cdn/shop/files/ScreenShot2024-10-21at3.49.46PM_352x352.png?v=1729511584",
   },
   {
     id: 4,
-    name: "Bike Racks",
+    name: "ALEXA DINING EXTENDABLE TABLE",
+    price: "AED 122.75",
     image:
-      "https://maglin-1c124.kxcdn.com/app/uploads/2020/09/products-menu_bikeracks-1-380x240.png",
+      "https://grassitupshop.com/cdn/shop/files/ScreenShot2023-12-08at1.10.29PM_352x352.png?v=1702026814",
   },
   {
     id: 5,
-    name: "Panels",
+    name: "EASY FIT SIDE TABLE - 60CM",
+    price: "AED 122.75",
     image:
-      "https://maglin-1c124.kxcdn.com/app/uploads/2020/09/products-menu_panels-380x240.png",
+      "https://grassitupshop.com/cdn/shop/files/ScreenShot2023-11-18at1.39.43PM_352x352.png?v=1700300570",
   },
   {
     id: 6,
-    name: "Bollards",
+    name: "EASY FIT SIDE TABLE PLUS B",
+    price: "AED 122.75",
     image:
-      "https://maglin-1c124.kxcdn.com/app/uploads/2020/09/products-menu_bollards-1-380x240.png",
+      "https://grassitupshop.com/cdn/shop/files/ScreenShot2023-11-24at12.07.30PM_352x352.png?v=1700813364",
   },
   {
     id: 7,
-    name: "Planters",
+    name: "NEWPORT DINING CHAIR",
+    price: "AED 122.75",
     image:
-      "https://maglin-1c124.kxcdn.com/app/uploads/2020/09/products-menu_planters-1-380x240.png",
+      "https://grassitupshop.com/cdn/shop/files/FUR5000255-0001_Diphano_Newport_Dining_20armchair_AF10_203R03_20HFTK_20C603_02_58c9da10-c5a0-429d-a48f-8599dbeea37d_352x352.jpg?v=1736256391",
   },
   {
     id: 8,
-    name: "Sun Shades",
+    name: "EASY FIT SIDE TABLE - 80CM",
+    price: "AED 122.75",
     image:
-      "https://maglin-1c124.kxcdn.com/app/uploads/2024/04/products-menu_sun-shades-380x240.png",
+      "https://grassitupshop.com/cdn/shop/files/ScreenShot2023-11-21at3.50.55PM_352x352.png?v=1700632114",
   },
   {
     id: 9,
-    name: "Planters",
+    name: "SWITCH SUN LOUNGER",
+    price: "AED 122.75",
     image:
-      "https://maglin-1c124.kxcdn.com/app/uploads/2020/09/products-menu_planters-1-380x240.png",
+      "https://grassitupshop.com/cdn/shop/files/ScreenShot2023-12-13at1.10.10PM_352x352.png?v=1702458675",
   },
   {
     id: 10,
-    name: "Bollards",
+    name: "ALEXA ROUND DINING TABLE - 148CM",
+    price: "AED 122.75",
     image:
-      "https://maglin-1c124.kxcdn.com/app/uploads/2020/09/products-menu_bollards-1-380x240.png",
+      "https://grassitupshop.com/cdn/shop/files/ScreenShot2023-09-29at10.05.42AM_288x288.png?v=1695967912",
   },
 ];
 
@@ -84,6 +94,7 @@ const ProductGrid = () => {
               </div>
             </div>
             <p className="productName">{product.name}</p>
+            <p className="productPrice">{product.price}</p>
           </div>
         ))}
       </div>

@@ -400,8 +400,13 @@
 
 .productName {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
+  color: #38373d;
+}
+.productPrice {
+  margin-top: 10px;
+  font-size: 13px;
   color: #38373d;
 }
 
@@ -690,7 +695,7 @@
 /* Text Content */
 .informative-category-section__text-container {
   width: 40%;
-  padding: 100px 20px 100px 60px;
+  padding: 0px 20px 100px 60px;
 }
 
 .informative-category-section__title {
@@ -699,7 +704,7 @@
 }
 
 .informative-category-section__description {
-  font-size: 14px;
+  font-size: 16px;
   color: #38373d;
 }
 
@@ -1399,6 +1404,13 @@ body {
   color: #38373d; /* Text color */
   margin: 20px 0px 0px 20px;
   font-size: 16px;
+}
+.image-price {
+  width: 100%;
+  text-align: left; /* Centers text */
+  color: #38373d; /* Text color */
+  margin: 10px 0px 0px 20px;
+  font-size: 13px;
 }
 .tab-indicator {
   display: flex;
