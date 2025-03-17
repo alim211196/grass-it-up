@@ -81,7 +81,6 @@ const ProductGrid = () => {
               <div className="iconContainer">
                 <i className="fas fa-heart"></i>
                 <i className="fas fa-shopping-bag"></i>
-                <i className="fas fa-eye"></i>
               </div>
             </div>
             <p className="productName">{product.name}</p>
