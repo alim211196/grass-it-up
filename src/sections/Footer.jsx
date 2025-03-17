@@ -3,7 +3,7 @@ import "../App.css"; // Import the custom styles
 
 const Footer = () => {
   return (
-    <footer className="footer mt-5">
+    <footer className="footer">
       <div className="container11">
         <div className="row">
           {/* Left Section - Brand */}
