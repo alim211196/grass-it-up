@@ -11,11 +11,11 @@ import SectionHeading from "./SectionHeading";
 
 const CylindricalCarousel = () => {
   const images = [
-    "https://cdn.prod.website-files.com/6486cb33f7cd6d9267f51a29/65884900f571497485dd5062_08%401280.webp",
-    "https://cdn.prod.website-files.com/6486cb33f7cd6d9267f51a29/65884900f571497485dd5062_08%401280.webp",
-    "https://cdn.prod.website-files.com/6486cb33f7cd6d9267f51a29/65884900f571497485dd5062_08%401280.webp",
-    "https://cdn.prod.website-files.com/6486cb33f7cd6d9267f51a29/65884900f571497485dd5062_08%401280.webp",
-    "https://cdn.prod.website-files.com/6486cb33f7cd6d9267f51a29/65884900f571497485dd5062_08%401280.webp",
+    "https://grassitupshop.com/cdn/shop/files/ScreenShot2024-03-15at1.16.12PM_352x352.png?v=1710495261",
+    "https://grassitupshop.com/cdn/shop/files/IMG_1655_352x352.jpg?v=1737641071",
+    "https://grassitupshop.com/cdn/shop/products/WhatsAppImage2022-06-10at3.28.38PM_1_448x288.jpg?v=1654865813",
+    "https://grassitupshop.com/cdn/shop/files/ScreenShot2024-03-15at1.16.12PM_352x352.png?v=1710495261",
+    "https://grassitupshop.com/cdn/shop/files/IMG_1655_352x352.jpg?v=1737641071",
   ];
 
   return (

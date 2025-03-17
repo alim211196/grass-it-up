@@ -15,6 +15,7 @@ import HorizontalCarousel from "./sections/HorizontalCarousel";
 import CylindricalCarousel from "./sections/CylindricalCarousel";
 import HotspotImage from "./sections/HotspotImage";
 import Footer from "./sections/Footer";
+import TopTrending from "./sections/TopTrending";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <ProductGrid />
       <BreakerSection />
       <HorizontalCarousel />
+      <TopTrending />
       {/* <GallerySection /> */}
       <VisitOurShowroom />
       <HotspotImage />
