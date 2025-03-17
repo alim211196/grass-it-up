@@ -1,6 +1,6 @@
 @font-face {
   font-family: "July It";
-  src: url("../public/July\ it.ttf") format("truetype"); /* Adjust the path */
+  src: url("/July-it.ttf") format("truetype"); /* Adjust the path */
   font-weight: normal;
   font-style: normal;
 }
