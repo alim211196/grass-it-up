@@ -1273,7 +1273,6 @@ body {
   width: 708px;
   height: auto;
   padding-bottom: 10px;
-  border-radius: 8px;
   transition: transform 0.3s ease-in-out;
 }
 .carousel-image:hover {

@@ -84,7 +84,7 @@ const HorizontalCarousel = () => {
     if (!isDragging.current) return;
     e.preventDefault();
     const x = e.pageX - carouselRef.current.offsetLeft;
-    const walk = (x - startX.current) * 1.5;
+    const walk = (x - startX.current) * 1;
     carouselRef.current.scrollLeft = scrollLeft.current - walk;
   };
 
@@ -93,10 +93,10 @@ const HorizontalCarousel = () => {
       <div
         className="carousel-wrapper"
         ref={carouselRef}
-        // onMouseDown={handleMouseDown}
-        // onMouseLeave={handleMouseLeave}
-        // onMouseUp={handleMouseUp}
-        // onMouseMove={handleMouseMove}
+        onMouseDown={handleMouseDown}
+        onMouseLeave={handleMouseLeave}
+        onMouseUp={handleMouseUp}
+        onMouseMove={handleMouseMove}
       >
         <div className="carousel-items">
           {images.map((image, index) => (
