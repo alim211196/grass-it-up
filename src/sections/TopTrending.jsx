@@ -59,7 +59,11 @@ const TopTrending = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div className="marker-carousel-container">
+    <div
+      className="marker-carousel-container"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
       <SectionHeading title="Top" subtitle="Trending" />
       <Swiper
         modules={[EffectCoverflow]}
@@ -86,8 +90,6 @@ const TopTrending = () => {
             <div
               className={`slide-item ${index === activeIndex ? "active" : ""}`}
               onClick={() => swiperRef && swiperRef.slideToLoop(index)}
-              data-aos="fade-up"
-              data-aos-delay="100"
             >
               <img src={item.src} alt={`Slide ${index + 1}`} />
               {item.hotspots.map((spot) => (

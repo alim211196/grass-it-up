@@ -23,7 +23,11 @@ const CylindricalCarousel = () => {
   }, []);
 
   return (
-    <div className="carousel-container-instagram">
+    <div
+      className="carousel-container-instagram"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
       <SectionHeading title="Instagram" subtitle="Feed" />
       <div className="curved-carousel-container">
         <Swiper
@@ -41,11 +45,7 @@ const CylindricalCarousel = () => {
         >
           {images.map((src, index) => (
             <SwiperSlide key={index} className="slider__el">
-              <div
-                className="slider__img"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
+              <div className="slider__img">
                 <img src={src} alt={`Slide ${index + 1}`} />
               </div>
             </SwiperSlide>

@@ -1,71 +1,163 @@
-import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "../App.css";
+import React, { useEffect } from "react";
+import { Swiper as GallerySwiper, SwiperSlide } from "swiper/react";
 
-gsap.registerPlugin(ScrollTrigger);
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-cards";
+import AOS from "aos";
+import "aos/dist/aos.css";
+// Import required modules
+import { EffectCards } from "swiper/modules";
+import SectionHeading from "./SectionHeading";
+
+const swiperStyles = {
+  width: "54vw",
+  height: "70vh",
+};
+
+const slideStyles = {
+  position: "relative",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  borderRadius: "18px",
+  overflow: "hidden",
+};
+
+const imageContainerStyles = {
+  width: "100%",
+  height: "100%",
+  overflow: "hidden",
+  position: "relative",
+};
+
+const imageStyles = {
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+  transition: "transform 0.3s ease-in-out",
+};
+
+const titleStyles = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  backgroundColor: "rgba(0, 0, 0, 0.5)",
+  color: "#fff",
+  padding: "10px 20px",
+  borderRadius: "8px",
+  fontSize: "20px",
+  fontWeight: "bold",
+  textAlign: "center",
+  whiteSpace: "nowrap",
+};
 
 const images = [
   {
-    src: "https://cdn.prod.website-files.com/6486cb33f7cd6d9267f51a29/65884900f571497485dd5062_08%401280.webp",
+    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-2.jpg",
+    name: "Modern Design",
   },
   {
-    src: "https://cdn.prod.website-files.com/6486cb33f7cd6d9267f51a29/65884900f571497485dd5062_08%401280.webp",
+    src: "https://grassitupshop.com/cdn/shop/products/WhatsAppImage2022-06-10at3.28.38PM_1_448x288.jpg?v=1654865813",
+    name: "Elegant Style",
   },
   {
-    src: "https://cdn.prod.website-files.com/6486cb33f7cd6d9267f51a29/65884900f571497485dd5062_08%401280.webp",
+    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-1.jpg",
+    name: "Luxury Sofa",
   },
   {
-    src: "https://cdn.prod.website-files.com/6486cb33f7cd6d9267f51a29/65884900f571497485dd5062_08%401280.webp",
+    src: "https://grassitupshop.com/cdn/shop/files/Sahara_608x416.jpg?v=1732629985",
+    name: "Cozy Living",
+  },
+  {
+    src: "https://grassitupshop.com/cdn/shop/files/Blue-20_608x416.jpg?v=1655713613",
+    name: "Modern Interior",
+  },
+
+  {
+    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-2.jpg",
+    name: "Modern Design",
+  },
+  {
+    src: "https://grassitupshop.com/cdn/shop/products/WhatsAppImage2022-06-10at3.28.38PM_1_448x288.jpg?v=1654865813",
+    name: "Elegant Style",
+  },
+  {
+    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-1.jpg",
+    name: "Luxury Sofa",
+  },
+  {
+    src: "https://grassitupshop.com/cdn/shop/files/Sahara_608x416.jpg?v=1732629985",
+    name: "Cozy Living",
+  },
+  {
+    src: "https://grassitupshop.com/cdn/shop/files/Blue-20_608x416.jpg?v=1655713613",
+    name: "Modern Interior",
+  },
+  {
+    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-1.jpg",
+    name: "Luxury Sofa",
+  },
+  {
+    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-2.jpg",
+    name: "Modern Design",
+  },
+  {
+    src: "https://grassitupshop.com/cdn/shop/products/WhatsAppImage2022-06-10at3.28.38PM_1_448x288.jpg?v=1654865813",
+    name: "Elegant Style",
+  },
+  {
+    src: "https://grassitupshop.com/cdn/shop/files/Sahara_608x416.jpg?v=1732629985",
+    name: "Cozy Living",
+  },
+  {
+    src: "https://grassitupshop.com/cdn/shop/files/Blue-20_608x416.jpg?v=1655713613",
+    name: "Modern Interior",
   },
 ];
 
 const GallerySection = () => {
-  const containerRef = useRef(null);
-
   useEffect(() => {
-    gsap.fromTo(
-      ".gallery-image",
-      { scale: 1, opacity: 0.7 },
-      {
-        scale: 1.5,
-        opacity: 1,
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start: "top 60%",
-          end: "bottom 40%",
-          scrub: true,
-        },
-      }
-    );
-
-    gsap.to(".gallery-image", {
-      scale: 1,
-      opacity: 0.7,
-      stagger: 0.2,
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "bottom 40%",
-        end: "bottom 10%",
-        scrub: true,
-      },
-    });
+    AOS.init({ duration: 1000 });
   }, []);
 
   return (
-    <div ref={containerRef} className="gallery-container">
-      <h2 className="gallery-title">OUR GALLERY</h2>
-      <div className="gallery-grid">
+    <div
+      className="blog-section py-5 overflow-hidden"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      <SectionHeading title="Our" subtitle="Gallery" />
+      <GallerySwiper
+        effect="cards"
+        grabCursor={true}
+        loop={true}
+        modules={[EffectCards]}
+        style={swiperStyles}
+        initialSlide={Math.floor(images.length / 2)} // Start from the center image
+      >
         {images.map((item, index) => (
-          <img
-            key={index}
-            src={item.src}
-            alt={`Gallery ${index + 1}`}
-            className="gallery-image"
-          />
+          <SwiperSlide key={index} style={slideStyles}>
+            <div style={imageContainerStyles} className="image-container">
+              <img
+                src={item.src}
+                alt={`Slide ${index + 1}`}
+                style={imageStyles}
+                className="gallery-image"
+              />
+              <div style={titleStyles}>{item.name}</div>
+            </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </GallerySwiper>
+      <style>
+        {`
+          .image-container:hover .gallery-image {
+            transform: scale(1.1);
+          }
+        `}
+      </style>
     </div>
   );
 };
