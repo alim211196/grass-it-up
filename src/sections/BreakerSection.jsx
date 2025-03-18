@@ -4,8 +4,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const images = [
-  "https://furnixar.vercel.app/assets/banner-01-BByUH_7G.png",
-  "https://furnixar.vercel.app/assets/banner-02-D_i8EOvA.png",
+  "https://dev-risians.com/html/grassitup/images/pop-cat-bg-8.png",
+  "https://dev-risians.com/html/grassitup/images/pop-cat-bg-1.png",
+
+  "https://dev-risians.com/html/grassitup/images/pop-cat-bg-11.png",
+  "https://dev-risians.com/html/grassitup/images/pop-cat-bg-12.png",
 ];
 
 const BreakerSection = () => {
@@ -47,8 +50,8 @@ const BreakerSection = () => {
   }, []);
 
   return (
-    <div className="breakSection">
-      <div className="imageContainer" data-aos="fade-up" data-aos-delay="100">
+    <div className="breakSection" data-aos="fade-up" data-aos-delay="100">
+      <div className="imageContainer">
         {images.map((img, index) => (
           <div
             key={index}
@@ -63,20 +66,14 @@ const BreakerSection = () => {
         className={`textSection ${isVisible ? "visible" : ""}`}
         ref={sectionRef}
       >
-        <span className="subTitle" data-aos="fade-up" data-aos-delay="100">
-          New Arrival
-        </span>
-        <h2 className="mainTitle" data-aos="fade-up" data-aos-delay="100">
-          Premium Lounge Sofa Chair
-        </h2>
-        <p className="description" data-aos="fade-up" data-aos-delay="100">
+        <span className="subTitle">New Arrival</span>
+        <h2 className="mainTitle">Premium Lounge Sofa Chair</h2>
+        <p className="description">
           We offer you an extremely comfortable lounge sofa chair. Taking the
           time to relax at home or the office will be more appealing than ever
           when you choose a modern lounge sofa chair.
         </p>
-        <a className="shopButton" data-aos="fade-up" data-aos-delay="100">
-          Let's Shop Now
-        </a>
+        <a className="shopButton">Let's Shop Now</a>
       </div>
     </div>
   );

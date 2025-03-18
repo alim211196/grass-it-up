@@ -12,12 +12,22 @@ const VisitOurShowroom = () => {
       <div className="showroom-left" data-aos="fade-left" data-aos-delay="100">
         <h2 className="small-text">Visit our</h2>
         <h1 className="big-text">
-          Sh
+          S
           <span className="rotating-image">
             <img src="chair.webp" alt="chair" />
           </span>
-          wroom
+          owroom
         </h1>
+        <p className="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          facilisi. Suspendisse potenti. Vivamus interdum, sapien nec tincidunt
+          tincidunt, velit orci tempus odio, a feugiat ligula eros nec libero.
+          Fusce euismod, lorem vel scelerisque interdum, ligula urna interdum
+          turpis, at pellentesque purus lorem nec leo. Curabitur vel ex et erat
+          pellentesque luctus. Integer malesuada, ex ac malesuada vulputate,
+          urna purus vestibulum mauris, eget imperdiet dui turpis ac purus.
+        </p>
+        <a className="shopButton">Go to location</a>
       </div>
 
       {/* Right Section */}

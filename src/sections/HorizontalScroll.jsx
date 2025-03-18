@@ -56,32 +56,32 @@ export default function HorizontalScroll() {
       title: "CHAIRS",
       buttonLabel: "SHOP CHAIRS",
       images: [
-        "https://images.ctfassets.net/tuohjudwxvzs/9Ff7V1JqJwu0cfYEJ4kWt/ef7b0e440769d005afdc9466fae600a0/chairs_nemcam.png",
-        "https://images.ctfassets.net/tuohjudwxvzs/6L5rxJi0JyWPr41ZbaoBbu/14ca5dda93736787b1f004c4da9ae3cd/chairs-mb_haymwf.png",
+        "https://grassitupshop.com/cdn/shop/products/image_d589c845-17f8-47d6-a3f9-a47b90dc94eb_288x288.jpg?v=1648220319",
+        "https://grassitupshop.com/cdn/shop/files/FUR5000255-0001_Diphano_Newport_Dining_20armchair_AF10_203R03_20HFTK_20C603_02_58c9da10-c5a0-429d-a48f-8599dbeea37d_352x352.jpg?v=1736256391",
       ],
     },
     {
       title: "TABLES",
       buttonLabel: "SHOP TABLES",
       images: [
-        "https://images.ctfassets.net/tuohjudwxvzs/3l4UZJUfxYdqFZnPT4qQ5f/10a77a6ca201d02798df92cc48cc250a/tables_gokhgz.png",
-        "https://images.ctfassets.net/tuohjudwxvzs/fO4HVOlQv4IKCfYs6cVay/74888751796597c8ee93425cfb9fc014/tables-mb_ljzlgt.png",
+        "https://grassitupshop.com/cdn/shop/products/ScreenShot2021-09-06at3.32.40PM_300x300.png?v=1630928030",
+        "https://grassitupshop.com/cdn/shop/products/ScreenShot2021-08-26at12.09.13PM_485x300.png?v=1630928030",
       ],
     },
     {
       title: "LAMPS",
       buttonLabel: "SHOP LAMPS",
       images: [
-        "https://images.ctfassets.net/tuohjudwxvzs/4mnTMMdY2Om1Fi61u6hF7O/795d642216b2551c90e946756d4a8386/lamps_v27n9t.png",
-        "https://images.ctfassets.net/tuohjudwxvzs/7MJGYGfL2FnbkB3s6lRtqG/52e59a170fca6aa3b5085e64c911fc3c/lamps-mb_wtugjk.png",
+        "https://grassitupshop.com/cdn/shop/products/ScreenShot2021-09-13at1.41.01PM_300x300.png?v=1631526121",
+        "https://grassitupshop.com/cdn/shop/products/ScreenShot2021-09-13at1.39.28PM_256x256.png?v=1631526014",
       ],
     },
     {
-      title: "SHELVES",
-      buttonLabel: "SHOP SHELVES",
+      title: "SOFA",
+      buttonLabel: "SHOP SOFA",
       images: [
-        "https://images.ctfassets.net/tuohjudwxvzs/1sGOK3xQvFTpDjkAAUtKY1/34680bc73428b1a991e939b7d300e86a/shelve_wi8ipx_u6na85.webp",
-        "https://images.ctfassets.net/tuohjudwxvzs/5KTiBZ1fkTZx9H1ofXUrXA/4c5369d037c7058909e0594f4dee8859/shelves_qy9agg.webp",
+        "https://grassitupshop.com/cdn/shop/products/ScreenShot2021-09-03at4.29.50PM_352x288.png?v=1632227990",
+        "https://grassitupshop.com/cdn/shop/products/ScreenShot2022-06-10at4.48.30PM_288x288.png?v=1654865813",
       ],
     },
   ];

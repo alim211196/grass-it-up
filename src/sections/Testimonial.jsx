@@ -43,15 +43,15 @@ const Testimonial = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <section className="testimonial-section">
+    <section
+      className="testimonial-section"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
       <div className="container-fluid">
         <SectionHeading title="Testimonials" subtitle="By our Client" />
         {/* First Row (Right to Left) */}
-        <div
-          className="testimonial-wrapper rtl"
-          data-aos="fade-right"
-          data-aos-delay="100"
-        >
+        <div className="testimonial-wrapper rtl">
           <div className="testimonial-slider">
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <div key={index} className="testimonial-card">
@@ -78,11 +78,7 @@ const Testimonial = () => {
         </div>
 
         {/* Second Row (Left to Right) */}
-        <div
-          className="testimonial-wrapper ltr"
-          data-aos="fade-left"
-          data-aos-delay="100"
-        >
+        <div className="testimonial-wrapper ltr">
           <div className="testimonial-slider">
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <div key={index} className="testimonial-card">

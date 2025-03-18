@@ -144,8 +144,8 @@
 }
 
 .logoImage {
-  height: 50px;
-  width: auto;
+  height: auto;
+  width: 200px;
 }
 
 /* Navigation Links */
@@ -470,7 +470,7 @@
 
 .shopButton {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 8px 16px;
   margin-top: 0px;
   border: 1px solid rgb(127, 156, 144);
   color: rgb(127, 156, 144);
@@ -522,8 +522,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: right;
   background-repeat: no-repeat;
   transition: opacity 1s ease-in-out;
   opacity: 0;
@@ -811,7 +811,7 @@
 }
 
 .section-title {
-  font-size: 32px;
+  font-size: 48px !important;
   font-weight: bold;
 }
 
@@ -983,9 +983,10 @@
 }
 
 .small-text {
-  font-size: 1.5rem;
+  font-size: 48px;
+  font-family: "July it", sans-serif;
   font-weight: 400;
-  color: #38373d;
+  color: rgb(127, 156, 144);
 }
 
 .big-text {
@@ -1203,7 +1204,7 @@ body {
 
 /* Container for Horizontal Scroll */
 .container1 {
-  width: 300vw; /* Reduce width to fit multiple cards */
+  width: 360vw; /* Reduce width to fit multiple cards */
   height: 100vh;
   display: flex;
   gap: 20px; /* Space between cards */
@@ -1228,7 +1229,7 @@ body {
 }
 
 .horizontal-scroll-title {
-  font-size: 5rem;
+  font-size: 3rem;
   color: #7f9c90;
   margin-bottom: 15px;
 }
@@ -1242,29 +1243,27 @@ body {
 }
 
 .image1 {
-  width: 400px;
+  width: 300px;
   height: auto;
   position: relative;
   z-index: 1;
-  border-radius: 50px;
   transition: transform 0.3s ease-in-out;
 }
 .image1:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .image2 {
-  width: 240px;
+  width: 200px;
   height: auto;
   position: absolute;
   bottom: -80px;
   left: 30px;
   z-index: 2;
-  border-radius: 50px;
   transition: transform 0.3s ease-in-out;
 }
 .image2:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /*end horizontal scrolling*/
@@ -1278,11 +1277,6 @@ body {
   display: flex;
   overflow: hidden;
   cursor: grab;
-}
-.carousel-items {
-  display: flex;
-  /* gap: 10px; */
-  transition: transform 0.3s ease-in-out;
 }
 
 .carousel-image {
@@ -1309,18 +1303,19 @@ body {
   font-size: 13px;
 }
 .tab-indicator {
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   width: 90%;
-  height: 1px;
+  height: 3px;
   background: #ddd;
   cursor: pointer;
 }
 .tab-section {
   flex: 1;
-  height: 5px;
+  height: 3px;
   transition: background 0.3s ease-in-out;
 }
 .tab-section.active {
@@ -1332,9 +1327,6 @@ body {
   display: flex;
   gap: 10px;
   margin-top: 0px;
-}
-.carousel-items div {
-  position: relative; /* Ensure each image container is the reference */
 }
 
 .add-to-cart {
@@ -1355,9 +1347,34 @@ body {
   transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
+.carousel-items div {
+  position: relative; /* Ensure this is the reference for absolute positioning */
+}
+
+.add-to-cart {
+  background: rgba(56, 55, 61, 0.8);
+  color: white;
+  padding: 8px 12px;
+  width: 120px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  bottom: 50vh; /* Slightly below the image */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* Apply hover on the entire div container */
 .carousel-items div:hover .add-to-cart {
-  bottom: 50vh; /* Moves up only for the hovered image */
   opacity: 1;
+  visibility: visible;
 }
 /*end horizontal carousel*/
 

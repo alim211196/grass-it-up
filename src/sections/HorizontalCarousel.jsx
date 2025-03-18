@@ -1,9 +1,15 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Container, Button } from "react-bootstrap";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SectionHeading from "./SectionHeading";
+
 const images = [
   {
     src: "https://cld.accentuate.io/447233851645/1740741955277/stinson-slide2.jpg?v=1740743025627&options=w_540",
@@ -44,79 +50,53 @@ const images = [
 ];
 
 const HorizontalCarousel = () => {
-  const carouselRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const isDragging = useRef(false);
-  const startX = useRef(0);
-  const scrollLeft = useRef(0);
+  const swiperRef = useRef(null);
 
   useEffect(() => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollTo({
-        left: activeIndex * 310,
-        behavior: "smooth",
-      });
-    }
-  }, [activeIndex]);
+    AOS.init({ duration: 1000 });
+  }, []);
 
+  // Handle manual slide change
   const scrollToIndex = (index) => {
-    setActiveIndex(index);
+    if (swiperRef.current) {
+      swiperRef.current.slideTo(index);
+    }
   };
 
+  // Next & Prev Navigation
   const scrollNext = () => {
-    if (activeIndex < images.length - 1) {
-      scrollToIndex(activeIndex + 1);
+    if (swiperRef.current) {
+      swiperRef.current.slideNext();
     }
   };
 
   const scrollPrev = () => {
-    if (activeIndex > 0) {
-      scrollToIndex(activeIndex - 1);
+    if (swiperRef.current) {
+      swiperRef.current.slidePrev();
     }
   };
-
-  const handleMouseDown = (e) => {
-    isDragging.current = true;
-    startX.current = e.pageX - carouselRef.current.offsetLeft;
-    scrollLeft.current = carouselRef.current.scrollLeft;
-  };
-
-  const handleMouseLeave = () => {
-    isDragging.current = false;
-  };
-
-  const handleMouseUp = () => {
-    isDragging.current = false;
-  };
-
-  const handleMouseMove = (e) => {
-    if (!isDragging.current) return;
-    e.preventDefault();
-    const x = e.pageX - carouselRef.current.offsetLeft;
-    const walk = (x - startX.current) * 1;
-    carouselRef.current.scrollLeft = scrollLeft.current - walk;
-  };
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
 
   return (
     <Container fluid className="carousel-container position-relative p-4">
       <SectionHeading title="New" subtitle="Expanded Collections" />
 
-      <div
+      {/* Swiper for Auto Sliding */}
+      <Swiper
+        modules={[Navigation, Autoplay]}
+        spaceBetween={10}
+        slidesPerView={3} // Adjust based on design
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        loop={true}
+        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
         className="carousel-wrapper"
-        ref={carouselRef}
-        onMouseDown={handleMouseDown}
-        onMouseLeave={handleMouseLeave}
-        onMouseUp={handleMouseUp}
-        onMouseMove={handleMouseMove}
-        data-aos="fade-up"
-        data-aos-delay="100"
+        // data-aos="fade-up"
+        // data-aos-delay="100"
       >
-        <div className="carousel-items">
-          {images.map((image, index) => (
-            <div key={index}>
+        {images.map((image, index) => (
+          <SwiperSlide key={index} className="carousel-items">
+            <div>
               <img
                 className={`carousel-image ${
                   activeIndex === index ? "active" : ""
@@ -142,11 +122,11 @@ const HorizontalCarousel = () => {
                 <i className="fa fa-shopping-cart"></i> Add to Cart
               </div>
             </div>
-          ))}
-        </div>
-      </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
-      {/* Tab Indicator Line */}
+      {/* Custom Indicators & Navigation Buttons */}
       <div className="tab-indicator">
         {images.map((_, index) => (
           <div
@@ -156,18 +136,10 @@ const HorizontalCarousel = () => {
           />
         ))}
         <div className="nav-buttons">
-          <Button
-            variant="light"
-            onClick={scrollPrev}
-            disabled={activeIndex === 0}
-          >
+          <Button variant="light" onClick={scrollPrev}>
             ◀
           </Button>
-          <Button
-            variant="light"
-            onClick={scrollNext}
-            disabled={activeIndex === images.length - 1}
-          >
+          <Button variant="light" onClick={scrollNext}>
             ▶
           </Button>
         </div>

@@ -7,7 +7,7 @@ import "swiper/css/effect-cards";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // Import required modules
-import { EffectCards } from "swiper/modules";
+import { Autoplay, EffectCards } from "swiper/modules";
 import SectionHeading from "./SectionHeading";
 
 const swiperStyles = {
@@ -133,9 +133,17 @@ const GallerySection = () => {
         effect="cards"
         grabCursor={true}
         loop={true}
-        modules={[EffectCards]}
+        modules={[EffectCards, Autoplay]} // Include Autoplay module
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 150,
+          modifier: 1.5,
+          slideShadows: false,
+        }}
         style={swiperStyles}
-        initialSlide={Math.floor(images.length / 2)} // Start from the center image
+        initialSlide={1} // Start from the center image
       >
         {images.map((item, index) => (
           <SwiperSlide key={index} style={slideStyles}>

@@ -1,36 +1,35 @@
 import React, { useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { ScrollControls, useScroll, useGLTF } from "@react-three/drei";
+import SectionHeading from "./SectionHeading";
 
 const ChairModel = () => {
-  const { scene } = useGLTF("/spanish_dining_chair.glb");
+  const { scene } = useGLTF("/chair_free.glb");
   const chairRef = useRef();
   const scroll = useScroll();
-  const [spinCompleted, setSpinCompleted] = useState(false);
+  const [rotationY, setRotationY] = useState(0);
 
   useFrame(() => {
     if (chairRef.current) {
-      const spinProgress = Math.min(scroll.offset * 4, 1); // Complete spin first
-      chairRef.current.rotation.y = spinProgress * Math.PI * 2; // Rotate smoothly
-
-      if (spinProgress >= 1 && !spinCompleted) {
-        setSpinCompleted(true); // Mark spin as complete
-      }
-
-      // Move chair downward only after spin completes
-      if (spinCompleted) {
-        const moveProgress = Math.max(0, scroll.offset - 0.25) * 2;
-        chairRef.current.position.y = 1 - moveProgress * 2;
-      }
+      // Rotate chair smoothly based on scroll
+      const spinProgress = scroll.offset * Math.PI * 2; // Adjust spin speed
+      chairRef.current.rotation.y = spinProgress;
     }
   });
+
+  // Handle hover-based spinning
+  const handleMouseEnter = () => {
+    setRotationY((prev) => prev + Math.PI / 4); // Rotate a bit on hover
+  };
 
   return (
     <primitive
       object={scene}
       ref={chairRef}
-      scale={[2, 2, 2]}
-      position={[0, 0, 0]} // Center the model
+      scale={[0.5, 0.5, 0.5]} // Small chair size
+      position={[0, 0, 0]} // Fixed position in center
+      rotation={[0, rotationY, 0]}
+      onPointerEnter={handleMouseEnter} // Rotate slightly on hover
     />
   );
 };
@@ -40,14 +39,19 @@ const FurnitureScrollEffect = () => {
     <div
       style={{
         width: "100vw",
-        height: "200vh", // Two pages for scrolling effect
+        height: "100vh",
         position: "relative",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "column",
       }}
     >
-      <Canvas camera={{ position: [0, 1.5, 5] }}>
+      <SectionHeading title="Top" subtitle="Trending" />
+      <Canvas camera={{ position: [4, 4, 4] }}>
         <ambientLight intensity={1.5} />
-        <directionalLight position={[5, 5, 5]} intensity={1} />
-        <ScrollControls pages={2} damping={0.3}>
+        <directionalLight position={[3, 3, 3]} intensity={1} />
+        <ScrollControls pages={1} damping={0.3}>
           <ChairModel />
         </ScrollControls>
       </Canvas>
