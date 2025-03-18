@@ -195,14 +195,12 @@
 
 /* Text color change on hover */
 .navbarHover .navLinks-header li a,
-.navbarHover .logo a,
-.navbarHover .navIcons i {
+.navbarHover .logo a {
   color: #38373d !important;
 }
 
 .navbarTransparent .navLinks-header li a,
-.navbarTransparent .logo a,
-.navbarTransparent .navIcons i {
+.navbarTransparent .logo a {
   color: white;
 }
 
@@ -212,14 +210,14 @@
   gap: 15px;
 }
 
-.navIcons i {
-  font-size: 18px;
+.navIcons img {
+  width: 24px;
+  height: 24px;
   cursor: pointer;
   transition: transform 0.2s, color 0.3s ease-in-out;
-  color: white;
 }
 
-.navIcons i:hover {
+.navIcons img:hover {
   transform: scale(1.1);
 }
 

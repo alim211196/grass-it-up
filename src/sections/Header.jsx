@@ -66,10 +66,22 @@ const Header = () => {
 
         {/* Icons */}
         <div className={"navIcons"}>
-          <i className="fas fa-search"></i>
-          <i className="fas fa-map-marker-alt"></i>
-          <i className="fas fa-user"></i>
-          <i className="fas fa-shopping-bag"></i>
+          <img
+            src={isScrolled || isHovered ? "/search.png" : "/search_white.png"}
+            alt="Search"
+          />
+          <img
+            src={isScrolled || isHovered ? "/heart.png" : "/heart_white.png"}
+            alt="Heart"
+          />
+          <img
+            src={isScrolled || isHovered ? "/cart.png" : "/cart_white.png"}
+            alt="Cart"
+          />
+          <img
+            src={isScrolled || isHovered ? "/avatar.png" : "/avatar_white.png"}
+            alt="Avatar"
+          />
         </div>
       </div>
     </header>
