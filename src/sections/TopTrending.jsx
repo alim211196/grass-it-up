@@ -90,12 +90,25 @@ const TopTrending = () => {
                   trigger="hover"
                   placement="top"
                   overlay={
-                    <Popover id={`popover-${spot.id}`}>
-                      <Popover.Header as="h6">{spot.text}</Popover.Header>
-                      <Popover.Body>
-                        <div className="d-flex align-items-center">
-                          <i className="fa fa-shopping-cart me-2"></i> Add to
-                          Cart
+                    <Popover
+                      id={`popover-${spot.id}`}
+                      className="custom-popover"
+                    >
+                      <Popover.Header as="h6" className="popover-header-custom">
+                        {spot.text}
+                      </Popover.Header>
+                      <Popover.Body className="popover-body-custom">
+                        <div className="d-flex align-items-center popover-item">
+                          <i className="fa fa-shopping-cart popover-icon"></i>{" "}
+                          Add to Cart
+                        </div>
+                        <div className="d-flex align-items-center popover-item">
+                          <i className="fa fa-heart popover-icon"></i> Add to
+                          Wishlist
+                        </div>
+                        <div className="d-flex align-items-center popover-item">
+                          <i className="fa fa-info-circle popover-icon"></i>{" "}
+                          More Info
                         </div>
                       </Popover.Body>
                     </Popover>
