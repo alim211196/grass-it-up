@@ -30,8 +30,8 @@ function App() {
       <BreakerSection />
       <HorizontalCarousel />
       <BlogSection />
-      <FurnitureScrollEffect />
-      <GallerySection />
+      {/* <FurnitureScrollEffect />
+      <GallerySection /> */}
       <TopTrending />
       <VisitOurShowroom />
       <HotspotImage />

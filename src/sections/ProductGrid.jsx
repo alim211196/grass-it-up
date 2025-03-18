@@ -83,14 +83,9 @@ const ProductGrid = () => {
   return (
     <section className="productSection">
       <SectionHeading title="Furniture" subtitle="PRODUCTS" />
-      <div className="productGrid">
+      <div className="productGrid" data-aos="fade-up" data-aos-delay="100">
         {products.map((product) => (
-          <div
-            key={product.id}
-            className="productCard"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
+          <div key={product.id} className="productCard">
             <div className="productImageWrapper">
               <img
                 src={product.image}

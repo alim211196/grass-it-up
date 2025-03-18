@@ -1,27 +1,56 @@
-import React, { useEffect } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useRef, useState } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { ScrollControls, useScroll, useGLTF } from "@react-three/drei";
 
-const FurnitureScrollEffect = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 500, // Faster animation (adjust as needed)
-      easing: "ease-in-out", // Smooth transition
-      once: true, // Run animation only once
-    });
-  }, []);
+const ChairModel = () => {
+  const { scene } = useGLTF("/spanish_dining_chair.glb");
+  const chairRef = useRef();
+  const scroll = useScroll();
+  const [spinCompleted, setSpinCompleted] = useState(false);
+
+  useFrame(() => {
+    if (chairRef.current) {
+      const spinProgress = Math.min(scroll.offset * 4, 1); // Complete spin first
+      chairRef.current.rotation.y = spinProgress * Math.PI * 2; // Rotate smoothly
+
+      if (spinProgress >= 1 && !spinCompleted) {
+        setSpinCompleted(true); // Mark spin as complete
+      }
+
+      // Move chair downward only after spin completes
+      if (spinCompleted) {
+        const moveProgress = Math.max(0, scroll.offset - 0.25) * 2;
+        chairRef.current.position.y = 1 - moveProgress * 2;
+      }
+    }
+  });
 
   return (
-    <div className="container11 text-center mt-5">
-      <img
-        src="https://grassitupshop.com/cdn/shop/files/FUR5000255-0001_Diphano_Newport_Dining_20armchair_AF10_203R03_20HFTK_20C603_02_58c9da10-c5a0-429d-a48f-8599dbeea37d_352x352.jpg?v=1736256391"
-        className="img-fluid"
-        data-aos="flip-left"
-        data-aos-duration="500" // Faster animation
-        data-aos-easing="ease-in-out"
-        alt="Furniture"
-      />
+    <primitive
+      object={scene}
+      ref={chairRef}
+      scale={[2, 2, 2]}
+      position={[0, 0, 0]} // Center the model
+    />
+  );
+};
+
+const FurnitureScrollEffect = () => {
+  return (
+    <div
+      style={{
+        width: "100vw",
+        height: "200vh", // Two pages for scrolling effect
+        position: "relative",
+      }}
+    >
+      <Canvas camera={{ position: [0, 1.5, 5] }}>
+        <ambientLight intensity={1.5} />
+        <directionalLight position={[5, 5, 5]} intensity={1} />
+        <ScrollControls pages={2} damping={0.3}>
+          <ChairModel />
+        </ScrollControls>
+      </Canvas>
     </div>
   );
 };

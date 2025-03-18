@@ -111,6 +111,8 @@ const HorizontalCarousel = () => {
         onMouseLeave={handleMouseLeave}
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
+        data-aos="fade-up"
+        data-aos-delay="100"
       >
         <div className="carousel-items">
           {images.map((image, index) => (
@@ -121,8 +123,6 @@ const HorizontalCarousel = () => {
                 }`}
                 src={image.src}
                 alt={image.alt}
-                data-aos="fade-up"
-                data-aos-delay="100"
               />
               <h4
                 className="image-text"
