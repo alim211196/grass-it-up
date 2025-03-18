@@ -20,6 +20,7 @@ import BlogSection from "./sections/BlogSection";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import FurnitureScrollEffect from "./sections/FurnitureScrollEffect";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -51,6 +52,10 @@ function App() {
       <section data-aos="fade-right" data-aos-delay="100">
         <BlogSection />
       </section>
+      {/* <section data-aos="fade-up" data-aos-delay="100"> */}
+      <FurnitureScrollEffect />
+      {/* </section> */}
+      <GallerySection />
       <section data-aos="zoom-in" data-aos-delay="100">
         <TopTrending />
       </section>
@@ -64,7 +69,7 @@ function App() {
       <section data-aos="flip-right" data-aos-delay="100">
         <PartnerMarquee />
       </section>
-      {/* <GallerySection /> */}
+
       <section data-aos="slide-up" data-aos-delay="100">
         <SubscriptionSection />
       </section>
