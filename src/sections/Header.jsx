@@ -42,15 +42,24 @@ const Header = () => {
 
         {/* Navigation Links */}
         <nav className={"navContainer"}>
-          <ul className={"navLinks"}>
+          <ul className={"navLinks-header"}>
             <li>
-              <a href="#">SHOP BY PRODUCT</a>
+              <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">SHOP BY MATERIAL</a>
+              <a href="#">Collections</a>
             </li>
             <li>
-              <a href="#">SHOP BY COLLECTION</a>
+              <a href="#">Products</a>
+            </li>
+            <li>
+              <a href="#">Brands</a>
+            </li>
+            <li>
+              <a href="#">Item on sale</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
             </li>
           </ul>
         </nav>

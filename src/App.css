@@ -112,7 +112,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw; /* Ensures full width */
+  width: 100%;
   z-index: 1000;
   transition: background 0.3s ease-in-out;
   box-sizing: border-box;
@@ -121,13 +121,10 @@
 .navbarHover {
   background: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
 }
 
-.navbarHover:hover .navLinks li a,
-.navbarHover:hover .logo a,
-.navbarHover:hover .navIcons i {
-  color: #38373d !important;
+.navbarTransparent {
+  background: transparent;
 }
 
 .container {
@@ -138,90 +135,87 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 10px 40px; /* Reduced padding for better responsiveness */
-  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
-/* 🛠️ Fix for perfect center alignment */
-.logo {
-  flex: 1;
-  text-align: left;
+/* Logo */
+.logo a {
+  text-decoration: none;
 }
 
-.logo img {
-  max-height: 50px;
+.logoImage {
+  height: 50px;
   width: auto;
 }
 
+/* Navigation Links */
 .navContainer {
-  flex: 2;
   display: flex;
   justify-content: center;
 }
 
-.navLinks {
+.navLinks-header {
   display: flex;
   list-style: none;
   gap: 20px;
   padding: 0;
   margin: 0;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
-.navLinks li {
-  display: inline-block;
+.navLinks-header li {
+  position: relative;
 }
 
-.navLinks li a {
+.navLinks-header li a {
   text-decoration: none;
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: white;
-  transition: color 0.3s ease;
-}
-
-.navLinks li a:hover {
-  color: #38373d;
+  transition: color 0.3s ease-in-out;
+  position: relative;
 }
 
 /* Underline effect */
-.navLinks li a::after {
+.navLinks-header li a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
-  width: 0%;
+  bottom: -3px;
+  width: 0;
   height: 2px;
   background-color: #38373d;
   transition: width 0.3s ease-in-out;
 }
 
-/* Hover effect */
-.navLinks li a:hover::after {
+/* Show underline on hover */
+.navLinks-header li a:hover::after {
   width: 100%;
 }
 
-.navLinks li a {
-  text-decoration: none;
+/* Text color change on hover */
+.navbarHover .navLinks-header li a,
+.navbarHover .logo a,
+.navbarHover .navIcons i {
+  color: #38373d !important;
+}
+
+.navbarTransparent .navLinks-header li a,
+.navbarTransparent .logo a,
+.navbarTransparent .navIcons i {
   color: white;
-  transition: color 0.3s ease;
 }
 
-.navLinks li a:hover {
-  color: #38373d;
-}
-
+/* Navbar Icons */
 .navIcons {
-  flex: 1;
   display: flex;
-  justify-content: flex-end;
   gap: 15px;
 }
 
 .navIcons i {
   font-size: 18px;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.2s, color 0.3s ease-in-out;
   color: white;
 }
 
@@ -229,42 +223,6 @@
   transform: scale(1.1);
 }
 
-.logo a {
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-}
-.logoImage {
-  height: 50px; /* Adjust as needed */
-  width: auto; /* Maintain aspect ratio */
-}
-
-/* Initially Transparent Navbar */
-/* Make navbar sticky */
-.navbarHover {
-  background: white;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
-}
-
-.navbarTransparent {
-  background: transparent;
-  transition: background 0.3s ease-in-out;
-}
-
-/* Ensure Navbar items are visible in transparent mode */
-.navbarTransparent .navLinks li a,
-.navbarTransparent .logo a,
-.navbarTransparent .navIcons i {
-  color: white;
-}
-
-.navbarHover .navLinks li a,
-.navbarHover .logo a,
-.navbarHover .navIcons i {
-  color: #38373d !important;
-}
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .container {
@@ -283,7 +241,7 @@
     align-items: center;
   }
 
-  .navLinks {
+  .navLinks-header {
     flex-direction: column;
     text-align: center;
     gap: 10px;
@@ -626,14 +584,17 @@
   display: block;
   transition: transform 1s ease-in-out;
 }
+.informative-category-section__image:hover {
+  transform: scale(1.1);
+}
 
-.informative-category-section__image--zoom-in {
+/* .informative-category-section__image--zoom-in {
   transform: scale(1.1);
 }
 
 .informative-category-section__image--zoom-out {
   transform: scale(1);
-}
+} */
 
 /* Text Content */
 .informative-category-section__text-container {
@@ -708,9 +669,12 @@
   height: auto; /* Maintains aspect ratio */
   object-fit: cover; /* Ensures proper image cropping */
 }
-
+.informative-category-section__bottom-image:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
 /* Zoom effects */
-.informative-category-section__bottom-image--zoom-in {
+/* .informative-category-section__bottom-image--zoom-in {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
@@ -718,7 +682,7 @@
 .informative-category-section__bottom-image--zoom-out {
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
-}
+} */
 
 .image-with-text {
   position: relative;
@@ -1090,8 +1054,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease-in-out;
 }
-
+.right-image:hover {
+  transform: scale(1.1); /* Scales up the image slightly */
+}
 /*end visit our showroom*/
 
 /*start news letter */
@@ -1304,6 +1271,10 @@ body {
   position: relative;
   z-index: 1;
   border-radius: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+.image1:hover {
+  transform: scale(1.1);
 }
 
 .image2 {
@@ -1314,6 +1285,10 @@ body {
   left: 30px;
   z-index: 2;
   border-radius: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+.image2:hover {
+  transform: scale(1.1);
 }
 
 /*end horizontal scrolling*/
@@ -1674,6 +1649,11 @@ body {
 .slide-item img {
   width: 100%;
   height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-item img:hover {
+  transform: scale(1.1); /* Scales up the image slightly */
 }
 
 .slide-item.active {

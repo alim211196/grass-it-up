@@ -39,7 +39,7 @@ export default function HorizontalScroll() {
     const handleScroll = () => {
       if (sectionRef.current) {
         const sectionTop = sectionRef.current.getBoundingClientRect().top;
-        const scrollOffset = Math.max(-100, Math.min(100, sectionTop / 3)); // Faster vertical movement
+        const scrollOffset = Math.max(-100, Math.min(100, sectionTop / 5)); // Faster vertical movement
         setOffset(scrollOffset);
       }
     };
@@ -105,7 +105,7 @@ export default function HorizontalScroll() {
                 src={section.images[1]}
                 alt={`${section.title} Image 2`}
                 className="image2"
-                style={{ transform: `translateX(${offset}px)` }}
+                // style={{ transform: `translateX(${offset}px)` }}
               />
             </div>
             <div
