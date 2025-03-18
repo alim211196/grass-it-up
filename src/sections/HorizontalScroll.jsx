@@ -3,12 +3,17 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef, useState, useEffect } from "react";
 import "../App.css";
 import SectionHeading from "./SectionHeading";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function HorizontalScroll() {
   const component = useRef();
   const slider = useRef();
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -51,7 +56,11 @@ export default function HorizontalScroll() {
         {/** Render Four Hero Cards **/}
         {[1, 2, 3, 4].map((index) => (
           <div className="panel card" key={index}>
-            <div className="hero-images">
+            <div
+              className="hero-images"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <img
                 src={`https://images.ctfassets.net/tuohjudwxvzs/9Ff7V1JqJwu0cfYEJ4kWt/ef7b0e440769d005afdc9466fae600a0/chairs_nemcam.png`}
                 alt={`Chair ${index}`}
@@ -64,7 +73,11 @@ export default function HorizontalScroll() {
                 style={{ transform: `translateX(${offset}px)` }}
               />
             </div>
-            <div className="hero-content">
+            <div
+              className="hero-content"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <h1 className="horizontal-scroll-title">CHAIRS</h1>
               <button className="shopButton">SHOP CHAIRS</button>
             </div>

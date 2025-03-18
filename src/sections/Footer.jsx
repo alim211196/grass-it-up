@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../App.css"; // Import the custom styles
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <footer className="footer">
       <div className="container11">
-        <div className="row">
+        <div className="row" data-aos="fade-up" data-aos-delay="100">
           {/* Left Section - Brand */}
           <div className="col-md-3">
             <h4 className="footer-brand">Grassitup</h4>

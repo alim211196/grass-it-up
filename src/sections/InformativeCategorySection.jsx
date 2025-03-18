@@ -1,11 +1,15 @@
 import { useEffect, useState, useRef } from "react";
 import "../App.css";
 import SectionHeading from "./SectionHeading";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const InformativeCategorySection = () => {
   const [isZoomed, setIsZoomed] = useState(false);
   const sectionRef = useRef(null);
-
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   useEffect(() => {
     const handleScroll = () => {
       if (sectionRef.current) {
@@ -26,7 +30,11 @@ const InformativeCategorySection = () => {
 
   return (
     <section className="informative-category-section" ref={sectionRef}>
-      <div className="informative-category-section__image-container">
+      <div
+        className="informative-category-section__image-container"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         {/* First Image */}
         <img
           src="https://terraoutdoor.com/cdn/shop/files/Avila_-_home_pagejpg_720x.jpg?v=1723002939"
@@ -61,7 +69,11 @@ const InformativeCategorySection = () => {
       <div className="informative-category-section__text-container">
         <SectionHeading title=" From Sunrise to" subtitle="Stargazing" />
 
-        <p className="informative-category-section__description">
+        <p
+          className="informative-category-section__description"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
           facilisi. Suspendisse potenti. Vivamus interdum, sapien nec tincidunt
           tincidunt, velit orci tempus odio, a feugiat ligula eros nec libero.
@@ -70,12 +82,20 @@ const InformativeCategorySection = () => {
           pellentesque luctus. Integer malesuada, ex ac malesuada vulputate,
           urna purus vestibulum mauris, eget imperdiet dui turpis ac purus.
         </p>
-        <div className="informative-category-section__buttons">
+        <div
+          className="informative-category-section__buttons"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <button className="btn-custom">Dining</button>
           <button className="btn-custom">Lounging</button>
           <button className="btn-custom">Living</button>
         </div>
-        <div className="informative-category-section__bottom-image-container">
+        <div
+          className="informative-category-section__bottom-image-container"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <img
             src="https://terraoutdoor.com/cdn/shop/files/homepage_sub_3_dine_540x.jpg?v=1627426673"
             alt="Outdoor Furniture"

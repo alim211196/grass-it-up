@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../App.css"; // Import custom CSS
 import SectionHeading from "./SectionHeading";
 import { OverlayTrigger, Popover } from "react-bootstrap";
@@ -53,7 +55,9 @@ const images = [
 const TopTrending = () => {
   const [swiperRef, setSwiperRef] = useState(null);
   const [activeIndex, setActiveIndex] = useState(1);
-
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <div className="marker-carousel-container">
       <SectionHeading title="Top" subtitle="Trending" />
@@ -82,6 +86,8 @@ const TopTrending = () => {
             <div
               className={`slide-item ${index === activeIndex ? "active" : ""}`}
               onClick={() => swiperRef && swiperRef.slideToLoop(index)}
+              data-aos="fade-up"
+              data-aos-delay="100"
             >
               <img src={item.src} alt={`Slide ${index + 1}`} />
               {item.hotspots.map((spot) => (

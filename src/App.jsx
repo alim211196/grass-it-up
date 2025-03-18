@@ -17,72 +17,29 @@ import HotspotImage from "./sections/HotspotImage";
 import Footer from "./sections/Footer";
 import TopTrending from "./sections/TopTrending";
 import BlogSection from "./sections/BlogSection";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import FurnitureScrollEffect from "./sections/FurnitureScrollEffect";
-function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration in ms
-      offset: 100, // Distance to trigger animation
-      once: true, // Animate only once
-    });
-  }, []);
 
+function App() {
   return (
     <>
       <HeroBanner />
       <Marquee />
-
       <HorizontalScroll />
-
-      <section data-aos="fade" data-aos-delay="100">
-        <InformativeCategorySection />
-      </section>
-      <section data-aos="fade-up" data-aos-delay="100">
-        <ProductGrid />
-      </section>
-      <section data-aos="fade-down" data-aos-delay="100">
-        <BreakerSection />
-      </section>
-      <section data-aos="fade-left" data-aos-delay="100">
-        <HorizontalCarousel />
-      </section>
-      <section data-aos="fade-right" data-aos-delay="100">
-        <BlogSection />
-      </section>
-      {/* <section data-aos="fade-up" data-aos-delay="100"> */}
+      <InformativeCategorySection />
+      <ProductGrid />
+      <BreakerSection />
+      <HorizontalCarousel />
+      <BlogSection />
       <FurnitureScrollEffect />
-      {/* </section> */}
       <GallerySection />
-      <section data-aos="zoom-in" data-aos-delay="100">
-        <TopTrending />
-      </section>
-      <section data-aos="zoom-out" data-aos-delay="100">
-        <VisitOurShowroom />
-      </section>
-
-      <section data-aos="flip-left" data-aos-delay="100">
-        <HotspotImage />
-      </section>
-      <section data-aos="flip-right" data-aos-delay="100">
-        <PartnerMarquee />
-      </section>
-
-      <section data-aos="slide-up" data-aos-delay="100">
-        <SubscriptionSection />
-      </section>
-
-      <section data-aos="fade-up" data-aos-delay="100">
-        <CylindricalCarousel />
-      </section>
-      <section data-aos="fade-down" data-aos-delay="100">
-        <Testimonial />
-      </section>
-      <section data-aos="fade-left" data-aos-delay="100">
-        <Footer />
-      </section>
+      <TopTrending />
+      <VisitOurShowroom />
+      <HotspotImage />
+      <PartnerMarquee />
+      <SubscriptionSection />
+      <CylindricalCarousel />
+      <Testimonial />
+      <Footer />
     </>
   );
 }

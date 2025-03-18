@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../App.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const SubscriptionSection = () => {
   const sectionRef = useRef(null);
   const [offset, setOffset] = useState(0);
@@ -19,6 +20,9 @@ const SubscriptionSection = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   return (
     <section ref={sectionRef} className="newsletter-section">
@@ -29,6 +33,8 @@ const SubscriptionSection = () => {
       <div
         className="subscription-box"
         style={{ transform: `translateY(${offset}px)` }}
+        data-aos="fade-up"
+        data-aos-delay="100"
       >
         <p>Never miss out, Stay updated</p>
         <div className="loading-box-container">

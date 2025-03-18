@@ -1,6 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Container, Button } from "react-bootstrap";
 import "../App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import SectionHeading from "./SectionHeading";
 const images = [
   {
@@ -94,6 +96,9 @@ const HorizontalCarousel = () => {
     const walk = (x - startX.current) * 1;
     carouselRef.current.scrollLeft = scrollLeft.current - walk;
   };
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   return (
     <Container fluid className="carousel-container position-relative p-4">
@@ -116,9 +121,23 @@ const HorizontalCarousel = () => {
                 }`}
                 src={image.src}
                 alt={image.alt}
+                data-aos="fade-up"
+                data-aos-delay="100"
               />
-              <h4 className="image-text">{image.name}</h4>
-              <h6 className="image-price">{image.price}</h6>
+              <h4
+                className="image-text"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                {image.name}
+              </h4>
+              <h6
+                className="image-price"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                {image.price}
+              </h6>
               <div className="add-to-cart">
                 <i className="fa fa-shopping-cart"></i> Add to Cart
               </div>

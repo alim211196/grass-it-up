@@ -3,7 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../App.css"; // Import custom CSS
 import SectionHeading from "./SectionHeading";
 
@@ -56,10 +57,14 @@ const blogData = [
 ];
 
 const BlogSection = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <div className="blog-section py-5 overflow-hidden">
       <SectionHeading title="Blog" subtitle="Stay informed and inspired" />
-      <div className="container">
+      <div data-aos="fade-up" data-aos-delay="100" className="container">
         <Swiper
           modules={[Autoplay, EffectCoverflow]}
           slidesPerView={1}

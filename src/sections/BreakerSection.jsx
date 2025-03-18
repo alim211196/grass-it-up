@@ -1,5 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 import "../App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const images = [
   "https://furnixar.vercel.app/assets/banner-01-BByUH_7G.png",
   "https://furnixar.vercel.app/assets/banner-02-D_i8EOvA.png",
@@ -39,9 +42,13 @@ const BreakerSection = () => {
     };
   }, []);
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <div className="breakSection">
-      <div className="imageContainer">
+      <div className="imageContainer" data-aos="fade-up" data-aos-delay="100">
         {images.map((img, index) => (
           <div
             key={index}
@@ -56,14 +63,20 @@ const BreakerSection = () => {
         className={`textSection ${isVisible ? "visible" : ""}`}
         ref={sectionRef}
       >
-        <span className="subTitle">New Arrival</span>
-        <h2 className="mainTitle">Premium Lounge Sofa Chair</h2>
-        <p className="description">
+        <span className="subTitle" data-aos="fade-up" data-aos-delay="100">
+          New Arrival
+        </span>
+        <h2 className="mainTitle" data-aos="fade-up" data-aos-delay="100">
+          Premium Lounge Sofa Chair
+        </h2>
+        <p className="description" data-aos="fade-up" data-aos-delay="100">
           We offer you an extremely comfortable lounge sofa chair. Taking the
           time to relax at home or the office will be more appealing than ever
           when you choose a modern lounge sofa chair.
         </p>
-        <a className="shopButton">Let's Shop Now</a>
+        <a className="shopButton" data-aos="fade-up" data-aos-delay="100">
+          Let's Shop Now
+        </a>
       </div>
     </div>
   );

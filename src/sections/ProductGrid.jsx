@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../App.css";
 import SectionHeading from "./SectionHeading";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const products = [
   {
     id: 1,
@@ -76,12 +77,20 @@ const products = [
 ];
 
 const ProductGrid = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <section className="productSection">
       <SectionHeading title="Furniture" subtitle="PRODUCTS" />
       <div className="productGrid">
         {products.map((product) => (
-          <div key={product.id} className="productCard">
+          <div
+            key={product.id}
+            className="productCard"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div className="productImageWrapper">
               <img
                 src={product.image}

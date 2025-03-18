@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../App.css";
 import SectionHeading from "./SectionHeading";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const testimonials = [
   {
     id: 1,
@@ -38,12 +39,19 @@ const testimonials = [
 ];
 
 const Testimonial = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <section className="testimonial-section">
       <div className="container-fluid">
         <SectionHeading title="Testimonials" subtitle="By our Client" />
         {/* First Row (Right to Left) */}
-        <div className="testimonial-wrapper rtl">
+        <div
+          className="testimonial-wrapper rtl"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
           <div className="testimonial-slider">
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <div key={index} className="testimonial-card">
@@ -70,7 +78,11 @@ const Testimonial = () => {
         </div>
 
         {/* Second Row (Left to Right) */}
-        <div className="testimonial-wrapper ltr">
+        <div
+          className="testimonial-wrapper ltr"
+          data-aos="fade-left"
+          data-aos-delay="100"
+        >
           <div className="testimonial-slider">
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <div key={index} className="testimonial-card">
