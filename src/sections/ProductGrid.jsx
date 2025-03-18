@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../App.css";
 import SectionHeading from "./SectionHeading";
 import AOS from "aos";
@@ -77,6 +77,16 @@ const products = [
 ];
 
 const ProductGrid = () => {
+  const [activePopover, setActivePopover] = useState(null);
+
+  const handleMouseEnter = (id, type) => {
+    setActivePopover(`${id}-${type}`);
+  };
+
+  const handleMouseLeave = () => {
+    setActivePopover(null);
+  };
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -93,8 +103,26 @@ const ProductGrid = () => {
                 className="productImage"
               />
               <div className="iconContainer">
-                <i className="fas fa-heart"></i>
-                <i className="fas fa-shopping-bag"></i>
+                <div
+                  className="iconWrapper"
+                  onMouseEnter={() => handleMouseEnter(product.id, "wishlist")}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <i className="fas fa-heart"></i>
+                  {activePopover === `${product.id}-wishlist` && (
+                    <div className="popover">Add to Wishlist</div>
+                  )}
+                </div>
+                <div
+                  className="iconWrapper"
+                  onMouseEnter={() => handleMouseEnter(product.id, "cart")}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <i className="fas fa-shopping-bag"></i>
+                  {activePopover === `${product.id}-cart` && (
+                    <div className="popover">Add to Cart</div>
+                  )}
+                </div>
               </div>
             </div>
             <p className="productName">{product.name}</p>
