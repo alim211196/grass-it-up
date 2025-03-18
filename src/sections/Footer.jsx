@@ -22,16 +22,16 @@ const Footer = () => {
             <ul className="list-unstyled social-links">
               <li>
                 <a href="#" className="facebook">
-                  📘 Facebook
+                  Facebook
                 </a>
               </li>
               <li>
                 <a href="#" className="instagram">
-                  📸 Instagram
+                  Instagram
                 </a>
               </li>
               <li>
-                <a href="mailto:Grass@Grassitup.ae">📧 Email</a>
+                <a href="mailto:Grass@Grassitup.ae"> Email</a>
               </li>
             </ul>
           </div>
