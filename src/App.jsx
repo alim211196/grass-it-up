@@ -18,6 +18,7 @@ import Footer from "./sections/Footer";
 import TopTrending from "./sections/TopTrending";
 import BlogSection from "./sections/BlogSection";
 import FurnitureScrollEffect from "./sections/FurnitureScrollEffect";
+import VideoSlider from "./sections/VideoSlider";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       <PartnerMarquee />
       <FurnitureScrollEffect />
       <CylindricalCarousel />
+      <VideoSlider />
       <Testimonial />
       <SubscriptionSection />
       <Footer />

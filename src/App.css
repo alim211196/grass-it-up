@@ -184,9 +184,10 @@
 
 .navLinks-header li a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-weight: bold;
   color: white;
   transition: color 0.3s ease-in-out;
   position: relative;
@@ -1958,3 +1959,65 @@ body {
 .product-card:hover .action-buttons {
   opacity: 1;
 }
+/* Product Card */
+
+/* start video slider */
+
+.video-slider-container {
+  width: 98vw;
+  margin: auto;
+  padding: 40px 0px 60px;
+}
+
+.main-slider {
+  padding: 60px 0;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+.main-slider .swiper-slide {
+  transition: all 1s ease;
+}
+
+.main-slider .swiper-slide.swiper-slide-active {
+  transform: scale(1.4);
+}
+
+.main-slider .swiper-slide.swiper-slide-next,
+.main-slider .swiper-slide.swiper-slide-prev {
+  transform: scale(0.6);
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pagination-slider .swiper-slide img {
+  max-width: 100%;
+  display: block;
+  cursor: pointer;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #7f9c90 !important; /* Change to your preferred color */
+}
+
+/* Optional: Change background or add a border */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 24px; /* Adjust the size */
+}
+/* end video slider */

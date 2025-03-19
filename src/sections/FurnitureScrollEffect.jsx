@@ -63,40 +63,60 @@ const FurnitureScrollEffect = () => {
     >
       <SectionHeading title="Modern" subtitle="Best Sellers" />
 
-      {/* Hide scrollbar but allow vertical scrolling */}
+      {/* This wrapper will have hidden scrollbar */}
       <div
         style={{
           width: "100vw",
           height: "90vh",
           position: "relative",
-          overflowY: "scroll",
-          overflowX: "hidden",
-          scrollbarWidth: "none", // For Firefox
-          msOverflowStyle: "none", // For IE/Edge
+          overflow: "hidden", // Prevents scrollbar appearance outside
         }}
       >
-        {/* Hide scrollbar for Webkit (Chrome/Safari) */}
-        <style>
-          {`
-            ::-webkit-scrollbar {
-              display: none;
-            }
-          `}
-        </style>
+        {/* Scrollable container with hidden scrollbar */}
+        <div
+          style={{
+            width: "100%",
+            height: "100%",
+            overflowY: "scroll", // Enables scrolling inside
+            overflowX: "hidden",
+            scrollbarWidth: "thin", // Firefox (makes it thin)
+            scrollbarColor: "transparent transparent", // Firefox (hides it)
+            msOverflowStyle: "none", // IE/Edge
+          }}
+          className="scroll-container"
+        >
+          {/* Hide scrollbar for Webkit (Chrome/Safari) */}
+          <style>
+            {`
+              .scroll-container::-webkit-scrollbar {
+                width: 8px; /* Thin scrollbar */
+              }
+              .scroll-container::-webkit-scrollbar-track {
+                background: #ffffff; /* Make track invisible */
+              }
+              .scroll-container::-webkit-scrollbar-thumb {
+                background: #ffffff; /* Almost transparent scrollbar */
+                border-radius: 4px;
+              }
+              .scroll-container::-webkit-scrollbar-thumb:hover {
+                background:#ffffff 
+              }
+            `}
+          </style>
 
-        {/* Canvas & Scroll Controls */}
-        <Canvas camera={{ position: [0, 1, 6], fov: 50 }}>
-          <ambientLight intensity={1.5} />
-          <directionalLight position={[2, 5, 5]} intensity={1} />
-          <ScrollControls pages={2} damping={0.3}>
-            {/* Children inside ScrollControls to ensure visibility */}
-            <ChairModel />
-            <SofaModel />
-          </ScrollControls>
-        </Canvas>
+          {/* Canvas & Scroll Controls */}
+          <Canvas camera={{ position: [0, 1, 6], fov: 50 }}>
+            <ambientLight intensity={1.5} />
+            <directionalLight position={[2, 5, 5]} intensity={1} />
+            <ScrollControls pages={2} damping={0.3}>
+              {/* Objects inside ScrollControls */}
+              <ChairModel />
+              <SofaModel />
+            </ScrollControls>
+          </Canvas>
+        </div>
       </div>
     </div>
   );
 };
-
 export default FurnitureScrollEffect;
