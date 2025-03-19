@@ -1,60 +1,100 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { ScrollControls, useScroll, useGLTF } from "@react-three/drei";
 import SectionHeading from "./SectionHeading";
 
+// Chair Component
 const ChairModel = () => {
   const { scene } = useGLTF("/chair_free.glb");
   const chairRef = useRef();
-  const scroll = useScroll();
-  const [rotationY, setRotationY] = useState(0);
+  const scroll = useScroll(); // Get scroll instance inside ScrollControls
 
   useFrame(() => {
     if (chairRef.current) {
-      // Rotate chair smoothly based on scroll
-      const spinProgress = scroll.offset * Math.PI * 2; // Adjust spin speed
+      const spinProgress = scroll.offset * Math.PI * 2; // Rotate smoothly with scroll
       chairRef.current.rotation.y = spinProgress;
     }
   });
-
-  // Handle hover-based spinning
-  const handleMouseEnter = () => {
-    setRotationY((prev) => prev + Math.PI / 4); // Rotate a bit on hover
-  };
 
   return (
     <primitive
       object={scene}
       ref={chairRef}
-      scale={[0.5, 0.5, 0.5]} // Small chair size
-      position={[0, 0, 0]} // Fixed position in center
-      rotation={[0, rotationY, 0]}
-      onPointerEnter={handleMouseEnter} // Rotate slightly on hover
+      scale={[0.45, 0.45, 0.45]}
+      position={[-3, -2, 0]} // Shift left
     />
   );
 };
 
+// Sofa Component
+const SofaModel = () => {
+  const { scene } = useGLTF("/sofa.glb");
+  const sofaRef = useRef();
+  const scroll = useScroll();
+
+  useFrame(() => {
+    if (sofaRef.current) {
+      const spinProgress = scroll.offset * Math.PI * 2;
+      sofaRef.current.rotation.y = spinProgress;
+    }
+  });
+
+  return (
+    <primitive
+      object={scene}
+      ref={sofaRef}
+      scale={[2.5, 2.5, 2.5]}
+      position={[2, 0, 0]} // Shift right
+    />
+  );
+};
+
+// Main Component
 const FurnitureScrollEffect = () => {
   return (
     <div
       style={{
-        width: "100vw",
-        height: "100vh",
-        position: "relative",
+        padding: "40px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
       }}
     >
-      <SectionHeading title="Top" subtitle="Trending" />
-      <Canvas camera={{ position: [4, 4, 4] }}>
-        <ambientLight intensity={1.5} />
-        <directionalLight position={[3, 3, 3]} intensity={1} />
-        <ScrollControls pages={1} damping={0.3}>
-          <ChairModel />
-        </ScrollControls>
-      </Canvas>
+      <SectionHeading title="Modern" subtitle="Best Sellers" />
+
+      {/* Hide scrollbar but allow vertical scrolling */}
+      <div
+        style={{
+          width: "100vw",
+          height: "90vh",
+          position: "relative",
+          overflowY: "scroll",
+          overflowX: "hidden",
+          scrollbarWidth: "none", // For Firefox
+          msOverflowStyle: "none", // For IE/Edge
+        }}
+      >
+        {/* Hide scrollbar for Webkit (Chrome/Safari) */}
+        <style>
+          {`
+            ::-webkit-scrollbar {
+              display: none;
+            }
+          `}
+        </style>
+
+        {/* Canvas & Scroll Controls */}
+        <Canvas camera={{ position: [0, 1, 6], fov: 50 }}>
+          <ambientLight intensity={1.5} />
+          <directionalLight position={[2, 5, 5]} intensity={1} />
+          <ScrollControls pages={2} damping={0.3}>
+            {/* Children inside ScrollControls to ensure visibility */}
+            <ChairModel />
+            <SofaModel />
+          </ScrollControls>
+        </Canvas>
+      </div>
     </div>
   );
 };
