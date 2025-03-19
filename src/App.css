@@ -191,6 +191,7 @@
   color: white;
   transition: color 0.3s ease-in-out;
   position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Underline effect */
@@ -291,6 +292,7 @@
   animation: marqueeScroll 15s linear infinite;
   font-size: 24px;
   line-height: 28.8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @keyframes marqueeScroll {
@@ -308,18 +310,6 @@
 }
 
 /* End marquee Section */
-
-.placeholderSection {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #d6d2c4;
-  color: #38373d;
-  font-size: 2rem;
-  font-weight: bold;
-}
 
 /* start product grid Section */
 
@@ -369,12 +359,14 @@
   font-size: 14px;
   font-weight: 500;
   color: #38373d;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .productPrice {
   margin-top: 10px;
   font-size: 13px;
   color: #38373d;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .iconContainer {
@@ -424,6 +416,7 @@
   white-space: nowrap;
   font-size: 12px;
   opacity: 1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -487,12 +480,14 @@
   font-size: 62px;
   font-weight: 700;
   color: #38373d;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .description {
   font-size: 16px;
   color: #3c474e;
   margin-top: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .shopButton {
@@ -510,6 +505,7 @@
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
   cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Create the hover background effect */
@@ -608,12 +604,13 @@
 
 .informative-category-section__title {
   font-size: 60px;
-  font-family: "canela" sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .informative-category-section__description {
   font-size: 16px;
   color: #38373d;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .informative-category-section__buttons {
@@ -636,6 +633,7 @@
   position: relative;
   min-width: 120px;
   text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .btn-custom::after {
@@ -706,42 +704,11 @@
   font-size: clamp(12px, 1.5vw, 18px); /* Responsive font size */
   max-width: 40%; /* Responsive width */
   text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 /* end informative and category section Section */
 
 /* Gallery Container */
-.gallery-container {
-  width: 100%;
-  margin-bottom: 100px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Gallery Title */
-.gallery-title {
-  position: absolute;
-  font-size: 3rem;
-  font-weight: bold;
-  color: #38373d;
-  text-align: center;
-  z-index: 2;
-}
-
-/* Image Grid */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-  width: 50vw;
-  height: 50vh;
-  position: relative;
-}
 
 /* Individual Images */
 .gallery-image {
@@ -773,6 +740,7 @@
   font-weight: bold;
   margin-bottom: 10px;
   position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .top-brands-title::after {
@@ -789,6 +757,7 @@
   font-size: 16px;
   color: #ccc;
   line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Right Section: Marquee Wrapper */
@@ -920,12 +889,14 @@
 .testimonial-text h5 {
   font-size: 22px;
   margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .testimonial-text .role {
   font-size: 16px;
   color: #bbb;
   margin: 2px 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .testimonial-text .message {
@@ -936,6 +907,7 @@
   white-space: normal;
   max-height: 4.5em;
   line-height: 1.5em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Responsive Design */
@@ -951,11 +923,13 @@
 
   .testimonial-text h5 {
     font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .testimonial-text .message {
     font-size: 13px;
     max-height: 3.5em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 }
 
@@ -972,11 +946,13 @@
 
   .testimonial-text h5 {
     font-size: 14px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .testimonial-text .message {
     font-size: 12px;
     max-height: 3em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 }
 
@@ -1012,6 +988,7 @@
   font-weight: 700;
   color: #38373d;
   position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .rotating-image {
@@ -1119,6 +1096,7 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Subscription box */
@@ -1138,6 +1116,7 @@
   font-size: 1rem;
   color: #38373d;
   margin-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Animated border container */
@@ -1161,6 +1140,7 @@
   color: white;
   outline: none;
   font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 12px;
   margin-right: 10px;
   position: relative;
@@ -1219,6 +1199,7 @@
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 2;
   cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .beam-container button::before {
@@ -1287,6 +1268,7 @@ body {
   font-size: 3rem;
   color: #7f9c90;
   margin-bottom: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Hero Images */
@@ -1351,6 +1333,7 @@ body {
   color: #38373d; /* Text color */
   margin: 20px 0px 0px 20px;
   font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .image-price {
   width: 100%;
@@ -1358,6 +1341,7 @@ body {
   color: #38373d; /* Text color */
   margin: 10px 0px 0px 20px;
   font-size: 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .tab-indicator {
   margin-top: 10px;
@@ -1415,6 +1399,7 @@ body {
   transform: translateX(-50%);
   opacity: 0;
   visibility: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
@@ -1554,6 +1539,7 @@ body {
   color: white;
   font-weight: bold;
   font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 6px;
   border: none;
 }
@@ -1582,6 +1568,7 @@ body {
   font-size: 22px;
   letter-spacing: 10px;
   text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #38373d; /* Darker shade for contrast */
 }
 
@@ -1633,6 +1620,7 @@ body {
 .footer p {
   font-size: 14px;
   margin-bottom: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .social-links li {
@@ -1655,6 +1643,7 @@ body {
   border-top: 1px solid #7f9c90;
   padding-top: 10px;
   font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 /*end footer*/
 
@@ -1725,6 +1714,7 @@ body {
   color: white;
   font-weight: bold;
   cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Smooth Pulse Effect */
@@ -1757,6 +1747,7 @@ body {
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .trending-hotspot-dot {
   width: 20px;
@@ -1771,10 +1762,12 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .trending-hotspot-label p {
   font-weight: 100;
   font-size: 11px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 /* Show label when hotspot is active */
 .trending-hotspot.active .trending-hotspot-label {
@@ -1801,12 +1794,14 @@ body {
   text-align: center;
   border-radius: 12px 12px 0 0;
   padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Popover Body */
 .popover-body-custom {
   padding: 10px;
   font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Popover Item */
@@ -1825,6 +1820,7 @@ body {
   color: #7f9c90;
   font-size: 18px;
   margin-right: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Popover Button */
@@ -1834,6 +1830,7 @@ body {
   padding: 10px 15px;
   border-radius: 8px;
   font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   /* transition: background 0.3s ease-in-out; */
 }
@@ -1901,10 +1898,12 @@ body {
 
 .blog-meta li {
   font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .blog-title {
   font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   margin: 0;
 }
