@@ -104,7 +104,7 @@ const TopTrending = () => {
               {item.hotspots.map((spot) => (
                 <OverlayTrigger
                   key={spot.id}
-                  trigger="hover"
+                  trigger={["hover", "focus"]}
                   placement="top"
                   overlay={
                     <Popover
