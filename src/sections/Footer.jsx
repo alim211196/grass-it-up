@@ -75,13 +75,9 @@ const Footer = () => {
                   time of delivery also available by bank transfer before
                   delivery.
                 </p>
-                <p className="text-white">
-                  For international Customers Payment can be made with Bank
-                  Transfer - Details are Shown at Checkout point.
-                </p>
               </div>
               {/* Useful Links */}
-              <div className="col-md-2 col-lg-2 mb-4">
+              <div className="col-md-2 col-lg-3 mb-4">
                 <h6 className="text-uppercase fw-bold">
                   What is included in the prices
                 </h6>
@@ -94,27 +90,11 @@ const Footer = () => {
                   For UAE Customers at the checkout we add the local VAT
                   (currently at 5%)
                 </p>
-                <p className="text-white">Shipping Cost</p>
-                <p className="text-white">
-                  For Dubai delivery address we offer free delivery, for other
-                  Emirates State we charge 350 AED + VAT per delivery.
-                </p>
-                <p className="text-white">
-                  For international delivery we charge accordingly and it is
-                  calculated before checkout.
-                </p>
-                <p className="text-white">
-                  If you like to arrange your own delivery please put a note in
-                  the box provided at the checkout or contact us on +971 4 33 88
-                  169 email: Grass@Grassitup.ae and if this is the case we will
-                  remove the shipping charges.
-                </p>
               </div>
               {/* Contact Info */}
-              <div className="col-md-3 col-lg-3 mb-4">
+              <div className="col-md-3 col-lg-2 mb-4">
                 <h6 className="text-uppercase fw-bold">Contact</h6>
                 <hr />
-
                 <p>
                   <i className="fas fa-home mr-3"></i> Dubai, UAE
                 </p>
