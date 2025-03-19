@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { ScrollControls, useScroll, useGLTF } from "@react-three/drei";
 import SectionHeading from "./SectionHeading";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 // Chair Component
 const ChairModel = () => {
   const { scene } = useGLTF("/chair_free.glb");
@@ -51,8 +52,13 @@ const SofaModel = () => {
 
 // Main Component
 const FurnitureScrollEffect = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <div
+      data-aos="fade-up"
+      data-aos-delay="100"
       style={{
         padding: "40px",
         display: "flex",

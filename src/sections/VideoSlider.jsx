@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectCoverflow, Autoplay } from "swiper/modules";
+import AOS from "aos";
 import "swiper/css";
+import "aos/dist/aos.css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
@@ -23,7 +25,9 @@ const ytVideoIds = [
 const VideoSlider = () => {
   const mainSwiperRef = useRef(null);
   const [players, setPlayers] = useState({});
-
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   useEffect(() => {
     const loadYouTubeAPI = () => {
       if (!window.YT) {
@@ -58,7 +62,11 @@ const VideoSlider = () => {
   }, []);
 
   return (
-    <div className="video-slider-container">
+    <div
+      className="video-slider-container"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
       <SectionHeading title="Youtube" subtitle="Feed" />
       {/* Main Video Swiper */}
       <Swiper
