@@ -1801,7 +1801,6 @@ body {
 .popover-body-custom {
   padding: 10px;
   font-size: 14px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Popover Item */
@@ -1820,7 +1819,6 @@ body {
   color: #7f9c90;
   font-size: 18px;
   margin-right: 10px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Popover Button */
