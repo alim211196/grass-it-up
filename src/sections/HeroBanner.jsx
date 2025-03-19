@@ -20,19 +20,6 @@ const HeroBanner = () => {
             alt="Grass It Up"
           />
         </video>
-
-        {/* Overlay Content */}
-        {/* <div className={"overlay"}>
-          <h1 className={"heroTitle"}>
-            Outdoor Furniture Inspired by Nature
-          </h1>
-          <p className={"heroSubtitle"}>
-            Designed for durability, crafted for comfort.
-          </p>
-          <a href="#" className="btn btn-light btn-lg">
-            Shop Now
-          </a>
-        </div> */}
       </div>
     </div>
   );

@@ -12,42 +12,50 @@ import { OverlayTrigger, Popover } from "react-bootstrap";
 
 const images = [
   {
-    src: "https://grassitupshop.com/cdn/shop/files/ScreenShot2024-03-15at1.16.12PM_352x352.png?v=1710495261",
+    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-1.jpg",
     hotspots: [
-      { id: 1, x: "50%", y: "48%", text: "TABLE" },
-      { id: 2, x: "40%", y: "67%", text: "CHAIR" },
+      { id: 1, x: "12%", y: "55%", text: "LAMP" },
+      { id: 2, x: "30%", y: "50%", text: "SOFA" },
+      { id: 3, x: "45%", y: "55%", text: "TABLE" },
+      { id: 4, x: "38%", y: "68%", text: "CHAIR" },
     ],
   },
   {
-    src: "https://grassitupshop.com/cdn/shop/files/IMG_1655_352x352.jpg?v=1737641071",
+    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-2.jpg",
     hotspots: [
-      { id: 1, x: "40%", y: "35%", text: "FRAME" },
-      { id: 2, x: "55%", y: "55%", text: "CUSHION" },
-      { id: 3, x: "71%", y: "65%", text: "STILL" },
+      { id: 1, x: "55%", y: "45%", text: "SOFA" },
+      { id: 2, x: "50%", y: "55%", text: "TABLE" },
+      { id: 3, x: "68%", y: "60%", text: "SOFA" },
     ],
   },
   {
-    src: "https://grassitupshop.com/cdn/shop/products/WhatsAppImage2022-06-10at3.28.38PM_1_448x288.jpg?v=1654865813",
+    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-3.jpg",
     hotspots: [
-      { id: 1, x: "40%", y: "40%", text: "SOFA" },
-      { id: 2, x: "55%", y: "65%", text: "TABLE" },
-      { id: 3, x: "10%", y: "70%", text: "LAMP" },
+      { id: 1, x: "25%", y: "20%", text: "UMBRELLA" },
+      { id: 2, x: "20%", y: "65%", text: "ARMCHAIR" },
+      { id: 3, x: "23%", y: "76%", text: "SUNBED" },
+      { id: 4, x: "70%", y: "70%", text: "DINING TABLE" },
+      { id: 5, x: "76%", y: "73%", text: "OUTDOOR SOFA" },
+      { id: 6, x: "88%", y: "76%", text: "ARMCHAIR" },
+      { id: 7, x: "92%", y: "63%", text: "CIRCULAR TABLE" },
     ],
   },
 
   {
-    src: "https://grassitupshop.com/cdn/shop/files/ScreenShot2024-03-15at1.16.12PM_352x352.png?v=1710495261",
+    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-1.jpg",
     hotspots: [
-      { id: 1, x: "50%", y: "48%", text: "TABLE" },
-      { id: 2, x: "40%", y: "67%", text: "CHAIR" },
+      { id: 1, x: "12%", y: "55%", text: "LAMP" },
+      { id: 2, x: "30%", y: "50%", text: "SOFA" },
+      { id: 3, x: "45%", y: "55%", text: "TABLE" },
+      { id: 4, x: "38%", y: "68%", text: "CHAIR" },
     ],
   },
   {
-    src: "https://grassitupshop.com/cdn/shop/files/IMG_1655_352x352.jpg?v=1737641071",
+    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-2.jpg",
     hotspots: [
-      { id: 1, x: "40%", y: "35%", text: "FRAME" },
-      { id: 2, x: "55%", y: "55%", text: "CUSHION" },
-      { id: 3, x: "71%", y: "65%", text: "STILL" },
+      { id: 1, x: "55%", y: "45%", text: "SOFA" },
+      { id: 2, x: "50%", y: "55%", text: "TABLE" },
+      { id: 3, x: "68%", y: "60%", text: "SOFA" },
     ],
   },
 ];
@@ -71,16 +79,17 @@ const TopTrending = () => {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={3}
-        spaceBetween={-50}
+        spaceBetween={-30}
         loop={true}
-        initialSlide={1}
+        initialSlide={3}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
+        speed={3000}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 150,
-          modifier: 1.5,
-          slideShadows: false,
+          depth: 3, // Controls the perspective depth (Increase for more 3D effect)
+          modifier: 1.5, // Controls how strong the effect is
+          slideShadows: false, // Disables extra shadows
         }}
         onSwiper={setSwiperRef}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
@@ -126,7 +135,9 @@ const TopTrending = () => {
                     className="trending-hotspot"
                     style={{ top: spot.y, left: spot.x }}
                   >
-                    <div className="trending-hotspot-dot">+</div>
+                    <div className="trending-hotspot-dot">
+                      <i className="fal fa-plus"></i>
+                    </div>
                     <div className="trending-pulse-effect"></div>
                   </div>
                 </OverlayTrigger>

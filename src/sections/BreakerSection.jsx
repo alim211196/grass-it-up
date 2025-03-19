@@ -6,7 +6,6 @@ import "aos/dist/aos.css";
 const images = [
   "https://dev-risians.com/html/grassitup/images/pop-cat-bg-8.png",
   "https://dev-risians.com/html/grassitup/images/pop-cat-bg-1.png",
-
   "https://dev-risians.com/html/grassitup/images/pop-cat-bg-11.png",
   "https://dev-risians.com/html/grassitup/images/pop-cat-bg-12.png",
 ];

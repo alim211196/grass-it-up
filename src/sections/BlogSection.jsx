@@ -9,12 +9,11 @@ import "../App.css"; // Import custom CSS
 import SectionHeading from "./SectionHeading";
 
 // Import images
-const blog1 =
-  "https://grassitupshop.com/cdn/shop/files/ScreenShot2024-03-15at1.16.12PM_352x352.png?v=1710495261";
-const blog2 =
-  "https://grassitupshop.com/cdn/shop/files/IMG_1655_352x352.jpg?v=1737641071";
-const blog3 =
-  "https://grassitupshop.com/cdn/shop/products/WhatsAppImage2022-06-10at3.28.38PM_1_448x288.jpg?v=1654865813";
+const blog1 = "https://dev-risians.com/html/grassitup/images/blog-bg-1.jpg";
+const blog2 = "https://dev-risians.com/html/grassitup/images/blog-bg-2.jpg";
+const blog3 = "https://dev-risians.com/html/grassitup/images/blog-bg-3.jpg";
+const blog4 = "https://dev-risians.com/html/grassitup/images/blog-bg-4.jpg";
+const blog5 = "https://dev-risians.com/html/grassitup/images/blog-bg-5.jpg";
 
 // Blog Data
 const blogData = [
@@ -37,22 +36,16 @@ const blogData = [
     title: "The Key Components of a Quality Sofa habitant vel tempor.",
   },
   {
-    image: blog1,
+    image: blog4,
     date: "13th March 2025",
     tag: "Vase",
     title: "Home Office Storage Ideas to Boost Productivity in 2023.",
   },
   {
-    image: blog2,
+    image: blog5,
     date: "5th May 2025",
     tag: "Interior",
     title: "Consectetur purus habitasse ut diam habitant varius.",
-  },
-  {
-    image: blog3,
-    date: "19th June 2025",
-    tag: "Vase",
-    title: "The Key Components of a Quality Sofa habitant vel tempor.",
   },
 ];
 
@@ -77,11 +70,11 @@ const BlogSection = () => {
           }}
           effect="coverflow"
           coverflowEffect={{
-            rotate: 20,
+            rotate: 30,
             stretch: 1,
-            depth: 90,
+            depth: 100,
             modifier: 0.5,
-            slideShadows: true,
+            slideShadows: false,
           }}
           className="blog-slider"
         >

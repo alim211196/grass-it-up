@@ -43,7 +43,7 @@ const titleStyles = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  backgroundColor: "rgba(0, 0, 0, 0.5)",
+  backgroundColor: "rgba(127 ,156, 144, 0.5)",
   color: "#fff",
   padding: "10px 20px",
   borderRadius: "8px",
@@ -59,7 +59,7 @@ const images = [
     name: "Modern Design",
   },
   {
-    src: "https://grassitupshop.com/cdn/shop/products/WhatsAppImage2022-06-10at3.28.38PM_1_448x288.jpg?v=1654865813",
+    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-3.jpg",
     name: "Elegant Style",
   },
   {

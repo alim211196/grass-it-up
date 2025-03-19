@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <HeroBanner />
-      <Marquee />
+      {/* <Marquee /> */}
       <HorizontalScroll />
       <InformativeCategorySection />
       <ProductGrid />
@@ -36,10 +36,10 @@ function App() {
       <VisitOurShowroom />
       <HotspotImage />
       <PartnerMarquee />
-      <SubscriptionSection />
+      <FurnitureScrollEffect />
       <CylindricalCarousel />
       <Testimonial />
-      <FurnitureScrollEffect />
+      <SubscriptionSection />
       <Footer />
     </>
   );

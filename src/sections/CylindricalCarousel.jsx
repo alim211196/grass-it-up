@@ -12,11 +12,11 @@ import SectionHeading from "./SectionHeading";
 
 const CylindricalCarousel = () => {
   const images = [
-    "https://grassitupshop.com/cdn/shop/files/qwe-2_416x288.jpg?v=1728471286",
-    "https://grassitupshop.com/cdn/shop/files/IMG_1655_352x352.jpg?v=1737641071",
-    "https://grassitupshop.com/cdn/shop/products/WhatsAppImage2022-06-10at3.28.38PM_1_448x288.jpg?v=1654865813",
-    "https://grassitupshop.com/cdn/shop/files/Sahara_608x416.jpg?v=1732629985",
-    "https://grassitupshop.com/cdn/shop/files/Blue-20_608x416.jpg?v=1655713613",
+    "https://dev-risians.com/html/grassitup/images/blog-bg-1.jpg",
+    "https://dev-risians.com/html/grassitup/images/blog-bg-2.jpg",
+    "https://dev-risians.com/html/grassitup/images/blog-bg-3.jpg",
+    "https://dev-risians.com/html/grassitup/images/blog-bg-4.jpg",
+    "https://dev-risians.com/html/grassitup/images/blog-bg-5.jpg",
   ];
   useEffect(() => {
     AOS.init({ duration: 1000 });

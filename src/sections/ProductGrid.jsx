@@ -130,6 +130,9 @@ const ProductGrid = () => {
           </div>
         ))}
       </div>
+      <div className="productMore">
+        <a className="shopButton">See all product</a>
+      </div>
     </section>
   );
 };
