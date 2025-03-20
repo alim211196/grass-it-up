@@ -102,8 +102,8 @@
   }
 
   /* .heroVideo {
-    display: none;
-  } */
+        display: none;
+      } */
 
   .heroImage {
     display: block;
@@ -140,7 +140,7 @@
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2),
     0px 6px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
 }
 
 .container {
@@ -184,10 +184,10 @@
 
 .navLinks-header li a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 2px;
-  text-transform: capitalize;
-  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: 500;
   color: white;
   transition: color 0.3s ease-in-out;
   position: relative;
@@ -204,6 +204,11 @@
   height: 3px;
   background-color: #bb976d;
   transition: width 0.3s ease-in-out;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.active-link {
+  border-bottom: 3px solid #bb976d;
 }
 
 /* Show underline on hover */
@@ -244,7 +249,7 @@
   .container {
     flex-direction: column;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0px 20px 0px 10px;
   }
 
   .logo {
@@ -589,12 +594,12 @@
 }
 
 /* .informative-category-section__image--zoom-in {
-  transform: scale(1.1);
-}
-
-.informative-category-section__image--zoom-out {
-  transform: scale(1);
-} */
+      transform: scale(1.1);
+    }
+    
+    .informative-category-section__image--zoom-out {
+      transform: scale(1);
+    } */
 
 /* Text Content */
 .informative-category-section__text-container {
@@ -677,14 +682,14 @@
 }
 /* Zoom effects */
 /* .informative-category-section__bottom-image--zoom-in {
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.informative-category-section__bottom-image--zoom-out {
-  transform: scale(1);
-  transition: transform 0.3s ease-in-out;
-} */
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .informative-category-section__bottom-image--zoom-out {
+      transform: scale(1);
+      transition: transform 0.3s ease-in-out;
+    } */
 
 .image-with-text {
   position: relative;
@@ -1380,6 +1385,7 @@ body {
 
 .carousel-items div {
   position: relative; /* Ensure this is the reference for absolute positioning */
+  overflow: hidden;
 }
 
 .add-to-cart {
@@ -1394,7 +1400,7 @@ body {
   justify-content: center;
   gap: 5px;
   position: absolute;
-  bottom: 20vh; /* Slightly below the image */
+  bottom: 40vh; /* Slightly below the image */
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
@@ -1674,6 +1680,7 @@ body {
   /* transform: scale(0.8); */
   /* opacity: 0.6; */
   position: relative;
+  overflow: hidden;
   border-radius: 5px;
 }
 

@@ -1,0 +1,139 @@
+.featured-collections {
+  text-align: center;
+  padding: 160px 20px 80px;
+  background-color: #fff;
+}
+
+.container-featured-collections {
+  margin: 0 auto;
+  width: 45vw;
+}
+
+.title-featured-collections {
+  font-size: 4rem;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.description-featured-collections {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container layout */
+.collection-shop-container {
+  width: 100%;
+  border-top: 1px dashed #ddd;
+  padding: 0 9% 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Left Section - Shop by Material */
+.collection-materials-list {
+  width: 30%;
+  padding: 20px 5px;
+  border-right: 1px dashed #ddd;
+}
+
+.collection-materials-list h2 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.collection-materials-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.collection-materials-list li {
+  line-height: 2.5;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+}
+
+/* Right Section - Product Display */
+.collection-product-display {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Product Item - Each section for an item */
+.collection-product-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px dashed #ddd;
+}
+/* Text Section: Center Left */
+.collection-product-info {
+  position: absolute;
+  left: 50px; /* Adjust left padding */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  z-index: 2;
+  width: 15vw;
+}
+
+.collection-product-info h2 {
+  font-size: 2rem;
+  color: #222;
+  font-weight: 300;
+}
+
+.collection-product-info p {
+  color: #555;
+  font-size: 0.8rem;
+}
+
+/* Image Section */
+.collection-product-image {
+  width: 100%;
+  height: 100%;
+  border-right: 1px dashed #ddd;
+  overflow: hidden;
+  position: relative;
+}
+.collection-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers the full area */
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.collection-product-image img:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .collection-shop-container {
+    flex-direction: column;
+  }
+
+  .collection-materials-list {
+    width: 100%;
+    text-align: center;
+    border-right: none;
+    border-bottom: 1px dashed #ddd;
+  }
+
+  .collection-.product-display {
+    width: 100%;
+  }
+}
