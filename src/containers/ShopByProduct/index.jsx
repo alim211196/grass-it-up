@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ShopByProduct.css";
+import "./shopByProduct.css";
 import Header from "../HomePage/subComponents/Header";
 import { useNavigate } from "react-router-dom";
 
