@@ -269,7 +269,7 @@
 /* Button */
 .top-button {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 40px;
 }
 
 .top-button button {
@@ -294,12 +294,13 @@
 .content-wrapper {
   display: flex;
   padding-top: 20px;
+  max-width: 1200px;
 }
 
 /* Left Section (Tabs + Content) */
 .left-section {
   flex: 1;
-  padding-right: 20px;
+  padding: 40px 60px 40px 0px;
   border-right: 1px solid #ddd;
 }
 
@@ -311,8 +312,6 @@
 }
 
 .tab-button {
-  font-size: 16px;
-  text-transform: uppercase;
   color: gray;
   border: none;
   background: none;
@@ -320,6 +319,29 @@
   padding-bottom: 5px;
   transition: all 0.3s ease-in-out;
   position: relative;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.tab-button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: black; /* Underline effect */
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.tab-button:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.tab-button:hover {
+  color: #38373d;
 }
 
 .tab-button.active {
@@ -328,9 +350,19 @@
   border-bottom: 1px solid black;
 }
 
+.tab-button.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+}
+
 /* Tab Content */
 .tab-content {
   margin-top: 15px;
+  border-left: 1px solid #ddd;
+  padding: 4px 16px;
 }
 
 .tab-content ul {
@@ -345,7 +377,7 @@
 /* Right Section (Dimensions Table) */
 .right-section {
   flex: 1;
-  padding-left: 20px;
+  padding: 40px 0px 40px 60px;
 }
 
 .right-section h2 {
@@ -361,7 +393,7 @@
 
 .right-section td {
   padding: 8px;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
 }
 
 .right-section .bold {

@@ -61,16 +61,13 @@ const ProductMetaData = () => {
           <table>
             <tbody>
               <tr>
-                <td>Width</td>
-                <td className="bold">92"</td>
-                <td>Depth</td>
-                <td className="bold">31"</td>
+                <td>Width 92"</td>
+
+                <td>Depth 31"</td>
               </tr>
               <tr>
-                <td>Height</td>
-                <td className="bold">22"</td>
-                <td>Weight</td>
-                <td className="bold">92 lbs</td>
+                <td>Height 22"</td>
+                <td>Weight 92 lbs</td>
               </tr>
             </tbody>
           </table>
