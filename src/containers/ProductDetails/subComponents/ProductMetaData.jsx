@@ -38,19 +38,69 @@ const ProductMetaData = () => {
               <div>
                 <p>
                   Marrying strong lines with subtle organic curves, Seaside
-                  brings coastal flavor to your patio, porch, or pool area.
+                  brings coastal flavor to your patio, porch or pool area.
+                  Supple, long-wearing Italian rope softens surfaces and defines
+                  the sofa’s silhouette while deep cushions and backrests create
+                  inviting, low-profile seating that puts comfort first –
+                  whether you’re entertaining or just relaxing at home.
                 </p>
                 <ul>
                   <li>Mixed materials</li>
                   <li>Aluminum frame</li>
+                  <li>Seat back is made of Italian polyolefin rope </li>
                   <li>Weather-friendly</li>
-                  <li>Low-profile design for relaxation</li>
+                  <li>
+                    Low-profile design encourages relaxing & makes seating
+                    accessible for kids & pets
+                  </li>
+                  <li>Comes with weather-friendly cushions </li>
+                  <li>1 long seat cushion provides clean look</li>
+                  <li>
+                    Cushions feature perfect combination of support & softness
+                  </li>
+                  <li>Comes with 1 seat cushion & 3 back cushions </li>
+                  <li>
+                    Combine with Seaside Lounge Chair & sectional components to
+                    create customized configuration
+                  </li>
                 </ul>
               </div>
             )}
-            {activeTab === "frame" && <p>Frame details content goes here...</p>}
+            {activeTab === "frame" && (
+              <ul>
+                <li>
+                  Extruded aluminum frame conducts heat & cold well, so surfaces
+                  stay comfortable to the touch
+                </li>
+                <li>Lightweight yet sturdy</li>
+                <li>Seat features durable slatted support system</li>
+                <li>Resistant to corrosion & rust</li>
+                <li>
+                  Matte powdercoat finish is baked-on & ultra-durable; resistant
+                  to chips & scratches
+                </li>
+                <li>Seat back is made of Italian polyolefin rope </li>
+                <li>Glides on bottom adjust to keep sofa level </li>
+                <li>Imported</li>
+                <li>Available in Dune</li>
+              </ul>
+            )}
             {activeTab === "cushion" && (
-              <p>Cushion details content goes here...</p>
+              <ul>
+                <li>
+                  Seat cushion core is made of Ever-Dri foam wrapped in Dacron
+                  polyester batting
+                </li>
+                <li>Back cushion core is made of shredded polyester fiber</li>
+                <li>All cushions are covered in durable fabric</li>
+                <li>Weather-resistant</li>
+                <li>Solution-dyed</li>
+                <li>Will not fade</li>
+                <li>Resistant to bleach </li>
+                <li>Hidden zippers provide uninterrupted style</li>
+                <li>Imported</li>
+                <li>Available in Tidal Foam</li>
+              </ul>
             )}
           </div>
         </div>
@@ -61,16 +111,48 @@ const ProductMetaData = () => {
           <table>
             <tbody>
               <tr>
-                <td>Width 92"</td>
+                <td>
+                  <div>
+                    <span>
+                      <i class="fas fa-arrows-alt-h"> </i> Width
+                    </span>
+                    <span>92"</span>
+                  </div>
+                </td>
 
-                <td>Depth 31"</td>
+                <td>
+                  <div>
+                    <span>
+                      {" "}
+                      <i class="fas fa-arrows-alt"> </i> Depth{" "}
+                    </span>
+                    <span>31"</span>
+                  </div>
+                </td>
               </tr>
               <tr>
-                <td>Height 22"</td>
-                <td>Weight 92 lbs</td>
+                <td>
+                  <div>
+                    <span>
+                      <i class="fas fa-arrows-alt-v"></i> Height
+                    </span>
+                    <span>22"</span>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <span>
+                      <i class="fas fa-weight"></i> Weight
+                    </span>
+                    <span>92lbs</span>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>
+          <p className="our-value" style={{ paddingTop: "20px" }}>
+            <a>see all dimensions</a>
+          </p>
         </div>
       </div>
     </div>

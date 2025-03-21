@@ -217,7 +217,7 @@
 .product-slider {
   flex: 1; /* Allow it to take available space */
   max-width: 60%; /* Adjust width to fit the left half */
-  padding: 0px;
+  padding: 0px 20px;
   border-radius: 8px;
 }
 
@@ -275,7 +275,7 @@
 .top-button button {
   padding: 10px 20px;
   border: none;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   color: black;
   cursor: pointer;
   background-color: #f4f1ee;
@@ -368,21 +368,36 @@
 .tab-content ul {
   padding-left: 20px;
   list-style-type: disc;
+  line-height: 21.96px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #4d4a47;
+  font-weight: 100;
+}
+.tab-content ul li {
+  margin-bottom: 5px;
 }
 
 .tab-content p {
-  line-height: 1.6;
+  line-height: 21.96px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #4d4a47;
+  font-weight: 100;
 }
 
 /* Right Section (Dimensions Table) */
 .right-section {
   flex: 1;
-  padding: 40px 0px 40px 60px;
+  padding: 60px 0px 60px 60px;
 }
 
 .right-section h2 {
-  font-size: 18px;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 4px;
   text-transform: uppercase;
+  margin-right: 40px;
   margin-bottom: 10px;
 }
 
@@ -392,10 +407,46 @@
 }
 
 .right-section td {
-  padding: 8px;
   border: 1px solid #ddd;
+  width: 50%;
+  padding: 15px 20px;
+}
+
+.right-section td div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-section td div span:first-of-type {
+  line-height: 21.96px;
+  font-weight: 100;
+  color: #4d4a47;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-left: 5px;
+}
+.right-section td div span:last-of-type {
+  margin-left: auto;
+  line-height: 1.4;
+  letter-spacing: normal;
+  font-size: 20px;
 }
 
 .right-section .bold {
   font-weight: bold;
+}
+
+.banner-image {
+  width: 100vw;
+  height: 100vh;
+  background: url(https://cld.accentuate.io/8825401639165/1740001189230/eta-seaside-main_.jpg)
+    no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
 }

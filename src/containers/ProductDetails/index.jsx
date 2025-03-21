@@ -6,6 +6,7 @@ import Footer from "../HomePage/subComponents/Footer";
 import "./productDetails.css";
 import ProductInfo from "./subComponents/ProductInfo";
 import ProductMetaData from "./subComponents/ProductMetaData";
+import ExploreProduct from "./subComponents/ExploreProduct";
 
 const ProductDetails = () => {
   const location = useLocation();
@@ -18,6 +19,8 @@ const ProductDetails = () => {
       <Header />
       <ProductInfo product={product} />
       <ProductMetaData />
+      <section className="banner-image" />
+      <ExploreProduct />
       <SubscriptionSection />
       <Footer />
     </>
