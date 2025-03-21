@@ -124,16 +124,8 @@ const ProductInfo = ({ product }) => {
             </p>
 
             <div className="tabby-div">
-              <img
-                src="/public/tabby.svg"
-                alt="Tabby"
-                className="tabby-cart-logo"
-              />
-              <img
-                src="/public/moon.svg"
-                alt="moon"
-                className="tabby-cart-logo"
-              />
+              <img src="/tabby.png" alt="Tabby" className="tabby-cart-logo" />
+              <img src="/moon.png" alt="moon" className="tabby-cart-logo" />
             </div>
           </div>
         </div>
