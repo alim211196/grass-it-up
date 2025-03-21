@@ -59,6 +59,11 @@
   line-height: 2.5;
   letter-spacing: 0.5px;
   font-size: 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.materials-list li:hover {
+  text-decoration: underline;
 }
 
 /* Right Section - Product Display */

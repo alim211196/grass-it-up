@@ -59,8 +59,11 @@
   line-height: 2.5;
   letter-spacing: 0.5px;
   font-size: 12px;
+  cursor: pointer;
 }
-
+.collection-materials-list li:hover {
+  text-decoration: underline;
+}
 /* Right Section - Product Display */
 .collection-product-display {
   display: flex;

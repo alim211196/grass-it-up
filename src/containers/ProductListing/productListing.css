@@ -39,7 +39,7 @@
   border-top: 1px dashed #ddd;
   border-bottom: 1px dashed #ddd;
   background-color: #fff;
-  padding: 10px 9.3% 10px 8.3%;
+  padding: 10px 9.3%;
   width: 100vw;
 }
 
@@ -129,11 +129,10 @@
 
 /* Sidebar Filter Section */
 .filter-section1 {
-  width: 250px;
-  max-width: 250px;
-  background: #f9f9f9;
+  width: 300px;
+  max-width: 300px;
   padding: 15px;
-  border-right: 1px solid #ddd;
+  /* border-right: 1px solid #ddd; */
   overflow: hidden;
   transition: max-width 0.5s ease-in-out, opacity 0.5s ease-in-out,
     padding 0.5s ease-in-out;
@@ -164,7 +163,7 @@
 }
 
 .product-grid-container.shrink {
-  width: calc(100% - 250px);
+  width: calc(100% - 300px);
 }
 
 .product-grid-container.expand {
@@ -186,6 +185,7 @@
 .product-details-div {
   margin-left: 10px;
   margin-bottom: 10px;
+  border: none;
 }
 .product-collection-image {
   width: 100%;
@@ -229,6 +229,116 @@
   box-shadow: none !important;
   appearance: none;
   width: 65%;
+}
+.accordion {
+  width: 100%;
+  overflow: hidden;
+  /* border: 1px dashed #ddd !important; */
+  border: none !important;
+  border-radius: 0px !important;
+  margin: 4px !important;
+}
+
+.accordion-item {
+  border: none !important;
+  box-shadow: none !important;
+  border: 1px dashed #ddd !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+  padding: 10px;
+}
+
+/* Title Section */
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: #f5f5f5; */
+  padding: 12px 15px;
+  cursor: pointer;
+  font-weight: 300;
+  transition: background 0.3s;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  position: relative;
+  text-align: left;
+}
+
+.accordion-title:hover {
+  background: #e0e0e0;
+}
+
+/* Plus/Minus Icon */
+.accordion-title::after {
+  content: "+";
+  font-size: 18px;
+  font-weight: 300;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hidden Checkbox to Control Expansion */
+.accordion-checkbox {
+  display: none;
+}
+
+/* Content Section */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+  padding: 0 15px;
+}
+.accordion-content ul {
+  padding-left: 0px;
+}
+.accordion-list {
+  list-style: none;
+  font-size: 13px;
+  line-height: 3.17;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+/* When Checked, Expand Section */
+.accordion-checkbox:checked + .accordion-title + .accordion-content {
+  max-height: 1000px; /* Adjust height as needed */
+  padding: 10px 15px;
+}
+
+/* Change Icon When Expanded */
+.accordion-checkbox:checked + .accordion-title::after {
+  content: "-";
+}
+.CollectionSidebar__Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px 0 0;
+  /* border-bottom: 1px dashed #ddd; */
+}
+.filter-heading {
+  font-size: 35px;
+  line-height: 1.57;
+  letter-spacing: 0;
+  font-family: Canela, sans-serif;
+  font-weight: 300;
+  color: #332f2c;
+  transition: color 0.2s ease-in-out;
+}
+.filter-collapse {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  line-height: 1;
+  color: #746d69;
 }
 /*product grid end*/
 

@@ -52,7 +52,7 @@ const categories = [
 
 const ProductCategorySlider = () => {
   return (
-    <div className="category-container">
+    <div className="category-container" data-aos="fade-up" data-aos-delay="100">
       <h2 className="category-title">Shop by Category</h2>
       <Swiper
         slidesPerView={3}

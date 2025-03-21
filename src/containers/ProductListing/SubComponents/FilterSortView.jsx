@@ -58,18 +58,19 @@ const FilterSortView = ({ setColSpan, toggleFilter }) => {
           {/* View Section */}
           <div className="view-section">
             <span className="view-label">View:</span>
-            <img
-              src={"/grid9.png"}
-              alt={"Grid9"}
-              style={{ height: "auto", width: "18px", margin: "5px" }}
-              onClick={() => setColSpan(4)}
-              role="button"
-            />
+
             <img
               src={"/grid4.png"}
               alt={"Grid4"}
               style={{ height: "auto", width: "18px", margin: "5px" }}
               onClick={() => setColSpan(6)}
+              role="button"
+            />
+            <img
+              src={"/grid9.png"}
+              alt={"Grid9"}
+              style={{ height: "auto", width: "18px", margin: "5px" }}
+              onClick={() => setColSpan(4)}
               role="button"
             />
           </div>

@@ -1,11 +1,13 @@
 import "./productListing.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "../HomePage/subComponents/Footer";
 import SubscriptionSection from "../HomePage/subComponents/SubscriptionSection";
 import Header from "../HomePage/subComponents/Header";
 import ProductGrid from "./SubComponents/ProductGrid";
 import FilterSortView from "./SubComponents/FilterSortView";
 import { useLocation } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import ProductCategorySlider from "./SubComponents/ProductCategorySlider";
 const products = [
   {
@@ -108,7 +110,7 @@ const products = [
 const ProductListing = () => {
   const [colSpan, setColSpan] = useState(4);
   const location = useLocation();
-  const [isFilterOpen, setIsFilterOpen] = useState(true);
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   const toggleFilter = () => {
     setIsFilterOpen((prev) => !prev);
@@ -116,24 +118,43 @@ const ProductListing = () => {
 
   // Check if the pathname starts with "/shop-all"
   const isShopAllPage = location.pathname.includes("/shop-all");
-
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+  const url = location.pathname;
+  const lastPart = url.split("/").pop();
+  const decodedText = decodeURIComponent(lastPart);
+  const cleanText = decodedText.replace(/[^\w\s-]/g, "").trim(); // Allow hyphens for now
+  const title = cleanText.replace(/-/g, " "); // Replace hyphens with spaces
   return (
     <>
       <Header />
       <section className="product-listing">
         <div className="container-product-listing">
-          <h1 className="title-product-listing">
-            {isShopAllPage ? "Lounging" : "Sofas"}
+          <h1
+            className="title-product-listing"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            {title}
           </h1>
           {isShopAllPage ? (
-            <p className="description-product-listing">
+            <p
+              className="description-product-listing"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               Create a space for relaxing and recharging under the sun or stars.
               Our deep seating assortment includes plush outdoor furniture from
               lounge chairs to sectionals in teak, aluminum, all-weather wicker
               and rope.
             </p>
           ) : (
-            <p className="description-product-listing">
+            <p
+              className="description-product-listing"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               Weather-friendly and welcoming, an outdoor sofa turns your patio
               or balcony into a second living room. Choose your favorite from
               our array of styles in teak, aluminum, all-weather wicker and

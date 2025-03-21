@@ -2,36 +2,161 @@ import React, { useState } from "react";
 import "../productListing.css"; // Custom styles
 
 const ProductGrid = ({ products, colSpan, isFilterOpen, toggleFilter }) => {
+  const filterSections = [
+    {
+      id: "category",
+      title: "Category",
+      options: [
+        "Accent Tables",
+        "Adirondacks & Rockers",
+        "Chaises & Daybeds",
+        "Coffee Tables",
+        "Dining Seating",
+        "Lounge Chairs",
+        "Loveseats",
+        "Ottomans",
+        "Sectionals",
+        "Side & End Tables",
+        "Sofas",
+      ],
+    },
+    {
+      id: "collection",
+      title: "Collection",
+      options: [
+        "Apollo",
+        "Aptos",
+        "Avila",
+        "Barrel Woven Pouf",
+        "Belvedere",
+        "Bolinas",
+        "Bordeaux",
+        "Breeze",
+        "Calabasas",
+        "Cambria",
+        "Carmel",
+        "Cavallo",
+        "Cazadero",
+        "Click",
+        "Cloud",
+        "Costa Mesa",
+        "Diablo",
+        "Elements",
+        "Harborside",
+        "Houe",
+        "Kai",
+        "La Jolla",
+        "Lisbon",
+        "Luna",
+        "Marin",
+        "Mariposa",
+        "Mason",
+        "Monte Rio",
+        "Montecito",
+        "Nicasio",
+        "Ojai",
+        "Olema",
+        "Pasadena",
+        "Presidio",
+        "Ravello",
+        "Reclips",
+        "Redondo",
+        "Rivoli",
+        "Salt Point",
+        "Santa Monica",
+        "Sausalito",
+        "Seaside",
+        "Skyline",
+        "Solana",
+        "Sonora",
+        "Stinson",
+        "Tiburon",
+        "Ventura",
+        "Vista",
+        "Woodside",
+      ],
+    },
+    {
+      id: "frame-color",
+      title: "Frame Color",
+      options: [
+        "Black",
+        "Charcoal",
+        "Dune",
+        "Grey",
+        "Light Grey",
+        "Natural Teak",
+        "Natural Wicker",
+        "Quartz Grey",
+        "Terra Wicker",
+        "Weathered Teak",
+        "White",
+      ],
+    },
+    {
+      id: "genre",
+      title: "Genre",
+      options: ["Clearance", "Dining & Bar", "Lounging", "Sale", "Swivel"],
+    },
+    {
+      id: "material",
+      title: "Material",
+      options: [
+        "Aluminum",
+        "Bamboo",
+        "Concrete",
+        "Plastic",
+        "Quartz Grey Aluminum",
+        "Steel",
+        "Teak",
+        "Textilene Mesh",
+        "Wicker",
+        "Woven Rope",
+      ],
+    },
+  ];
+
   return (
     <div className="product-page-container">
       {/* Sidebar Filter Section */}
       <div className={`filter-section1 ${isFilterOpen ? "open" : "closed"}`}>
-        <button className="filter-toggle-btn" onClick={toggleFilter}>
-          {isFilterOpen ? "Close Filters" : "Filters"}
-        </button>
-        {isFilterOpen && (
-          <div className="filters-content">
-            <h4>Filters</h4>
-            <div className="filter-category">
-              <h5>Category</h5>
-              <ul>
-                <li>
-                  <input type="checkbox" /> Option 1
-                </li>
-                <li>
-                  <input type="checkbox" /> Option 2
-                </li>
-                <li>
-                  <input type="checkbox" /> Option 3
-                </li>
-              </ul>
+        <div className="CollectionSidebar__Header">
+          <h4 className="filter-heading">Filters</h4>
+          <a onClick={toggleFilter} className="filter-collapse">
+            {" "}
+            collapse
+          </a>
+        </div>
+
+        <div className="accordion">
+          {filterSections.map((section) => (
+            <div className="accordion-item" key={section.id}>
+              <input
+                type="checkbox"
+                id={section.id}
+                className="accordion-checkbox"
+              />
+              <label htmlFor={section.id} className="accordion-title">
+                {section.title}
+              </label>
+              <div className="accordion-content">
+                <ul>
+                  {section.options.map((option, index) => (
+                    <li key={index} className="accordion-list">
+                      <input type="checkbox" /> {option}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
-        )}
+          ))}
+        </div>
       </div>
 
       {/* Product Grid Section */}
       <div
+        data-aos="fade-up"
+        data-aos-delay="100"
         className={`product-grid-container ${
           isFilterOpen ? "shrink" : "expand"
         }`}

@@ -5,6 +5,7 @@ import Footer from "../HomePage/subComponents/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 const materials = [
   {
     name: "Aluminum",
@@ -44,7 +45,7 @@ const ShopByMaterial = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
-
+  const navigate = useNavigate();
   return (
     <>
       <Header />
@@ -69,6 +70,9 @@ const ShopByMaterial = () => {
                 className="active"
                 data-aos="fade-up"
                 data-aos-delay="100"
+                onClick={() =>
+                  navigate(`/collections/${material.name.toLowerCase()}`)
+                }
               >
                 {material.name}
               </li>
@@ -84,6 +88,9 @@ const ShopByMaterial = () => {
               key={index}
               data-aos="fade-up"
               data-aos-delay="100"
+              onClick={() =>
+                navigate(`/collections/${item.name.toLowerCase()}`)
+              }
             >
               {/* Text Section (Left Centered) */}
               <div className="product-info">
