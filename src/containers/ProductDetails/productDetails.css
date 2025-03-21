@@ -290,26 +290,6 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.top-button button::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #bb976d; /* Underline effect */
-  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
-}
-
-.top-button button:hover::after {
-  width: 100%;
-  left: 0;
-}
-
-.top-button button:hover {
-  color: #38373d;
-}
-
 /* Content Wrapper */
 .content-wrapper {
   display: flex;
@@ -341,30 +321,11 @@
   transition: all 0.3s ease-in-out;
   position: relative;
 }
-.tab-button::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #bb976d; /* Underline effect */
-  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
-}
-
-.tab-button:hover::after {
-  width: 100%;
-  left: 0;
-}
-
-.tab-button:hover {
-  color: #38373d;
-}
 
 .tab-button.active {
   color: black;
   font-weight: 500;
-  border-bottom: 2px solid #bb976d;
+  border-bottom: 1px solid black;
 }
 
 /* Tab Content */
