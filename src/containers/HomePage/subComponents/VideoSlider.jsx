@@ -13,13 +13,13 @@ import SectionHeading from "./SectionHeading";
 const ytVideoIds = [
   "4hsK2eP-TFQ",
   "L49mc-IsBfM",
-  "FY2hbcE2O0Y",
   "2rrgcdO0qxI",
   "cY-TawxisHs",
   "722gJf_yFaE",
   "D7NxP7viay8",
   "dij5G-tF-zg",
   "-SvB1PgZqD0",
+  "FY2hbcE2O0Y",
 ];
 
 const VideoSlider = () => {
@@ -73,7 +73,7 @@ const VideoSlider = () => {
         ref={mainSwiperRef}
         modules={[EffectCoverflow, Navigation, Autoplay]}
         slidesPerView={3}
-        initialSlide={2}
+        initialSlide={1}
         centeredSlides
         effect="coverflow"
         navigation

@@ -60,21 +60,22 @@ const BlogSection = () => {
       <div data-aos="fade-up" data-aos-delay="100" className="container">
         <Swiper
           modules={[Autoplay, EffectCoverflow]}
-          slidesPerView={1}
-          spaceBetween={15}
+          slidesPerView={3}
+          spaceBetween={0}
           loop={true}
           autoplay={{ delay: 3000 }}
-          breakpoints={{
-            576: { slidesPerView: 2, spaceBetween: 20 },
-            1024: { slidesPerView: 3, spaceBetween: 30 },
-          }}
           effect="coverflow"
+          centeredSlides={true}
           coverflowEffect={{
             rotate: 30,
             stretch: 1,
             depth: 100,
             modifier: 0.5,
-            slideShadows: false,
+            slideShadows: true,
+          }}
+          breakpoints={{
+            576: { slidesPerView: 2, spaceBetween: 20 },
+            1024: { slidesPerView: 3, spaceBetween: 30 },
           }}
           className="blog-slider"
         >

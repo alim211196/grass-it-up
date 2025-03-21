@@ -12,7 +12,7 @@ const ProductPage = () => {
         >
           <img
             src={
-              "https://terraoutdoor.com/cdn/shop/files/Sunbrella-RESTORE-16-oz_540x.jpg"
+              "https://terraoutdoor.com/cdn/shop/files/seaside-stinson-coffee-table-1_600x.jpg"
             }
             alt="Sunbrella Restore Fabric Protector"
           />
@@ -22,11 +22,9 @@ const ProductPage = () => {
           data-aos="fade-right"
           data-aos-delay="100"
         >
-          <h4 className="product-category">FABRIC PROTECTOR</h4>
-          <h1 className="product-title">
-            Sunbrella Restore Fabric Protector & Repellent
-          </h1>
-          <p className="product-price">$28</p>
+          <h4 className="product-category">Lightweight yet sturdy</h4>
+          <h1 className="product-title">Stinson Coffee Table in Dune</h1>
+          <p className="product-price">$925</p>
           <div className="fabric-section1">
             <span className="product-stock">
               <span className="stock-check">

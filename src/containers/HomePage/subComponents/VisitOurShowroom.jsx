@@ -12,21 +12,9 @@ const VisitOurShowroom = () => {
     AOS.init({ duration: 1000 });
   }, []);
   const images = [
-    "https://lh3.googleusercontent.com/p/AF1QipNWULMU8hvCIee_b_agok5x8C5Dpytqdpo8iu3u=s680-w680-h510",
-    "https://lh3.googleusercontent.com/p/AF1QipMW1MqMMXK60ampgeezBrmHRX5sXknRgCFWL1eV=s680-w680-h510",
     "https://lh3.googleusercontent.com/p/AF1QipOWIgmNSGTr8sZarU-ymzVve3QewuYNGqmdFB_c=s680-w680-h510",
-    "https://lh3.googleusercontent.com/p/AF1QipPtYCzU7tMtj73Vluv6k_0cpal_qqKDKLJfwNff=s680-w680-h510",
-    "https://lh3.googleusercontent.com/p/AF1QipMLGtnQNZroDGfiwQZg5epq4eXQip7lwYvuDFpE=s680-w680-h510",
-    "https://lh3.googleusercontent.com/p/AF1QipPb1s1NYK174BkPgfJHeIKIh-cXIxf0TCziKqXA=s680-w680-h510",
-    "https://lh3.googleusercontent.com/p/AF1QipMpuPH0hNSf_S7xMyfSJyDmIU_EXVNI1NDWQG4q=s680-w680-h510",
-    "https://lh3.googleusercontent.com/p/AF1QipMkJgnoLeB7jwIYND1FR_qV_auZQjEEpgxaPVgS=s680-w680-h510",
-    "https://lh3.googleusercontent.com/p/AF1QipPPnA2nuI5MY21DGyqh4FMILHUieH0-q--aIGhv=s680-w680-h510",
-    "https://lh3.googleusercontent.com/p/AF1QipN9XY8LroXvojRubg-Y5Xsl3uXVt3YKAZPoJVo4=s680-w680-h510",
-    "https://lh3.googleusercontent.com/p/AF1QipMB2mv37tqoE8RsBXwnradSeaBMeZvcOX8y4iQV=s680-w680-h510",
-    "https://lh3.googleusercontent.com/p/AF1QipOkA7WWphvH1uHHmEBWyk-cJnyJG_5_VeLheAwc=s680-w680-h510",
+    "https://lh3.googleusercontent.com/p/AF1QipMW1MqMMXK60ampgeezBrmHRX5sXknRgCFWL1eV=s680-w680-h510",
     "https://lh3.googleusercontent.com/p/AF1QipNNurZaoteL0AsfHDkAQJ49LsOpsqsrwVCo4roo=s680-w680-h510",
-    "https://lh3.googleusercontent.com/p/AF1QipNEO9pxSPPJAmL70kocpfM0d990e9rO1QHzexY8=s680-w680-h510",
-    "https://lh3.googleusercontent.com/p/AF1QipMUnlgq_GD04rHc3AS3U8GK8Ff4AU5g5tE2a6f3=s680-w680-h510",
   ];
   return (
     <div className="visit-showroom-container">

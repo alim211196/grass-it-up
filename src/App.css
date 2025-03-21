@@ -1400,8 +1400,8 @@ body {
   justify-content: center;
   gap: 5px;
   position: absolute;
-  bottom: 40vh; /* Slightly below the image */
-  left: 50%;
+  bottom: 5.5vh;
+  left: 25vw;
   transform: translateX(-50%);
   opacity: 0;
   visibility: hidden;
