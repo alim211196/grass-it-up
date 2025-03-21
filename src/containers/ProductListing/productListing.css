@@ -228,7 +228,12 @@
   background-color: transparent;
   box-shadow: none !important;
   appearance: none;
-  width: 65%;
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  cursor: pointer;
 }
 .accordion {
   width: 100%;

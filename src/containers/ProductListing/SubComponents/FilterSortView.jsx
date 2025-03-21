@@ -22,6 +22,7 @@ const FilterSortView = ({ setColSpan, toggleFilter }) => {
               <select
                 id="gridSelect"
                 className="form-select d-inline-block  no-border-select"
+                defaultValue={"featured"}
               >
                 <option value={"featured"}>Featured</option>
                 <option value={"best-selling"}>Best Selling</option>
