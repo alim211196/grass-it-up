@@ -113,6 +113,14 @@
   border: 1px solid #7f9c90;
   border-radius: 50%;
 }
+.fabric-option2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  border: 1px solid #38373d;
+  border-radius: 50%;
+}
 .fabric-section .fabric-option button {
   background-color: #d2c4b8;
   width: 20px;
@@ -126,6 +134,17 @@
 }
 .fabric-section .fabric-option1 button {
   background-color: #7f9c90;
+  width: 20px;
+  height: 20px;
+  margin: 4px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  font-weight: 300;
+  border: none;
+}
+.fabric-section .fabric-option2 button {
+  background-color: #38373d;
   width: 20px;
   height: 20px;
   margin: 4px;
@@ -150,13 +169,24 @@
   flex-shrink: 0;
   padding-right: 2px;
 }
+.stock-check {
+  border-radius: 50%;
+  border: 1px solid #d2c4b8;
+  height: 12px;
+  width: 12px;
+  text-align: center;
+  font-size: 8px;
+  color: #d2c4b8;
+}
 .product-stock {
   display: flex;
+  align-items: inherit;
   font-size: 13px;
   line-height: 1.5;
   letter-spacing: 0.5px;
   color: #332f2c;
   text-align: left;
+  gap: 5px;
 }
 /* Quantity & Add to Cart */
 .cart-details-section {

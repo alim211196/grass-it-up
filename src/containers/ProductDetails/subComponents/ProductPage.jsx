@@ -28,7 +28,12 @@ const ProductPage = () => {
           </h1>
           <p className="product-price">$28</p>
           <div className="fabric-section1">
-            <span className="product-stock"> In stock</span>
+            <span className="product-stock">
+              <span className="stock-check">
+                <i className="fa fa-check"></i>
+              </span>
+              In stock
+            </span>
           </div>
           <div className="cart-details-section">
             <div className="quantity">

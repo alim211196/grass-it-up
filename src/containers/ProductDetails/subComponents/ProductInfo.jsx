@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Thumbs } from "swiper/modules";
+import { Navigation, Thumbs, Zoom } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-
+import "swiper/css/zoom";
 const images = [
   "https://cdn.accentuate.io/8825401639165/1740006238258/seaside-dune-sofa-1.jpg",
   "https://cdn.accentuate.io/8825401639165/1740006241991/seaside-dune-sofa-2.jpg",
@@ -27,13 +27,16 @@ const ProductInfo = ({ product }) => {
         <Swiper
           spaceBetween={10}
           navigation
+          zoom={true}
           thumbs={{ swiper: thumbsSwiper }}
-          modules={[Navigation, Thumbs]}
+          modules={[Navigation, Thumbs, Zoom]}
           className="product-slider"
         >
           {images.map((img, index) => (
             <SwiperSlide key={index}>
-              <img src={img} alt={`Product ${index}`} />
+              <div className="swiper-zoom-container">
+                <img src={img} alt={`Product ${index}`} />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -78,6 +81,9 @@ const ProductInfo = ({ product }) => {
             <div className="fabric-option">
               <button></button>
             </div>
+            <div className="fabric-option2">
+              <button></button>
+            </div>
             <div className="fabric-option1">
               <button></button>
             </div>
@@ -85,7 +91,12 @@ const ProductInfo = ({ product }) => {
 
           <div className="fabric-div">
             <span className="fabric-name">Tidal Foam</span>
-            <span className="product-stock">In stock</span>
+            <span className="product-stock">
+              <span className="stock-check">
+                <i className="fa fa-check"></i>
+              </span>
+              In stock
+            </span>
           </div>
         </div>
 
