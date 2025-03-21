@@ -28,7 +28,7 @@
 
 .product-details-price {
   font-size: 20px;
-  margin: 10px 0;
+  margin: 22px 0;
 }
 
 .new-details-price {
@@ -74,7 +74,7 @@
   flex-direction: column;
   justify-content: center;
   margin: 15px 0;
-  padding: 15px 0;
+  padding: 20px 0;
   margin-bottom: 20px;
   border-top: 1px solid #dad4cb;
   border-bottom: 1px solid #dad4cb;
@@ -159,7 +159,7 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
-  padding: 12px 24px;
+  padding: 16px;
 }
 .fabric-name {
   font-size: 12px;
@@ -604,5 +604,62 @@
 
   .product-actions {
     justify-content: center;
+  }
+}
+
+.payment-cart-info {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  gap: 10px;
+  text-align: left;
+}
+
+.payment-cart-info p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  flex: 1;
+}
+
+.more-cart-options {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.more-cart-options:hover {
+  text-decoration: underline;
+}
+
+.tabby-cart-logo {
+  height: 30px;
+  width: auto;
+}
+
+.tabby-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .payment-cart-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .more-cart-options {
+    margin-top: 5px;
   }
 }

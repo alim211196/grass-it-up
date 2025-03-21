@@ -17,7 +17,7 @@ const images = [
 ];
 const ProductInfo = ({ product }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
+  const installment = (product?.price / 4).toFixed(2);
   return (
     <div className="product-container">
       {/* Left Section - Image */}
@@ -114,6 +114,28 @@ const ProductInfo = ({ product }) => {
           <span className="our-value">
             <a>Learn More</a>
           </span>
+        </div>
+        <hr />
+        <div>
+          <div className="payment-cart-info">
+            <p>
+              4 interest-free payments or as low as{" "}
+              <strong>$400.23/month.</strong> <strong>More options</strong>{" "}
+            </p>
+
+            <div className="tabby-div">
+              <img
+                src="/public/tabby.svg"
+                alt="Tabby"
+                className="tabby-cart-logo"
+              />
+              <img
+                src="/public/moon.svg"
+                alt="moon"
+                className="tabby-cart-logo"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
