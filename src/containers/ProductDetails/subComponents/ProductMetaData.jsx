@@ -14,7 +14,7 @@ const ProductMetaData = () => {
       {/* Section Container */}
       <div className="content-wrapper">
         {/* Left Section - Tabs & Content */}
-        <div className="left-section">
+        <div className="left-section" data-aos="fade-left" data-aos-delay="100">
           {/* Tabs */}
           <div className="tabs">
             {["overview", "frame", "cushion"].map((tab) => (
@@ -106,7 +106,11 @@ const ProductMetaData = () => {
         </div>
 
         {/* Right Section - Dimensions Table */}
-        <div className="right-section">
+        <div
+          className="right-section"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
           <h2>Dimensions</h2>
           <table>
             <tbody>

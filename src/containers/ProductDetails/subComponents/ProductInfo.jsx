@@ -17,6 +17,7 @@ const images = [
 ];
 const ProductInfo = ({ product }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
   return (
     <div className="product-container">
       {/* Left Section - Image */}
@@ -73,9 +74,15 @@ const ProductInfo = ({ product }) => {
 
         <div className="fabric-section">
           <p className="fabric-label">Cushion Fabric:</p>
-          <div className="fabric-option">
-            <button></button>
+          <div className="fabric-row">
+            <div className="fabric-option">
+              <button></button>
+            </div>
+            <div className="fabric-option1">
+              <button></button>
+            </div>
           </div>
+
           <div className="fabric-div">
             <span className="fabric-name">Tidal Foam</span>
             <span className="product-stock">In stock</span>
