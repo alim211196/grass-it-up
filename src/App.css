@@ -1491,7 +1491,7 @@ body {
   content: "";
   position: absolute;
   left: -5%;
-  bottom: -24px;
+  bottom: -25px;
   width: 110%;
   height: 80px; /* Reduce height */
   /* background: white; */

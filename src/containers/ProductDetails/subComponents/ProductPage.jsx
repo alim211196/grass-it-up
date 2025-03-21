@@ -3,7 +3,7 @@ import "../productDetails.css";
 
 const ProductPage = () => {
   return (
-    <div className="product-page-container">
+    <div className="product-page-container1">
       <div className="inner-div">
         <div
           className="product-image-page"

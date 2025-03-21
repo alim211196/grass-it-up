@@ -22,14 +22,14 @@ const ProductInfo = ({ product }) => {
     <div className="product-container">
       {/* Left Section - Image */}
 
-      <div className="product-slider">
+      <div className="product-slider-container">
         {/* Main Image Slider */}
         <Swiper
           spaceBetween={10}
           navigation
           thumbs={{ swiper: thumbsSwiper }}
           modules={[Navigation, Thumbs]}
-          className="main-slider"
+          className="product-slider"
         >
           {images.map((img, index) => (
             <SwiperSlide key={index}>
