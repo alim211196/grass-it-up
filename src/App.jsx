@@ -12,11 +12,15 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/product-details" element={<ProductDetails />} />
+
       <Route path="/shop-by-product" element={<ShopByProduct />} />
       <Route path="/shop-by-material" element={<ShopByMaterial />} />
       <Route path="/shop-by-collection" element={<ShopByCollection />} />
       <Route path="/collections/:category" element={<ProductListing />} />
+      <Route
+        path="/collections/:category/products/:product"
+        element={<ProductDetails />}
+      />
     </Routes>
   );
 }

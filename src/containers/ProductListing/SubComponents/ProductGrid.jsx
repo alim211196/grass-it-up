@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import "../productListing.css"; // Custom styles
+import { useNavigate } from "react-router-dom";
 
-const ProductGrid = ({ products, colSpan, isFilterOpen, toggleFilter }) => {
+const ProductGrid = ({
+  products,
+  colSpan,
+  isFilterOpen,
+  toggleFilter,
+  categoryTitle,
+}) => {
   const filterSections = [
     {
       id: "category",
@@ -116,6 +123,7 @@ const ProductGrid = ({ products, colSpan, isFilterOpen, toggleFilter }) => {
     },
   ];
 
+  const navigate = useNavigate();
   return (
     <div className="product-page-container">
       {/* Sidebar Filter Section */}
@@ -155,15 +163,22 @@ const ProductGrid = ({ products, colSpan, isFilterOpen, toggleFilter }) => {
 
       {/* Product Grid Section */}
       <div
-        data-aos="fade-up"
-        data-aos-delay="100"
         className={`product-grid-container ${
           isFilterOpen ? "shrink" : "expand"
         }`}
       >
         <div className="row" style={{ borderRight: "1px dashed #ddd" }}>
           {products.map((product) => (
-            <div key={product.id} className={`col-md-${colSpan} m-0 p-0`}>
+            <div
+              key={product.id}
+              className={`col-md-${colSpan} m-0 p-0`}
+              onClick={() =>
+                navigate(
+                  `/collections/${categoryTitle?.toLowerCase()}/products/${product?.name.toLowerCase()}`,
+                  { state: product }
+                )
+              }
+            >
               <div className="product-collection-card">
                 <div className="product-image-div">
                   <img

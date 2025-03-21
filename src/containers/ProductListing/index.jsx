@@ -125,7 +125,8 @@ const ProductListing = () => {
   const lastPart = url.split("/").pop();
   const decodedText = decodeURIComponent(lastPart);
   const cleanText = decodedText.replace(/[^\w\s-]/g, "").trim(); // Allow hyphens for now
-  const title = cleanText.replace(/-/g, " "); // Replace hyphens with spaces
+  const categoryTitle = cleanText.replace(/-/g, " "); // Replace hyphens with spaces
+
   return (
     <>
       <Header />
@@ -136,7 +137,7 @@ const ProductListing = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            {title}
+            {categoryTitle}
           </h1>
           {isShopAllPage ? (
             <p
@@ -172,6 +173,7 @@ const ProductListing = () => {
           colSpan={colSpan}
           isFilterOpen={isFilterOpen}
           toggleFilter={toggleFilter}
+          categoryTitle={categoryTitle}
         />
       </section>
       <SubscriptionSection />
