@@ -96,9 +96,13 @@
   transform: translateY(-50%);
   color: #333;
   z-index: 2;
-  width: 100%;
+  max-width: 90%;
   font-weight: 500;
   text-align: start;
+  text-transform: capitalize;
+  white-space: nowrap; /* Keeps text in a single line */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Responsive */

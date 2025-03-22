@@ -7,6 +7,7 @@ import ShopByCollection from "./containers/ShopByCollection";
 import ShopByMaterial from "./containers/ShopByMaterial";
 import ShopByProduct from "./containers/ShopByProduct";
 import ProductListing from "./containers/ProductListing";
+import ShopByBrand from "./containers/ShopByBrand";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
 
       <Route path="/shop-by-product" element={<ShopByProduct />} />
+      <Route path="/shop-by-brand" element={<ShopByBrand />} />
       <Route path="/shop-by-material" element={<ShopByMaterial />} />
       <Route path="/shop-by-collection" element={<ShopByCollection />} />
       <Route path="/collections/:category" element={<ProductListing />} />

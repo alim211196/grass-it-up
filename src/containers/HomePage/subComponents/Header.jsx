@@ -59,6 +59,16 @@ const Header = () => {
             </li>
             <li>
               <a
+                href="/shop-by-brand"
+                className={
+                  location.pathname === "/shop-by-brand" ? "active-link" : ""
+                }
+              >
+                Shop by Brand
+              </a>
+            </li>
+            <li>
+              <a
                 href="/shop-by-material"
                 className={
                   location.pathname === "/shop-by-material" ? "active-link" : ""

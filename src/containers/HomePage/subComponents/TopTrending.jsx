@@ -89,7 +89,7 @@ const TopTrending = () => {
           stretch: 0,
           depth: 3, // Controls the perspective depth (Increase for more 3D effect)
           modifier: 1.5, // Controls how strong the effect is
-          slideShadows: false, // Disables extra shadows
+          slideShadows: true, // Disables extra shadows
         }}
         onSwiper={setSwiperRef}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}

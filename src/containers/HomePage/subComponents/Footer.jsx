@@ -72,7 +72,7 @@ const Footer = () => {
                 {" "}
                 {/* Added spacing */}
                 {/* Company Info */}
-                <div className="col-md-3 col-lg-3 mb-4">
+                <div className="col-md-4 col-lg-4 mb-4">
                   <img
                     src={"/Master_Logo_WHITE.png"}
                     alt="Grass It Up"
@@ -80,33 +80,117 @@ const Footer = () => {
                   />
 
                   <p style={{ marginLeft: "20px" }}>
-                    Welcome to Grassitup - Luxury Outdoor Furniture Store Dubai
+                    Welcome to Grassitup - Luxury Outdoor Furniture Store Dubai,
+                    offering a wide selection of contemporary and stylish garden
+                    furniture with a focus on quality, durability, and design,
+                    including dining sets, sofas, and more.
                   </p>
                 </div>
                 {/* Products */}
                 <div className="col-md-2 col-lg-2 mb-4">
                   <h6 className="text-uppercase fw-bold">Payment Method</h6>
                   <hr />
-                  <p className="text-white">
-                    For 🇦🇪 UAE customer they can pay by Credit Card or Cash at
-                    time of delivery also available by bank transfer before
-                    delivery.
+                  <p
+                    className="text-white"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      flexDirection: "row",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <span>
+                      <img
+                        src={"/apple-pay.svg"}
+                        alt="Apple-Pay"
+                        style={{
+                          width: "10vw", // Adjusts width based on viewport width
+                          maxWidth: "40px", // Prevents it from growing too large
+                          height: "auto", // Maintains aspect ratio
+                        }}
+                      />
+                    </span>
+                    <span>
+                      <img
+                        src={"/mastercard.svg"}
+                        alt="Mastercard"
+                        style={{
+                          width: "10vw", // Adjusts width based on viewport width
+                          maxWidth: "40px", // Prevents it from growing too large
+                          height: "auto", // Maintains aspect ratio
+                        }}
+                      />
+                    </span>
+                    <span>
+                      <img
+                        src={"/paypal.svg"}
+                        alt="paypal"
+                        style={{
+                          width: "10vw", // Adjusts width based on viewport width
+                          maxWidth: "40px", // Prevents it from growing too large
+                          height: "auto", // Maintains aspect ratio
+                        }}
+                      />
+                    </span>
+                    <span>
+                      <img
+                        src={"/visa.svg"}
+                        alt="Visa"
+                        style={{
+                          width: "10vw", // Adjusts width based on viewport width
+                          maxWidth: "40px", // Prevents it from growing too large
+                          height: "auto", // Maintains aspect ratio
+                        }}
+                      />
+                    </span>
                   </p>
                 </div>
                 {/* Useful Links */}
-                <div className="col-md-2 col-lg-3 mb-4">
-                  <h6 className="text-uppercase fw-bold">
-                    What is included in the prices
-                  </h6>
+                <div className="col-md-3 col-lg-2 mb-4">
+                  <h6 className="text-uppercase fw-bold">Help & Advice</h6>
                   <hr />
-                  <p className="text-white">
-                    For each products we list in its description what is
-                    included in the price
-                  </p>
-                  <p className="text-white">
-                    For UAE Customers at the checkout we add the local VAT
-                    (currently at 5%)
-                  </p>
+                  <ul style={{ listStyle: "none", paddingLeft: 0 }}>
+                    <li style={{ lineHeight: "2" }}>
+                      <a
+                        href="#"
+                        style={{ color: "white", textDecoration: "none" }}
+                      >
+                        About Us
+                      </a>
+                    </li>
+                    <li style={{ lineHeight: "2" }}>
+                      <a
+                        href="#"
+                        style={{ color: "white", textDecoration: "none" }}
+                      >
+                        Our Showroom
+                      </a>
+                    </li>
+                    <li style={{ lineHeight: "2" }}>
+                      <a
+                        href="#"
+                        style={{ color: "white", textDecoration: "none" }}
+                      >
+                        Terms & Conditions
+                      </a>
+                    </li>
+                    <li style={{ lineHeight: "2" }}>
+                      <a
+                        href="#"
+                        style={{ color: "white", textDecoration: "none" }}
+                      >
+                        Privacy Policy
+                      </a>
+                    </li>
+                    <li style={{ lineHeight: "2" }}>
+                      <a
+                        href="#"
+                        style={{ color: "white", textDecoration: "none" }}
+                      >
+                        Delivery Information
+                      </a>
+                    </li>
+                  </ul>
                 </div>
                 {/* Contact Info */}
                 <div className="col-md-3 col-lg-2 mb-4">
