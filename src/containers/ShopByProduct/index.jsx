@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./shopByProduct.css";
 import Header from "../HomePage/subComponents/Header";
 import { useNavigate } from "react-router-dom";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const sections = [
   {
     name: "Lounging",
@@ -152,6 +153,9 @@ const ShopByProduct = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to top on mount
   }, []);
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <Header />
@@ -181,6 +185,8 @@ const ShopByProduct = () => {
                 onClick={() =>
                   navigate(`/collections/${item.title.toLowerCase()}`)
                 }
+                data-aos="fade-up"
+                data-aos-delay="100"
               >
                 <img src={item.src} alt={item.title} loading="lazy" />
                 <p>{item.title}</p>
@@ -193,6 +199,8 @@ const ShopByProduct = () => {
                   `/collections/shop-all-${activeSection.name.toLowerCase()}`
                 )
               }
+              data-aos="fade-up"
+              data-aos-delay="100"
             >
               <h1>Shop All {activeSection.name}</h1>
             </div>
