@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 // Chair Component
 const ChairModel = () => {
-  const { scene } = useGLTF("/public/designer_chair_02a.glb");
+  const { scene } = useGLTF("/designer_chair_02a.glb");
   const chairRef = useRef();
   const scroll = useScroll(); // Get scroll instance inside ScrollControls
 
