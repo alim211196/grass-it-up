@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 // Chair Component
 const ChairModel = () => {
-  const { scene } = useGLTF("/chair_free.glb");
+  const { scene } = useGLTF("/public/designer_chair_02a.glb");
   const chairRef = useRef();
   const scroll = useScroll(); // Get scroll instance inside ScrollControls
 
@@ -21,15 +21,15 @@ const ChairModel = () => {
     <primitive
       object={scene}
       ref={chairRef}
-      scale={[0.45, 0.45, 0.45]}
-      position={[-3, -2, 0]} // Shift left
+      scale={[2.5, 2.5, 2.5]}
+      position={[-3.3, -1, 0]} // Shift left
     />
   );
 };
 
 // Sofa Component
 const SofaModel = () => {
-  const { scene } = useGLTF("/sofa.glb");
+  const { scene } = useGLTF("/3d_pbr_curved_sofa.glb");
   const sofaRef = useRef();
   const scroll = useScroll();
 
@@ -44,8 +44,8 @@ const SofaModel = () => {
     <primitive
       object={scene}
       ref={sofaRef}
-      scale={[2.5, 2.5, 2.5]}
-      position={[2, 0, 0]} // Shift right
+      scale={[1.4, 1.4, 1.4]}
+      position={[1, 0, 0]} // Shift right
     />
   );
 };
