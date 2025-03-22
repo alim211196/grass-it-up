@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroBanner from "./subComponents/HeroBanner";
 import HorizontalScroll from "./subComponents/HorizontalScroll";
 import InformativeCategorySection from "./subComponents/InformativeCategorySection";
@@ -19,6 +19,9 @@ import SubscriptionSection from "./subComponents/SubscriptionSection";
 import Footer from "./subComponents/Footer";
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on mount
+  }, []);
   return (
     <>
       <HeroBanner />

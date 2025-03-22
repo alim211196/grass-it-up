@@ -46,6 +46,9 @@ const ShopByMaterial = () => {
     AOS.init({ duration: 1000 });
   }, []);
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on mount
+  }, []);
   return (
     <>
       <Header />

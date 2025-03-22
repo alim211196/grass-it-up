@@ -18,6 +18,12 @@ const ProductDetails = () => {
     AOS.init({ duration: 1000 });
   }, []);
 
+  const urlPath = window.location.pathname; // Get the path after domain
+  const segments = urlPath.split("/"); // Split URL by "/"
+  const category = segments[2];
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on mount
+  }, []);
   return (
     <>
       <Header />
@@ -28,7 +34,7 @@ const ProductDetails = () => {
         data-aos="fade-up"
         data-aos-delay="100"
       />
-      <ExploreProduct />
+      <ExploreProduct category={category} />
       <ProductPage />
       <SubscriptionSection />
       <Footer />

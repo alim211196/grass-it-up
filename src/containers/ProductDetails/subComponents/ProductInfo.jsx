@@ -17,7 +17,12 @@ const images = [
 ];
 const ProductInfo = ({ product }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  const installment = (product?.price / 4).toFixed(2);
+
+  const [quantity, setQuantity] = useState(1);
+  const handleIncrement = () => setQuantity((prev) => prev + 1);
+  const handleDecrement = () =>
+    setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
+
   return (
     <div className="product-container">
       {/* Left Section - Image */}
@@ -103,9 +108,11 @@ const ProductInfo = ({ product }) => {
         {/* Quantity and Cart Button */}
         <div className="cart-details-section">
           <div className="quantity">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
+            <button onClick={handleDecrement} disabled={quantity < 1}>
+              -
+            </button>
+            <span>{quantity}</span>
+            <button onClick={handleIncrement}>+</button>
           </div>
           <button className="add-to-cart-details">Add to Cart</button>
         </div>

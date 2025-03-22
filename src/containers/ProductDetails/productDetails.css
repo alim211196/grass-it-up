@@ -105,22 +105,7 @@
   border: 1px solid #d2c4b8;
   border-radius: 50%;
 }
-.fabric-option1 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style-type: none;
-  border: 1px solid #7f9c90;
-  border-radius: 50%;
-}
-.fabric-option2 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style-type: none;
-  border: 1px solid #38373d;
-  border-radius: 50%;
-}
+
 .fabric-section .fabric-option button {
   background-color: #d2c4b8;
   width: 20px;
@@ -239,6 +224,10 @@
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.add-to-cart-details:hover {
+  background-color: rgb(187, 151, 109);
 }
 
 /* Responsive Design */
@@ -519,6 +508,7 @@
 
 .product-image-page img {
   max-width: 100%;
+  max-height: 90vh;
   height: auto;
 }
 

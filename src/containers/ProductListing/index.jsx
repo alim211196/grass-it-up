@@ -126,7 +126,9 @@ const ProductListing = () => {
   const decodedText = decodeURIComponent(lastPart);
   const cleanText = decodedText.replace(/[^\w\s-]/g, "").trim(); // Allow hyphens for now
   const categoryTitle = cleanText.replace(/-/g, " "); // Replace hyphens with spaces
-
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on mount
+  }, []);
   return (
     <>
       <Header />

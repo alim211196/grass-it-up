@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../ShopByProduct/shopByProduct.css";
 import Header from "../HomePage/subComponents/Header";
 import { useNavigate } from "react-router-dom";
@@ -193,6 +193,9 @@ const sections = [
 const ShopByBrand = () => {
   const [activeSection, setActiveSection] = useState(sections[0]);
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on mount
+  }, []);
   return (
     <>
       <Header />

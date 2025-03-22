@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "../productDetails.css";
 
 const ProductPage = () => {
+  const [quantity, setQuantity] = useState(1);
+  const handleIncrement = () => setQuantity((prev) => prev + 1);
+  const handleDecrement = () =>
+    setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
   return (
     <div className="product-page-container1">
       <div className="inner-div">
@@ -35,9 +39,11 @@ const ProductPage = () => {
           </div>
           <div className="cart-details-section">
             <div className="quantity">
-              <button>-</button>
-              <span>1</span>
-              <button>+</button>
+              <button onClick={handleDecrement} disabled={quantity < 1}>
+                -
+              </button>
+              <span>{quantity}</span>
+              <button onClick={handleIncrement}>+</button>
             </div>
             <button className="add-to-cart-details">Add to Cart</button>
           </div>

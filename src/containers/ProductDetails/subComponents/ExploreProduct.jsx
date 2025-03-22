@@ -9,6 +9,7 @@ import "../../../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SectionHeading from "../../HomePage/subComponents/SectionHeading";
+import { useNavigate } from "react-router-dom";
 
 const images = [
   {
@@ -31,10 +32,10 @@ const images = [
   },
 ];
 
-const ExploreProduct = () => {
+const ExploreProduct = ({ category }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
-
+  const navigate = useNavigate();
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -58,6 +59,16 @@ const ExploreProduct = () => {
       swiperRef.current.slidePrev();
     }
   };
+  const scrollToTop = (image) => {
+    navigate(
+      `/collections/${category?.toLowerCase()}/products/${image?.name.toLowerCase()}`,
+      { state: image }
+    );
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scrolling effect
+    });
+  };
 
   return (
     <Container fluid className="carousel-container position-relative p-4">
@@ -78,7 +89,7 @@ const ExploreProduct = () => {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index} className="carousel-items">
-            <div>
+            <div onClick={() => scrollToTop(image)}>
               <img
                 className={`carousel-image ${
                   activeIndex === index ? "active" : ""
