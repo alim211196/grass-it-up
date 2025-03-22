@@ -7,6 +7,9 @@ import "aos/dist/aos.css";
 const sections = [
   {
     name: "Diphano",
+    logo: "/diphano.png",
+    description:
+      "Diphano is a Belgian manufacturer of high-quality, durable, and functional outdoor furniture, known for its versatile collections and focus on creating comfortable and elegant outdoor spaces. ",
     images: [
       {
         title: "Switch Sun Lounger",
@@ -53,6 +56,9 @@ const sections = [
   },
   {
     name: "Ethimo",
+    logo: "/ethimo.png",
+    description:
+      "Ethimo is an Italian brand specializing in high-quality, contemporary outdoor furniture, known for its sophisticated design, durable materials, and ability to enhance outdoor spaces with a touch of luxury and elegance, drawing inspiration from the Mediterranean and nature. ",
     images: [
       {
         title: "Elisir Dining Armchair",
@@ -99,6 +105,8 @@ const sections = [
   },
   {
     name: "Grassitup",
+    logo: "/Master_Logo_RGB.jpg",
+    description: `Grassitup is a Dubai-based retailer and wholesaler of high-quality, durable, and luxury outdoor furniture, offering a wide selection of outdoor dining, living, and garden furniture, with a focus on contemporary design and a balance of beauty, nature, culture, and tradition.  `,
     images: [
       {
         title: "Aspen Armchair - White",
@@ -144,6 +152,12 @@ const sections = [
   },
   {
     name: "Tidelli",
+    logo: "/tidelli.svg",
+    description: `Tidelli is a Brazilian luxury brand specializing 
+    in handcrafted, customizable outdoor furniture, known for 
+    its contemporary designs and use of materials like wood,
+     aluminum, synthetic fiber, and nautical rope,
+      creating comfortable and stylish outdoor spaces. `,
     images: [
       {
         title: "Fushion Love Seat Swing",
@@ -203,6 +217,7 @@ const ShopByBrand = () => {
   return (
     <>
       <Header />
+
       <div className="shop-by-product-container">
         {/* Sidebar Tabs */}
         <div className="product-tabs">
@@ -221,6 +236,14 @@ const ShopByBrand = () => {
 
         {/* Image Grid Section */}
         <div className="product-content">
+          <section className="brand-section">
+            <img
+              src={activeSection.logo}
+              alt={activeSection.logo}
+              loading="lazy"
+            />
+            <p className="brand-description">{activeSection.description}</p>
+          </section>
           <div className="product-images-grid">
             {activeSection.images.map((item, index) => (
               <div

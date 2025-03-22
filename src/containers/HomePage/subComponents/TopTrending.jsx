@@ -83,16 +83,16 @@ const TopTrending = () => {
         loop={true}
         initialSlide={3}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
-        speed={3000}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
           depth: 3, // Controls the perspective depth (Increase for more 3D effect)
           modifier: 1.5, // Controls how strong the effect is
-          slideShadows: true, // Disables extra shadows
+          slideShadows: false, // Disables extra shadows
         }}
         onSwiper={setSwiperRef}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+        className="top-trending-slider"
       >
         {images.map((item, index) => (
           <SwiperSlide key={index}>

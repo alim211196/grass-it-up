@@ -71,7 +71,7 @@ const BlogSection = () => {
             stretch: 1,
             depth: 100,
             modifier: 0.5,
-            slideShadows: true,
+            slideShadows: false,
           }}
           breakpoints={{
             576: { slidesPerView: 2, spaceBetween: 20 },

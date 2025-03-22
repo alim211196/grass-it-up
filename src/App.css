@@ -1700,6 +1700,20 @@ body {
   opacity: 1;
 }
 
+.top-trending-slider .swiper-slide {
+  transition: all 0.3s ease-in-out;
+  filter: blur(3px); /* Blur for non-active slides */
+  opacity: 0.6; /* Lower opacity */
+  transform: scale(0.8); /* Scale down */
+}
+
+.top-trending-slider .swiper-slide-active {
+  filter: blur(0px); /* Remove blur */
+  opacity: 1; /* Full visibility */
+  transform: scale(1); /* Scale up the center image */
+  z-index: 2;
+}
+
 .trending-pulse-effect {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   animation: tooltip-shadow-pulse 5s infinite;
@@ -1872,7 +1886,19 @@ body {
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
+.blog-slider .swiper-slide {
+  transition: all 0.3s ease-in-out;
+  filter: blur(3px); /* Blur for non-active slides */
+  opacity: 0.6; /* Lower opacity */
+  transform: scale(0.8); /* Scale down */
+}
 
+.blog-slider .swiper-slide-active {
+  filter: blur(0px); /* Remove blur */
+  opacity: 1; /* Full visibility */
+  transform: scale(1); /* Scale up the center image */
+  z-index: 2;
+}
 /* Scale-up effect on hover */
 .blog-card:hover .blog-img {
   transform: scale(1.1);

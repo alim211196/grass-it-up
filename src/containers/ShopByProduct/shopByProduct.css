@@ -31,8 +31,15 @@
 /* Content Section */
 .product-content {
   flex: 1;
-  overflow: hidden;
+  overflow-y: auto; /* Enable vertical scrolling */
   position: relative;
+  height: 100vh; /* Ensure it covers the full viewport height */
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.product-content::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari */
 }
 
 .product-content h2 {
@@ -124,4 +131,22 @@
   .product-images-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+.brand-section {
+  text-align: center;
+  padding: 40px 100px;
+  background-color: #fff;
+  max-width: 90%;
+}
+.brand-section img {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.brand-description {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
