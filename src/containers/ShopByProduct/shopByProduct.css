@@ -58,7 +58,6 @@
   width: 100%;
   height: 100%;
   min-height: 268px;
-
   border-bottom: 1px dashed #ddd;
   border-right: 1px dashed #ddd;
   display: flex;
@@ -69,9 +68,9 @@
   text-decoration: underline;
   cursor: pointer;
 }
-.product-shop-all p {
-  font-size: 4rem;
-  color: #2c2c2c;
+.product-shop-all h2 {
+  font-size: 3rem;
+  color: #7f9c90;
   margin-bottom: 10px;
   text-transform: capitalize;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

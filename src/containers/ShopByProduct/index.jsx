@@ -202,7 +202,7 @@ const ShopByProduct = () => {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <h1>Shop All {activeSection.name}</h1>
+              <h2>Shop All {activeSection.name}</h2>
             </div>
           </div>
         </div>
