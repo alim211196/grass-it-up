@@ -10,6 +10,7 @@ const FilterSortView = ({ setColSpan, toggleFilter }) => {
             src={"/filter.png"}
             alt={"Filter"}
             style={{ height: "18px", width: "18px" }}
+            loading="lazy"
           />
           <span className="filter-text">FILTERS</span>
         </div>
@@ -66,6 +67,7 @@ const FilterSortView = ({ setColSpan, toggleFilter }) => {
               style={{ height: "auto", width: "18px", margin: "5px" }}
               onClick={() => setColSpan(6)}
               role="button"
+              loading="lazy"
             />
             <img
               src={"/grid9.png"}
@@ -73,6 +75,7 @@ const FilterSortView = ({ setColSpan, toggleFilter }) => {
               style={{ height: "auto", width: "18px", margin: "5px" }}
               onClick={() => setColSpan(4)}
               role="button"
+              loading="lazy"
             />
           </div>
         </div>

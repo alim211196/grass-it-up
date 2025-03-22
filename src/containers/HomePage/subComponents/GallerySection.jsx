@@ -153,6 +153,7 @@ const GallerySection = () => {
                 alt={`Slide ${index + 1}`}
                 style={imageStyles}
                 className="gallery-image"
+                loading="lazy"
               />
               <div style={titleStyles}>{item.name}</div>
             </div>

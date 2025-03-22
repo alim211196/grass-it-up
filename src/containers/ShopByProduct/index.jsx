@@ -182,7 +182,7 @@ const ShopByProduct = () => {
                   navigate(`/collections/${item.title.toLowerCase()}`)
                 }
               >
-                <img src={item.src} alt={item.title} />
+                <img src={item.src} alt={item.title} loading="lazy" />
                 <p>{item.title}</p>
               </div>
             ))}

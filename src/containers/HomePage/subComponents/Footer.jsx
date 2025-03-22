@@ -77,6 +77,7 @@ const Footer = () => {
                     src={"/Master_Logo_WHITE.png"}
                     alt="Grass It Up"
                     className={"logoImage"}
+                    loading="lazy"
                   />
 
                   <p style={{ marginLeft: "20px" }}>
@@ -96,7 +97,7 @@ const Footer = () => {
                       display: "flex",
                       alignItems: "center",
                       flexDirection: "row",
-                      justifyContent: "space-between",
+                      justifyContent: "space-around",
                     }}
                   >
                     <span>
@@ -108,6 +109,7 @@ const Footer = () => {
                           maxWidth: "40px", // Prevents it from growing too large
                           height: "auto", // Maintains aspect ratio
                         }}
+                        loading="lazy"
                       />
                     </span>
                     <span>
@@ -119,6 +121,7 @@ const Footer = () => {
                           maxWidth: "40px", // Prevents it from growing too large
                           height: "auto", // Maintains aspect ratio
                         }}
+                        loading="lazy"
                       />
                     </span>
                     <span>
@@ -130,6 +133,7 @@ const Footer = () => {
                           maxWidth: "40px", // Prevents it from growing too large
                           height: "auto", // Maintains aspect ratio
                         }}
+                        loading="lazy"
                       />
                     </span>
                     <span>
@@ -141,6 +145,7 @@ const Footer = () => {
                           maxWidth: "40px", // Prevents it from growing too large
                           height: "auto", // Maintains aspect ratio
                         }}
+                        loading="lazy"
                       />
                     </span>
                   </p>

@@ -24,7 +24,7 @@ const VisitOurShowroom = () => {
         <h1 className="big-text">
           S
           <span className="rotating-image">
-            <img src="chair.webp" alt="chair" />
+            <img src="chair.webp" alt="chair" loading="lazy" />
           </span>
           owroom
         </h1>
@@ -59,7 +59,12 @@ const VisitOurShowroom = () => {
         >
           {images.map((image, index) => (
             <SwiperSlide key={index} className="swiper-slide1">
-              <img src={image} alt={`image ${index}`} className="slide-image" />
+              <img
+                src={image}
+                alt={`image ${index}`}
+                className="slide-image"
+                loading="lazy"
+              />
             </SwiperSlide>
           ))}
         </Swiper>

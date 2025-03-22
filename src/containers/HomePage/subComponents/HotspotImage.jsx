@@ -23,6 +23,7 @@ const HotspotImage = () => {
         src="https://terraoutdoor.com/cdn/shop/files/homepage_material_integrity_3_1512x.png?v=1627507566"
         alt="Interactive Hotspot"
         className="hotspot-image"
+        loading="lazy"
       />
 
       {/* Hotspot Markers */}

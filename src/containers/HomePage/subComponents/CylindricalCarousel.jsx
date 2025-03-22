@@ -46,7 +46,7 @@ const CylindricalCarousel = () => {
           {images.map((src, index) => (
             <SwiperSlide key={index} className="slider__el">
               <div className="slider__img">
-                <img src={src} alt={`Slide ${index + 1}`} />
+                <img src={src} alt={`Slide ${index + 1}`} loading="lazy" />
               </div>
             </SwiperSlide>
           ))}

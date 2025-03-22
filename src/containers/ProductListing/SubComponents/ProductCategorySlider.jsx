@@ -70,6 +70,7 @@ const ProductCategorySlider = () => {
                 src={category.image}
                 alt={category.title}
                 className="category-img"
+                loading="lazy"
               />
               <p className="category-text">{category.title}</p>
             </div>

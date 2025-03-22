@@ -18,6 +18,7 @@ const HeroBanner = () => {
             src="/fallback.jpg"
             className={`img-fluid ${"heroImage"}`}
             alt="Grass It Up"
+            loading="lazy"
           />
         </video>
       </div>

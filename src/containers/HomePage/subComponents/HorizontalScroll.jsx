@@ -100,11 +100,13 @@ export default function HorizontalScroll() {
                 src={section.images[0]}
                 alt={`${section.title} Image 1`}
                 className="image1"
+                loading="lazy"
               />
               <img
                 src={section.images[1]}
                 alt={`${section.title} Image 2`}
                 className="image2"
+                loading="lazy"
                 // style={{ transform: `translateX(${offset}px)` }}
               />
             </div>

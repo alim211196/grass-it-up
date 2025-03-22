@@ -61,6 +61,7 @@ const PartnerMarquee = () => {
               src={logo}
               alt={`Partner ${index + 1}`}
               className="partner-logo"
+              loading="lazy"
             />
           ))}
         </div>

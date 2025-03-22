@@ -103,6 +103,7 @@ const HorizontalCarousel = () => {
                 }`}
                 src={image.src}
                 alt={image.alt}
+                loading="lazy"
               />
               <h4
                 className="image-text"

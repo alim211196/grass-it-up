@@ -82,7 +82,12 @@ const BlogSection = () => {
           {blogData.map((item, index) => (
             <SwiperSlide key={index} className="blog-card">
               <div className="blog-img-wrapper">
-                <img src={item.image} alt="blog-card" className="blog-img" />
+                <img
+                  src={item.image}
+                  alt="blog-card"
+                  className="blog-img"
+                  loading="lazy"
+                />
               </div>
               <div className="blog-overlay">
                 <ul className="blog-meta">

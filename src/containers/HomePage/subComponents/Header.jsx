@@ -40,6 +40,7 @@ const Header = () => {
               }
               alt="Grass It Up"
               className="logoImage"
+              loading="lazy"
             />
           </a>
         </div>
@@ -99,6 +100,7 @@ const Header = () => {
               key={icon}
               src={isDarkMode ? `/${icon}.png` : `/${icon}_white.png`}
               alt={icon}
+              loading="lazy"
             />
           ))}
         </div>

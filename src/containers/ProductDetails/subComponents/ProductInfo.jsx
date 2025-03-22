@@ -40,7 +40,7 @@ const ProductInfo = ({ product }) => {
           {images.map((img, index) => (
             <SwiperSlide key={index}>
               <div className="swiper-zoom-container">
-                <img src={img} alt={`Product ${index}`} />
+                <img src={img} alt={`Product ${index}`} loading="lazy" />
               </div>
             </SwiperSlide>
           ))}
@@ -57,7 +57,7 @@ const ProductInfo = ({ product }) => {
         >
           {images.map((img, index) => (
             <SwiperSlide key={index}>
-              <img src={img} alt={`Thumbnail ${index}`} />
+              <img src={img} alt={`Thumbnail ${index}`} loading="lazy" />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -131,8 +131,18 @@ const ProductInfo = ({ product }) => {
             </p>
 
             <div className="tabby-div">
-              <img src="/tabby.png" alt="Tabby" className="tabby-cart-logo" />
-              <img src="/moon.png" alt="moon" className="tabby-cart-logo" />
+              <img
+                src="/tabby.png"
+                alt="Tabby"
+                className="tabby-cart-logo"
+                loading="lazy"
+              />
+              <img
+                src="/moon.png"
+                alt="moon"
+                className="tabby-cart-logo"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

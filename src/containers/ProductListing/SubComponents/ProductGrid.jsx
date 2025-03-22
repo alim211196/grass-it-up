@@ -185,6 +185,7 @@ const ProductGrid = ({
                     src={product.image}
                     alt={product.name}
                     className="product-collection-image"
+                    loading="lazy"
                   />
                 </div>
                 <div className="product-details-div">

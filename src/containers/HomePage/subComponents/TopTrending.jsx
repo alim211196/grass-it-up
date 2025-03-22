@@ -100,7 +100,7 @@ const TopTrending = () => {
               className={`slide-item ${index === activeIndex ? "active" : ""}`}
               onClick={() => swiperRef && swiperRef.slideToLoop(index)}
             >
-              <img src={item.src} alt={`Slide ${index + 1}`} />
+              <img src={item.src} alt={`Slide ${index + 1}`} loading="lazy" />
               {item.hotspots.map((spot) => (
                 <OverlayTrigger
                   key={spot.id}

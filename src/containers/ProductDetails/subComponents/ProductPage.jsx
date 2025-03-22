@@ -19,6 +19,7 @@ const ProductPage = () => {
               "https://terraoutdoor.com/cdn/shop/files/seaside-stinson-coffee-table-1_600x.jpg"
             }
             alt="Sunbrella Restore Fabric Protector"
+            loading="lazy"
           />
         </div>
         <div

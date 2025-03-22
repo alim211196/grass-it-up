@@ -103,7 +103,7 @@ const ShopByMaterial = () => {
 
               {/* Image Section (Full Width) */}
               <div className="product-image">
-                <img src={item.image} alt={item.name} />
+                <img src={item.image} alt={item.name} loading="lazy" />
               </div>
             </div>
           ))}

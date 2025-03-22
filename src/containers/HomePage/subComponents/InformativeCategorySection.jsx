@@ -44,6 +44,7 @@ const InformativeCategorySection = () => {
               ? "informative-category-section__image--zoom-in"
               : "informative-category-section__image--zoom-out"
           }`}
+          loading="lazy"
         />
 
         {/* Second Image with Text Overlay */}
@@ -56,6 +57,7 @@ const InformativeCategorySection = () => {
                 ? "informative-category-section__image--zoom-in"
                 : "informative-category-section__image--zoom-out"
             }`}
+            loading="lazy"
           />
           <div className="overlay-text">
             <p>
@@ -104,6 +106,7 @@ const InformativeCategorySection = () => {
                 ? "informative-category-section__bottom-image--zoom-in"
                 : "informative-category-section__bottom-image--zoom-out"
             }`}
+            loading="lazy"
           />
         </div>
       </div>
