@@ -87,69 +87,6 @@ const Footer = () => {
                     including dining sets, sofas, and more.
                   </p>
                 </div>
-                {/* Products */}
-                <div className="col-md-2 col-lg-2 mb-4">
-                  <h6 className="text-uppercase fw-bold">Payment Method</h6>
-                  <hr />
-                  <p
-                    className="text-white"
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      flexDirection: "row",
-                      justifyContent: "space-around",
-                    }}
-                  >
-                    <span>
-                      <img
-                        src={"/apple-pay.svg"}
-                        alt="Apple-Pay"
-                        style={{
-                          width: "10vw", // Adjusts width based on viewport width
-                          maxWidth: "40px", // Prevents it from growing too large
-                          height: "auto", // Maintains aspect ratio
-                        }}
-                        loading="lazy"
-                      />
-                    </span>
-                    <span>
-                      <img
-                        src={"/mastercard.svg"}
-                        alt="Mastercard"
-                        style={{
-                          width: "10vw", // Adjusts width based on viewport width
-                          maxWidth: "40px", // Prevents it from growing too large
-                          height: "auto", // Maintains aspect ratio
-                        }}
-                        loading="lazy"
-                      />
-                    </span>
-                    <span>
-                      <img
-                        src={"/paypal.svg"}
-                        alt="paypal"
-                        style={{
-                          width: "10vw", // Adjusts width based on viewport width
-                          maxWidth: "40px", // Prevents it from growing too large
-                          height: "auto", // Maintains aspect ratio
-                        }}
-                        loading="lazy"
-                      />
-                    </span>
-                    <span>
-                      <img
-                        src={"/visa.svg"}
-                        alt="Visa"
-                        style={{
-                          width: "10vw", // Adjusts width based on viewport width
-                          maxWidth: "40px", // Prevents it from growing too large
-                          height: "auto", // Maintains aspect ratio
-                        }}
-                        loading="lazy"
-                      />
-                    </span>
-                  </p>
-                </div>
                 {/* Useful Links */}
                 <div className="col-md-3 col-lg-2 mb-4">
                   <h6 className="text-uppercase fw-bold">Help & Advice</h6>
@@ -212,6 +149,69 @@ const Footer = () => {
                   </p>
                   <p>
                     <i className="fas fa-print mr-3"></i> +971 4 33 88 169
+                  </p>
+                </div>
+                {/* Products */}
+                <div className="col-md-2 col-lg-2 mb-4">
+                  <h6 className="text-uppercase fw-bold">Payment Method</h6>
+                  <hr />
+                  <p
+                    className="text-white"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      flexDirection: "row",
+                      justifyContent: "space-around",
+                    }}
+                  >
+                    <span>
+                      <img
+                        src={"/apple-pay.svg"}
+                        alt="Apple-Pay"
+                        style={{
+                          width: "10vw", // Adjusts width based on viewport width
+                          maxWidth: "40px", // Prevents it from growing too large
+                          height: "auto", // Maintains aspect ratio
+                        }}
+                        loading="lazy"
+                      />
+                    </span>
+                    <span>
+                      <img
+                        src={"/mastercard.svg"}
+                        alt="Mastercard"
+                        style={{
+                          width: "10vw", // Adjusts width based on viewport width
+                          maxWidth: "40px", // Prevents it from growing too large
+                          height: "auto", // Maintains aspect ratio
+                        }}
+                        loading="lazy"
+                      />
+                    </span>
+                    <span>
+                      <img
+                        src={"/paypal.svg"}
+                        alt="paypal"
+                        style={{
+                          width: "10vw", // Adjusts width based on viewport width
+                          maxWidth: "40px", // Prevents it from growing too large
+                          height: "auto", // Maintains aspect ratio
+                        }}
+                        loading="lazy"
+                      />
+                    </span>
+                    <span>
+                      <img
+                        src={"/visa.svg"}
+                        alt="Visa"
+                        style={{
+                          width: "10vw", // Adjusts width based on viewport width
+                          maxWidth: "40px", // Prevents it from growing too large
+                          height: "auto", // Maintains aspect ratio
+                        }}
+                        loading="lazy"
+                      />
+                    </span>
                   </p>
                 </div>
               </div>
