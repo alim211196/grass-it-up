@@ -17,6 +17,7 @@ import VideoSlider from "./subComponents/VideoSlider";
 import Testimonial from "./subComponents/Testimonial";
 import SubscriptionSection from "./subComponents/SubscriptionSection";
 import Footer from "./subComponents/Footer";
+import Chatbot from "../ChatBot";
 
 const HomePage = () => {
   return (
@@ -39,6 +40,7 @@ const HomePage = () => {
       <Testimonial />
       <SubscriptionSection />
       <Footer />
+      <Chatbot />
     </>
   );
 };
