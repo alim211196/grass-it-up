@@ -9,28 +9,45 @@ const Chatbot = () => {
       sender: "bot",
     },
     {
-      text: `Hi, I saw a sofa set called "Sunset Luxe" on your website. Can you tell me more about it?`,
+      text: `Hi, I’m looking for an outdoor sofa set that’s durable and seats 4 to 5 people. Do you have any recommendations?`,
       sender: "user",
     },
     {
-      text: " Sure! The Sunset Luxe Sofa Set features a durable aluminum frame, weather-resistant cushions, and is available in beige, charcoal gray, and navy blue. You can check all the details, including dimensions, on www.grassitup.com/sunset-luxe.",
+      text: "Absolutely! Here are two great options for you:",
+      sender: "bot",
+    },
+
+    {
+      type: "product",
+      products: [
+        {
+          name: "Outdoor Rattan Sofa Set",
+          image: "/product1.png",
+          list: [
+            "Stylish and durable with water-resistant cushions.",
+            "Seats up to 4 people comfortably.",
+            "Available in beige, charcoal gray, and navy blue.",
+          ],
+          link: "https://example.com/sofa1",
+        },
+      ],
       sender: "bot",
     },
     {
-      text: `Is the fabric waterproof?`,
-      sender: "user",
-    },
-    {
-      text: "Yes, the cushions are water-resistant, perfect for outdoor use. For heavy rain, we recommend protective covers. Visit the product page for more details: www.grassitup.com/sunset-luxe.",
+      type: "product",
+      products: [
+        {
+          name: "Luxury Patio Sofa Set",
+          image: "/product2.png",
+          list: [
+            "Flexible design with modular sections for customization.",
+            "Weatherproof materials for long-lasting use.",
+            "Seats up to 5 people.",
+          ],
+          link: "https://example.com/sofa2",
+        },
+      ],
       sender: "bot",
-    },
-    {
-      text: `Great, thanks!`,
-      sender: "user",
-    },
-    {
-      text: `You're welcome! Happy shopping! 😊`,
-      sender: "user",
     },
   ]);
 
@@ -72,7 +89,7 @@ const Chatbot = () => {
         <img
           src="/persona.gif"
           alt="persona"
-          style={{ width: "50px", height: "auto" }}
+          style={{ width: "200px", height: "auto" }}
         />
       </button>
 
@@ -82,7 +99,7 @@ const Chatbot = () => {
           <div
             className="chatbot-container"
             style={{
-              backgroundImage: "url(/bgimage.png)",
+              backgroundImage: "url(/grassitup.webp)",
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
@@ -97,12 +114,15 @@ const Chatbot = () => {
                 left: 0,
                 width: "100%",
                 height: "100%",
-                backgroundColor: "rgba(0, 0, 0, 0.8)", // Dark overlay (adjust opacity)
-                boxShadow: "inset 0 0 10px rgba(0, 0, 0, 0.6)", // Shadow effect
                 zIndex: 1, // Keep it above background image
+                backgroundColor: "rgba(0, 0, 0, 0.8)",
+                backdropFilter: "blur(5px)",
+                webkitBackdropFilter: "blur(5px)",
+                boxShadow:
+                  "0px 4px 10px rgba(255, 255, 255, 0.2),0px 6px 30px rgba(0, 0, 0, 0.3)",
               }}
             ></div>
-            <div style={{ position: "relative", zIndex: 2 }}>
+            <div style={{ position: "relative", zIndex: 2, width: "100%" }}>
               <button className="close-btn" onClick={() => setOpen(false)}>
                 <img src={"/x-circle.png"} alt="X" />
               </button>
@@ -140,13 +160,32 @@ const Chatbot = () => {
                         >
                           {msg.sender === "bot" && (
                             <img
-                              src="/persona.png"
+                              src="/persona.gif"
                               alt="Bot Avatar"
                               className="small-avatar"
                             />
                           )}
                           <div className="msg">
-                            <p>{renderMessage(msg.text)}</p>
+                            {msg.type === "product" ? (
+                              // Product Cards Section
+                              msg.products.map((product, pIndex) => (
+                                <div key={pIndex} className="bot-product-card">
+                                  <img
+                                    src={product.image}
+                                    alt={product.name}
+                                    className="bot-product-image"
+                                  />
+                                  <div className="bot-product-info">
+                                    <h3>{product.name}</h3>
+                                    {product.list.map((i) => (
+                                      <li key={i}>{i}</li>
+                                    ))}
+                                  </div>
+                                </div>
+                              ))
+                            ) : (
+                              <p>{renderMessage(msg.text)}</p>
+                            )}
                           </div>
                         </div>
                       ))}

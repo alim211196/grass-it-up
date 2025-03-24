@@ -3,68 +3,20 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: rgba(187, 151, 109, 0.7);
-
+  background-color: white;
   border: none;
   padding: 8px;
-  border-radius: 50%;
-
+  border-radius: 5px;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
-  /* Floating animation */
-  animation: float 1.5s infinite alternate;
 }
 
 /* Hover effect */
 .fab-button:hover {
-  transform: scale(1.1) rotate(10deg);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Click effect */
-.fab-button:active {
-  transform: scale(0.95);
-}
-
-/* Floating Animation */
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-5px);
-  }
-}
-
-/* Pulse effect */
-.fab-button::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  background: rgba(127, 156, 144, 0.5);
-  border-radius: 50%;
-  z-index: -1;
-  transform: translate(-50%, -50%);
-  animation: pulse 1.5s infinite ease-out;
-}
-
-/* Pulse Animation */
-@keyframes pulse {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 0.7;
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1.5);
-    opacity: 0;
-  }
-}
 /* Chatbot Modal */
 .chatbot-modal {
   position: fixed;
@@ -99,7 +51,7 @@
   right: 20px;
   border: none;
   cursor: pointer;
-  background-color: #bb976d;
+  background-color: #7f9c90;
   border-radius: 50%;
   width: 36px;
   height: 36px;
@@ -118,7 +70,7 @@
   font-size: 48px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #bb976d;
+  color: #7f9c90;
 }
 .botDesc {
   font-family: Urbanist;
@@ -129,10 +81,10 @@
   color: white;
 }
 .small-avatar {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: auto;
   border-radius: 50%;
-  background: #bb976d;
+  background: #7f9c90;
 }
 
 body.chatbot-modal {
@@ -143,7 +95,7 @@ body.chatbot-modal {
   position: relative;
   height: 100%;
   scrollbar-width: none; /* For Firefox */
-  scrollbar-color: #bb976d #f0f0f0; /* Scrollbar color */
+  scrollbar-color: #7f9c90 #f0f0f0; /* Scrollbar color */
 }
 .column-class::-webkit-scrollbar {
   display: none;
@@ -154,12 +106,12 @@ body.chatbot-modal {
 }
 
 .column-class::-webkit-scrollbar-thumb {
-  background: #bb976d; /* Scrollbar color */
+  background: #7f9c90; /* Scrollbar color */
   border-radius: 5px; /* Rounded corners */
 }
 
 .column-class::-webkit-scrollbar-thumb:hover {
-  background: #bb976d; /* Darker shade on hover */
+  background: #7f9c90; /* Darker shade on hover */
 }
 
 .chatbox {
@@ -171,7 +123,7 @@ body.chatbot-modal {
   max-height: 64vh; /* Set a fixed height */
   overflow-y: auto; /* Enable vertical scrolling */
   scrollbar-width: none; /* For Firefox */
-  scrollbar-color: #bb976d #f0f0f0; /* Scrollbar color */
+  scrollbar-color: #7f9c90 #f0f0f0; /* Scrollbar color */
 }
 
 /* Scrollbar Styling for WebKit Browsers (Chrome, Safari) */
@@ -184,12 +136,12 @@ body.chatbot-modal {
 }
 
 .chatbox::-webkit-scrollbar-thumb {
-  background: #bb976d; /* Scrollbar color */
+  background: #7f9c90; /* Scrollbar color */
   border-radius: 5px; /* Rounded corners */
 }
 
 .chatbox::-webkit-scrollbar-thumb:hover {
-  background: #bb976d; /* Darker shade on hover */
+  background: #7f9c90; /* Darker shade on hover */
 }
 
 .chat-item {
@@ -197,7 +149,7 @@ body.chatbot-modal {
   align-items: start;
   gap: 10px;
   padding: 4px 0px;
-  max-width: 50%;
+  max-width: 60%;
 }
 .chat-item p {
   margin-bottom: 0px;
@@ -208,7 +160,8 @@ body.chatbot-modal {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: white;
+  background: #7f9c90;
+  object-fit: contain;
 }
 
 /* Bot message (Left) */
@@ -217,11 +170,15 @@ body.chatbot-modal {
 }
 
 .left .msg {
-  background: white;
   padding: 10px;
-  border-radius: 10px;
+  color: white;
+  border-radius: 20px;
   border-top-left-radius: 0;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2),
+    0px 6px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* User message (Right) */
@@ -231,12 +188,15 @@ body.chatbot-modal {
 }
 
 .right .msg {
-  background: #bb976d;
   color: white;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 20px;
   border-bottom-right-radius: 0;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2),
+    0px 6px 30px rgba(0, 0, 0, 0.3);
 }
 /* Input Box - Fixed at Bottom */
 .typing-area {
@@ -244,13 +204,16 @@ body.chatbot-modal {
   bottom: 0px;
   left: 10px;
   right: 10px;
-  background: white;
   padding: 8px;
   display: flex;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 10px;
   z-index: 2;
-  border: 1px solid #f0f0f0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2),
+    0px 6px 30px rgba(0, 0, 0, 0.3);
 }
 
 .chat-input {
@@ -258,6 +221,7 @@ body.chatbot-modal {
   border: none;
   padding: 5px;
   outline: none;
+  background: transparent;
 }
 
 .attach-btn,
@@ -270,7 +234,7 @@ body.chatbot-modal {
   margin-left: 8px;
   border: none;
   cursor: pointer;
-  background-color: #bb976d;
+  background-color: #7f9c90;
   border-radius: 50%;
   width: 36px;
   height: 36px;
@@ -283,4 +247,33 @@ body.chatbot-modal {
 .send-btn img {
   width: 18px;
   height: auto;
+}
+/* Product Card */
+.bot-product-card {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+/* .product-card:hover {
+  transform: scale(1.02);
+} */
+.bot-product-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.bot-product-info {
+  flex: 1;
+  padding-left: 10px;
+}
+.bot-product-info h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+.bot-product-info li {
+  font-size: 13px;
+  color: white;
 }
