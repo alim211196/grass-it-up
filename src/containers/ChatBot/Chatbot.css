@@ -1,20 +1,92 @@
-/* Floating Action Button */
-.fab-button {
+/* Chatbot Floating Button */
+.chatbot-container-home {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: white;
-  border: none;
-  padding: 8px;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
 }
 
-/* Hover effect */
-.fab-button:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+/* Default Chatbot Box */
+.chatbot-box-home {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* background: white; */
+  /* border-radius: 50px; */
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+/* Expanded Chatbot Box */
+.chatbot-box-home.expanded {
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Avatar Box */
+.chatbot-avatar-box-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Avatar Image */
+.chatbot-avatar-home {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Expanded Avatar */
+.chatbot-box-home.expanded .chatbot-avatar-home {
+  width: 200px;
+  height: auto;
+}
+
+/* Chat Text */
+.chatbot-text-box-home {
+  padding: inherit;
+  height: 48px;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f0f0f0;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+/* Chat Button (Visible on Hover) */
+.chatbot-button-home {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  position: absolute;
+  bottom: 10px;
+  z-index: 3;
 }
 
 /* Chatbot Modal */

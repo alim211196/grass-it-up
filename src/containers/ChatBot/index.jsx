@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Chatbot.css";
-
+import { motion } from "framer-motion";
 const Chatbot = () => {
   const [open, setOpen] = useState(false);
+  const [expand, setExpand] = useState(false);
   const [messages, setMessages] = useState([
     {
       text: "Hello! Welcome to Grass It Up. 🌿 How can I assist you today?",
@@ -85,13 +86,73 @@ const Chatbot = () => {
   return (
     <>
       {/* Floating Action Button (FAB) */}
-      <button className="fab-button" onClick={() => setOpen(true)}>
-        <img
-          src="/persona.gif"
-          alt="persona"
-          style={{ width: "200px", height: "auto" }}
-        />
-      </button>
+      <div className="chatbot-container-home">
+        {/* Floating Button Section */}
+        <motion.div
+          className={`chatbot-box-home ${expand ? "expanded" : ""}`}
+          initial={{ height: "50px", width: "160px" }}
+          animate={
+            expand
+              ? { height: "auto", width: "220px" }
+              : { height: "50px", width: "160px" }
+          }
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          onMouseEnter={() => setExpand(true)}
+          onMouseLeave={() => setExpand(false)}
+        >
+          {/* First Div - Small Avatar */}
+          <div
+            className="chatbot-avatar-box-home"
+            style={{
+              backgroundImage: "url(/grassitup.webp)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              borderRadius: "10px",
+              position: "relative", // Required for overlay
+            }}
+          >
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                zIndex: 1, // Keep it above background image
+                backgroundColor: "rgba(0, 0, 0, 0.7)",
+                backdropFilter: "blur(5px)",
+                webkitBackdropFilter: "blur(5px)",
+                borderRadius: "10px",
+              }}
+            ></div>
+            <div style={{ position: "relative", zIndex: 2, width: "100%" }}>
+              <img
+                src={expand ? "/persona.gif" : "/short-avatar.jpg"}
+                alt="persona"
+                className="chatbot-avatar-home"
+              />
+            </div>
+          </div>
+
+          {/* Second Div - Chat Text (Initially Visible) */}
+          {!expand && (
+            <motion.button className="chatbot-text-box-home">
+              Chat
+            </motion.button>
+          )}
+
+          {/* Chat Button (Visible When Expanded) */}
+          {expand && (
+            <motion.button
+              className="chatbot-button-home"
+              onClick={() => setOpen(true)}
+            >
+              Chat
+            </motion.button>
+          )}
+        </motion.div>
+      </div>
 
       {/* Chatbot Modal */}
       {open && (
