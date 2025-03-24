@@ -83,6 +83,22 @@ const Chatbot = () => {
       document.body.classList.remove("chatbot-modal");
     };
   }, [open]);
+
+  const [selectedImage, setSelectedImage] = useState({
+    png: "/persona.png",
+    gif: "/persona.gif",
+  });
+
+  const avatarOptions = [
+    { png: "/persona1.png", gif: "/persona1.gif", alt: "persona1" },
+    { png: "/persona2.png", gif: "/persona2.gif", alt: "persona2" },
+    { png: "/persona.png", gif: "/persona.gif", alt: "persona3" },
+  ];
+
+  const handleAvatarChange = (avatar) => {
+    setSelectedImage({ png: avatar.png, gif: avatar.gif });
+  };
+
   return (
     <>
       {/* Floating Action Button (FAB) */}
@@ -96,10 +112,34 @@ const Chatbot = () => {
               ? { height: "auto", width: "220px" }
               : { height: "50px", width: "160px" }
           }
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.2, ease: "easeInOut" }}
           onMouseEnter={() => setExpand(true)}
           onMouseLeave={() => setExpand(false)}
         >
+          {expand && (
+            <motion.div className="chatbot-button-home-top">
+              {avatarOptions.map((avatar, index) => (
+                <motion.img
+                  key={index}
+                  src={avatar.png}
+                  alt={avatar.alt}
+                  className="chatbot-avatar-small"
+                  onClick={() => handleAvatarChange(avatar)}
+                  animate={{
+                    scale: selectedImage.png === avatar.png ? 1.2 : 1,
+                  }}
+                  transition={{ duration: 0.3 }}
+                  style={{
+                    border:
+                      selectedImage.png === avatar.png
+                        ? "2px solid #7f9c90"
+                        : "none",
+                    cursor: "pointer",
+                  }}
+                />
+              ))}
+            </motion.div>
+          )}
           {/* First Div - Small Avatar */}
           <div
             className="chatbot-avatar-box-home"
@@ -120,15 +160,15 @@ const Chatbot = () => {
                 width: "100%",
                 height: "100%",
                 zIndex: 1, // Keep it above background image
-                backgroundColor: "rgba(0, 0, 0, 0.7)",
+                backgroundColor: "rgba(0, 0, 0, 0.3)",
                 backdropFilter: "blur(5px)",
-                webkitBackdropFilter: "blur(5px)",
+                WebkitBackdropFilter: "blur(5px)",
                 borderRadius: "10px",
               }}
             ></div>
             <div style={{ position: "relative", zIndex: 2, width: "100%" }}>
               <img
-                src={expand ? "/persona.gif" : "/short-avatar.jpg"}
+                src={expand ? selectedImage.gif : selectedImage.png}
                 alt="persona"
                 className="chatbot-avatar-home"
               />
@@ -178,7 +218,7 @@ const Chatbot = () => {
                 zIndex: 1, // Keep it above background image
                 backgroundColor: "rgba(0, 0, 0, 0.8)",
                 backdropFilter: "blur(5px)",
-                webkitBackdropFilter: "blur(5px)",
+                WebkitBackdropFilter: "blur(5px)",
                 boxShadow:
                   "0px 4px 10px rgba(255, 255, 255, 0.2),0px 6px 30px rgba(0, 0, 0, 0.3)",
               }}
@@ -221,7 +261,7 @@ const Chatbot = () => {
                         >
                           {msg.sender === "bot" && (
                             <img
-                              src="/short-avatar.jpg"
+                              src={selectedImage.png}
                               alt="Bot Avatar"
                               className="small-avatar"
                             />
@@ -274,7 +314,7 @@ const Chatbot = () => {
                   </div>
                   <div className="col-md-4 col-lg-4">
                     <img
-                      src="/persona.gif"
+                      src={selectedImage.gif}
                       alt="persona"
                       style={{ width: "100%", height: "auto" }}
                     />
