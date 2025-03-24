@@ -96,28 +96,31 @@ const Chatbot = () => {
   ];
 
   const handleAvatarChange = (avatar) => {
-    setSelectedImage({ png: avatar.png, gif: avatar.gif });
+    setSelectedImage({ ...selectedImage, png: avatar.png, gif: avatar.gif });
   };
 
   return (
     <>
-      {/* Floating Action Button (FAB) */}
-      <div className="chatbot-container-home">
-        {/* Floating Button Section */}
+      <motion.div
+        className="chatbot-container-home"
+        onMouseEnter={() => setExpand(true)}
+        onMouseLeave={() => setExpand(false)}
+      >
         <motion.div
           className={`chatbot-box-home ${expand ? "expanded" : ""}`}
           initial={{ height: "50px", width: "160px" }}
           animate={
-            expand
-              ? { height: "auto", width: "220px" }
-              : { height: "50px", width: "160px" }
+            expand ? { height: "auto", width: 220 } : { height: 50, width: 160 }
           }
-          transition={{ duration: 0.2, ease: "easeInOut" }}
-          onMouseEnter={() => setExpand(true)}
-          onMouseLeave={() => setExpand(false)}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
         >
           {expand && (
-            <motion.div className="chatbot-button-home-top">
+            <motion.div
+              className="chatbot-button-home-top"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+            >
               {avatarOptions.map((avatar, index) => (
                 <motion.img
                   key={index}
@@ -140,8 +143,8 @@ const Chatbot = () => {
               ))}
             </motion.div>
           )}
-          {/* First Div - Small Avatar */}
-          <div
+
+          <motion.div
             className="chatbot-avatar-box-home"
             style={{
               backgroundImage: "url(/grassitup.webp)",
@@ -152,37 +155,26 @@ const Chatbot = () => {
               position: "relative", // Required for overlay
             }}
           >
-            <div
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                zIndex: 1, // Keep it above background image
-                backgroundColor: "rgba(0, 0, 0, 0.3)",
-                backdropFilter: "blur(5px)",
-                WebkitBackdropFilter: "blur(5px)",
-                borderRadius: "10px",
-              }}
-            ></div>
+            <div className="chatbot-overlay"></div>
             <div style={{ position: "relative", zIndex: 2, width: "100%" }}>
-              <img
+              <motion.img
+                key={expand ? selectedImage.gif : selectedImage.png}
                 src={expand ? selectedImage.gif : selectedImage.png}
                 alt="persona"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
                 className="chatbot-avatar-home"
               />
             </div>
-          </div>
+          </motion.div>
 
-          {/* Second Div - Chat Text (Initially Visible) */}
           {!expand && (
             <motion.button className="chatbot-text-box-home">
               Chat
             </motion.button>
           )}
 
-          {/* Chat Button (Visible When Expanded) */}
           {expand && (
             <motion.button
               className="chatbot-button-home"
@@ -192,9 +184,8 @@ const Chatbot = () => {
             </motion.button>
           )}
         </motion.div>
-      </div>
+      </motion.div>
 
-      {/* Chatbot Modal */}
       {open && (
         <div className="chatbot-modal">
           <div
@@ -316,7 +307,11 @@ const Chatbot = () => {
                     <img
                       src={selectedImage.gif}
                       alt="persona"
-                      style={{ width: "100%", height: "auto" }}
+                      style={{
+                        width: "100%",
+                        height: "auto",
+                        objectFit: "cover",
+                      }}
                     />
                   </div>
                 </div>
