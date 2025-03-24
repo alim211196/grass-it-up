@@ -138,6 +138,29 @@
 body.chatbot-modal {
   overflow: hidden;
 }
+.column-class {
+  overflow-y: auto;
+  position: relative;
+  height: 100%;
+  scrollbar-width: none; /* For Firefox */
+  scrollbar-color: #bb976d #f0f0f0; /* Scrollbar color */
+}
+.column-class::-webkit-scrollbar {
+  display: none;
+}
+
+.column-class::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Track background */
+}
+
+.column-class::-webkit-scrollbar-thumb {
+  background: #bb976d; /* Scrollbar color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.column-class::-webkit-scrollbar-thumb:hover {
+  background: #bb976d; /* Darker shade on hover */
+}
 
 .chatbox {
   display: flex;

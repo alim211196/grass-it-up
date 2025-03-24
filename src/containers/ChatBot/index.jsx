@@ -118,14 +118,7 @@ const Chatbot = () => {
                     height: "100%",
                   }}
                 >
-                  <div
-                    className="col-md-8 col-lg-8"
-                    style={{
-                      overflowY: "auto",
-                      position: "relative",
-                      height: "100%",
-                    }}
-                  >
+                  <div className="col-md-8 col-lg-8 column-class">
                     <div style={{ margin: "1rem 3rem 0rem" }}>
                       <h1 className="botTitle">Welcome to GrassItUp!</h1>
                       <p className="botDesc">
