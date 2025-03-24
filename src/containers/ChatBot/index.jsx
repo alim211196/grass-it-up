@@ -108,7 +108,7 @@ const Chatbot = () => {
   const handleMouseLeave = () => {
     timeoutId = setTimeout(() => {
       setExpand(false);
-    }, 200); // Delay to prevent instant collapse
+    }, 500); // Delay to prevent instant collapse
   };
   return (
     <>
