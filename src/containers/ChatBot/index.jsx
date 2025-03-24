@@ -221,7 +221,7 @@ const Chatbot = () => {
                         >
                           {msg.sender === "bot" && (
                             <img
-                              src="/persona.gif"
+                              src="/short-avatar.jpg"
                               alt="Bot Avatar"
                               className="small-avatar"
                             />
