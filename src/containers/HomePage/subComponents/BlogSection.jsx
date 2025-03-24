@@ -47,6 +47,12 @@ const blogData = [
     tag: "Interior",
     title: "Consectetur purus habitasse ut diam habitant varius.",
   },
+  {
+    image: blog3,
+    date: "19th June 2025",
+    tag: "Vase",
+    title: "The Key Components of a Quality Sofa habitant vel tempor.",
+  },
 ];
 
 const BlogSection = () => {

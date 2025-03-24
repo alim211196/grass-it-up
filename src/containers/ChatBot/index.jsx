@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Chatbot.css";
 import { motion } from "framer-motion";
 const Chatbot = () => {
-  let timeoutId = null;
   const [open, setOpen] = useState(false);
   const [expand, setExpand] = useState(false);
   const [messages, setMessages] = useState([
@@ -88,40 +87,57 @@ const Chatbot = () => {
   const [selectedImage, setSelectedImage] = useState({
     png: "/persona.png",
     gif: "/persona.gif",
+    name: "Alexa",
   });
 
   const avatarOptions = [
-    { png: "/persona1.png", gif: "/persona1.gif", alt: "persona1" },
-    { png: "/persona2.png", gif: "/persona2.gif", alt: "persona2" },
-    { png: "/persona.png", gif: "/persona.gif", alt: "persona3" },
+    {
+      png: "/persona1.png",
+      gif: "/persona1.gif",
+      alt: "persona1",
+      name: "Julia",
+    },
+    {
+      png: "/persona2.png",
+      gif: "/persona2.gif",
+      alt: "persona2",
+      name: "Jaz",
+    },
+    {
+      png: "/persona.png",
+      gif: "/persona.gif",
+      alt: "persona3",
+      name: "Alexa",
+    },
   ];
 
   const handleAvatarChange = (avatar) => {
-    setSelectedImage({ ...selectedImage, png: avatar.png, gif: avatar.gif });
+    setSelectedImage({
+      ...selectedImage,
+      png: avatar.png,
+      gif: avatar.gif,
+      name: avatar.name,
+    });
   };
 
   const handleMouseEnter = () => {
-    clearTimeout(timeoutId); // Clear any existing timeout to prevent flickering
     setExpand(true);
   };
 
   const handleMouseLeave = () => {
-    timeoutId = setTimeout(() => {
-      setExpand(false);
-    }, 500); // Delay to prevent instant collapse
+    setExpand(false);
   };
   return (
     <>
       <motion.div
         className="chatbot-container-home"
         onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
       >
         <motion.div
           className={`chatbot-box-home ${expand ? "expanded" : ""}`}
-          initial={{ height: "50px", width: "160px" }}
+          initial={{ height: 70, width: 210 }}
           animate={
-            expand ? { height: "auto", width: 220 } : { height: 50, width: 160 }
+            expand ? { height: "auto", width: 300 } : { height: 70, width: 210 }
           }
           transition={{ duration: 0.3, ease: "easeInOut" }}
         >
@@ -177,6 +193,14 @@ const Chatbot = () => {
                 transition={{ duration: 0.3 }}
                 className="chatbot-avatar-home"
               />
+              {expand && (
+                <motion.div className="chatbot-name-close">
+                  <span>{selectedImage.name}</span>
+                  <button onClick={handleMouseLeave}>
+                    <img src={"/x-circle.png"} alt="X" />
+                  </button>
+                </motion.div>
+              )}
             </div>
           </motion.div>
 
@@ -315,15 +339,17 @@ const Chatbot = () => {
                     </div>
                   </div>
                   <div className="col-md-4 col-lg-4">
-                    <img
-                      src={selectedImage.gif}
-                      alt="persona"
-                      style={{
-                        width: "100%",
-                        height: "auto",
-                        objectFit: "cover",
-                      }}
-                    />
+                    <div>
+                      <img
+                        src={selectedImage.gif}
+                        alt="persona"
+                        style={{
+                          width: "100%",
+                          height: "auto",
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

@@ -36,7 +36,7 @@ const HomePage = () => {
       <PartnerMarquee />
       <FurnitureScrollEffect />
       <CylindricalCarousel />
-      <VideoSlider />
+      {/* <VideoSlider /> */}
       <Testimonial />
       <SubscriptionSection />
       <Footer />

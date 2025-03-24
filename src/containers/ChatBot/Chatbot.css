@@ -50,23 +50,23 @@
 
 /* Avatar Image */
 .chatbot-avatar-home {
-  width: 48px;
-  height: 48px;
+  width: 70px;
+  height: 70px;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
 /* Expanded Avatar */
 .chatbot-box-home.expanded .chatbot-avatar-home {
-  width: 200px;
-  height: 250px;
+  width: 300px;
+  height: 350px;
   object-fit: cover;
 }
 
 /* Chat Text */
 .chatbot-text-box-home {
   padding: inherit;
-  height: 48px;
+  height: 70px;
   width: 100%;
   background: white;
   border-radius: 10px;
@@ -77,7 +77,7 @@
   justify-content: center;
   border: 1px solid #f0f0f0;
   color: black;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.2s ease-in-out;
@@ -87,18 +87,76 @@
 .chatbot-button-home {
   width: 80%;
   padding: 10px;
+  height: 70px;
   margin: 10px;
   border: none;
   border-radius: 10px;
   background: white;
   color: black;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
   position: absolute;
   bottom: 10px;
   z-index: 3;
+}
+
+.chatbot-name-close {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: "row";
+  position: absolute;
+  top: 10px;
+  z-index: 3;
+  padding: 5px 10px;
+}
+
+.chatbot-name-close {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  position: absolute;
+  top: 10px;
+  z-index: 3;
+  padding: 0px 10px;
+  width: 100%;
+}
+/* Style for the text inside */
+.chatbot-name-close span {
+  padding: 4px 8px;
+  font-size: 16px;
+  color: white;
+  background: rgba(255, 255, 255, 0.3); /* Light overlay */
+  border-radius: 10px; /* Rounded corners */
+  font-weight: bold;
+}
+
+/* Style for the button */
+.chatbot-name-close button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.3); /* Light overlay */
+  border: none;
+  border-radius: 50%; /* Fully rounded */
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Button hover effect */
+.chatbot-name-close button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Style for the close icon */
+.chatbot-name-close img {
+  width: 24px;
+  height: 24px;
 }
 .chatbot-button-home-top {
   width: 100%;
@@ -117,8 +175,8 @@
   transition: background 0.3s ease-in-out;
 }
 .chatbot-avatar-small {
-  width: 48px;
-  height: 48px;
+  width: 70px;
+  height: 70px;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
