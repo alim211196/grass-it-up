@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Chatbot.css";
 import { motion } from "framer-motion";
 const Chatbot = () => {
+  let timeoutId = null;
   const [open, setOpen] = useState(false);
   const [expand, setExpand] = useState(false);
   const [messages, setMessages] = useState([
@@ -99,12 +100,22 @@ const Chatbot = () => {
     setSelectedImage({ ...selectedImage, png: avatar.png, gif: avatar.gif });
   };
 
+  const handleMouseEnter = () => {
+    clearTimeout(timeoutId); // Clear any existing timeout to prevent flickering
+    setExpand(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutId = setTimeout(() => {
+      setExpand(false);
+    }, 200); // Delay to prevent instant collapse
+  };
   return (
     <>
       <motion.div
         className="chatbot-container-home"
-        onMouseEnter={() => setExpand(true)}
-        onMouseLeave={() => setExpand(false)}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <motion.div
           className={`chatbot-box-home ${expand ? "expanded" : ""}`}
