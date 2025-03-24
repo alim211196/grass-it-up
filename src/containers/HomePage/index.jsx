@@ -1,45 +1,64 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
+
+// Eagerly load essential components
 import HeroBanner from "./subComponents/HeroBanner";
 import HorizontalScroll from "./subComponents/HorizontalScroll";
-import InformativeCategorySection from "./subComponents/InformativeCategorySection";
-import ProductGrid from "./subComponents/ProductGrid";
-import BreakerSection from "./subComponents/BreakerSection";
-import HorizontalCarousel from "./subComponents/HorizontalCarousel";
-import BlogSection from "./subComponents/BlogSection";
-import GallerySection from "./subComponents/GallerySection";
-import TopTrending from "./subComponents/TopTrending";
-import VisitOurShowroom from "./subComponents/VisitOurShowroom";
-import HotspotImage from "./subComponents/HotspotImage";
-import PartnerMarquee from "./subComponents/PartnerMarquee";
-import FurnitureScrollEffect from "./subComponents/FurnitureScrollEffect";
-import CylindricalCarousel from "./subComponents/CylindricalCarousel";
-import VideoSlider from "./subComponents/VideoSlider";
-import Testimonial from "./subComponents/Testimonial";
-import SubscriptionSection from "./subComponents/SubscriptionSection";
-import Footer from "./subComponents/Footer";
-import Chatbot from "../ChatBot";
+
+// Lazy load the rest of the components
+const InformativeCategorySection = lazy(() =>
+  import("./subComponents/InformativeCategorySection")
+);
+const ProductGrid = lazy(() => import("./subComponents/ProductGrid"));
+const BreakerSection = lazy(() => import("./subComponents/BreakerSection"));
+const HorizontalCarousel = lazy(() =>
+  import("./subComponents/HorizontalCarousel")
+);
+const BlogSection = lazy(() => import("./subComponents/BlogSection"));
+const GallerySection = lazy(() => import("./subComponents/GallerySection"));
+const TopTrending = lazy(() => import("./subComponents/TopTrending"));
+const VisitOurShowroom = lazy(() => import("./subComponents/VisitOurShowroom"));
+const HotspotImage = lazy(() => import("./subComponents/HotspotImage"));
+const PartnerMarquee = lazy(() => import("./subComponents/PartnerMarquee"));
+const FurnitureScrollEffect = lazy(() =>
+  import("./subComponents/FurnitureScrollEffect")
+);
+const CylindricalCarousel = lazy(() =>
+  import("./subComponents/CylindricalCarousel")
+);
+const VideoSlider = lazy(() => import("./subComponents/VideoSlider"));
+const Testimonial = lazy(() => import("./subComponents/Testimonial"));
+const SubscriptionSection = lazy(() =>
+  import("./subComponents/SubscriptionSection")
+);
+const Footer = lazy(() => import("./subComponents/Footer"));
+const Chatbot = lazy(() => import("../ChatBot"));
 
 const HomePage = () => {
   return (
     <>
+      {/* Immediately visible components */}
       <HeroBanner />
       <HorizontalScroll />
-      <InformativeCategorySection />
-      <ProductGrid />
-      <BreakerSection />
-      <HorizontalCarousel />
-      <BlogSection />
-      <GallerySection />
-      <TopTrending />
-      <VisitOurShowroom />
-      <HotspotImage />
-      <PartnerMarquee />
-      <FurnitureScrollEffect />
-      <CylindricalCarousel />
-      {/* <VideoSlider /> */}
-      <Testimonial />
-      <SubscriptionSection />
-      <Footer />
+
+      {/* Lazy-loaded components wrapped in Suspense */}
+      <Suspense fallback={null}>
+        <InformativeCategorySection />
+        <ProductGrid />
+        <BreakerSection />
+        <HorizontalCarousel />
+        <BlogSection />
+        <GallerySection />
+        <TopTrending />
+        <VisitOurShowroom />
+        <HotspotImage />
+        <PartnerMarquee />
+        <FurnitureScrollEffect />
+        <CylindricalCarousel />
+        <VideoSlider />
+        <Testimonial />
+        <SubscriptionSection />
+        <Footer />
+      </Suspense>
       <Chatbot />
     </>
   );
