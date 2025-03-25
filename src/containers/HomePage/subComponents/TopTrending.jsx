@@ -72,7 +72,7 @@ const TopTrending = () => {
       data-aos="fade-up"
       data-aos-delay="100"
     >
-      <SectionHeading title="Top" subtitle="Trending" />
+      <SectionHeading title="Featured" subtitle="Collections" />
       <Swiper
         modules={[EffectCoverflow, Autoplay]}
         effect="coverflow"

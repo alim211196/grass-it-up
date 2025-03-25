@@ -94,7 +94,7 @@ const ProductGrid = () => {
   }, []);
   return (
     <section className="productSection">
-      <SectionHeading title="Furniture" subtitle="PRODUCTS" />
+      <SectionHeading title="Best" subtitle="Sellers" />
       <div className="productGrid" data-aos="fade-up" data-aos-delay="100">
         {products.map((product) => (
           <div key={product.id} className="productCard">
