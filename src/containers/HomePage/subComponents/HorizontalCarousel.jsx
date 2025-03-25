@@ -80,7 +80,7 @@ const HorizontalCarousel = () => {
 
   return (
     <Container fluid className="carousel-container position-relative p-4">
-      <SectionHeading title="New" subtitle="Expanded Collections" />
+      <SectionHeading title="Latest" subtitle="Expanded Collections" />
 
       {/* Swiper for Auto Sliding */}
       <Swiper

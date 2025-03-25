@@ -1249,8 +1249,18 @@ body {
   height: 100vh;
   display: flex;
   gap: 20px; /* Space between cards */
+  position: relative;
 }
-
+.featured-categories {
+  position: absolute;
+  top: 9%;
+  /* left: 50%; */
+  transform: translateX(250%);
+  text-align: center;
+  z-index: 1000;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
 /* Card Panels */
 .card {
   width: 40vw; /* Make each card smaller than full width */

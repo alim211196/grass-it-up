@@ -90,43 +90,48 @@ export default function HorizontalScroll() {
   return (
     <div className="App" ref={component}>
       <div ref={slider} className="container1">
+        <div className="featured-categories">
+          <SectionHeading title="Featured" subtitle="Categories" />
+        </div>
         {sections.map((section, index) => (
-          <div className="panel card" key={index}>
-            <div
-              className="hero-images"
-              data-aos="fade-right"
-              data-aos-delay="100"
-            >
-              <img
-                src={section.images[0]}
-                alt={`${section.title} Image 1`}
-                className="image1"
-                loading="lazy"
-              />
-              <img
-                src={section.images[1]}
-                alt={`${section.title} Image 2`}
-                className="image2"
-                loading="lazy"
-                // style={{ transform: `translateX(${offset}px)` }}
-              />
-            </div>
-            <div
-              className="hero-content"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <h1 className="horizontal-scroll-title">{section.title}</h1>
-              <button
-                className="shopButton"
-                onClick={() =>
-                  navigate(`/collections/${section.title.toLowerCase()}`)
-                }
+          <>
+            <div className="panel card" key={index}>
+              <div
+                className="hero-images"
+                data-aos="fade-right"
+                data-aos-delay="100"
               >
-                {section.buttonLabel}
-              </button>
+                <img
+                  src={section.images[0]}
+                  alt={`${section.title} Image 1`}
+                  className="image1"
+                  loading="lazy"
+                />
+                <img
+                  src={section.images[1]}
+                  alt={`${section.title} Image 2`}
+                  className="image2"
+                  loading="lazy"
+                  // style={{ transform: `translateX(${offset}px)` }}
+                />
+              </div>
+              <div
+                className="hero-content"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <h1 className="horizontal-scroll-title">{section.title}</h1>
+                <button
+                  className="shopButton"
+                  onClick={() =>
+                    navigate(`/collections/${section.title.toLowerCase()}`)
+                  }
+                >
+                  {section.buttonLabel}
+                </button>
+              </div>
             </div>
-          </div>
+          </>
         ))}
       </div>
     </div>

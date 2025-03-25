@@ -56,7 +56,7 @@ const BlogSection = () => {
 
   return (
     <div className="blog-section py-5 overflow-hidden">
-      <SectionHeading title="Blog" subtitle="Stay informed and inspired" />
+      <SectionHeading title="Trends" subtitle="and News" />
       <div data-aos="fade-up" data-aos-delay="100" className="container">
         <Swiper
           modules={[Autoplay, EffectCoverflow]}
