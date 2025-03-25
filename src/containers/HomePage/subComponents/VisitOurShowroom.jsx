@@ -37,7 +37,7 @@ const VisitOurShowroom = () => {
           pellentesque luctus. Integer malesuada, ex ac malesuada vulputate,
           urna purus vestibulum mauris, eget imperdiet dui turpis ac purus.
         </p>
-        <a className="shopButton">Click Here</a>
+        <a className="shopButton">Get Directions</a>
       </div>
 
       {/* Right Section */}
