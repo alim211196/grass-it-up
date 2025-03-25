@@ -42,7 +42,7 @@ const HomePage = () => {
       <HorizontalScroll />
       <Chatbot />
       {/* Lazy-loaded components wrapped in Suspense */}
-      <Suspense fallback={<SuspenseLoader />}>
+      <Suspense fallback={null}>
         <InformativeCategorySection />
         <ProductGrid />
         <BreakerSection />
