@@ -3,6 +3,7 @@ import React, { lazy, Suspense } from "react";
 // Eagerly load essential components
 import HeroBanner from "./subComponents/HeroBanner";
 import HorizontalScroll from "./subComponents/HorizontalScroll";
+import SuspenseLoader from "../SuspenseLoader";
 
 // Lazy load the rest of the components
 const InformativeCategorySection = lazy(() =>
@@ -39,9 +40,9 @@ const HomePage = () => {
       {/* Immediately visible components */}
       <HeroBanner />
       <HorizontalScroll />
-
+      <Chatbot />
       {/* Lazy-loaded components wrapped in Suspense */}
-      <Suspense fallback={null}>
+      <Suspense fallback={<SuspenseLoader />}>
         <InformativeCategorySection />
         <ProductGrid />
         <BreakerSection />
@@ -59,7 +60,6 @@ const HomePage = () => {
         <SubscriptionSection />
         <Footer />
       </Suspense>
-      <Chatbot />
     </>
   );
 };

@@ -9,6 +9,7 @@ import "../../../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SectionHeading from "./SectionHeading";
+import { useNavigate } from "react-router-dom";
 
 const images = [
   {
@@ -52,7 +53,7 @@ const images = [
 const HorizontalCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
-
+  const navigate = useNavigate();
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -96,7 +97,14 @@ const HorizontalCarousel = () => {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index} className="carousel-items">
-            <div>
+            <div
+              onClick={() =>
+                navigate(
+                  `/collections/${image?.name?.toLowerCase()}/products/${image?.name.toLowerCase()}`,
+                  { state: image }
+                )
+              }
+            >
               <img
                 className={`carousel-image ${
                   activeIndex === index ? "active" : ""

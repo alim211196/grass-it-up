@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import "../../../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
 const images = [
   "https://dev-risians.com/html/grassitup/images/pop-cat-bg-8.png",
@@ -14,7 +15,7 @@ const BreakerSection = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
@@ -72,7 +73,9 @@ const BreakerSection = () => {
           time to relax at home or the office will be more appealing than ever
           when you choose a modern lounge sofa chair.
         </p>
-        <a className="shopButton">Let's Shop Now</a>
+        <a className="shopButton" onClick={() => navigate(`/shop-by-product`)}>
+          Let's Shop Now
+        </a>
       </div>
     </div>
   );

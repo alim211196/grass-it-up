@@ -3,10 +3,12 @@ import "../../../App.css";
 import SectionHeading from "./SectionHeading";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
 const InformativeCategorySection = () => {
   const [isZoomed, setIsZoomed] = useState(false);
   const sectionRef = useRef(null);
+  const navigate = useNavigate();
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -89,9 +91,24 @@ const InformativeCategorySection = () => {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <button className="btn-custom">Dining</button>
-          <button className="btn-custom">Lounging</button>
-          <button className="btn-custom">Living</button>
+          <button
+            className="btn-custom"
+            onClick={() => navigate(`/shop-by-product`)}
+          >
+            Dining
+          </button>
+          <button
+            className="btn-custom"
+            onClick={() => navigate(`/shop-by-product`)}
+          >
+            Lounging
+          </button>
+          <button
+            className="btn-custom"
+            onClick={() => navigate(`/shop-by-product`)}
+          >
+            Living
+          </button>
         </div>
         <div
           className="informative-category-section__bottom-image-container"

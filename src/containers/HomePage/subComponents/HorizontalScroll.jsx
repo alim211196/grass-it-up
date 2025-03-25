@@ -5,12 +5,13 @@ import "../../../App.css";
 import SectionHeading from "./SectionHeading";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function HorizontalScroll() {
   const component = useRef();
   const slider = useRef();
-
+  const navigate = useNavigate();
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -116,7 +117,14 @@ export default function HorizontalScroll() {
               data-aos-delay="100"
             >
               <h1 className="horizontal-scroll-title">{section.title}</h1>
-              <button className="shopButton">{section.buttonLabel}</button>
+              <button
+                className="shopButton"
+                onClick={() =>
+                  navigate(`/collections/${section.title.toLowerCase()}`)
+                }
+              >
+                {section.buttonLabel}
+              </button>
             </div>
           </div>
         ))}

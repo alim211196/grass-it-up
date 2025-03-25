@@ -3,6 +3,7 @@ import "../../../App.css";
 import SectionHeading from "./SectionHeading";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
 const products = [
   {
@@ -79,7 +80,7 @@ const products = [
 
 const ProductGrid = () => {
   const [activePopover, setActivePopover] = useState(null);
-
+  const navigate = useNavigate();
   const handleMouseEnter = (id, type) => {
     setActivePopover(`${id}-${type}`);
   };
@@ -97,7 +98,10 @@ const ProductGrid = () => {
       <div className="productGrid" data-aos="fade-up" data-aos-delay="100">
         {products.map((product) => (
           <div key={product.id} className="productCard">
-            <div className="productImageWrapper">
+            <div
+              className="productImageWrapper"
+              onClick={() => navigate(`/collections/${product.name}`)}
+            >
               <img
                 src={product.image}
                 alt={product.name}
@@ -133,7 +137,12 @@ const ProductGrid = () => {
         ))}
       </div>
       <div className="productMore">
-        <a className="shopButton">See all products</a>
+        <a
+          className="shopButton"
+          onClick={() => navigate(`/collections/shop-all-products`)}
+        >
+          See all products
+        </a>
       </div>
     </section>
   );
