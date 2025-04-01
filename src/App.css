@@ -60,12 +60,14 @@
   text-align: center;
   color: white;
   width: 90%;
+  z-index: 2;
 }
 
 .heroTitle {
   font-size: 3.5rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  font-family: "July it", sans-serif;
+  font-weight: 400;
+  color: white;
 }
 
 .heroSubtitle {
@@ -1255,11 +1257,12 @@ body {
   position: absolute;
   top: 9%;
   /* left: 50%; */
-  transform: translateX(250%);
+  /* transform: translateX(250%); */
   text-align: center;
   z-index: 1000;
   padding: 10px 20px;
   border-radius: 8px;
+  width: 100vw;
 }
 /* Card Panels */
 .card {
@@ -1482,14 +1485,13 @@ body {
 }
 
 /* Curved Mask Effect */
-.curved-carousel-container::before {
+/* .curved-carousel-container::before {
   content: "";
   position: absolute;
   left: -5%;
   top: 41px;
   width: 110%;
-  height: 80px; /* Reduce height */
-  /* background: white; */
+  height: 80px; 
   border-radius: 100%;
   z-index: 2;
   background-image: url(/gallery-overlay-start-bg.png);
@@ -1503,15 +1505,14 @@ body {
   left: -5%;
   bottom: -25px;
   width: 110%;
-  height: 80px; /* Reduce height */
-  /* background: white; */
+  height: 80px; 
   border-radius: 100%;
   z-index: 2;
   background-image: url(/gallery-overlay-end-bg.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100%;
-}
+} */
 
 /*end insta feed*/
 
@@ -1679,7 +1680,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: transform 0.5s ease, opacity 0.5s ease;
-  padding-top: 4rem;
+  padding-top: 5px;
 }
 
 .slide-item {

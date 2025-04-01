@@ -1,0 +1,93 @@
+.faq-container {
+  padding: 120px 20px 80px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.faq-heading {
+  font-size: 3rem;
+  color: #bb976d;
+  padding: 30px;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/* Buttons Section */
+.faq-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px;
+}
+
+.faq-btn {
+  background: #fff;
+  border: 1px solid #8b6a4c;
+  color: #8b6a4c;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 33vw;
+}
+
+.faq-btn:hover {
+  background: #9f7c5c;
+  color: white;
+}
+
+.active-btn {
+  background: #fff;
+}
+
+/* Swipe Animation */
+.faq-swipe-section {
+  overflow: hidden;
+}
+
+/* FAQ List */
+.faq-list {
+  border-top: 1px dashed #f0f0f0;
+}
+
+.faq-item {
+  border-bottom: 1px dashed #f0f0f0;
+}
+.faq-answer-container {
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 0.5s ease-in-out;
+}
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+  background-color: #eaeaea;
+}
+
+.faq-icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Expanding FAQ Answer */
+.faq-answer {
+  padding: 15px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #333;
+}

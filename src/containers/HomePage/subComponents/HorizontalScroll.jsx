@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { useLayoutEffect, useRef, useState, useEffect } from "react";
+import { useLayoutEffect, useRef, useState, useEffect, Fragment } from "react";
 import "../../../App.css";
 import SectionHeading from "./SectionHeading";
 import AOS from "aos";
@@ -94,8 +94,8 @@ export default function HorizontalScroll() {
           <SectionHeading title="Featured" subtitle="Categories" />
         </div>
         {sections.map((section, index) => (
-          <>
-            <div className="panel card" key={index}>
+          <Fragment key={index}>
+            <div className="panel card">
               <div
                 className="hero-images"
                 data-aos="fade-right"
@@ -131,7 +131,7 @@ export default function HorizontalScroll() {
                 </button>
               </div>
             </div>
-          </>
+          </Fragment>
         ))}
       </div>
     </div>

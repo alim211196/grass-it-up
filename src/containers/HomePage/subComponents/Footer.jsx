@@ -94,7 +94,7 @@ const Footer = () => {
                   <ul style={{ listStyle: "none", paddingLeft: 0 }}>
                     <li style={{ lineHeight: "2" }}>
                       <a
-                        href="#"
+                        href="/about-us"
                         style={{ color: "white", textDecoration: "none" }}
                       >
                         About Us
@@ -102,15 +102,15 @@ const Footer = () => {
                     </li>
                     <li style={{ lineHeight: "2" }}>
                       <a
-                        href="#"
+                        href="/faqs"
                         style={{ color: "white", textDecoration: "none" }}
                       >
-                        Our Showroom
+                        Faqs
                       </a>
                     </li>
                     <li style={{ lineHeight: "2" }}>
                       <a
-                        href="#"
+                        href="/terms-conditions"
                         style={{ color: "white", textDecoration: "none" }}
                       >
                         Terms & Conditions
@@ -118,7 +118,7 @@ const Footer = () => {
                     </li>
                     <li style={{ lineHeight: "2" }}>
                       <a
-                        href="#"
+                        href="/privacy-policy"
                         style={{ color: "white", textDecoration: "none" }}
                       >
                         Privacy Policy
@@ -126,10 +126,10 @@ const Footer = () => {
                     </li>
                     <li style={{ lineHeight: "2" }}>
                       <a
-                        href="#"
+                        href="/returns-exchanges"
                         style={{ color: "white", textDecoration: "none" }}
                       >
-                        Delivery Information
+                        Returns & Exchanges
                       </a>
                     </li>
                   </ul>

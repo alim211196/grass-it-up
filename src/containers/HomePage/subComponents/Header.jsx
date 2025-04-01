@@ -24,6 +24,13 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isHomePage]);
 
+  const navIcons = [
+    { name: "search", path: "/search" },
+    { name: "location", path: "/location" },
+    { name: "avatar", path: "/profile" },
+    { name: "bag", path: "/cart" },
+  ];
+
   return (
     <header
       className={`navbar ${isDarkMode ? "navbarHover" : "navbarTransparent"}`}
@@ -95,13 +102,17 @@ const Header = () => {
 
         {/* Icons */}
         <div className="navIcons">
-          {["search", "location", "avatar", "bag"].map((icon) => (
-            <img
-              key={icon}
-              src={isDarkMode ? `/${icon}.png` : `/${icon}_white.png`}
-              alt={icon}
-              loading="lazy"
-            />
+          {navIcons.map((icon) => (
+            <a href={icon.path}>
+              <img
+                key={icon.name}
+                src={
+                  isDarkMode ? `/${icon.name}.png` : `/${icon.name}_white.png`
+                }
+                alt={icon.name}
+                loading="lazy"
+              />
+            </a>
           ))}
         </div>
       </div>

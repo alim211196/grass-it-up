@@ -33,7 +33,7 @@ const SubscriptionSection = lazy(() =>
 );
 const Footer = lazy(() => import("./subComponents/Footer"));
 const Chatbot = lazy(() => import("../ChatBot"));
-
+// const GallerySection2 = lazy(() => import("./subComponents/GallerySection2"));
 const HomePage = () => {
   return (
     <>
@@ -42,7 +42,7 @@ const HomePage = () => {
       <HorizontalScroll />
       <Chatbot />
       {/* Lazy-loaded components wrapped in Suspense */}
-      <Suspense fallback={null}>
+      <Suspense fallback={<SuspenseLoader />}>
         <InformativeCategorySection />
         <ProductGrid />
         <BreakerSection />
