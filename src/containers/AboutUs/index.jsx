@@ -5,7 +5,6 @@ import "./aboutus.css";
 import SubscriptionSection from "../HomePage/subComponents/SubscriptionSection";
 import PartnerMarquee from "../HomePage/subComponents/PartnerMarquee";
 import OurHistory from "./OurHistory";
-import BreakerSection from "../HomePage/subComponents/BreakerSection";
 import SectionHeading from "../HomePage/subComponents/SectionHeading";
 const AboutUs = () => {
   return (
