@@ -9,7 +9,6 @@
   color: #bb976d;
   padding: 30px;
   text-transform: capitalize;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
 
@@ -28,6 +27,7 @@
   padding: 10px 20px;
   font-size: 1rem;
   cursor: pointer;
+  letter-spacing: 2px;
   transition: all 0.3s ease-in-out;
   width: 33vw;
 }
@@ -54,17 +54,12 @@
 .faq-item {
   border-bottom: 1px dashed #f0f0f0;
 }
-.faq-answer-container {
-  overflow: hidden;
-  max-height: 0px;
-  transition: max-height 0.5s ease-in-out;
-}
 .faq-question {
   width: 100%;
   text-align: left;
   padding: 15px;
   font-size: 18px;
-  font-weight: bold;
+  color: #38373d;
   background-color: #fff;
   border: none;
   outline: none;
@@ -73,10 +68,16 @@
   justify-content: space-between;
   align-items: center;
   transition: background-color 0.3s;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .faq-question:hover {
-  background-color: #eaeaea;
+  background-color: #8b6a4c;
+  color: white;
 }
 
 .faq-icon {
@@ -90,4 +91,14 @@
   background-color: #ffffff;
   font-size: 16px;
   color: #333;
+  letter-spacing: 2px;
+}
+.faq-answer-container {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.faq-item.active .faq-answer-container {
+  max-height: 200px; /* Adjust to fit the longest possible answer */
 }

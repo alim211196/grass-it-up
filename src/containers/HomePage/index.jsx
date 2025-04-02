@@ -33,7 +33,7 @@ const SubscriptionSection = lazy(() =>
 );
 const Footer = lazy(() => import("./subComponents/Footer"));
 const Chatbot = lazy(() => import("../ChatBot"));
-// const GallerySection2 = lazy(() => import("./subComponents/GallerySection2"));
+const GallerySection2 = lazy(() => import("./subComponents/GallerySection2"));
 const HomePage = () => {
   return (
     <>
@@ -48,7 +48,7 @@ const HomePage = () => {
         <BreakerSection />
         <HorizontalCarousel />
         <BlogSection />
-        <GallerySection />
+        <GallerySection2 />
         <TopTrending />
         <VisitOurShowroom />
         <HotspotImage />

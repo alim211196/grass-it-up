@@ -1,76 +1,69 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/free-mode";
 import "swiper/css/navigation";
-import "swiper/css/thumbs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SectionHeading from "./SectionHeading";
+const images = [
+  {
+    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-2.jpg",
+    name: "Modern Design",
+  },
+  {
+    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-1.jpg",
+    name: "Luxury Sofa",
+  },
 
+  {
+    src: "https://dev-risians.com/html/grassitup/images/blog-bg-1.jpg",
+    name: "Modern Design",
+  },
+  {
+    src: "https://dev-risians.com/html/grassitup/images/blog-bg-2.jpg",
+    name: "Luxury Sofa",
+  },
+  {
+    src: "https://dev-risians.com/html/grassitup/images/blog-bg-3.jpg",
+    name: "Modern Design",
+  },
+  {
+    src: "https://dev-risians.com/html/grassitup/images/blog-bg-4.jpg",
+    name: "Luxury Sofa",
+  },
+  {
+    src: "https://dev-risians.com/html/grassitup/images/blog-bg-5.jpg",
+    name: "Modern Design",
+  },
+];
 const GallerySection2 = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const mainSwiperRef = useRef(null);
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
-
-  const images = [
-    {
-      src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-2.jpg",
-      name: "Modern Design",
-    },
-    {
-      src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-1.jpg",
-      name: "Luxury Sofa",
-    },
-    {
-      src: "https://grassitupshop.com/cdn/shop/files/Sahara_608x416.jpg?v=1732629985",
-      name: "Cozy Living",
-    },
-    {
-      src: "https://grassitupshop.com/cdn/shop/files/Blue-20_608x416.jpg?v=1655713613",
-      name: "Modern Interior",
-    },
-    {
-      src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-2.jpg",
-      name: "Modern Design",
-    },
-    {
-      src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-1.jpg",
-      name: "Luxury Sofa",
-    },
-    {
-      src: "https://grassitupshop.com/cdn/shop/files/Sahara_608x416.jpg?v=1732629985",
-      name: "Cozy Living",
-    },
-    {
-      src: "https://grassitupshop.com/cdn/shop/files/Blue-20_608x416.jpg?v=1655713613",
-      name: "Modern Interior",
-    },
-  ];
 
   return (
     <div
       className="blog-section py-5 overflow-hidden"
       data-aos="fade-up"
       data-aos-delay="100"
-      style={{ height: "150vh" }}
     >
       <SectionHeading title="Our" subtitle="Gallery" />
 
       {/* Main Swiper */}
       <Swiper
-        thumbs={{
-          swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
-        }}
+        onSwiper={(swiper) => (mainSwiperRef.current = swiper)}
         spaceBetween={5}
         slidesPerView={1}
         navigation={true}
-        modules={[FreeMode, Navigation, Thumbs]}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        modules={[Navigation, Autoplay]}
         className="mySwiper2"
         style={{ width: "100vw", height: "70vh" }}
+        onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
       >
         {images.map((item, index) => (
           <SwiperSlide
@@ -83,20 +76,26 @@ const GallerySection2 = () => {
             }}
           >
             <div
-              style={{ width: "100%", height: "100%", position: "relative" }}
               className="image-container"
+              style={{ width: "100%", height: "100%", position: "relative" }}
             >
               <img
                 src={item.src}
                 alt={`Slide ${index + 1}`}
+                className="gallery-image"
+                loading="lazy"
                 style={{
                   width: "100%",
                   height: "100%",
                   objectFit: "cover",
                   transition: "transform 0.3s ease-in-out",
                 }}
-                className="gallery-image"
-                loading="lazy"
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.transform = "scale(1.1)")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.transform = "scale(1)")
+                }
               />
               <div
                 style={{
@@ -121,37 +120,42 @@ const GallerySection2 = () => {
         ))}
       </Swiper>
 
-      {/* Thumbnails Swiper */}
-      <Swiper
-        onSwiper={setThumbsSwiper}
-        spaceBetween={5}
-        slidesPerView={4}
-        freeMode={true}
-        watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="w-full direct"
-        style={{ height: "30vh" }}
-      >
-        {images.map((item, index) => (
-          <SwiperSlide
-            key={index}
-            style={{
-              height: "100%",
-              display: "flex",
-              alignItems: "start",
-              justifyContent: "start",
-            }}
-          >
-            <img
-              src={item.src}
-              alt={`Slide ${index + 1}`}
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              className="gallery-image"
-              loading="lazy"
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      {/* Thumbnails */}
+      <div className="thumbnail-container">
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={4}
+          navigation={true}
+          modules={[Navigation]}
+          className="thumbnail-slider"
+          style={{
+            display: "flex",
+            gap: "5px",
+            marginTop: "5px",
+            // overflowX: "auto",
+          }}
+        >
+          {images.map((item, index) => (
+            <SwiperSlide
+              key={index}
+              className={`thumbnail ${activeIndex === index ? "active" : ""}`}
+              onClick={() => mainSwiperRef.current?.slideTo(index)}
+              style={{
+                width: "20%",
+                height: "20vh",
+                cursor: "pointer",
+              }}
+            >
+              <img
+                src={item.src}
+                alt={`Thumb ${index + 1}`}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                loading="lazy"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };

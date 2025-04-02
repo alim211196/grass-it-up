@@ -79,7 +79,6 @@ const Faqs = () => {
           <div className="faq-list">
             {faqsData.map((faq, index) => (
               <div
-                key={index}
                 className={`faq-item ${activeIndex === index ? "active" : ""}`}
               >
                 <button
@@ -91,26 +90,8 @@ const Faqs = () => {
                     {activeIndex === index ? "−" : "+"}
                   </span>
                 </button>
-
-                <div
-                  className="faq-answer-container"
-                  style={{
-                    maxHeight: activeIndex === index ? "200px" : "0px",
-                    transition: "max-height 0.5s ease-in-out",
-                  }}
-                >
-                  {activeIndex === index && (
-                    <motion.div
-                      className="faq-answer"
-                      layout // 👈 Keeps layout stable
-                      initial={{ opacity: 0, y: 10 }} // Start faded & slightly below
-                      animate={{ opacity: 2, y: 0 }} // Smooth fade-in
-                      exit={{ opacity: 0, y: 10 }} // Fade-out upwards
-                      transition={{ duration: 0.5, ease: "easeIn" }} // Slow smooth transition
-                    >
-                      {faq.answer}
-                    </motion.div>
-                  )}
+                <div className="faq-answer-container">
+                  <div className="faq-answer">{faq.answer}</div>
                 </div>
               </div>
             ))}

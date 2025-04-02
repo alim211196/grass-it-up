@@ -102,8 +102,8 @@ const Header = () => {
 
         {/* Icons */}
         <div className="navIcons">
-          {navIcons.map((icon) => (
-            <a href={icon.path}>
+          {navIcons.map((icon, index) => (
+            <a href={icon.path} key={index}>
               <img
                 key={icon.name}
                 src={
