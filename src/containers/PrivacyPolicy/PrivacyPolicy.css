@@ -1,14 +1,14 @@
 /* Main Container */
-.terms-container {
+.policy-container {
   padding: 160px 20px 20px;
   background-color: #fff;
 }
-.terms-heading-container {
+.policy-heading-container {
   margin: 0 auto;
   width: 60vw;
   padding: 30px 0px;
 }
-.terms-heading {
+.policy-heading {
   font-size: 4rem;
   color: #bb976d;
   margin-bottom: 10px;
@@ -16,7 +16,7 @@
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.terms-description {
+.policy-description {
   font-size: 1rem;
   color: #6c757d;
   line-height: 1.6;
@@ -24,7 +24,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 /* Terms Content */
-.terms-content {
+.policy-content {
   font-size: 14px;
   color: #332f2c;
   line-height: 30px;
@@ -34,12 +34,12 @@
 }
 
 /* Each Terms Section */
-.terms-item {
+.policy-item {
   padding: 15px;
 }
 
 /* Section Title */
-.terms-item h2 {
+.policy-item h2 {
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -49,7 +49,7 @@
 }
 
 /* Section Description */
-.terms-item p {
+.policy-item p {
   font-size: 1.1rem;
   text-align: left;
   text-transform: capitalize;
@@ -63,15 +63,15 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .terms-title {
+  .policy-title {
     font-size: 2rem;
   }
 
-  .terms-item h2 {
+  .policy-item h2 {
     font-size: 1.5rem;
   }
 
-  .terms-item p {
+  .policy-item p {
     font-size: 1rem;
   }
 }

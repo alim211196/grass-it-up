@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "./aboutus.css";
 
 // import required modules
-import { Parallax, Pagination, Navigation } from "swiper/modules";
+import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
 import SectionHeading from "../HomePage/subComponents/SectionHeading";
 const slidesData = [
   {
@@ -61,7 +61,8 @@ export default function OurHistory() {
           clickable: true,
         }}
         navigation={true}
-        modules={[Parallax, Pagination, Navigation]}
+        modules={[Parallax, Pagination, Navigation, Autoplay]}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         className="about-swiper"
       >
         <div
