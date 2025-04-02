@@ -60,7 +60,7 @@ const GallerySection2 = () => {
         slidesPerView={1}
         navigation={true}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         className="mySwiper2"
         style={{ width: "100vw", height: "70vh" }}
         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
