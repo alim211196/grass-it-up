@@ -60,7 +60,7 @@ const GallerySection2 = () => {
         slidesPerView={1}
         navigation={true}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
-        modules={[Navigation, Autoplay]}
+        modules={[Navigation]}
         className="mySwiper2"
         style={{ width: "100vw", height: "70vh" }}
         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
@@ -144,12 +144,20 @@ const GallerySection2 = () => {
                 width: "20%",
                 height: "20vh",
                 cursor: "pointer",
+                border: activeIndex === index ? "3px solid black" : "none",
+                paddingTop: 0,
+                borderRadius: 5,
               }}
             >
               <img
                 src={item.src}
                 alt={`Thumb ${index + 1}`}
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  borderRadius: 5,
+                }}
                 loading="lazy"
               />
             </SwiperSlide>
