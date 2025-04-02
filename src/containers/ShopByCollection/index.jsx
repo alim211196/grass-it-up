@@ -67,7 +67,7 @@ const materials = [
   {
     name: "Cambria",
     description:
-      "Terra Luxe™ cushions with a style-setting mix of crisp lines & smooth curves.",
+      "GrassItUp Luxe™ cushions with a style-setting mix of crisp lines & smooth curves.",
     image:
       "https://cld.accentuate.io/399907815677/1663182591551/Cambria-collection-main.jpg",
   },

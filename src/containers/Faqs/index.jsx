@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Header from "../HomePage/subComponents/Header";
 import Footer from "../HomePage/subComponents/Footer";
 import "./Faqs.css"; // Import the CSS file for styling
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const faqsData = [
   {
     question: "What types of outdoor furniture does Grassitup offer?",
@@ -45,12 +46,15 @@ const Faqs = () => {
   const handleSwipe = (index) => {
     setSwipeIndex(index);
   };
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   return (
     <>
       <Header />
-      <div className="faq-container">
-        <h2 className="faq-heading">Frequently Asked Questions</h2>
+      <div className="faq-container" data-aos="fade-up" data-aos-delay="100">
+        <h1 className="faq-heading">Frequently Asked Questions</h1>
 
         {/* Buttons Below Title */}
         <div className="faq-buttons">

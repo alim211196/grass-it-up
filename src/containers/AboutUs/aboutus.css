@@ -1,0 +1,303 @@
+.about-container {
+  text-align: center;
+  padding: 160px 20px 80px;
+  background-color: #fff;
+}
+.heading-container {
+  margin: 0 auto;
+  width: 60vw;
+}
+.about-heading {
+  font-size: 4rem;
+  color: #bb976d;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-subheading {
+  text-transform: uppercase;
+  line-height: 1.43;
+  letter-spacing: 4px;
+  width: 100%;
+  margin: 20px;
+  font-size: 1rem;
+}
+
+.about-description {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-banner-image {
+  width: 100vw;
+  height: 100vh;
+  background: url(https://terraoutdoor.com/cdn/shop/files/table_img_2x_c6f7c1a3-a413-4d24-a02f-5c7ae20fe5e4_1512x.png)
+    no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.mission-container {
+  margin: 0 auto;
+  padding: 50px 0px;
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mission-heading {
+  line-height: 1.43;
+  letter-spacing: 4px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px !important;
+  font-size: inherit;
+  text-align: center;
+}
+.mission-description {
+  line-height: 1.22;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 28px;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: #333;
+  transition: color 0.2s ease-in-out;
+  text-align: center;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+}
+
+.about-container2 {
+  display: flex;
+  background-color: #f0f0f0;
+}
+
+.about-image {
+  /* flex: 1; */
+}
+
+.about-image img {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px 40px;
+}
+
+.about-text h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.about-text p {
+  font-size: 14px;
+  color: #332f2c;
+  line-height: 30px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+/* Pricing Section */
+.pricing-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+/* Main Heading */
+.main-heading {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 40px;
+  line-height: 1.2;
+  color: #bb976d;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Subheading */
+.subheading {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Features Container */
+.features-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+/* Feature Box */
+.feature-box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #f0f0f0;
+  border-radius: 50%;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
+  margin: -10px -10px 0;
+}
+
+/* Feature Box Hover Effect */
+.feature-box:hover {
+  border-color: #bb976d;
+  cursor: pointer;
+}
+.feature-box p {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Icons */
+.icon img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+}
+.about-swiper {
+  width: 100%;
+  background: #000;
+  height: 100vh !important;
+}
+
+.about-swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+  height: 100vh !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center;
+}
+
+.about-parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100vh !important;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-swiper-slide .title {
+  font-size: 41px;
+  font-weight: 300;
+  text-align: left;
+  font-size: 4rem;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-swiper-slide .subtitle {
+  font-size: 21px;
+  text-align: left;
+}
+.glass-effect {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.about-swiper-slide .text {
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 1.43;
+  letter-spacing: 4px;
+  width: 100%;
+  font-size: 1rem;
+  color: black;
+}
+
+/* Full-screen hero section */
+.about-hero-section {
+  height: 100vh;
+  width: 100%;
+  background: url(/shop-now-bg.png) no-repeat center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+/* White overlay */
+.about-hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Content box */
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  color: black;
+  font-family: "Georgia", serif;
+}
+
+.about-hero-content h1 {
+  font-size: 4rem;
+  color: #bb976d;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-hero-content p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+/* Underline */
+.about-underline {
+  width: 100px;
+  height: 2px;
+  background: black;
+  margin: 10px auto;
+}
