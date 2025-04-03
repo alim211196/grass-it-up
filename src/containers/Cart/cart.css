@@ -74,12 +74,12 @@
 }
 .stock-check1 {
   border-radius: 50%;
-  border: 1px solid #d2c4b8;
+  border: 1px solid #bb976d;
   height: 12px;
   width: 12px;
   text-align: center;
   font-size: 8px;
-  color: #d2c4b8;
+  color: #bb976d;
 }
 .product-stock1 {
   display: flex;
@@ -146,7 +146,7 @@
 .remove-btn {
   background: none;
   border: none;
-  color: rgb(127, 156, 144);
+  color: #bb976d;
   cursor: pointer;
   margin-top: 10px;
   font-size: 13px;
