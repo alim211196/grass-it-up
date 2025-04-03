@@ -1,0 +1,162 @@
+.profile-section {
+  text-align: center;
+  padding: 98px 0px 0px;
+  background-color: #fff;
+}
+.profile-container {
+  height: 100vh;
+  width: 100%;
+  background: url(/shop-now-bg.png) no-repeat center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  flex-direction: column;
+}
+.profile-welcome-message {
+  font-size: 4rem;
+  color: #bb976d;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.profile-username {
+  text-transform: uppercase;
+  line-height: 1.43;
+  letter-spacing: 4px;
+  width: 100%;
+  margin: 20px;
+  font-size: 1rem;
+}
+.myorder-section {
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.myorder-title {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #bb976d;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.myorder-cart-items {
+  display: flex;
+  flex: 2;
+  background: #fff;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.myorder-cart-item {
+  display: flex;
+  align-items: center;
+  border: 1px dashed #ddd;
+}
+
+.myorder-cart-item-div {
+  width: 200px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.myorder-cart-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s ease-in-out;
+}
+
+.myorder-cart-item-image:hover {
+  transform: scale(1.1);
+}
+.myorder-cart-item-details {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.myorder-cart-item-details-div1 {
+  padding: 10px 20px;
+  gap: 3px;
+}
+.myorder-cart-item-details-div2 {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.myorder-cart-price-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.myorder-cart-item-details h3 {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.myorder-cart-item-details p {
+  font-size: 13px;
+  color: #555;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+}
+
+.myorder-cart-price {
+  font-weight: bold;
+  color: #222;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+}
+
+.myaddress-section {
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.myaddress-title {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #bb976d;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.star-rating {
+  display: flex;
+  gap: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.star {
+  color: #ccc;
+  transition: color 0.2s ease-in-out;
+}
+
+.star.filled {
+  color: rgb(187, 151, 109);
+}
+.write-a-review {
+  color: rgb(127, 156, 144);
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.write-a-review:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

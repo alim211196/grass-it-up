@@ -27,7 +27,7 @@ const Header = () => {
   const navIcons = [
     { name: "search", path: "/search" },
     { name: "location", path: "/location" },
-    { name: "avatar", path: "/profile" },
+    { name: "avatar", path: "account/profile" },
     { name: "bag", path: "/cart" },
   ];
 
