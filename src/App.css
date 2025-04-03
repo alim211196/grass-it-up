@@ -1638,10 +1638,12 @@ body {
   font-size: 14px;
   margin-bottom: 8px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
 }
 
 .social-links li {
   list-style: none;
+  letter-spacing: 2px;
 }
 
 .social-links a {
@@ -1650,6 +1652,7 @@ body {
   display: block;
   padding: 5px 0;
   transition: color 0.3s ease;
+  letter-spacing: 2px;
 }
 
 .social-links a:hover {

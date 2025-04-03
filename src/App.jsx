@@ -46,15 +46,15 @@ function App() {
         <Route path="/terms-conditions" element={<TermsConditions />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
-        <Route path="/customer/profile" element={<CustomerProfile />} />
-        <Route path="/customer/signin" element={<CustomerLogin />} />
-        <Route path="/customer/signup" element={<CustomerReg />} />
+        <Route path="/account/profile" element={<CustomerProfile />} />
+        <Route path="/account/login" element={<CustomerLogin />} />
+        <Route path="/account/register" element={<CustomerReg />} />
         <Route
           path="/interior-designer/profile"
           element={<DesignerProfile />}
         />
-        <Route path="/interior-designer/signin" element={<DesignerLogin />} />
-        <Route path="/interior-designer/signup" element={<DesignerReg />} />
+        <Route path="/interior-designer/login" element={<DesignerLogin />} />
+        <Route path="/interior-designer/register" element={<DesignerReg />} />
       </Routes>
     </Suspense>
   );

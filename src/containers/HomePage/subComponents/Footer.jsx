@@ -80,7 +80,7 @@ const Footer = () => {
                     loading="lazy"
                   />
 
-                  <p style={{ marginLeft: "20px" }}>
+                  <p style={{ marginLeft: "20px", letterSpacing: "2px" }}>
                     Welcome to Grassitup - Luxury Outdoor Furniture Store Dubai,
                     offering a wide selection of contemporary and stylish garden
                     furniture with a focus on quality, durability, and design,
@@ -89,13 +89,22 @@ const Footer = () => {
                 </div>
                 {/* Useful Links */}
                 <div className="col-md-3 col-lg-2 mb-4">
-                  <h6 className="text-uppercase fw-bold">Help & Advice</h6>
+                  <h6
+                    className="text-uppercase fw-bold"
+                    style={{ letterSpacing: "2px" }}
+                  >
+                    Help & Advice
+                  </h6>
                   <hr />
                   <ul style={{ listStyle: "none", paddingLeft: 0 }}>
                     <li style={{ lineHeight: "2" }}>
                       <a
                         href="/about-us"
-                        style={{ color: "white", textDecoration: "none" }}
+                        style={{
+                          color: "white",
+                          textDecoration: "none",
+                          letterSpacing: "2px",
+                        }}
                       >
                         About Us
                       </a>
@@ -103,7 +112,11 @@ const Footer = () => {
                     <li style={{ lineHeight: "2" }}>
                       <a
                         href="/faqs"
-                        style={{ color: "white", textDecoration: "none" }}
+                        style={{
+                          color: "white",
+                          textDecoration: "none",
+                          letterSpacing: "2px",
+                        }}
                       >
                         Faqs
                       </a>
@@ -111,7 +124,11 @@ const Footer = () => {
                     <li style={{ lineHeight: "2" }}>
                       <a
                         href="/terms-conditions"
-                        style={{ color: "white", textDecoration: "none" }}
+                        style={{
+                          color: "white",
+                          textDecoration: "none",
+                          letterSpacing: "2px",
+                        }}
                       >
                         Terms & Conditions
                       </a>
@@ -119,7 +136,11 @@ const Footer = () => {
                     <li style={{ lineHeight: "2" }}>
                       <a
                         href="/privacy-policy"
-                        style={{ color: "white", textDecoration: "none" }}
+                        style={{
+                          color: "white",
+                          textDecoration: "none",
+                          letterSpacing: "2px",
+                        }}
                       >
                         Privacy Policy
                       </a>
@@ -127,7 +148,11 @@ const Footer = () => {
                     <li style={{ lineHeight: "2" }}>
                       <a
                         href="/returns-exchanges"
-                        style={{ color: "white", textDecoration: "none" }}
+                        style={{
+                          color: "white",
+                          textDecoration: "none",
+                          letterSpacing: "2px",
+                        }}
                       >
                         Returns & Exchanges
                       </a>
@@ -136,9 +161,14 @@ const Footer = () => {
                 </div>
                 {/* Contact Info */}
                 <div className="col-md-3 col-lg-2 mb-4">
-                  <h6 className="text-uppercase fw-bold">Contact</h6>
+                  <h6
+                    className="text-uppercase fw-bold"
+                    style={{ letterSpacing: "2px" }}
+                  >
+                    Contact
+                  </h6>
                   <hr />
-                  <p>
+                  <p style={{ letterSpacing: "2px" }}>
                     <i className="fas fa-home mr-3"></i> Dubai, UAE
                   </p>
                   <p>
@@ -153,7 +183,12 @@ const Footer = () => {
                 </div>
                 {/* Products */}
                 <div className="col-md-2 col-lg-2 mb-4">
-                  <h6 className="text-uppercase fw-bold">Payment Method</h6>
+                  <h6
+                    className="text-uppercase fw-bold"
+                    style={{ letterSpacing: "2px" }}
+                  >
+                    Payment Method
+                  </h6>
                   <hr />
                   <p
                     className="text-white"
