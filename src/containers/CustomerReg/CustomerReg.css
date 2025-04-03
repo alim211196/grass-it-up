@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 120px 80px 20px;
+  padding: 100px 0px 0px;
   margin: 0 auto;
   height: 100%;
 }
@@ -17,7 +17,7 @@
 
 /* Left Side Image */
 .register-image {
-  width: 80%;
+  width: 60vw;
   overflow: hidden;
   position: relative;
 }
@@ -34,8 +34,8 @@
 }
 /* Right Side Form */
 .register-form {
-  width: 50%;
-  padding: 40px 0px 40px 40px;
+  width: 40vw;
+  padding: 4rem 4rem 0rem;
 }
 
 .register-form h2 {

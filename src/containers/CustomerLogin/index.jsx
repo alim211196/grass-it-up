@@ -49,7 +49,7 @@ const CustomerLogin = () => {
               <div className="login-links">
                 <p>
                   Already Have An Account?{" "}
-                  <Link to="/account/register">Create Account</Link>
+                  <Link to="/account/register">Register</Link>
                 </p>
                 <Link to="/account/forgot-password">Forgot Your Password?</Link>
               </div>

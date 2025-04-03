@@ -1,5 +1,5 @@
 /* Login Page Container */
-.login-container {
+.d-login-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,36 +9,36 @@
 }
 
 /* Main Content Wrapper */
-.login-content {
+.d-login-content {
   display: flex;
   overflow: hidden;
   align-items: center;
 }
 
 /* Left Side Image */
-.login-image {
+.d-login-image {
   width: 60vw;
   overflow: hidden;
   position: relative;
 }
 
-.login-image img {
+.d-login-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 1s ease-in-out;
 }
 
-.login-image img:hover {
+.d-login-image img:hover {
   transform: scale(1.1);
 }
 /* Right Side Form */
-.login-form {
+.d-login-form {
   width: 40vw;
   padding: 4rem 4rem 0rem;
 }
 
-.login-form h2 {
+.d-login-form h2 {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -47,7 +47,7 @@
   font-weight: 700;
 }
 
-.login-form p {
+.d-login-form p {
   font-size: 14px;
   color: #332f2c;
   line-height: 30px;
@@ -119,19 +119,19 @@
 }
 
 /* Additional Links */
-.login-links {
+.d-login-links {
   margin-top: 15px;
   font-size: 14px;
   text-align: center;
 }
 
-.login-links a {
+.d-login-links a {
   color: rgb(127, 156, 144);
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-.login-links a:hover {
+.d-login-links a:hover {
   text-decoration: underline;
 }

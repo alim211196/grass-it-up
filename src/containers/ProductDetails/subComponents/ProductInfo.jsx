@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "swiper/css/zoom";
+import { useNavigate } from "react-router-dom";
 const images = [
   "https://cdn.accentuate.io/8825401639165/1740006238258/seaside-dune-sofa-1.jpg",
   "https://cdn.accentuate.io/8825401639165/1740006241991/seaside-dune-sofa-2.jpg",
@@ -17,7 +18,7 @@ const images = [
 ];
 const ProductInfo = ({ product }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
+  const navigate = useNavigate();
   const [quantity, setQuantity] = useState(1);
   const handleIncrement = () => setQuantity((prev) => prev + 1);
   const handleDecrement = () =>
@@ -114,7 +115,12 @@ const ProductInfo = ({ product }) => {
             <span>{quantity}</span>
             <button onClick={handleIncrement}>+</button>
           </div>
-          <button className="add-to-cart-details">Add to Cart</button>
+          <button
+            className="add-to-cart-details"
+            onClick={() => navigate("/cart")}
+          >
+            Add to Cart
+          </button>
         </div>
         <div className="fabric-div">
           <span className="product-stock">Everyday Low Shipping - </span>

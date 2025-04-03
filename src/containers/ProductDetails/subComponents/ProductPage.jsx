@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "../productDetails.css";
+import { useNavigate } from "react-router-dom";
 
 const ProductPage = () => {
+  const navigate = useNavigate();
   const [quantity, setQuantity] = useState(1);
   const handleIncrement = () => setQuantity((prev) => prev + 1);
   const handleDecrement = () =>
@@ -46,7 +48,12 @@ const ProductPage = () => {
               <span>{quantity}</span>
               <button onClick={handleIncrement}>+</button>
             </div>
-            <button className="add-to-cart-details">Add to Cart</button>
+            <button
+              className="add-to-cart-details"
+              onClick={() => navigate("/cart")}
+            >
+              Add to Cart
+            </button>
           </div>
 
           <span className="product-stock">

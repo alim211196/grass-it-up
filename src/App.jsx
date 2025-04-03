@@ -50,11 +50,17 @@ function App() {
         <Route path="/account/login" element={<CustomerLogin />} />
         <Route path="/account/register" element={<CustomerReg />} />
         <Route
-          path="/interior-designer/profile"
+          path="/interior-designer/account/profile"
           element={<DesignerProfile />}
         />
-        <Route path="/interior-designer/login" element={<DesignerLogin />} />
-        <Route path="/interior-designer/register" element={<DesignerReg />} />
+        <Route
+          path="/interior-designer/account/login"
+          element={<DesignerLogin />}
+        />
+        <Route
+          path="/interior-designer/account/register"
+          element={<DesignerReg />}
+        />
       </Routes>
     </Suspense>
   );
