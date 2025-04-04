@@ -84,7 +84,7 @@ const HorizontalCarousel = () => {
 
       {/* Swiper for Auto Sliding */}
       <Swiper
-        modules={[Navigation, Autoplay]}
+        modules={[Navigation]}
         spaceBetween={10}
         slidesPerView={3} // Adjust based on design
         autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -127,8 +127,13 @@ const HorizontalCarousel = () => {
               >
                 {image.price}
               </h6>
-              <div className="add-to-cart">
-                <i className="fa fa-shopping-cart"></i> Add to Cart
+              <div className="carousel-iconContainer">
+                <div className="carousel-iconWrapper">
+                  <i className="fas fa-heart"></i>
+                </div>
+                <div className="carousel-iconWrapper">
+                  <i className="fas fa-shopping-bag"></i>
+                </div>
               </div>
             </div>
           </SwiperSlide>

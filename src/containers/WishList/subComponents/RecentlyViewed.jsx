@@ -32,7 +32,7 @@ const images = [
   },
 ];
 
-const ExploreProduct = ({ category }) => {
+const RecentlyViewed = ({ category }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
   const navigate = useNavigate();
@@ -72,7 +72,7 @@ const ExploreProduct = ({ category }) => {
 
   return (
     <Container fluid className="carousel-container position-relative p-4">
-      <SectionHeading title="Explore" subtitle="the Aesthetic" />
+      <SectionHeading title="Recently" subtitle="Viewed" />
 
       {/* Swiper for Auto Sliding */}
       <Swiper
@@ -147,4 +147,4 @@ const ExploreProduct = ({ category }) => {
   );
 };
 
-export default ExploreProduct;
+export default RecentlyViewed;

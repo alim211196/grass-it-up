@@ -18,6 +18,7 @@ const PrivacyPolicy = lazy(() => import("./containers/PrivacyPolicy"));
 const ReturnsExchanges = lazy(() => import("./containers/ReturnsExchanges"));
 const TermsConditions = lazy(() => import("./containers/TermsConditions"));
 const Cart = lazy(() => import("./containers/Cart"));
+const WishList = lazy(() => import("./containers/WishList"));
 const Checkout = lazy(() => import("./containers/Checkout"));
 const CustomerProfile = lazy(() => import("./containers/CustomerProfile"));
 const CustomerLogin = lazy(() => import("./containers/CustomerLogin"));
@@ -45,6 +46,7 @@ function App() {
         <Route path="/returns-exchanges" element={<ReturnsExchanges />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/wishlist" element={<WishList />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/account/profile" element={<CustomerProfile />} />
         <Route path="/account/login" element={<CustomerLogin />} />
