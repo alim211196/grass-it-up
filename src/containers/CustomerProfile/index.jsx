@@ -6,6 +6,7 @@ import SubscriptionSection from "../HomePage/subComponents/SubscriptionSection";
 import Footer from "../HomePage/subComponents/Footer";
 import "./customerProfile.css";
 import StarRating from "./StarRating";
+import AddressCard from "./AddressCard";
 const orders = [
   {
     id: 1,
@@ -28,6 +29,31 @@ const orders = [
     image:
       "https://cdn.accentuate.io/8825401639165/1740006238258/seaside-dune-sofa-1.jpg", // Replace with actual image
     quantity: 1,
+  },
+];
+
+const sampleAddresses = [
+  {
+    fullName: "John Doe",
+    phone: "1234567890",
+    address1: "123 Main St",
+    address2: "Apt 4B",
+    city: "New York",
+    state: "NY",
+    zip: "10001",
+    country: "USA",
+    isPrimary: true,
+  },
+  {
+    fullName: "Jane Smith",
+    phone: "9876543210",
+    address1: "456 Elm St",
+    address2: "Apt 4B",
+    city: "Los Angeles",
+    state: "CA",
+    zip: "90001",
+    country: "USA",
+    isPrimary: false,
   },
 ];
 const CustomerProfile = () => {
@@ -54,6 +80,8 @@ const CustomerProfile = () => {
           >
             John J Doe
           </h6>
+          <p className="profile-email">johndoe@gmail.com</p>
+          <a className="update-profile">Update Profile</a>
         </div>
       </section>
       <section className="myorder-section">
@@ -103,6 +131,9 @@ const CustomerProfile = () => {
         >
           My addresses
         </h1>
+        {sampleAddresses.map((addr, i) => (
+          <AddressCard key={i} isPrimary={addr.isPrimary} address={addr} />
+        ))}
       </section>
       <SubscriptionSection />
       <Footer />

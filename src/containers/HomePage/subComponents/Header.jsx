@@ -30,7 +30,7 @@ const Header = () => {
     { name: "avatar", path: "account/profile" },
     { name: "bag", path: "/cart" },
   ];
-
+  const cartCount = 2;
   return (
     <header
       className={`navbar ${isDarkMode ? "navbarHover" : "navbarTransparent"}`}
@@ -103,7 +103,7 @@ const Header = () => {
         {/* Icons */}
         <div className="navIcons">
           {navIcons.map((icon, index) => (
-            <a href={icon.path} key={index}>
+            <a href={icon.path} key={index} className="iconWrapper">
               <img
                 key={icon.name}
                 src={
@@ -112,6 +112,9 @@ const Header = () => {
                 alt={icon.name}
                 loading="lazy"
               />
+              {icon.path === "/cart" && cartCount > 0 && (
+                <span className="notify-badge">{cartCount}</span>
+              )}
             </a>
           ))}
         </div>
