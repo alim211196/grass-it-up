@@ -21,11 +21,12 @@
   width: 100%;
   margin: 20px;
   font-size: 1rem;
+  color: #000;
 }
 
 .about-description {
   font-size: 1rem;
-  color: #6c757d;
+  color: #000;
   line-height: 1.6;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -60,15 +61,14 @@
   text-align: center;
 }
 .mission-description {
-  line-height: 1.22;
   width: 100%;
   margin: 0 auto;
-  font-size: 28px;
-  letter-spacing: 0;
-  font-weight: 300;
-  color: #333;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #000;
   transition: color 0.2s ease-in-out;
   text-align: center;
+  line-height: 1.6;
 }
 
 .about-section {
@@ -78,11 +78,11 @@
 
 .about-container2 {
   display: flex;
-  background-color: #f0f0f0;
 }
 
 .about-image {
-  /* flex: 1; */
+  z-index: 10;
+  margin: 40px 0px;
 }
 
 .about-image img {
@@ -94,6 +94,10 @@
 .about-text {
   flex: 1;
   padding: 20px 40px;
+  background: #f0f0f0;
+  padding-left: 20vw;
+  margin-left: -15vw;
+  z-index: 2;
 }
 
 .about-text h2 {
@@ -131,7 +135,7 @@
 /* Subheading */
 .subheading {
   font-size: 1rem;
-  color: #6c757d;
+  color: #000;
   line-height: 1.6;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -167,7 +171,7 @@
 }
 .feature-box p {
   font-size: 1rem;
-  color: #6c757d;
+  color: #000;
   line-height: 1.6;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -213,7 +217,7 @@
   font-weight: 300;
   text-align: left;
   font-size: 4rem;
-  color: black;
+  color: white;
   margin-bottom: 10px;
   text-transform: capitalize;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -225,9 +229,9 @@
 }
 .glass-effect {
   margin: 20px;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   color: white;
@@ -245,7 +249,7 @@
   letter-spacing: 2px;
   width: 100%;
   font-size: 1rem;
-  color: black;
+  color: white;
 }
 
 /* Full-screen hero section */
@@ -300,4 +304,45 @@
   height: 2px;
   background: black;
   margin: 10px auto;
+}
+
+.shopNow {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 0px;
+  border: 1px solid rgb(127, 156, 144);
+  color: rgb(127, 156, 144);
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  z-index: 1;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Create the hover background effect */
+.shopNow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgb(127, 156, 144);
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
+}
+
+/* On hover, slide background in from the left and change text color */
+.shopNow:hover {
+  color: #fff;
+  border-color: rgb(127, 156, 144);
+}
+
+.shopNow:hover::before {
+  transform: translateX(100%);
 }

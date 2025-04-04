@@ -70,7 +70,7 @@ export default function OurHistory() {
           className="about-parallax-bg"
           style={{
             "background-image":
-              "url(https://terraoutdoor.com/cdn/shop/files/montara_live_edge_eta_main_1_1512x.jpg)",
+              "url(https://lh3.googleusercontent.com/p/AF1QipNNurZaoteL0AsfHDkAQJ49LsOpsqsrwVCo4roo=s680-w680-h510)",
           }}
           data-swiper-parallax="-23%"
         ></div>

@@ -160,7 +160,7 @@ const AboutUs = () => {
       >
         <div className="about-hero-content">
           <SectionHeading title="Explore" subtitle="GrassItUp" />
-          <button className="btn-custom">Let's Shop Now</button>
+          <button className="shopNow">Let's Shop Now</button>
         </div>
       </section>
       <PartnerMarquee />
