@@ -31,6 +31,7 @@ const Header = () => {
     { name: "bag", path: "/cart" },
   ];
   const cartCount = 2;
+  const wishlistCount = 3;
   return (
     <header
       className={`navbar ${isDarkMode ? "navbarHover" : "navbarTransparent"}`}
@@ -114,6 +115,9 @@ const Header = () => {
               />
               {icon.path === "/cart" && cartCount > 0 && (
                 <span className="notify-badge">{cartCount}</span>
+              )}
+              {icon.path === "/wishlist" && wishlistCount > 0 && (
+                <span className="notify-badge">{wishlistCount}</span>
               )}
             </a>
           ))}
