@@ -63,8 +63,6 @@ const Faqs = () => {
               key={index}
               className={`faq-btn ${swipeIndex === index ? "active-btn" : ""}`}
               onClick={() => handleSwipe(index)}
-              whileTap={{ scale: 0.95 }}
-              whileHover={{ scale: 1.1 }}
             >
               {btn}
             </motion.button>

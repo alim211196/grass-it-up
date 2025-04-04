@@ -17,28 +17,51 @@
   display: flex;
   justify-content: center;
   gap: 15px;
-  padding: 30px;
+  padding: 30px 0px;
 }
 
 .faq-btn {
   background: #fff;
-  border: 1px solid #8b6a4c;
-  color: #8b6a4c;
+  border: 1px dashed #f0f0f0;
+  color: #000;
   padding: 10px 20px;
   font-size: 1rem;
   cursor: pointer;
   letter-spacing: 2px;
-  transition: all 0.3s ease-in-out;
   width: 33vw;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  z-index: 1;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Create the hover background effect */
+.faq-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #bb976d;
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
 }
 
 .faq-btn:hover {
-  background: #caad91;
+  background: #bb976d;
   color: white;
 }
 
+.faq-btn:hover::before {
+  transform: translateX(100%);
+}
+
 .active-btn {
-  background: #fff;
+  background: #bb976d;
+  color: white;
 }
 
 /* Swipe Animation */
@@ -58,8 +81,8 @@
   width: 100%;
   text-align: left;
   padding: 15px;
-  font-size: 18px;
-  color: #38373d;
+  font-size: 1rem;
+  color: #000;
   background-color: #fff;
   border: none;
   outline: none;
@@ -70,27 +93,25 @@
   transition: background-color 0.3s;
   text-decoration: none;
   letter-spacing: 2px;
-  font-weight: 500;
   position: relative;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .faq-question:hover {
-  background-color: #caad91;
+  background-color: #bb976d;
   color: white;
 }
 
 .faq-icon {
   font-size: 20px;
-  font-weight: bold;
 }
 
 /* Expanding FAQ Answer */
 .faq-answer {
   padding: 15px;
-  background-color: #ffffff;
-  font-size: 16px;
-  color: #333;
+  background-color: #f0f0f0;
+  font-size: 0.8rem;
+  color: #000;
   letter-spacing: 2px;
 }
 .faq-answer-container {
@@ -100,5 +121,5 @@
 }
 
 .faq-item.active .faq-answer-container {
-  max-height: 200px; /* Adjust to fit the longest possible answer */
+  max-height: 400px; /* Adjust to fit the longest possible answer */
 }
