@@ -653,3 +653,34 @@
     margin-top: 5px;
   }
 }
+
+.pd-wishlist-icon-div {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  display: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Show on hover of the card */
+.swiper-zoom-container:hover .pd-wishlist-icon-div {
+  display: block;
+}
+.product-image-page:hover .pd-wishlist-icon-div {
+  display: block;
+}
+
+.pd-wishlist-icon-div i {
+  font-size: 20px;
+  color: #fff;
+  background: rgba(187, 151, 109, 0.7);
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.pd-wishlist-icon-div i:hover {
+  color: #38373d;
+  background: rgba(187, 151, 109, 0.7);
+}

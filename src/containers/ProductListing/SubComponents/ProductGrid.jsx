@@ -197,6 +197,9 @@ const ProductGrid = ({
                     {product.fprice}
                   </span>
                 </div>
+                <div className="wishlist-icon-div">
+                  <i className="fas fa-heart"></i>
+                </div>
               </div>
             </div>
           ))}

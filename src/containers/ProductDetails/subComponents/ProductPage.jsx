@@ -23,6 +23,9 @@ const ProductPage = () => {
             alt="Sunbrella Restore Fabric Protector"
             loading="lazy"
           />
+          <div className="pd-wishlist-icon-div">
+            <i className="fas fa-heart"></i>
+          </div>
         </div>
         <div
           className="product-details"

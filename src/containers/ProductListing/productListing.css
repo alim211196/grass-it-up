@@ -212,6 +212,7 @@
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.5px;
+  color: #bb976d;
 }
 .product-collection-fprice {
   font-size: 12px;
@@ -220,7 +221,7 @@
   letter-spacing: 0.5px;
   text-decoration: line-through;
   margin-left: 10px;
-  color: #7f9c90;
+  color: #333;
 }
 .no-border-select {
   border: none !important;
@@ -395,4 +396,32 @@
   background: #f5f0eb;
   margin-top: -18px;
   position: relative;
+}
+
+.wishlist-icon-div {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Show on hover of the card */
+.product-collection-card:hover .wishlist-icon-div {
+  display: block;
+}
+
+.wishlist-icon-div i {
+  font-size: 20px;
+  color: #fff;
+  background: rgba(187, 151, 109, 0.7);
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.wishlist-icon-div i:hover {
+  color: #38373d;
+  background: rgba(187, 151, 109, 0.7);
 }

@@ -42,6 +42,9 @@ const ProductInfo = ({ product }) => {
             <SwiperSlide key={index}>
               <div className="swiper-zoom-container">
                 <img src={img} alt={`Product ${index}`} loading="lazy" />
+                <div className="pd-wishlist-icon-div">
+                  <i className="fas fa-heart"></i>
+                </div>
               </div>
             </SwiperSlide>
           ))}
