@@ -7,6 +7,7 @@ import SubscriptionSection from "../HomePage/subComponents/SubscriptionSection";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./wishlist.css";
+import Breadcrumb from "../Breadcrumb";
 const products = [
   {
     id: 1,
@@ -40,6 +41,9 @@ const WishList = () => {
   return (
     <>
       <Header />
+      <Breadcrumb
+        path={[{ label: "Home", link: "/" }, { label: "WishList" }]}
+      />
       <section className="wishlist-listing">
         <div className="container-wishlist-listing">
           <h1

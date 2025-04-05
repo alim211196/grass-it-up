@@ -26,11 +26,13 @@ const CustomerReg = lazy(() => import("./containers/CustomerReg"));
 const DesignerLogin = lazy(() => import("./containers/DesignerLogin"));
 const DesignerReg = lazy(() => import("./containers/DesignerReg"));
 const DesignerProfile = lazy(() => import("./containers/DesignerProfile"));
+const TrendsNews = lazy(() => import("./containers/TrendsNews"));
 function App() {
   return (
     <Suspense fallback={<SuspenseLoader />}>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/trends-and-news" element={<TrendsNews />} />
         <Route path="/shop-by-product" element={<ShopByProduct />} />
         <Route path="/shop-by-brand" element={<ShopByBrand />} />
         <Route path="/shop-by-material" element={<ShopByMaterial />} />
