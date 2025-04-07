@@ -53,8 +53,12 @@ export default function BenefitsSection() {
           title="Benefits"
           subtitle="Of Being A Interior Designer"
         />
-        <div className="benefit-container">
-          <div className="benefit-box" data-aos="fade-up" data-aos-delay="100">
+        <div
+          className="benefit-container"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div className="benefit-box">
             <div className="benefit-icon">
               <img src="/tree.svg" alt="Tree Icon" />
             </div>
@@ -63,7 +67,7 @@ export default function BenefitsSection() {
               top-quality materials at the best possible prices.
             </p>
           </div>
-          <div className="benefit-box" data-aos="fade-up" data-aos-delay="100">
+          <div className="benefit-box">
             <div className="benefit-icon">
               <img src="/design.svg" alt="Design Icon" />
             </div>
@@ -72,7 +76,7 @@ export default function BenefitsSection() {
               artisans to create furnishings of exceptional style and quality.
             </p>
           </div>
-          <div className="benefit-box" data-aos="fade-up" data-aos-delay="100">
+          <div className="benefit-box">
             <div className="benefit-icon">
               <img src="/warehouse.svg" alt="Warehouse Icon" />
             </div>
@@ -81,7 +85,7 @@ export default function BenefitsSection() {
               team, eliminating the middleman.
             </p>
           </div>
-          <div className="benefit-box" data-aos="fade-up" data-aos-delay="100">
+          <div className="benefit-box">
             <div className="benefit-icon">
               <img src="/tag.svg" alt="Tag Icon" />
             </div>
