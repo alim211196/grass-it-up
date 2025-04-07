@@ -1,12 +1,13 @@
 import React from "react";
-import Header from "../HomePage/subComponents/Header";
-import Footer from "../HomePage/subComponents/Footer";
 import "./TermsConditions.css";
+import Breadcrumb from "../Breadcrumb";
 
 const TermsConditions = () => {
   return (
     <>
-      <Header />
+      <Breadcrumb
+        path={[{ label: "Home", link: "/" }, { label: "Terms & Conditions" }]}
+      />
       <section className="terms-container">
         <div className="terms-heading-container">
           <h1 className="terms-heading" data-aos="fade-up" data-aos-delay="100">
@@ -207,7 +208,6 @@ const TermsConditions = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

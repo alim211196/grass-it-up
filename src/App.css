@@ -116,6 +116,12 @@
 
 /* Start Header Section */
 
+.toolbar {
+  height: 98px;
+  position: relative;
+  background: transparent;
+}
+
 .navbar {
   display: flex;
   align-items: center;

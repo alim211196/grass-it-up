@@ -1,13 +1,11 @@
 import React, { useEffect } from "react";
-import Header from "../HomePage/subComponents/Header";
-import Footer from "../HomePage/subComponents/Footer";
 import WishCardList from "./subComponents/WishCardList";
 import RecentlyViewed from "./subComponents/RecentlyViewed";
-import SubscriptionSection from "../HomePage/subComponents/SubscriptionSection";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./wishlist.css";
 import Breadcrumb from "../Breadcrumb";
+import SubscriptionSection from "../../common/SubscriptionSection";
 const products = [
   {
     id: 1,
@@ -37,10 +35,11 @@ const products = [
 const WishList = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
+    window.scrollTo(0, 0);
   }, []);
+
   return (
     <>
-      <Header />
       <Breadcrumb
         path={[{ label: "Home", link: "/" }, { label: "WishList" }]}
       />
@@ -77,7 +76,6 @@ const WishList = () => {
 
       <RecentlyViewed />
       <SubscriptionSection />
-      <Footer />
     </>
   );
 };

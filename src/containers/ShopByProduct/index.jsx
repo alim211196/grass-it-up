@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./shopByProduct.css";
-import Header from "../HomePage/subComponents/Header";
 import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -158,7 +157,6 @@ const ShopByProduct = () => {
   }, []);
   return (
     <>
-      <Header />
       <div className="shop-by-product-container">
         {/* Sidebar Tabs */}
         <div className="product-tabs">

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, memo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../../../App.css";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../../../common/SectionHeading";
 import { OverlayTrigger, Popover } from "react-bootstrap";
 
 const images = [
@@ -150,4 +150,4 @@ const TopTrending = () => {
   );
 };
 
-export default TopTrending;
+export default memo(TopTrending);

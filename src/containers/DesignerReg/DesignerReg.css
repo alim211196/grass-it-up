@@ -1,0 +1,467 @@
+/* Start Video Section */
+
+.BannerFormContainer {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.BannerForm {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.BannerForm::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Adjust opacity (0.5 = 50% darkness) */
+  z-index: 1; /* Places it above the video */
+}
+
+/* Video Styling */
+.BannerFormVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers the area */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Fallback Image */
+.BannerFormImage {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay Content */
+.BannerFormOverlay {
+  position: absolute;
+  top: 21%;
+  right: -26%;
+  text-align: center;
+  color: white;
+  width: 100%;
+  z-index: 1;
+}
+
+.form-wrapper {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2),
+    0px 6px 30px rgba(0, 0, 0, 0.3);
+}
+
+.form-wrapper h2 {
+  text-align: left;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #fff;
+  height: 40px;
+  background: white;
+}
+
+.form-group select {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+  background: white;
+}
+
+.form-checkbox {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.form-checkbox a {
+  color: #7f9c90;
+  text-decoration: none;
+  margin: 0 3px;
+}
+
+.signIn-btn {
+  display: inline-block;
+  margin-top: 0px;
+  border: 1px solid rgb(127, 156, 144);
+  color: rgb(127, 156, 144);
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  z-index: 1;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 4px;
+  border-radius: 5px;
+  height: 40px;
+}
+
+/* Create the hover background effect */
+.signIn-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgb(127, 156, 144);
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
+}
+
+/* On hover, slide background in from the left and change text color */
+.signIn-btn:hover {
+  color: #fff;
+  border-color: rgb(127, 156, 144);
+}
+
+.signIn-btn:hover::before {
+  transform: translateX(100%);
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.register-links {
+  text-align: center;
+  font-size: 14px;
+}
+
+.register-links a {
+  color: #7f9c90;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* Hide default checkbox */
+.custom-checkbox {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Checked state */
+.custom-checkbox:checked {
+  background-color: #7f9c90; /* Change this to your theme color */
+  border-color: #7f9c90;
+}
+
+/* Add checkmark using ::after */
+.custom-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 4px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.benefits-section {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.benefit-container {
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.intro-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Features Container */
+.benefit-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Feature Box */
+.benefit-box {
+  width: 20vw;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  border: 1px solid #f0f0f0;
+  padding: 20px;
+  background: linear-gradient(131.5deg, #eaeaea 25.92%, #fff 71.18%);
+  box-shadow: -7px -7px 25px #fff, 7px 7px 15px #00000026;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Feature Box Hover Effect */
+.benefit-box:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.benefit-box p {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Icons */
+.benefit-icon img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+}
+.banner-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+}
+
+.tagline {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f9c73d;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.headline {
+  font-size: 28px;
+  font-weight: 700;
+  max-width: 500px;
+  text-align: left;
+}
+
+.better-section {
+  position: relative;
+  background: linear-gradient(131.5deg, #eaeaea 25.92%, #fff 71.18%);
+  box-shadow: -7px -7px 25px #fff, 7px 7px 15px #00000026;
+  color: white;
+  padding: 80px 40px;
+  overflow: hidden;
+  background-image: url("/id_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+.text-content h1 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: rgb(127, 156, 144);
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 16px;
+  color: #000;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.join-button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 0px;
+  border: 1px solid rgb(127, 156, 144);
+  color: rgb(127, 156, 144);
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  z-index: 1;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Create the hover background effect */
+.join-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgb(127, 156, 144);
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
+}
+
+/* On hover, slide background in from the left and change text color */
+.join-button:hover {
+  color: #fff;
+  border-color: rgb(127, 156, 144);
+}
+
+.join-button:hover::before {
+  transform: translateX(100%);
+}
+
+/* Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .content-wrapper {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 50px;
+    text-align: left;
+  }
+
+  .text-content {
+    max-width: 500px;
+  }
+
+  .text-content h1 {
+    font-size: 36px;
+  }
+}
+.custom-file-upload {
+  position: relative;
+  display: inline-block;
+  padding: 8px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #fff;
+  height: 40px;
+  background: white;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload label {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #838383;
+  font-weight: 500;
+  margin: 0px !important;
+}

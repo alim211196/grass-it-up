@@ -1,11 +1,10 @@
 import "./shopByMaterial.css";
-import Header from "../HomePage/subComponents/Header";
-import SubscriptionSection from "../HomePage/subComponents/SubscriptionSection";
-import Footer from "../HomePage/subComponents/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Breadcrumb from "../Breadcrumb";
+import SubscriptionSection from "../../common/SubscriptionSection";
 const materials = [
   {
     name: "Aluminum",
@@ -51,7 +50,9 @@ const ShopByMaterial = () => {
   }, []);
   return (
     <>
-      <Header />
+      <Breadcrumb
+        path={[{ label: "Home", link: "/" }, { label: "Shop by Material" }]}
+      />
       <section className="material-integrity">
         <div className="container-material-integrity">
           <h1 className="title-material-integrity">Material Integrity</h1>
@@ -110,7 +111,6 @@ const ShopByMaterial = () => {
         </div>
       </section>
       <SubscriptionSection />
-      <Footer />
     </>
   );
 };

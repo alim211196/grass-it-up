@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, memo } from "react";
 import { Swiper as GallerySwiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -8,7 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 // Import required modules
 import { Autoplay, EffectCards } from "swiper/modules";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../../../common/SectionHeading";
 
 const swiperStyles = {
   width: "54vw",
@@ -171,4 +171,4 @@ const GallerySection = () => {
   );
 };
 
-export default GallerySection;
+export default memo(GallerySection);

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { memo, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
@@ -6,7 +6,7 @@ import "swiper/css/effect-coverflow";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../../../App.css"; // Import custom CSS
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../../../common/SectionHeading";
 import { useNavigate } from "react-router-dom";
 
 // Blog Data
@@ -152,4 +152,4 @@ const BlogSection = () => {
   );
 };
 
-export default BlogSection;
+export default memo(BlogSection);

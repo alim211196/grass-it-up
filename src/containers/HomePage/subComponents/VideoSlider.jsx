@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, memo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectCoverflow, Autoplay } from "swiper/modules";
 import AOS from "aos";
@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import "../../../App.css";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../../../common/SectionHeading";
 
 const ytVideoIds = [
   "4hsK2eP-TFQ",
@@ -91,4 +91,4 @@ const VideoSlider = () => {
   );
 };
 
-export default VideoSlider;
+export default memo(VideoSlider);

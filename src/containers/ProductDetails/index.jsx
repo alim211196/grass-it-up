@@ -1,8 +1,5 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import Header from "../HomePage/subComponents/Header";
-import SubscriptionSection from "../HomePage/subComponents/SubscriptionSection";
-import Footer from "../HomePage/subComponents/Footer";
 import "./productDetails.css";
 import ProductInfo from "./subComponents/ProductInfo";
 import ProductMetaData from "./subComponents/ProductMetaData";
@@ -10,6 +7,8 @@ import ExploreProduct from "./subComponents/ExploreProduct";
 import ProductPage from "./subComponents/ProductPage";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import SubscriptionSection from "../../common/SubscriptionSection";
+import Breadcrumb from "../Breadcrumb";
 const ProductDetails = () => {
   const location = useLocation();
   const product = location.state; // Access the passed product object
@@ -26,7 +25,9 @@ const ProductDetails = () => {
   }, []);
   return (
     <>
-      <Header />
+      <Breadcrumb
+        path={[{ label: "Home", link: "/" }, { label: product?.name }]}
+      />
       <ProductInfo product={product} />
       <ProductMetaData />
       <section
@@ -37,7 +38,6 @@ const ProductDetails = () => {
       <ExploreProduct category={category} />
       <ProductPage />
       <SubscriptionSection />
-      <Footer />
     </>
   );
 };

@@ -3,9 +3,8 @@
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  padding: 20px 80px;
+  padding: 80px;
   align-items: start;
-  margin-top: 100px;
 }
 
 /* Right Side - Product Info */

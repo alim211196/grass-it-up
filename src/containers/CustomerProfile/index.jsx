@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Header from "../HomePage/subComponents/Header";
-import SubscriptionSection from "../HomePage/subComponents/SubscriptionSection";
-import Footer from "../HomePage/subComponents/Footer";
 import "./customerProfile.css";
 import StarRating from "./StarRating";
 import AddressCard from "./AddressCard";
+import SubscriptionSection from "../../common/SubscriptionSection";
+import Breadcrumb from "../Breadcrumb";
 const orders = [
   {
     id: 1,
@@ -59,11 +58,14 @@ const sampleAddresses = [
 const CustomerProfile = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
+    window.scrollTo(0, 0);
   }, []);
 
   return (
     <>
-      <Header />
+      <Breadcrumb
+        path={[{ label: "Home", link: "/" }, { label: "Your Profile" }]}
+      />
       <section className="profile-section">
         <div className="profile-container">
           <h1
@@ -136,7 +138,6 @@ const CustomerProfile = () => {
         ))}
       </section>
       <SubscriptionSection />
-      <Footer />
     </>
   );
 };

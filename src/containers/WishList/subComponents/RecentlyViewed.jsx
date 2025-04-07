@@ -8,8 +8,8 @@ import "swiper/css/pagination";
 import "../../../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import SectionHeading from "../../HomePage/subComponents/SectionHeading";
 import { useNavigate } from "react-router-dom";
+import SectionHeading from "../../../common/SectionHeading";
 
 const images = [
   {

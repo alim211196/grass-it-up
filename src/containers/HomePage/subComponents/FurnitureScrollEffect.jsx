@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, memo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { ScrollControls, useScroll, useGLTF } from "@react-three/drei";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../../../common/SectionHeading";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // Chair Component
@@ -125,4 +125,4 @@ const FurnitureScrollEffect = () => {
     </div>
   );
 };
-export default FurnitureScrollEffect;
+export default memo(FurnitureScrollEffect);

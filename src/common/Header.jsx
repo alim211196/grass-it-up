@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import "../../../App.css";
+import "../App.css";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -8,7 +8,9 @@ const Header = () => {
 
   const location = useLocation();
 
-  const isHomePage = location.pathname === "/";
+  const isHomePage = ["/interior-designer/account/register", "/"].includes(
+    location.pathname
+  );
   const isDarkMode = !isHomePage || isScrolled || isHovered; // True when navbar should be dark
 
   useEffect(() => {

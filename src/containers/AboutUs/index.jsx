@@ -1,15 +1,16 @@
 import React from "react";
-import Header from "../HomePage/subComponents/Header";
-import Footer from "../HomePage/subComponents/Footer";
 import "./aboutus.css";
-import SubscriptionSection from "../HomePage/subComponents/SubscriptionSection";
+import SubscriptionSection from "../../common/SubscriptionSection";
 import PartnerMarquee from "../HomePage/subComponents/PartnerMarquee";
 import OurHistory from "./OurHistory";
-import SectionHeading from "../HomePage/subComponents/SectionHeading";
+import SectionHeading from "../../common/SectionHeading";
+import Breadcrumb from "../Breadcrumb";
 const AboutUs = () => {
   return (
     <>
-      <Header />
+      <Breadcrumb
+        path={[{ label: "Home", link: "/" }, { label: "About GrassItUp" }]}
+      />
       <section
         className="about-container"
         data-aos="fade-up"
@@ -165,7 +166,6 @@ const AboutUs = () => {
       </section>
       <PartnerMarquee />
       <SubscriptionSection />
-      <Footer />
     </>
   );
 };

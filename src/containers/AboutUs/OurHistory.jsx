@@ -11,7 +11,7 @@ import "./aboutus.css";
 
 // import required modules
 import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
-import SectionHeading from "../HomePage/subComponents/SectionHeading";
+import SectionHeading from "../../common/SectionHeading";
 const slidesData = [
   {
     title: "Exceptional Quality",

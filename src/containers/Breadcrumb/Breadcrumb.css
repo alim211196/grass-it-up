@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 120px 40px 0px;
+  padding: 20px;
   font-family: "Segoe UI", sans-serif;
   flex-wrap: wrap;
-  max-width: 1200px;
+
   margin: auto;
 }
 

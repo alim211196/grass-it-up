@@ -2,7 +2,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef, useState, useEffect, Fragment } from "react";
 import "../../../App.css";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../../../common/SectionHeading";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";

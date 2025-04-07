@@ -1,6 +1,6 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, memo } from "react";
 import "../../../App.css";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../../../common/SectionHeading";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
@@ -131,4 +131,4 @@ const InformativeCategorySection = () => {
   );
 };
 
-export default InformativeCategorySection;
+export default memo(InformativeCategorySection);

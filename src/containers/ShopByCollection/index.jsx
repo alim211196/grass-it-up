@@ -1,11 +1,10 @@
 import "./shopByCollection.css";
-import Header from "../HomePage/subComponents/Header";
-import SubscriptionSection from "../HomePage/subComponents/SubscriptionSection";
-import Footer from "../HomePage/subComponents/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import SubscriptionSection from "../../common/SubscriptionSection";
+import Breadcrumb from "../Breadcrumb";
 
 const materials = [
   {
@@ -166,7 +165,9 @@ const ShopByCollection = () => {
   }, []);
   return (
     <>
-      <Header />
+      <Breadcrumb
+        path={[{ label: "Home", link: "/" }, { label: "Shop by Collection" }]}
+      />
       <section className="featured-collections">
         <div className="container-featured-collections">
           <h1 className="title-featured-collections">Featured Collections</h1>
@@ -225,7 +226,6 @@ const ShopByCollection = () => {
         </div>
       </section>
       <SubscriptionSection />
-      <Footer />
     </>
   );
 };

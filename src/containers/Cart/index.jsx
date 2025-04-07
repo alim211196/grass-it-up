@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Header from "../HomePage/subComponents/Header";
-import Footer from "../HomePage/subComponents/Footer";
-import SubscriptionSection from "../HomePage/subComponents/SubscriptionSection";
+
 import "./cart.css";
-import SectionHeading from "../HomePage/subComponents/SectionHeading";
+import SectionHeading from "../../common/SectionHeading";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Breadcrumb from "../Breadcrumb";
+import SubscriptionSection from "../../common/SubscriptionSection";
 const Cart = () => {
   const [cart, setCart] = useState([
     {
@@ -56,10 +56,13 @@ const Cart = () => {
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
+    window.scrollTo(0, 0);
   }, []);
   return (
     <>
-      <Header />
+      <Breadcrumb
+        path={[{ label: "Home", link: "/" }, { label: "Your Shopping Cart" }]}
+      />
       <section className="shopping-cart">
         <h1 className="cart-title" data-aos="fade-left" data-aos-delay="100">
           Your Shopping Cart
@@ -203,7 +206,6 @@ const Cart = () => {
         </div>
       </section>
       <SubscriptionSection />
-      <Footer />
     </>
   );
 };

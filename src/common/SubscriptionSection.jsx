@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../../../App.css";
+import "../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const SubscriptionSection = () => {

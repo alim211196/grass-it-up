@@ -1,5 +1,5 @@
 .blogDetails-details-section {
-  padding: 20px;
+  padding: 20px 20px 0px;
   background-color: white;
 }
 
@@ -7,7 +7,7 @@
   max-width: 1200px;
   margin: auto;
   background: white;
-  padding: 40px;
+  padding: 40px 40px 10px;
   border: "1px dashed #ddd";
   border-radius: 12px;
   /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06); */
@@ -64,4 +64,122 @@
   font-size: 1rem;
   color: #555;
   line-height: 1.8;
+}
+
+.rec_blog-details-section {
+  padding: 20px;
+  background-color: white;
+}
+
+.rec_blog-container {
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border: "1px dashed #ddd";
+  border-radius: 12px;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06); */
+}
+
+.rec_blog-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+.rec_blog_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0px 20px 0px 10px; /* Reduced padding for better responsiveness */
+  flex-wrap: wrap;
+}
+
+.rec_blog-slider .swiper-slide {
+  transition: all 0.3s ease-in-out;
+  filter: blur(3px); /* Blur for non-active slides */
+  opacity: 0.6; /* Lower opacity */
+  transform: scale(0.8); /* Scale down */
+}
+
+.rec_blog-slider .swiper-slide-active {
+  filter: blur(0px); /* Remove blur */
+  opacity: 1; /* Full visibility */
+  transform: scale(1); /* Scale up the center image */
+  z-index: 2;
+}
+
+/* Scale-up effect on hover */
+.rec_blog-card:hover .rec_blog-img {
+  transform: scale(1.1);
+}
+
+/* Overlay with Text */
+.rec_blog-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.rec_blog-meta {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.rec_blog-meta li {
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rec_blog-card_title {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+.badge {
+  background-color: #bb976d;
+}
+.rec_blog-overlay:hover .badge {
+  background-color: #bb976d;
+  color: black;
+  text-decoration: none;
+}
+
+.rec_blog-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Image Wrapper */
+.rec_blog-img-wrapper {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Blog Images */
+.rec_blog-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }

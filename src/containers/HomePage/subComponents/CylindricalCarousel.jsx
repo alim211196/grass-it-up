@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, memo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -8,7 +8,7 @@ import "../../../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FreeMode, Autoplay } from "swiper/modules";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../../../common/SectionHeading";
 
 const CylindricalCarousel = () => {
   const images = [
@@ -56,4 +56,4 @@ const CylindricalCarousel = () => {
   );
 };
 
-export default CylindricalCarousel;
+export default memo(CylindricalCarousel);

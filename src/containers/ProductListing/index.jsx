@@ -1,14 +1,13 @@
 import "./productListing.css";
 import React, { useEffect, useState } from "react";
-import Footer from "../HomePage/subComponents/Footer";
-import SubscriptionSection from "../HomePage/subComponents/SubscriptionSection";
-import Header from "../HomePage/subComponents/Header";
 import ProductGrid from "./SubComponents/ProductGrid";
 import FilterSortView from "./SubComponents/FilterSortView";
 import { useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ProductCategorySlider from "./SubComponents/ProductCategorySlider";
+import SubscriptionSection from "../../common/SubscriptionSection";
+import Breadcrumb from "../Breadcrumb";
 const products = [
   {
     id: 1,
@@ -129,9 +128,12 @@ const ProductListing = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to top on mount
   }, []);
+
   return (
     <>
-      <Header />
+      <Breadcrumb
+        path={[{ label: "Home", link: "/" }, { label: categoryTitle }]}
+      />
       <section className="product-listing">
         <div className="container-product-listing">
           <h1
@@ -179,7 +181,6 @@ const ProductListing = () => {
         />
       </section>
       <SubscriptionSection />
-      <Footer />
     </>
   );
 };

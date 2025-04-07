@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, memo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../../../common/SectionHeading";
 const images = [
   {
     src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-2.jpg",
@@ -168,4 +168,4 @@ const GallerySection2 = () => {
   );
 };
 
-export default GallerySection2;
+export default memo(GallerySection2);

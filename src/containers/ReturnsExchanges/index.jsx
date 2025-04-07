@@ -1,12 +1,13 @@
 import React from "react";
-import Header from "../HomePage/subComponents/Header";
-import Footer from "../HomePage/subComponents/Footer";
 import "./ReturnsExchanges.css";
+import Breadcrumb from "../Breadcrumb";
 
 const ReturnsExchanges = () => {
   return (
     <>
-      <Header />
+      <Breadcrumb
+        path={[{ label: "Home", link: "/" }, { label: "Returns & Exchanges" }]}
+      />
       <section className="returns-container">
         <div className="returns-heading-container">
           <h1
@@ -92,7 +93,6 @@ const ReturnsExchanges = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

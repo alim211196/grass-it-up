@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, memo } from "react";
 import "../../../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -81,4 +81,4 @@ const BreakerSection = () => {
   );
 };
 
-export default BreakerSection;
+export default memo(BreakerSection);

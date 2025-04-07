@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, memo } from "react";
 import "../../../App.css";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../../../common/SectionHeading";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const testimonials = [
@@ -105,4 +105,4 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial;
+export default memo(Testimonial);

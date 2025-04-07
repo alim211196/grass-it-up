@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, memo } from "react";
 import { Container, Button } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "../../../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../../../common/SectionHeading";
 import { useNavigate } from "react-router-dom";
 
 const images = [
@@ -162,4 +162,4 @@ const HorizontalCarousel = () => {
   );
 };
 
-export default HorizontalCarousel;
+export default memo(HorizontalCarousel);

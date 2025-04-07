@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, memo } from "react";
 import "../../../App.css";
 import AOS from "aos";
 import "swiper/css";
@@ -73,4 +73,4 @@ const VisitOurShowroom = () => {
   );
 };
 
-export default VisitOurShowroom;
+export default memo(VisitOurShowroom);

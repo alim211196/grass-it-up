@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, memo } from "react";
 import "../../../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -70,4 +70,4 @@ const PartnerMarquee = () => {
   );
 };
 
-export default PartnerMarquee;
+export default memo(PartnerMarquee);

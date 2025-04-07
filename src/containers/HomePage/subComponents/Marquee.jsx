@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, memo } from "react";
 import "../../../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -30,4 +30,4 @@ const Marquee = () => {
   );
 };
 
-export default Marquee;
+export default memo(Marquee);

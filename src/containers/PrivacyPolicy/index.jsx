@@ -1,12 +1,13 @@
 import React from "react";
-import Header from "../HomePage/subComponents/Header";
-import Footer from "../HomePage/subComponents/Footer";
 import "./PrivacyPolicy.css";
+import Breadcrumb from "../Breadcrumb";
 
 const PrivacyPolicy = () => {
   return (
     <>
-      <Header />
+      <Breadcrumb
+        path={[{ label: "Home", link: "/" }, { label: "Privacy Policy" }]}
+      />
       <section className="policy-container">
         <div className="policy-heading-container">
           <h1
@@ -227,7 +228,6 @@ const PrivacyPolicy = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };
