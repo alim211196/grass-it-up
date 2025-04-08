@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./customerProfile.css";
+import "./profile.css";
 import StarRating from "./StarRating";
 import AddressCard from "./AddressCard";
 import SubscriptionSection from "../../common/SubscriptionSection";

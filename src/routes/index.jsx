@@ -18,13 +18,20 @@ const TermsConditions = lazy(() => import("../containers/TermsConditions"));
 const Cart = lazy(() => import("../containers/Cart"));
 const WishList = lazy(() => import("../containers/WishList"));
 const Checkout = lazy(() => import("../containers/Checkout"));
-const CustomerProfile = lazy(() => import("../containers/CustomerProfile"));
-const CustomerLogin = lazy(() => import("../containers/CustomerLogin"));
+const Profile = lazy(() => import("../containers/Profile"));
+const Login = lazy(() => import("../containers/Login"));
 const CustomerReg = lazy(() => import("../containers/CustomerReg"));
-const DesignerLogin = lazy(() => import("../containers/DesignerLogin"));
 const DesignerReg = lazy(() => import("../containers/DesignerReg"));
-const DesignerProfile = lazy(() => import("../containers/DesignerProfile"));
 const TrendsNews = lazy(() => import("../containers/TrendsNews"));
+const ThankYou = lazy(() => import("../containers/ThankYou"));
+const Coupons = lazy(() => import("../containers/Coupons"));
+const ForgotPassword = lazy(() => import("../containers/ForgotPassword"));
+const Invoice = lazy(() => import("../containers/Invoice"));
+const OrderTracking = lazy(() => import("../containers/OrderTracking"));
+const OrderReturn = lazy(() => import("../containers/OrderReturn"));
+const ResetPassword = lazy(() => import("../containers/ResetPassword"));
+const VerifyOTP = lazy(() => import("../containers/VerifyOTP"));
+const NotFound = lazy(() => import("../containers/NotFound"));
 
 const router = createBrowserRouter([
   {
@@ -54,22 +61,50 @@ const router = createBrowserRouter([
       { path: "/cart", element: <Cart /> },
       { path: "/wishlist", element: <WishList /> },
       { path: "/checkout", element: <Checkout /> },
-      { path: "/account/profile", element: <CustomerProfile /> },
-      { path: "/account/login", element: <CustomerLogin /> },
-      { path: "/account/register", element: <CustomerReg /> },
+      { path: "/profile", element: <Profile /> },
+      { path: "/login", element: <Login /> },
+      { path: "/register", element: <CustomerReg /> },
       {
-        path: "/interior-designer/account/profile",
-        element: <DesignerProfile />,
-      },
-      {
-        path: "/interior-designer/account/login",
-        element: <DesignerLogin />,
-      },
-      {
-        path: "/interior-designer/account/register",
+        path: "/interior-designer/register",
         element: <DesignerReg />,
       },
+      {
+        path: "/thank-you",
+        element: <ThankYou />,
+      },
+      {
+        path: "/coupons",
+        element: <Coupons />,
+      },
+      {
+        path: "/forgot-password",
+        element: <ForgotPassword />,
+      },
+      {
+        path: "/invoice",
+        element: <Invoice />,
+      },
+      {
+        path: "/order-tracking",
+        element: <OrderTracking />,
+      },
+      {
+        path: "/order-return",
+        element: <OrderReturn />,
+      },
+      {
+        path: "/reset-password",
+        element: <ResetPassword />,
+      },
+      {
+        path: "/verify",
+        element: <VerifyOTP />,
+      },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 

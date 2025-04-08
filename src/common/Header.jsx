@@ -8,7 +8,7 @@ const Header = () => {
 
   const location = useLocation();
 
-  const isHomePage = ["/interior-designer/account/register", "/"].includes(
+  const isHomePage = ["/interior-designer/register", "/"].includes(
     location.pathname
   );
   const isDarkMode = !isHomePage || isScrolled || isHovered; // True when navbar should be dark
@@ -29,7 +29,7 @@ const Header = () => {
   const navIcons = [
     { name: "search", path: "/search" },
     { name: "heart", path: "/wishlist" },
-    { name: "avatar", path: "account/profile" },
+    { name: "avatar", path: "/profile" },
     { name: "bag", path: "/cart" },
   ];
   const cartCount = 2;

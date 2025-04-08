@@ -83,8 +83,7 @@ const BannerForm = () => {
 
               <div className="register-links full-width">
                 <p>
-                  Already Have An Account?{" "}
-                  <Link to="/account/login">Login</Link>
+                  Already Have An Account? <Link to="/login">Login</Link>
                 </p>
               </div>
             </form>

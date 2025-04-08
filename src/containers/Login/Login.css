@@ -1,5 +1,5 @@
 /* Login Page Container */
-.d-login-container {
+.login-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,36 +8,36 @@
 }
 
 /* Main Content Wrapper */
-.d-login-content {
+.login-content {
   display: flex;
   overflow: hidden;
   align-items: center;
 }
 
 /* Left Side Image */
-.d-login-image {
+.login-image {
   width: 60vw;
   overflow: hidden;
   position: relative;
 }
 
-.d-login-image img {
+.login-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 1s ease-in-out;
 }
 
-.d-login-image img:hover {
+.login-image img:hover {
   transform: scale(1.1);
 }
 /* Right Side Form */
-.d-login-form {
+.login-form {
   width: 40vw;
   padding: 4rem 4rem 0rem;
 }
 
-.d-login-form h2 {
+.login-form h2 {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -46,7 +46,7 @@
   font-weight: 700;
 }
 
-.d-login-form p {
+.login-form p {
   font-size: 14px;
   color: #332f2c;
   line-height: 30px;
@@ -70,8 +70,8 @@
   width: 100%;
   padding: 8px 16px;
   font-size: 16px;
-  border: 1px solid #fff;
-  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  background-color: #fff;
   letter-spacing: 2px;
 }
 
@@ -118,19 +118,58 @@
 }
 
 /* Additional Links */
-.d-login-links {
+.login-links {
   margin-top: 15px;
   font-size: 14px;
   text-align: center;
 }
 
-.d-login-links a {
+.login-links a {
   color: rgb(127, 156, 144);
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-.d-login-links a:hover {
+.login-links a:hover {
   text-decoration: underline;
+}
+.form-checkbox {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+/* Hide default checkbox */
+.custom-checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Checked state */
+.custom-checkbox:checked {
+  background-color: #7f9c90; /* Change this to your theme color */
+  border-color: #7f9c90;
+}
+
+/* Add checkmark using ::after */
+.custom-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 4px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }

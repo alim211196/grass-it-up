@@ -1,45 +1,34 @@
 import React, { useEffect } from "react";
-import "./CustomerReg.css";
+import "./Login.css";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-const CustomerReg = () => {
+const CustomerLogin = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
     window.scrollTo(0, 0);
   }, []);
   return (
     <>
-      <div className="register-container">
-        <div className="register-content">
+      <div className="login-container">
+        <div className="login-content">
           {/* Left Image Section */}
-          <div className="register-image">
+          <div className="login-image">
             <img
-              src="https://furnixar.vercel.app/assets/register-Cnkj9wpu.jpg"
-              alt="Register Image"
+              src="https://furnixar.vercel.app/assets/login-BM3CAJLe.jpg"
+              alt="Login Image"
             />
           </div>
 
           {/* Right Form Section */}
-          <div className="register-form">
+          <div className="login-form">
             <h2 data-aos="fade-up" data-aos-delay="100">
-              Create New Account
+              Welcome back !
             </h2>
             <p data-aos="fade-up" data-aos-delay="100">
-              Register for an account to take advantage of order tracking and
-              history as well as pre-filled forms during checkout on subsequent
-              orders on GrassItUp.
+              Login and start purchasing on GrassItUp.
             </p>
             <form>
-              <div
-                className="form-group"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <label>Full name *</label>
-                <input type="text" placeholder="John J Doe" required />
-              </div>
-
               <div
                 className="form-group"
                 data-aos="fade-up"
@@ -57,23 +46,37 @@ const CustomerReg = () => {
                 <label>Password *</label>
                 <input type="password" placeholder="Password" required />
               </div>
-
+              <div
+                className="form-checkbox"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <input
+                  type="checkbox"
+                  id="agree"
+                  required
+                  className="custom-checkbox"
+                />
+                <label htmlFor="agree">Remember Me</label>
+              </div>
               <button
                 type="submit"
                 className="btn-primary"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                Register
+                Login
               </button>
+
               <div
-                className="register-links"
+                className="login-links"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
                 <p>
-                  Already Have An Account? <Link to="/login">Login</Link>
+                  Already Have An Account? <Link to="/register">Register</Link>
                 </p>
+                <Link to="/forgot-password">Forgot Your Password?</Link>
               </div>
             </form>
           </div>
@@ -83,4 +86,4 @@ const CustomerReg = () => {
   );
 };
 
-export default CustomerReg;
+export default CustomerLogin;

@@ -1,0 +1,88 @@
+.NotFound-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.NotFound-content {
+  max-width: 550px;
+}
+
+.NotFound-icon {
+  width: 100%;
+  height: auto;
+}
+
+.NotFound-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NotFound-subtitle {
+  text-transform: uppercase;
+  line-height: 1.43;
+  letter-spacing: 4px;
+  width: 100%;
+  margin: 20px;
+  font-size: 1rem;
+  color: #000;
+}
+
+.NotFound-description {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.NotFound-link {
+  color: #bb976d;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.NotFound-button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 0px;
+  border: 1px solid rgb(127, 156, 144);
+  color: rgb(127, 156, 144);
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  z-index: 1;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+}
+
+/* Create the hover background effect */
+.NotFound-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgb(127, 156, 144);
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
+}
+
+/* On hover, slide background in from the left and change text color */
+.NotFound-button:hover {
+  color: #fff;
+  border-color: rgb(127, 156, 144);
+}
+
+.NotFound-button:hover::before {
+  transform: translateX(100%);
+}

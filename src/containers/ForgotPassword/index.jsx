@@ -1,29 +1,32 @@
 import React, { useEffect } from "react";
-import "./DesignerLogin.css";
+import "./ForgotPassword.css";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-const DesignerLogin = () => {
+const ForgotPassword = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
+    window.scrollTo(0, 0);
   }, []);
   return (
     <>
-      <div className="d-login-container">
-        <div className="d-login-content">
+      <div className="forgot-pass-container">
+        <div className="forgot-pass-content">
           {/* Left Image Section */}
-          <div className="d-login-image">
-            <img src="/bgimage.png" alt="Login Image" />
+          <div className="forgot-pass-image">
+            <img
+              src="https://furnixar.vercel.app/assets/forget-pass-BsduFWln.jpg"
+              alt="ForgotPassword Image"
+            />
           </div>
 
           {/* Right Form Section */}
-          <div className="d-login-form">
+          <div className="forgot-pass-form">
             <h2 data-aos="fade-up" data-aos-delay="100">
-              Welcome Back
+              Forget Password
             </h2>
             <p data-aos="fade-up" data-aos-delay="100">
-              {" "}
-              Login and start purchasing
+              Change your password and start purchasing on GrassItUp.
             </p>
             <form>
               <div
@@ -34,35 +37,26 @@ const DesignerLogin = () => {
                 <label>Email *</label>
                 <input type="email" placeholder="your@email.com" required />
               </div>
-
-              <div
-                className="form-group"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <label>Password *</label>
-                <input type="password" placeholder="Password" required />
-              </div>
-
+              <p className="Note" data-aos="fade-up" data-aos-delay="100">
+                Note: We will send a otp on your email
+              </p>
               <button
                 type="submit"
                 className="btn-primary"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                Sign In
+                Send Info
               </button>
 
               <div
-                className="d-login-links"
+                className="forgot-pass-links"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
                 <p>
-                  Already Have An Account?{" "}
-                  <Link to="/account/register">Register</Link>
+                  Already Have An Account? <Link to="/login">Login</Link>
                 </p>
-                <Link to="/account/forgot-password">Forgot Your Password?</Link>
               </div>
             </form>
           </div>
@@ -72,4 +66,4 @@ const DesignerLogin = () => {
   );
 };
 
-export default DesignerLogin;
+export default ForgotPassword;

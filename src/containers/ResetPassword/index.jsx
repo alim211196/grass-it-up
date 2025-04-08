@@ -1,29 +1,32 @@
 import React, { useEffect } from "react";
-import "./CustomerLogin.css";
+import "./ResetPassword.css";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-const CustomerLogin = () => {
+const ResetPassword = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
+    window.scrollTo(0, 0);
   }, []);
   return (
     <>
-      <div className="login-container">
-        <div className="login-content">
+      <div className="reset-pass-container">
+        <div className="reset-pass-content">
           {/* Left Image Section */}
-          <div className="login-image">
-            <img src="/bgimage.png" alt="Login Image" />
+          <div className="reset-pass-image">
+            <img
+              src="https://furnixar.vercel.app/assets/portfolio-02-SqWI2KHP.jpg"
+              alt="Reset Password Image"
+            />
           </div>
 
           {/* Right Form Section */}
-          <div className="login-form">
+          <div className="reset-pass-form">
             <h2 data-aos="fade-up" data-aos-delay="100">
-              Welcome Back
+              Reset password !
             </h2>
             <p data-aos="fade-up" data-aos-delay="100">
-              {" "}
-              Login and start purchasing
+              Change your password and start purchasing on GrassItUp.
             </p>
             <form>
               <div
@@ -31,17 +34,20 @@ const CustomerLogin = () => {
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                <label>Email *</label>
-                <input type="email" placeholder="your@email.com" required />
+                <label>New Password *</label>
+                <input type="password" placeholder="New Password" required />
               </div>
-
               <div
                 className="form-group"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                <label>Password *</label>
-                <input type="password" placeholder="Password" required />
+                <label>Confirm Password *</label>
+                <input
+                  type="password"
+                  placeholder="Confirm Password"
+                  required
+                />
               </div>
 
               <button
@@ -50,20 +56,8 @@ const CustomerLogin = () => {
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                Sign In
+                Change Password
               </button>
-
-              <div
-                className="login-links"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <p>
-                  Already Have An Account?{" "}
-                  <Link to="/account/register">Register</Link>
-                </p>
-                <Link to="/account/forgot-password">Forgot Your Password?</Link>
-              </div>
             </form>
           </div>
         </div>
@@ -72,4 +66,4 @@ const CustomerLogin = () => {
   );
 };
 
-export default CustomerLogin;
+export default ResetPassword;

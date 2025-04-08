@@ -10,7 +10,7 @@ const LayoutIndex = ({ children }) => {
     "/",
     "/shop-by-product",
     "/shop-by-brand",
-    "/interior-designer/account/register",
+    "/interior-designer/register",
   ].includes(location.pathname);
   const hideFooter = ["/shop-by-product", "/shop-by-brand"].includes(
     location.pathname
