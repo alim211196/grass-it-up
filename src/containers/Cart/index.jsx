@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import "./cart.css";
 import SectionHeading from "../../common/SectionHeading";
 import AOS from "aos";

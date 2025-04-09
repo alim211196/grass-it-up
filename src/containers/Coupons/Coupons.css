@@ -1,0 +1,114 @@
+.coupon-section {
+  padding: 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.coupon-section h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.coupon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.coupon-card {
+  background-color: #fff;
+  border-radius: 12px;
+  position: relative;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.coupon-card::before,
+.coupon-card::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  background: #f6f4f3;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.coupon-card::before {
+  left: -10px;
+}
+
+.coupon-card::after {
+  right: -10px;
+}
+
+.coupon-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.coupon-content p {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.discount {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.coupon-card button {
+  background-color: #f2ebe4;
+  border: none;
+  padding: 10px 15px;
+  color: #8c6b4f;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.coupon-card button:hover {
+  background-color: #e3dacd;
+}
+
+.coupon-heading-container {
+  margin: 0 auto;
+  width: 60vw;
+  text-align: center;
+}
+.coupon-heading {
+  font-size: 4rem;
+  color: #bb976d;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.coupon-subheading {
+  text-transform: uppercase;
+  line-height: 1.43;
+  letter-spacing: 4px;
+  width: 100%;
+  margin: 20px 0px;
+  font-size: 1rem;
+  color: #000;
+}
+
+.coupon-description {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

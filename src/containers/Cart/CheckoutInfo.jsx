@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const CheckoutInfo = () => {
-  const [showCoupon, setShowCoupon] = useState(false);
+  const navigate = useNavigate();
+
   return (
     <section className="checkout-details-container">
       <form className="checkout-form">
@@ -121,32 +123,28 @@ const CheckoutInfo = () => {
             <span className="coupon-text">
               Are you missing your coupon code ?
             </span>
-            <span
-              className="coupon-btn"
-              onClick={() => setShowCoupon(!showCoupon)}
-            >
-              Click here to add
+            <span className="coupon-btn" onClick={() => navigate("/coupons")}>
+              Go to coupon zone
             </span>
           </div>
 
-          {showCoupon && (
-            <div
-              className="checkout-section"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div className="coupon-row">
-                <input
-                  type="text"
-                  placeholder="Coupon Code"
-                  className="checkout-form-input"
-                />
-                <button type="button" className="apply-btn">
-                  Apply
-                </button>
-              </div>
+          <div
+            className="checkout-section"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div className="coupon-row">
+              <input
+                type="text"
+                placeholder="Coupon Code"
+                className="checkout-form-input"
+              />
+              <button type="button" className="apply-btn">
+                Apply
+              </button>
             </div>
-          )}
+          </div>
+
           <div
             className="checkout-section"
             data-aos="fade-up"
