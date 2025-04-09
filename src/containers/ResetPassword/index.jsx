@@ -1,13 +1,17 @@
 import React, { useEffect } from "react";
 import "./ResetPassword.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const ResetPassword = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     AOS.init({ duration: 1000 });
     window.scrollTo(0, 0);
   }, []);
+  const handleSubmit = () => {
+    navigate("/login");
+  };
   return (
     <>
       <div className="reset-pass-container">
@@ -23,19 +27,20 @@ const ResetPassword = () => {
           {/* Right Form Section */}
           <div className="reset-pass-form">
             <h2 data-aos="fade-up" data-aos-delay="100">
-              Reset password !
+              Set a Password
             </h2>
             <p data-aos="fade-up" data-aos-delay="100">
-              Change your password and start purchasing on GrassItUp.
+              Set the new password for your account so you can login and access
+              all the features.
             </p>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div
                 className="form-group"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                <label>New Password *</label>
-                <input type="password" placeholder="New Password" required />
+                <label>Password *</label>
+                <input type="password" placeholder="Password" required />
               </div>
               <div
                 className="form-group"
@@ -56,7 +61,7 @@ const ResetPassword = () => {
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                Change Password
+                Submit
               </button>
             </form>
           </div>

@@ -1,0 +1,119 @@
+.verify-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f1ef;
+  height: 90vh;
+  padding: 20px;
+  background-image: url("https://terraoutdoor.com/cdn/shop/collections/collection_header_DEl_Mar_dining_1512x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+}
+
+.verify-box {
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2), 0px 6px 30px rgba(0, 0, 0, 0.3);
+}
+
+.verify-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.verify-subtext {
+  font-size: 16px;
+  color: #fff;
+}
+
+.verify-email {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.otp-box {
+  width: 45px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid #ccc;
+  /* border-radius: 8px; */
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.otp-box:focus {
+  border-color: #b68e60;
+}
+
+.resend-text {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.resend-link {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.verify-btn {
+  width: 100%;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 0px;
+  border: 1px solid rgb(127, 156, 144);
+  color: rgb(127, 156, 144);
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  z-index: 1;
+  cursor: pointer;
+  background-color: white;
+  letter-spacing: 2px;
+}
+
+/* Create the hover background effect */
+.verify-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgb(127, 156, 144);
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
+}
+
+/* On hover, slide background in from the left and change text color */
+.verify-btn:hover {
+  color: #fff;
+  border-color: rgb(127, 156, 144);
+}
+
+.verify-btn:hover::before {
+  transform: translateX(100%);
+}

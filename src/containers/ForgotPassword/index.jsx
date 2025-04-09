@@ -1,13 +1,17 @@
 import React, { useEffect } from "react";
 import "./ForgotPassword.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const ForgotPassword = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     AOS.init({ duration: 1000 });
     window.scrollTo(0, 0);
   }, []);
+  const handleSubmit = () => {
+    navigate("/verify");
+  };
   return (
     <>
       <div className="forgot-pass-container">
@@ -28,7 +32,7 @@ const ForgotPassword = () => {
             <p data-aos="fade-up" data-aos-delay="100">
               Change your password and start purchasing on GrassItUp.
             </p>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div
                 className="form-group"
                 data-aos="fade-up"

@@ -1,0 +1,201 @@
+.invoice-container {
+  background: #f9f9f9;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+.invoice-wrapper {
+  background: #f9f9f9;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 750px;
+}
+
+.invoice-box {
+  background: #fff;
+  border-radius: 10px;
+  /* padding: 30px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.invoice-logo-header {
+  padding: 10px;
+}
+.invoice-header h3 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: #172430;
+  margin-bottom: 0px;
+}
+
+.print-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 0px;
+  border: 1px solid rgb(127, 156, 144);
+  color: rgb(127, 156, 144);
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  z-index: 1;
+  cursor: pointer;
+  background-color: white;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Create the hover background effect */
+.print-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgb(127, 156, 144);
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
+}
+
+/* On hover, slide background in from the left and change text color */
+.print-btn:hover {
+  color: #fff;
+  border-color: rgb(127, 156, 144);
+}
+
+.print-btn:hover::before {
+  transform: translateX(100%);
+}
+
+.invoice-cards {
+  display: flex;
+  gap: 20px;
+  padding: 0px 20px 20px;
+}
+
+.invoice-card {
+  flex: 1;
+  border: 1px dashed #ddd;
+  padding: 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #333;
+}
+.invoice-card #p1 {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 2px;
+  word-spacing: 2px;
+}
+.invoice-card #p2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  word-spacing: 2px;
+}
+.invoice-section-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  border-left: 5px solid #e7d3bd;
+  padding-left: 5px;
+  word-spacing: 2px;
+}
+.invoice-card #p3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  color: "#3c474e";
+  word-spacing: 2px;
+}
+.order-info {
+  padding: 20px;
+}
+
+.order-header {
+  background-color: #e7d3bd;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+  word-spacing: 2px;
+}
+
+.table-head,
+.product-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  word-spacing: 2px;
+}
+.table-head {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  word-spacing: 2px;
+}
+.product-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.product-info img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.product-info p {
+  margin-bottom: 5px;
+}
+.summary-box {
+  padding-top: 15px;
+  font-size: 14px;
+  word-spacing: 2px;
+}
+#align-center {
+  text-align: center;
+  align-self: center;
+  font-weight: 600;
+  word-spacing: 2px;
+}
+
+.summary-box div {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+.summary-box p {
+  font-weight: 500;
+  word-spacing: 2px;
+}
+
+.total-row {
+  border-top: 1px dashed #888;
+  margin-top: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+  word-spacing: 2px;
+}
+.grassitup {
+  height: auto;
+  width: 200px;
+}
