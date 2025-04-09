@@ -1,312 +1,388 @@
-.profile-section {
-  text-align: center;
-  padding: 98px 0px 0px;
-  background-color: #fff;
-}
-.profile-container {
-  height: 100vh;
-  width: 100%;
-  background: url(/shop-now-bg.png) no-repeat center;
-  background-size: contain;
+.profile-page {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  flex-direction: column;
-}
-.profile-welcome-message {
-  font-size: 4rem;
-  color: #bb976d;
-  margin-bottom: 10px;
-  text-transform: capitalize;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.profile-username {
-  text-transform: uppercase;
-  line-height: 1.43;
-  letter-spacing: 4px;
-  width: 100%;
-  margin: 10px;
-  font-size: 1rem;
-}
-.profile-email {
-  font-size: 1rem;
-  color: #6c757d;
-  line-height: 1.6;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.myorder-section {
-  max-width: 900px;
-  margin: 40px auto;
-  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  /* background-color: #f9f9f9; */
 }
 
-.myorder-title {
-  font-weight: bold;
-  font-size: 2rem;
-  color: #bb976d;
-  margin-bottom: 20px;
-  text-transform: capitalize;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.myorder-cart-items {
-  display: flex;
-  flex: 2;
-  background: #fff;
-  gap: 15px;
-  flex-direction: column;
-}
-
-.myorder-cart-item {
-  display: flex;
-  align-items: center;
-  border: 1px dashed #ddd;
-}
-
-.myorder-cart-item:hover {
-  transform: scale(1.01);
-  transition: transform 1s ease-in-out;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.myorder-cart-item-div {
-  width: 200px;
-  height: auto;
-  overflow: hidden;
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  padding: 2rem 1.5rem;
   position: relative;
 }
 
-.myorder-cart-item-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 1s ease-in-out;
-}
-
-.myorder-cart-item-image:hover {
-  transform: scale(1.1);
-}
-.myorder-cart-item-details {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-}
-.myorder-cart-item-details-div1 {
-  padding: 10px 20px;
-  gap: 3px;
-}
-.myorder-cart-item-details-div2 {
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.myorder-cart-price-div {
-  display: flex;
-  flex-direction: column;
-}
-
-.myorder-cart-item-details h3 {
-  font-size: 18px;
-  letter-spacing: 0.5px;
-  line-height: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.myorder-cart-item-details p {
-  font-size: 13px;
-  color: #555;
-  letter-spacing: 0.5px;
-  line-height: 20px;
-}
-
-.myorder-cart-price {
-  font-weight: bold;
-  color: #222;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-  line-height: 20px;
-}
-
-.myaddress-section {
-  max-width: 900px;
-  margin: 40px auto;
-  font-family: Arial, sans-serif;
-}
-
-.myaddress-title {
-  font-weight: bold;
-  font-size: 2rem;
-  color: #bb976d;
-  margin-bottom: 20px;
-  text-transform: capitalize;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.star-rating {
-  display: flex;
-  gap: 5px;
-  font-size: 2rem;
+.sidebar-item {
+  padding: 1rem 0;
   cursor: pointer;
+  font-size: 16px;
+  border-left: 5px solid transparent;
+  transition: all 0.3s ease;
+  padding-left: 10px;
+  word-spacing: 2px;
 }
 
-.star {
-  color: #ccc;
-  transition: color 0.2s ease-in-out;
-}
-
-.star.filled {
-  color: rgb(187, 151, 109);
-}
-.write-a-review {
-  color: rgb(127, 156, 144);
-  text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-.write-a-review:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.update-profile {
-  display: inline-block;
-  padding: 8px 16px;
-  margin-top: 0px;
-  border: 1px solid rgb(127, 156, 144);
-  color: rgb(127, 156, 144);
-  font-size: 18px;
+.sidebar-item.active {
+  color: #c3a375;
   font-weight: 500;
-  text-decoration: none;
-  border-radius: 50px;
-  position: relative;
-  overflow: hidden;
-  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
-  z-index: 1;
-  cursor: pointer;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-left: 5px solid #c3a375;
+  word-spacing: 2px;
 }
 
-/* Create the hover background effect */
-.update-profile::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: rgb(127, 156, 144);
-  transition: transform 0.4s ease-in-out;
-  z-index: -1;
+/* Right-side content */
+.right-side-content {
+  padding: 2.5rem 4rem;
+  flex: 1;
+  background-color: #fafafa;
+}
+.profile-info {
+  font-family: "Poppins", sans-serif;
+  padding: 0px 0px 40px;
+  word-spacing: 2px;
 }
 
-/* On hover, slide background in from the left and change text color */
-.update-profile:hover {
-  color: #fff;
-  border-color: rgb(127, 156, 144);
+.profile-name {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-bottom: 4px;
+  word-spacing: 2px;
 }
 
-.update-profile:hover::before {
-  transform: translateX(100%);
+.profile-role {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 16px;
+  word-spacing: 2px;
 }
 
-.card-wrapper {
+.profile-description {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 24px;
+  word-spacing: 2px;
+}
+
+.profile-contact p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  word-spacing: 2px;
+}
+
+.profile-contact .icon {
+  margin-right: 8px;
+  color: #c3a375;
+  font-size: 18px;
+  word-spacing: 2px;
+}
+
+.account-form-container {
+  padding: 0px 0px 40px;
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
   display: flex;
   flex-wrap: wrap;
-  padding: 16px;
-  justify-content: space-between;
+  gap: 20px;
 }
 
-.address-card {
-  position: relative;
-  width: 100%;
-  background-color: #fff;
-  border: 1px dashed #ddd;
-  padding: 16px;
-  transition: all 0.3s ease;
-  overflow: hidden;
-  margin-bottom: 16px;
-}
-.address-card:hover {
-  transform: scale(1.01);
-  transition: transform 1s ease-in-out;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.account-form-group {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
 }
 
-.primary-badge {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background-color: rgb(187, 151, 109);
+.account-form-label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #1e1e1e;
+  word-spacing: 2px;
+}
+
+.account-form-input,
+.account-form-textarea {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #333;
+  word-spacing: 2px;
+}
+
+.account-form-textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.account-form-input:focus,
+.account-form-textarea:focus {
+  outline: none;
+  border-color: #c3a375;
+  box-shadow: 0 0 0 2px rgba(195, 163, 117, 0.2);
+}
+
+.form-actions {
+  margin-top: 20px;
+}
+
+.account-form-button {
+  background-color: rgb(127, 156, 144);
   color: white;
-  padding: 4px 10px;
-  font-size: 12px;
-  border-radius: 50px;
-  font-weight: bold;
-}
-
-.edit-btn {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  display: none;
-  padding: 6px 12px;
-  cursor: pointer;
-  font-size: 14px;
-  border: 1px solid rgb(127, 156, 144);
-  color: rgb(127, 156, 144);
+  padding: 12px 28px;
+  border: none;
+  font-size: 15px;
   font-weight: 500;
+  border-radius: 4px;
+  display: inline-block;
   text-decoration: none;
-  border-radius: 50px;
+  position: relative;
   overflow: hidden;
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
+  cursor: pointer;
+  word-spacing: 2px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Create the hover background effect */
-.edit-btn::before {
+.account-form-button::before {
   content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: rgb(127, 156, 144);
+  background: white;
   transition: transform 0.4s ease-in-out;
   z-index: -1;
 }
 
 /* On hover, slide background in from the left and change text color */
-.edit-btn:hover {
-  color: #fff;
-  border-color: rgb(127, 156, 144);
+.account-form-button:hover {
+  color: rgb(127, 156, 144);
+  border-color: white;
 }
 
-.edit-btn:hover::before {
+.account-form-button:hover::before {
   transform: translateX(100%);
 }
 
-.address-card:hover .edit-btn {
-  display: block;
+.order-list {
+  width: 100%;
+  padding: 0px 0px 40px;
+  font-family: "Poppins", sans-serif;
+  word-spacing: 2px;
 }
 
-.address-details h5 {
-  font-size: 18px;
-  letter-spacing: 0.5px;
-  line-height: 20px;
-  white-space: nowrap;
+.order-list-header,
+.order-item {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 0.5fr;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+.order-history-header,
+.order-history {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.order-list-header {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+  word-spacing: 2px;
+}
+
+.order-product-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.order-product-info img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.order-product-info .category {
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+  word-spacing: 2px;
+}
+
+.order-product-info .title {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 2px 0 0;
+  word-spacing: 2px;
+}
+
+.order-price {
+  font-weight: 500;
+  color: #1e1e1e;
+  word-spacing: 2px;
+}
+
+.order-status {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 4px;
+  text-align: center;
+  width: fit-content;
+  word-spacing: 2px;
+}
+
+.order-status.completed {
+  background-color: #28a7451a;
+  color: #28a745;
+}
+
+.order-status.pending {
+  background-color: #ffc1071a;
+  color: #ffc107;
+}
+
+.order-status.cancel {
+  background-color: #dc35451a;
+  color: #dc3545;
+}
+
+.remove button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  word-spacing: 2px;
+}
+
+.remove button:hover {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .order-list-header,
+  .order-item {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .order-item {
+    gap: 10px;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+}
+.wishlist-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.wishlist-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card-img {
+  position: relative;
   overflow: hidden;
 }
-.address-details p {
-  margin-bottom: 0px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+.card-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.hover-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.icon-btn {
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+  word-spacing: 2px;
+}
+
+.icon-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.wishlist-card:hover .card-img img {
+  transform: scale(1.1);
+}
+
+.wishlist-card:hover .hover-icons {
+  opacity: 1;
+}
+
+.card-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.wishlist-price {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+  word-spacing: 2px;
+}
+
+.wishlist-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 0;
+  word-spacing: 2px;
+}
+
+.wishlist-rating {
+  color: #f1c40f;
+  font-size: 14px;
+  word-spacing: 2px;
+}
+
+.wishlist-rating .wishlist-count {
+  color: #666;
+  margin-left: 5px;
   font-size: 13px;
-  color: #555;
-  letter-spacing: 0.5px;
-  line-height: 20px;
+  word-spacing: 2px;
 }
