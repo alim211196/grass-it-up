@@ -11,10 +11,14 @@ const Invoice = () => {
     <section className="invoice-container">
       <div className="invoice-wrapper">
         <div className="invoice-header">
-          <h3 data-aos="fade-up" data-aos-delay="100">
+          <h3 data-aos="fade-left" data-aos-delay="100">
             Invoice : <span>#038 - 456980</span>
           </h3>
-          <button className="print-btn" data-aos="fade-up" data-aos-delay="100">
+          <button
+            className="print-btn"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             Print Invoice
           </button>
         </div>

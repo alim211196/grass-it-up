@@ -152,7 +152,7 @@
   z-index: 1;
   cursor: pointer;
   word-spacing: 2px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid rgb(127, 156, 144);
 }
 
 /* Create the hover background effect */
@@ -171,7 +171,7 @@
 /* On hover, slide background in from the left and change text color */
 .account-form-button:hover {
   color: rgb(127, 156, 144);
-  border-color: white;
+  border: 1px solid rgb(127, 156, 144);
 }
 
 .account-form-button:hover::before {
@@ -385,4 +385,54 @@
   margin-left: 5px;
   font-size: 13px;
   word-spacing: 2px;
+}
+
+.header-banner-container {
+  position: relative;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.header-banner-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(187, 151, 109, 0.6);
+  z-index: 1;
+}
+
+.header-banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+.header-banner-content h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.header-banner-breadcrumb {
+  font-size: 16px;
+  color: #f1f1f1;
+}
+
+.header-banner-breadcrumb a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-banner-breadcrumb span {
+  margin: 0 6px;
+  color: #ddd;
 }

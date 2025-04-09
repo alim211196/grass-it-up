@@ -42,8 +42,9 @@
   display: inline-block;
   padding: 8px 16px;
   margin-top: 0px;
+  color: white;
   border: 1px solid rgb(127, 156, 144);
-  color: rgb(127, 156, 144);
+  background-color: rgb(127, 156, 144);
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
@@ -52,7 +53,6 @@
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
   cursor: pointer;
-  background-color: white;
   letter-spacing: 2px;
   border-radius: 20px;
   font-size: 12px;
@@ -66,15 +66,15 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: rgb(127, 156, 144);
+  background: white;
   transition: transform 0.4s ease-in-out;
   z-index: -1;
 }
 
 /* On hover, slide background in from the left and change text color */
 .print-btn:hover {
-  color: #fff;
-  border-color: rgb(127, 156, 144);
+  color: rgb(127, 156, 144);
+  border: 1px solid rgb(127, 156, 144);
 }
 
 .print-btn:hover::before {
@@ -127,7 +127,7 @@
 }
 
 .order-header {
-  background-color: #e7d3bd;
+  background-color: rgb(127, 156, 144, 0.5);
   padding: 15px;
   font-weight: bold;
   font-size: 20px;

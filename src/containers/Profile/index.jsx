@@ -10,6 +10,7 @@ import OrderList from "./OrderList";
 import OrderHistory from "./OrderHistory";
 import WishListContainer from "./WishListContainer";
 import { useNavigate } from "react-router-dom";
+import HeaderBanner from "./HeaderBanner";
 const tabs = [
   "My Profile",
   "My Account",
@@ -56,7 +57,8 @@ const CustomerProfile = () => {
 
   return (
     <>
-      <Breadcrumb path={[{ label: "Home", link: "/" }, { label: activeTab }]} />
+      {/* <Breadcrumb path={[{ label: "Home", link: "/" }, { label: activeTab }]} /> */}
+      <HeaderBanner activeTab={activeTab} />
       <div className="profile-page">
         <div className="sidebar">
           {tabs.map((tab) => (

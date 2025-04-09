@@ -419,9 +419,11 @@
   padding: 10px;
   border-radius: 50%;
   transition: background 0.3s;
+  border: 1px solid rgba(187, 151, 109, 0.7);
 }
 
 .wishlist-icon-div i:hover {
-  color: #38373d;
-  background: rgba(187, 151, 109, 0.7);
+  color: rgba(187, 151, 109, 0.7);
+  border: 1px solid rgba(187, 151, 109, 0.7);
+  background: white;
 }

@@ -127,8 +127,9 @@
 .signIn-btn {
   display: inline-block;
   margin-top: 0px;
+  color: white;
   border: 1px solid rgb(127, 156, 144);
-  color: rgb(127, 156, 144);
+  background-color: rgb(127, 156, 144);
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
@@ -151,15 +152,15 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: rgb(127, 156, 144);
+  background: white;
   transition: transform 0.4s ease-in-out;
   z-index: -1;
 }
 
 /* On hover, slide background in from the left and change text color */
 .signIn-btn:hover {
-  color: #fff;
-  border-color: rgb(127, 156, 144);
+  color: rgb(127, 156, 144);
+  border: 1px solid rgb(127, 156, 144);
 }
 
 .signIn-btn:hover::before {
@@ -319,15 +320,15 @@
 
 .better-section {
   position: relative;
+  min-height: 77vh;
   background: linear-gradient(131.5deg, #eaeaea 25.92%, #fff 71.18%);
-  box-shadow: -7px -7px 25px #fff, 7px 7px 15px #00000026;
-  color: white;
-  padding: 80px 40px;
-  overflow: hidden;
   background-image: url("/id_bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 100%;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .content-wrapper {
@@ -335,9 +336,10 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  height: 100%;
 }
 
 .text-content h1 {
@@ -365,9 +367,10 @@
   display: inline-block;
   padding: 8px 16px;
   margin-top: 0px;
-  border: 1px solid rgb(127, 156, 144);
-  color: rgb(127, 156, 144);
   font-size: 18px;
+  color: white;
+  border: 1px solid rgb(127, 156, 144);
+  background-color: rgb(127, 156, 144);
   font-weight: 500;
   text-decoration: none;
   border-radius: 50px;
@@ -387,15 +390,15 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: rgb(127, 156, 144);
+  background: white;
   transition: transform 0.4s ease-in-out;
   z-index: -1;
 }
 
 /* On hover, slide background in from the left and change text color */
 .join-button:hover {
-  color: #fff;
-  border-color: rgb(127, 156, 144);
+  color: rgb(127, 156, 144);
+  border: 1px solid rgb(127, 156, 144);
 }
 
 .join-button:hover::before {

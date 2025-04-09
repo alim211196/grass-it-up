@@ -25,7 +25,7 @@ const BannerForm = () => {
           data-aos-delay="100"
         >
           <div class="form-wrapper">
-            <h2>Join as a service interior designer</h2>
+            <h2>Join as a interior designer</h2>
             <form className="grid-form">
               <div className="form-group">
                 <label>Full Name *</label>

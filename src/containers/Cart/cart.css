@@ -212,27 +212,43 @@
 }
 
 .checkout-btn {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
   width: 100%;
-  padding: 18px 10px;
-  background-color: #f4f1ee;
   font-size: 12px;
   letter-spacing: 3px;
   line-height: normal;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  transition: 0.2s ease-in-out;
+  padding: 16px;
+  color: white;
+  border: 1px solid rgb(127, 156, 144);
+  background-color: rgb(127, 156, 144);
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  z-index: 1;
   margin-bottom: 10px;
-  word-spacing: 2px;
+}
+
+.checkout-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
 }
 
 .checkout-btn:hover {
-  background-color: rgb(187, 151, 109);
+  color: rgb(127, 156, 144);
+  border: 1px solid rgb(127, 156, 144);
+}
+
+.checkout-btn:hover::before {
+  transform: translateX(100%);
 }
 
 .payment-buttons {
@@ -441,51 +457,80 @@
 }
 
 .apply-btn {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  padding: 4px 8px;
-  height: 40px;
-  background-color: #f4f1ee;
   font-size: 12px;
   letter-spacing: 3px;
   line-height: normal;
   text-align: center;
-  text-transform: uppercase;
-  transition: 0.2s ease-in-out;
-  letter-spacing: 3px;
   font-weight: 700;
-  cursor: pointer;
+  text-transform: uppercase;
+  padding: 8px;
+  color: white;
+  border: 1px solid rgb(127, 156, 144);
+  background-color: rgb(127, 156, 144);
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.apply-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
 }
 
 .apply-btn:hover {
-  background-color: rgb(187, 151, 109);
+  color: rgb(127, 156, 144);
+  border: 1px solid rgb(127, 156, 144);
+}
+
+.apply-btn:hover::before {
+  transform: translateX(100%);
 }
 
 .place-order-btn {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  padding: 4px 8px;
-  height: 43px;
-  background-color: #f4f1ee;
+  width: 100%;
   font-size: 12px;
   letter-spacing: 3px;
   line-height: normal;
   text-align: center;
-  text-transform: uppercase;
-  transition: 0.2s ease-in-out;
-  letter-spacing: 3px;
   font-weight: 700;
-  cursor: pointer;
+  text-transform: uppercase;
+  padding: 16px;
+  color: white;
+  border: 1px solid rgb(127, 156, 144);
+  background-color: rgb(127, 156, 144);
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.place-order-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
 }
 
 .place-order-btn:hover {
-  background-color: rgb(187, 151, 109);
+  color: rgb(127, 156, 144);
+  border: 1px solid rgb(127, 156, 144);
+}
+
+.place-order-btn:hover::before {
+  transform: translateX(100%);
 }
 
 .checkout-form {
