@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Breadcrumb from "../Breadcrumb";
 import SubscriptionSection from "../../common/SubscriptionSection";
+import CheckoutInfo from "./checkoutInfo";
 const Cart = () => {
   const [cart, setCart] = useState([
     {
@@ -167,6 +168,7 @@ const Cart = () => {
           </div>
         </div>
       </section>
+      <CheckoutInfo />
       <section className="SatisfactionGuarantee">
         <div className="SatisfactionGuarantee-container">
           <SectionHeading title="Satisfaction" subtitle="Guarantee" />
@@ -205,6 +207,7 @@ const Cart = () => {
           </div>
         </div>
       </section>
+
       <SubscriptionSection />
     </>
   );
