@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Breadcrumb from "../Breadcrumb";
 import SubscriptionSection from "../../common/SubscriptionSection";
-import CheckoutInfo from "./checkoutInfo";
+import CheckoutInfo from "./CheckoutInfo";
 const Cart = () => {
   const [cart, setCart] = useState([
     {
