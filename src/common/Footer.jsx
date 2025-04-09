@@ -11,8 +11,7 @@ const Footer = () => {
       <footer
         className="text-center text-lg-start text-white"
         style={{
-          backgroundImage:
-            "url(https://dev-risians.com/html/grassitup/images/footer-overlay-bg.jpg)",
+          backgroundImage: "url(/footer-bg.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

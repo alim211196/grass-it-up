@@ -13,37 +13,37 @@ import { useNavigate } from "react-router-dom";
 
 const images = [
   {
-    src: "https://cld.accentuate.io/447233851645/1740741955277/stinson-slide2.jpg?v=1740743025627&options=w_540",
+    src: "/lec1.webp",
     alt: "Chair 1",
     name: "Stinson",
     price: "AED 122.75",
   },
   {
-    src: "https://cld.accentuate.io/447231525117/1740741924557/del-mar-slide2.jpg?v=1740742978453&options=w_540",
+    src: "/lec2.webp",
     alt: "Chair 2",
     name: "Del Mar",
     price: "AED 122.75",
   },
   {
-    src: "https://cld.accentuate.io/447231557885/1740741992444/seaside-slide2.jpg?v=1741206376098&options=w_540",
+    src: "/lec3.webp",
     alt: "Chair 3",
     name: "Seaside",
     price: "AED 122.75",
   },
   {
-    src: "https://cld.accentuate.io/278232039573/1648774506347/diablo-dune.jpg?v=1740763762856&options=w_540",
+    src: "/lec4.webp",
     alt: "Chair 4",
     name: "Diablo",
     price: "AED 122.75",
   },
   {
-    src: "https://cld.accentuate.io/278997434517/1740764015996/montecito-newness.jpg?v=1740764015996",
+    src: "/lec5.webp",
     alt: "Chair 5",
     name: "Montecito",
     price: "AED 122.75",
   },
   {
-    src: "https://cld.accentuate.io/403659391229/1677543722329/salt-point-new.jpg?v=1740765139159",
+    src: "/lec6.webp",
     alt: "Chair 6",
     name: "Salt Point",
     price: "AED 122.75",

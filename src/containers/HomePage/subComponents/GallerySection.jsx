@@ -55,15 +55,15 @@ const titleStyles = {
 
 const images = [
   {
-    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-2.jpg",
+    src: "/trend-pro-bg-2.jpg",
     name: "Modern Design",
   },
   {
-    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-3.jpg",
+    src: "/trend-pro-bg-3.jpg",
     name: "Elegant Style",
   },
   {
-    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-1.jpg",
+    src: "/trend-pro-bg-1.jpg",
     name: "Luxury Sofa",
   },
   {
@@ -76,7 +76,7 @@ const images = [
   },
 
   {
-    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-2.jpg",
+    src: "/trend-pro-bg-2.jpg",
     name: "Modern Design",
   },
   {
@@ -84,7 +84,7 @@ const images = [
     name: "Elegant Style",
   },
   {
-    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-1.jpg",
+    src: "/trend-pro-bg-1.jpg",
     name: "Luxury Sofa",
   },
   {
@@ -96,11 +96,11 @@ const images = [
     name: "Modern Interior",
   },
   {
-    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-1.jpg",
+    src: "/trend-pro-bg-1.jpg",
     name: "Luxury Sofa",
   },
   {
-    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-2.jpg",
+    src: "/trend-pro-bg-2.jpg",
     name: "Modern Design",
   },
   {

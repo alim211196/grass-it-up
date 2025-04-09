@@ -11,11 +11,7 @@ const VisitOurShowroom = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
-  const images = [
-    "https://lh3.googleusercontent.com/p/AF1QipOWIgmNSGTr8sZarU-ymzVve3QewuYNGqmdFB_c=s680-w680-h510",
-    "https://lh3.googleusercontent.com/p/AF1QipMW1MqMMXK60ampgeezBrmHRX5sXknRgCFWL1eV=s680-w680-h510",
-    "https://lh3.googleusercontent.com/p/AF1QipNNurZaoteL0AsfHDkAQJ49LsOpsqsrwVCo4roo=s680-w680-h510",
-  ];
+  const images = ["/vs1.jpg", "/vs2.jpg", "/vs3.jpg"];
   return (
     <div className="visit-showroom-container">
       {/* Left Section */}

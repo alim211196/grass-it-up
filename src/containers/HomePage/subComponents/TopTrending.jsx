@@ -12,7 +12,7 @@ import { OverlayTrigger, Popover } from "react-bootstrap";
 
 const images = [
   {
-    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-1.jpg",
+    src: "/trend-pro-bg-1.jpg",
     hotspots: [
       { id: 1, x: "12%", y: "55%", text: "LAMP" },
       { id: 2, x: "30%", y: "50%", text: "SOFA" },
@@ -21,7 +21,7 @@ const images = [
     ],
   },
   {
-    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-2.jpg",
+    src: "/trend-pro-bg-2.jpg",
     hotspots: [
       { id: 1, x: "55%", y: "45%", text: "SOFA" },
       { id: 2, x: "50%", y: "55%", text: "TABLE" },
@@ -29,7 +29,7 @@ const images = [
     ],
   },
   {
-    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-3.jpg",
+    src: "/trend-pro-bg-3.jpg",
     hotspots: [
       { id: 1, x: "25%", y: "20%", text: "UMBRELLA" },
       { id: 2, x: "20%", y: "65%", text: "ARMCHAIR" },
@@ -42,7 +42,7 @@ const images = [
   },
 
   {
-    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-1.jpg",
+    src: "/trend-pro-bg-1.jpg",
     hotspots: [
       { id: 1, x: "12%", y: "55%", text: "LAMP" },
       { id: 2, x: "30%", y: "50%", text: "SOFA" },
@@ -51,7 +51,7 @@ const images = [
     ],
   },
   {
-    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-2.jpg",
+    src: "/trend-pro-bg-2.jpg",
     hotspots: [
       { id: 1, x: "55%", y: "45%", text: "SOFA" },
       { id: 2, x: "50%", y: "55%", text: "TABLE" },

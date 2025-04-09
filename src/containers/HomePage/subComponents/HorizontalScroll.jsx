@@ -56,34 +56,22 @@ export default function HorizontalScroll() {
     {
       title: "CHAIRS",
       buttonLabel: "SHOP CHAIRS",
-      images: [
-        "https://images.ctfassets.net/tuohjudwxvzs/9Ff7V1JqJwu0cfYEJ4kWt/ef7b0e440769d005afdc9466fae600a0/chairs_nemcam.png",
-        "https://images.ctfassets.net/tuohjudwxvzs/6L5rxJi0JyWPr41ZbaoBbu/14ca5dda93736787b1f004c4da9ae3cd/chairs-mb_haymwf.png",
-      ],
+      images: ["/category10.png", "/category11.png"],
     },
     {
       title: "TABLES",
       buttonLabel: "SHOP TABLES",
-      images: [
-        "https://images.ctfassets.net/tuohjudwxvzs/3l4UZJUfxYdqFZnPT4qQ5f/10a77a6ca201d02798df92cc48cc250a/tables_gokhgz.png",
-        "https://images.ctfassets.net/tuohjudwxvzs/fO4HVOlQv4IKCfYs6cVay/74888751796597c8ee93425cfb9fc014/tables-mb_ljzlgt.png",
-      ],
+      images: ["/category20.png", "/category21.png"],
     },
     {
       title: "LAMPS",
       buttonLabel: "SHOP LAMPS",
-      images: [
-        "https://images.ctfassets.net/tuohjudwxvzs/4mnTMMdY2Om1Fi61u6hF7O/795d642216b2551c90e946756d4a8386/lamps_v27n9t.png",
-        "https://images.ctfassets.net/tuohjudwxvzs/7MJGYGfL2FnbkB3s6lRtqG/52e59a170fca6aa3b5085e64c911fc3c/lamps-mb_wtugjk.png",
-      ],
+      images: ["/category30.png", "/category31.png"],
     },
     {
       title: "SHELVES",
       buttonLabel: "SHOP SHELVES",
-      images: [
-        "https://images.ctfassets.net/tuohjudwxvzs/1sGOK3xQvFTpDjkAAUtKY1/34680bc73428b1a991e939b7d300e86a/shelve_wi8ipx_u6na85.webp",
-        "https://images.ctfassets.net/tuohjudwxvzs/5KTiBZ1fkTZx9H1ofXUrXA/4c5369d037c7058909e0594f4dee8859/shelves_qy9agg.webp",
-      ],
+      images: ["/category40.webp", "/category41.webp"],
     },
   ];
 

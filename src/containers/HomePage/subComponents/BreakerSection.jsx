@@ -5,10 +5,10 @@ import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
 
 const images = [
-  "https://dev-risians.com/html/grassitup/images/pop-cat-bg-8.png",
-  "https://dev-risians.com/html/grassitup/images/pop-cat-bg-1.png",
-  "https://dev-risians.com/html/grassitup/images/pop-cat-bg-11.png",
-  "https://dev-risians.com/html/grassitup/images/pop-cat-bg-12.png",
+  "/breaker1.png",
+  "/breaker2.png",
+  "/breaker3.png",
+  "/breaker4.png",
 ];
 
 const BreakerSection = () => {

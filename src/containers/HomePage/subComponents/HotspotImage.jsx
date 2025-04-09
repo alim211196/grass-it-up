@@ -20,7 +20,7 @@ const HotspotImage = () => {
     <div className="hotspot-container" data-aos="fade-up" data-aos-delay="100">
       {/* Background Image */}
       <img
-        src="https://terraoutdoor.com/cdn/shop/files/homepage_material_integrity_3_1512x.png?v=1627507566"
+        src="/material-integrity.webp"
         alt="Interactive Hotspot"
         className="hotspot-image"
         loading="lazy"

@@ -8,32 +8,32 @@ import "aos/dist/aos.css";
 import SectionHeading from "../../../common/SectionHeading";
 const images = [
   {
-    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-2.jpg",
+    src: "/trend-pro-bg-2.jpg",
     name: "Modern Design",
   },
   {
-    src: "https://dev-risians.com/html/grassitup/images/trend-pro-bg-1.jpg",
+    src: "/trend-pro-bg-1.jpg",
     name: "Luxury Sofa",
   },
 
   {
-    src: "https://dev-risians.com/html/grassitup/images/blog-bg-1.jpg",
+    src: "/blog-bg-1.jpg",
     name: "Modern Design",
   },
   {
-    src: "https://dev-risians.com/html/grassitup/images/blog-bg-2.jpg",
+    src: "/blog-bg-2.jpg",
     name: "Luxury Sofa",
   },
   {
-    src: "https://dev-risians.com/html/grassitup/images/blog-bg-3.jpg",
+    src: "/blog-bg-3.jpg",
     name: "Modern Design",
   },
   {
-    src: "https://dev-risians.com/html/grassitup/images/blog-bg-4.jpg",
+    src: "/blog-bg-4.jpg",
     name: "Luxury Sofa",
   },
   {
-    src: "https://dev-risians.com/html/grassitup/images/blog-bg-5.jpg",
+    src: "/blog-bg-5.jpg",
     name: "Modern Design",
   },
 ];

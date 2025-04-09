@@ -39,7 +39,7 @@ const InformativeCategorySection = () => {
       >
         {/* First Image */}
         <img
-          src="https://terraoutdoor.com/cdn/shop/files/Avila_-_home_pagejpg_720x.jpg?v=1723002939"
+          src="/informative1.webp"
           alt="Outdoor Furniture"
           className={`informative-category-section__image ${
             isZoomed
@@ -52,7 +52,7 @@ const InformativeCategorySection = () => {
         {/* Second Image with Text Overlay */}
         <div className="image-with-text">
           <img
-            src="https://terraoutdoor.com/cdn/shop/files/chaise-overlap_1080x.png?v=1716935605"
+            src="/informative3.webp"
             alt="Outdoor Furniture"
             className={`informative-category-section__image ${
               isZoomed
@@ -116,7 +116,7 @@ const InformativeCategorySection = () => {
           data-aos-delay="100"
         >
           <img
-            src="https://terraoutdoor.com/cdn/shop/files/homepage_sub_3_dine_540x.jpg?v=1627426673"
+            src="/informative2.webp"
             alt="Outdoor Furniture"
             className={`informative-category-section__bottom-image ${
               isZoomed
