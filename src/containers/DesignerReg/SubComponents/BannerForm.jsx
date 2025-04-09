@@ -7,10 +7,7 @@ const BannerForm = () => {
       {/* Video Background */}
       <div className={"BannerForm"}>
         <video autoPlay muted loop playsInline className={"BannerFormVideo"}>
-          <source
-            src="https://videos.pexels.com/video-files/7578552/7578552-uhd_2560_1440_30fps.mp4"
-            type="video/mp4"
-          />
+          <source src="/banner_video.mp4" type="video/mp4" />
           <img
             src="/fallback.jpg"
             className={`img-fluid ${"BannerFormImage"}`}
