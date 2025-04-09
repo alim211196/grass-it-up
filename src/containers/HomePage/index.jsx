@@ -12,13 +12,16 @@ import TopTrending from "./subComponents/TopTrending";
 import VisitOurShowroom from "./subComponents/VisitOurShowroom";
 import HotspotImage from "./subComponents/HotspotImage";
 import PartnerMarquee from "./subComponents/PartnerMarquee";
-import FurnitureScrollEffect from "./subComponents/FurnitureScrollEffect";
+
 import CylindricalCarousel from "./subComponents/CylindricalCarousel";
 import Testimonial from "./subComponents/Testimonial";
 import SubscriptionSection from "../../common/SubscriptionSection";
 import Chatbot from "../ChatBot";
 import GallerySection2 from "./subComponents/GallerySection2";
 
+const FurnitureScrollEffect = lazy(() =>
+  import("./subComponents/FurnitureScrollEffect")
+);
 // Lazy load only VideoSlider
 const VideoSlider = lazy(() => import("./subComponents/VideoSlider"));
 
@@ -40,14 +43,15 @@ const HomePage = () => {
       <VisitOurShowroom />
       <HotspotImage />
       <PartnerMarquee />
-      <FurnitureScrollEffect />
+      <Suspense fallback={null}>
+        <FurnitureScrollEffect />
+      </Suspense>
+
       <CylindricalCarousel />
 
-      {/* Only VideoSlider is lazy-loaded */}
       <Suspense fallback={null}>
         <VideoSlider />
       </Suspense>
-
       <Testimonial />
       <SubscriptionSection />
     </>
