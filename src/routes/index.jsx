@@ -29,6 +29,7 @@ const ForgotPassword = lazy(() => import("../containers/ForgotPassword"));
 const Invoice = lazy(() => import("../containers/Invoice"));
 const OrderTracking = lazy(() => import("../containers/OrderTracking"));
 const OrderReturn = lazy(() => import("../containers/OrderReturn"));
+const OrderCancel = lazy(() => import("../containers/OrderCancel"));
 const ResetPassword = lazy(() => import("../containers/ResetPassword"));
 const VerifyOTP = lazy(() => import("../containers/VerifyOTP"));
 const NotFound = lazy(() => import("../containers/NotFound"));
@@ -91,6 +92,10 @@ const router = createBrowserRouter([
       {
         path: "/order-return",
         element: <OrderReturn />,
+      },
+      {
+        path: "/order-cancel",
+        element: <OrderCancel />,
       },
       {
         path: "/reset-password",

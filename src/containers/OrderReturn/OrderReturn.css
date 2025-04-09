@@ -1,0 +1,152 @@
+.return-order-container {
+  padding: 1.5rem;
+  max-width: 700px;
+  margin: auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.return-order-page-title {
+  font-size: 3rem;
+  color: #bb976d;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  word-spacing: 2px;
+  text-align: center;
+}
+
+.return-order-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.return-order-product-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.return-order-product-image {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 1s ease-in-out;
+  object-fit: contain;
+}
+.return-order-product-image:hover {
+  transform: scale(1.1);
+}
+.return-order-product-details h3 {
+  margin: 0;
+  font-size: 18px;
+  word-spacing: 2px;
+}
+
+.return-order-product-price {
+  color: #b1763c;
+  font-weight: bold;
+  word-spacing: 2px;
+}
+
+.strikethrough {
+  color: #aaa;
+  text-decoration: line-through;
+  margin-left: 8px;
+  font-size: 14px;
+  word-spacing: 2px;
+}
+
+.return-order-product-qty {
+  font-size: 14px;
+  margin-top: 4px;
+  word-spacing: 2px;
+}
+
+.return-order-cancel-reason-section {
+  margin-top: 1.5rem;
+}
+
+.return-order-section-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  word-spacing: 2px;
+}
+
+.return-order-radio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.return-order-radio-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 15px;
+  word-spacing: 2px;
+}
+
+.return-order-radio-option input[type="radio"] {
+  accent-color: #b1763c;
+}
+
+.return-order-textarea-group {
+  margin-top: 1.5rem;
+}
+
+.return-order-textarea-group label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+  word-spacing: 2px;
+}
+
+.return-order-textarea-group textarea {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.75rem;
+  resize: vertical;
+  word-spacing: 2px;
+  font-size: 14px;
+}
+
+.return-order-file-upload-group {
+  margin-top: 1.5rem;
+}
+
+.return-order-file-upload-label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+  word-spacing: 2px;
+}
+
+.return-order-upload-box {
+  border: 2px dashed #bbb;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.return-order-upload-trigger {
+  color: #b1763c;
+  font-weight: 500;
+  cursor: pointer;
+  word-spacing: 2px;
+}
+
+.return-order-file-name {
+  margin-top: 0.5rem;
+  font-size: 14px;
+  word-spacing: 2px;
+  color: #555;
+}

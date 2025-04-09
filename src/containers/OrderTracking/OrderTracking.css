@@ -1,0 +1,116 @@
+.track-order-container {
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.track-order-title {
+  font-size: 3rem;
+  color: #bb976d;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  word-spacing: 2px;
+  text-align: center;
+}
+
+.track-order-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.track-order-product-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.track-order-product-image {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  transition: transform 1s ease-in-out;
+}
+
+.track-order-product-image:hover {
+  transform: scale(1.1);
+}
+
+.track-order-product-details h3 {
+  font-size: 18px;
+  margin: 0;
+  word-spacing: 2px;
+}
+
+.track-order-product-price {
+  font-weight: bold;
+  color: #b1763c;
+  word-spacing: 2px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  color: #aaa;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.track-order-product-qty {
+  font-size: 14px;
+  margin-top: 5px;
+  word-spacing: 2px;
+}
+
+.track-order-order-details {
+  margin: 1rem 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.track-order-order-status h4 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  word-spacing: 2px;
+}
+
+.track-order-status-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.track-order-status-list li {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.track-order-status-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ccc;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.track-order-status-complete .track-order-status-dot {
+  background-color: #b1763c;
+}
+
+.track-order-status-active .track-order-status-dot {
+  background-color: #b1763c;
+  border: 2px solid #b1763c;
+}
+
+.track-order-status-list li p {
+  margin: 0;
+}
