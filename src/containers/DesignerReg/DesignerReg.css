@@ -338,6 +338,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-right: 10vw;
   text-align: center;
   height: 100%;
 }
@@ -433,6 +434,7 @@
     flex-direction: row;
     justify-content: flex-end;
     gap: 50px;
+    padding-right: 10vw;
     text-align: left;
   }
 
