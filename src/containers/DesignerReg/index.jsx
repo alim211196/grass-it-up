@@ -17,12 +17,12 @@ const DesignerReg = () => {
         <div className="content-wrapper">
           <div className="text-content">
             <h1 data-aos="fade-up" data-aos-delay="100">
-              Bridging the Gap Between Talent and Opportunity
+              Partner with Grass It Up & Enjoy Exclusive Trade Benefits!
             </h1>
 
             <p data-aos="fade-up" data-aos-delay="100">
-              Join the platform that connects innovative minds with real-world
-              solutions.
+              Join our program to order premium outdoor furniture for clients
+              and receive special trade benefits. Become a Partner!
             </p>
             <button
               className="join-button"
