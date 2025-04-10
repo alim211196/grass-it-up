@@ -2106,7 +2106,7 @@ body {
   background-image: url("/id_bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
