@@ -95,33 +95,37 @@ export default function BenefitsSection() {
             </p>
           </div>
         </div>
-      </div>
-      <div className="banner-container" data-aos="fade-up" data-aos-delay="100">
-        <video autoPlay muted loop playsInline className={"BannerFormVideo"}>
-          <source
-            src="https://videos.pexels.com/video-files/7578554/7578554-uhd_2560_1440_30fps.mp4"
-            type="video/mp4"
-          />
-          <img
-            src="/fallback.jpg"
-            className={`img-fluid ${"BannerFormImage"}`}
-            alt="Grass It Up"
-            loading="lazy"
-          />
-        </video>
+        <div
+          className="banner-container"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <video autoPlay muted loop playsInline className={"BannerFormVideo"}>
+            <source
+              src="https://videos.pexels.com/video-files/7578554/7578554-uhd_2560_1440_30fps.mp4"
+              type="video/mp4"
+            />
+            <img
+              src="/fallback.jpg"
+              className={`img-fluid ${"BannerFormImage"}`}
+              alt="Grass It Up"
+              loading="lazy"
+            />
+          </video>
 
-        <div className="banner-overlay">
-          <img
-            src={"/Master_Logo_WHITE.png"}
-            alt="Grass It Up"
-            className="logoImage"
-            loading="lazy"
-            data-aos="fade-left"
-            data-aos-delay="100"
-          />
-          <h2 className="headline" data-aos="fade-left" data-aos-delay="100">
-            Innovation at Its Best: A Closer Look at Our Services
-          </h2>
+          <div className="banner-overlay">
+            <img
+              src={"/Master_Logo_WHITE.png"}
+              alt="Grass It Up"
+              className="logoImage"
+              loading="lazy"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            />
+            <h2 className="headline" data-aos="fade-left" data-aos-delay="100">
+              Innovation at Its Best: A Closer Look at Our Services
+            </h2>
+          </div>
         </div>
       </div>
     </section>

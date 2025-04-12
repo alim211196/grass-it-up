@@ -124,6 +124,10 @@
   margin: 0 3px;
 }
 
+.form-checkbox a:hover {
+  text-decoration: underline;
+}
+
 .signIn-btn {
   display: inline-block;
   margin-top: 0px;
@@ -213,15 +217,53 @@
   transform: rotate(45deg);
 }
 
+.form-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+.tab:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tab.active {
+  background-color: #7f9c90;
+  color: white;
+  border: 1px solid #7f9c90;
+}
+
+.tab-content {
+  animation: fadeSlideIn 0.6s ease-in-out both;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .benefits-section {
   padding: 50px 20px;
   background-color: #fff;
   text-align: center;
-}
-
-.benefit-container {
-  margin: 0 auto;
-  padding: 40px;
 }
 
 .intro-text {
@@ -236,6 +278,8 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+  margin: 0 auto;
+  padding: 40px;
 }
 
 /* Feature Box */
@@ -280,6 +324,12 @@
   overflow: hidden;
   border-radius: 10px;
   height: 300px;
+}
+
+@media (min-width: 1600px) {
+  .banner-container {
+    max-width: 1600px;
+  }
 }
 
 .banner-image {

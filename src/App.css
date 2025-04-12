@@ -3,6 +3,7 @@
   src: url("/July-it.ttf") format("truetype"); /* Adjust the path */
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Start Video Section */

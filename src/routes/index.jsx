@@ -89,10 +89,7 @@ const router = createBrowserRouter([
         path: "/order-tracking",
         element: <OrderTracking />,
       },
-      {
-        path: "/order-return",
-        element: <OrderReturn />,
-      },
+
       {
         path: "/order-cancel",
         element: <OrderCancel />,

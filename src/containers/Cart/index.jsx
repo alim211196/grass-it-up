@@ -64,11 +64,11 @@ const Cart = () => {
         path={[{ label: "Home", link: "/" }, { label: "Your Shopping Cart" }]}
       />
       <section className="shopping-cart">
-        <h1 className="cart-title" data-aos="fade-left" data-aos-delay="100">
+        <h1 className="cart-title" data-aos="fade-up" data-aos-delay="100">
           Your Shopping Cart
         </h1>
         <div className="cart-container">
-          <div className="cart-items" data-aos="fade-left" data-aos-delay="100">
+          <div className="cart-items" data-aos="fade-up" data-aos-delay="100">
             {cart.map((item) => (
               <div className="cart-item" key={item.id}>
                 <div className="cart-item-div">
@@ -122,7 +122,7 @@ const Cart = () => {
           </div>
           <div
             className="order-summary"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-delay="100"
           >
             <h3>ORDER SUMMARY</h3>

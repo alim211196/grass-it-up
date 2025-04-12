@@ -131,7 +131,7 @@ const ProductGrid = () => {
           className="shopButton"
           onClick={() => navigate(`/collections/shop-all-products`)}
         >
-          See all products
+          See All Products
         </a>
       </div>
     </section>

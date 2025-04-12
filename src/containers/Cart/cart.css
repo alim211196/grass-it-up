@@ -396,6 +396,7 @@
   margin: 40px auto;
   font-family: Arial, sans-serif;
   word-spacing: 2px;
+  letter-spacing: 0.5px;
 }
 
 .checkout-form {
@@ -413,6 +414,7 @@
   line-height: 24px;
   word-spacing: 2px;
   margin: 16px 0px;
+  letter-spacing: 0.5px;
 }
 .checkout-div-right {
   width: 50%;
@@ -427,6 +429,7 @@
   line-height: 24px;
   color: #1e1e1e;
   word-spacing: 2px;
+  letter-spacing: 0.5px;
 }
 .coupon-btn {
   font-size: 14px;
@@ -435,6 +438,7 @@
   margin-left: 5px;
   cursor: pointer;
   word-spacing: 2px;
+  letter-spacing: 0.5px;
 }
 .checkout-section {
   gap: 10px;
@@ -557,6 +561,7 @@
   font-weight: 500;
   color: #172430;
   word-spacing: 2px;
+  letter-spacing: 0.5px;
 }
 
 .checkout-form-input,
@@ -583,4 +588,59 @@
   border: 1px solid #ccc;
   height: 40px;
   background: white;
+}
+.form-checkbox {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.form-checkbox a {
+  text-decoration: none;
+}
+.form-checkbox a:hover {
+  text-decoration: underline;
+}
+
+.form-checkbox label {
+  color: black;
+  text-decoration: none;
+  margin: 0 3px;
+}
+/* Hide default checkbox */
+.custom-checkbox {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Checked state */
+.custom-checkbox:checked {
+  background-color: #7f9c90; /* Change this to your theme color */
+  border-color: #7f9c90;
+}
+
+/* Add checkmark using ::after */
+.custom-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 4px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+input[type="radio"]:checked {
+  accent-color: #7f9c90;
 }
