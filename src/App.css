@@ -2221,3 +2221,64 @@ body {
     font-size: 36px;
   }
 }
+.custom-swiper {
+  width: 100%;
+  padding: 60px 0;
+  overflow: visible;
+}
+
+.custom-swiper-slide {
+  width: 50vw !important;
+  max-width: 700px;
+  height: 400px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.custom-swiper-slide-active {
+  transform: scale(1);
+  z-index: 3;
+}
+
+.custom-swiper-slide-prev,
+.custom-swiper-slide-next {
+  transform: scale(0.85);
+  z-index: 2;
+}
+
+.custom-swiper-slide-prev + .custom-swiper-slide,
+.custom-swiper-slide-next + .custom-swiper-slide {
+  transform: scale(0.75);
+  z-index: 1;
+}
+
+.custom-swiper-slide-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-swiper-slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.custom-swiper-slide-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+}

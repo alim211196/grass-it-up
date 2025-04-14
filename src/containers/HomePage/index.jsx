@@ -19,6 +19,7 @@ import SubscriptionSection from "../../common/SubscriptionSection";
 import Chatbot from "../ChatBot";
 import GallerySection2 from "./subComponents/GallerySection2";
 import InteriorJoinNow from "./subComponents/InteriorJoinNow";
+import GallerySection3 from "./subComponents/GallerySection3";
 
 const FurnitureScrollEffect = lazy(() =>
   import("./subComponents/FurnitureScrollEffect")
@@ -39,7 +40,7 @@ const HomePage = () => {
       <BreakerSection />
       <HorizontalCarousel />
       <BlogSection />
-      <GallerySection2 />
+      <GallerySection3 />
       <TopTrending />
       <VisitOurShowroom />
       <HotspotImage />
