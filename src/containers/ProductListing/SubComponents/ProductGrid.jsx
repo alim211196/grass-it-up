@@ -180,6 +180,15 @@ const ProductGrid = ({
               }
             >
               <div className="product-collection-card">
+                {/* PICKUP Ribbon - Top Left */}
+                {product.availableForPickup && (
+                  <div className="ribbon ribbon-pickup">Pickup</div>
+                )}
+
+                {/* OUT OF STOCK Ribbon - Bottom Right */}
+                {product.availability === "Out of stock" && (
+                  <div className="ribbon ribbon-outofstock">Out of Stock</div>
+                )}
                 <div className="product-image-div">
                   <img
                     src={product.image}
@@ -188,23 +197,17 @@ const ProductGrid = ({
                     loading="lazy"
                   />
                 </div>
-                <div className="product-info-container">
-                  <div className="product-details-div">
-                    <h5 className="product-collection-name">{product.name}</h5>
-                    <span className="product-collection-price">
-                      {product.price}
-                    </span>
-                    <span className="product-collection-fprice">
-                      {product.fprice}
-                    </span>
-                  </div>
-                  {product.availability === "Out of stock" && (
-                    <span className="stock-badge">Out of stock</span>
-                  )}
+
+                <div className="product-details-div">
+                  <h5 className="product-collection-name">{product.name}</h5>
+                  <span className="product-collection-price">
+                    {product.price}
+                  </span>
+                  <span className="product-collection-fprice">
+                    {product.fprice}
+                  </span>
                 </div>
-                {product.availableForPickup && (
-                  <span className="small-pickup-tag">Pickup ✔</span>
-                )}
+
                 <div className="wishlist-icon-div">
                   <i className="fas fa-heart"></i>
                 </div>

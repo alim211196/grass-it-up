@@ -71,21 +71,49 @@
   gap: 10px;
 }
 
-.pickup-tag {
-  font-size: 14px;
-  background-color: #e6f7e6;
-  color: #7f9c90;
-  padding: 4px 10px;
-  border-radius: 12px;
-  margin-top: 8px;
+/* Base ribbon container */
+.cart-ribbon {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  top: 10px;
+  right: -10px;
+  width: 10rem;
+  padding: 0.4rem 0;
+  text-align: center;
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background: rgba(127, 156, 144, 1);
+  z-index: 2;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.pickup-tag.unavailable {
-  background-color: #fff1f0;
-  color: #bb976d;
+/* Label content */
+.cart-ribbon::after {
+  content: attr(data-label);
+  position: relative;
+  z-index: 3;
+}
+
+/* Triangle ribbon tail */
+.cart-ribbon::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-top: 10px solid rgba(127, 156, 144, 1);
+  z-index: 1;
+  transform: rotate(-90deg);
+}
+
+/* Optional: Change color for unavailable */
+.cart-ribbon.unavailable {
+  background: rgba(187, 151, 109, 1);
+}
+.cart-ribbon.unavailable::before {
+  border-top-color: rgba(187, 151, 109, 1);
 }
 .cart-price-div {
   display: flex;

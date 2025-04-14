@@ -696,20 +696,22 @@
   background: white;
 }
 
-.pickup-badge {
-  color: #fff;
-  background: rgba(127, 156, 144, 0.7);
-  font-size: 14px;
-  padding: 4px 8px;
-  border-radius: 8px;
+/* Common ribbon style */
+.pd-ribbon {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 1;
-  cursor: pointer;
+  z-index: 2;
+  color: white;
+  padding: 4px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  transform: rotate(-45deg);
+  width: 170px;
 }
-.pickup-badge:hover {
-  color: rgba(127, 156, 144, 0.7);
-  border: 1px solid rgba(127, 156, 144, 0.7);
-  background: white;
+
+/* Top Left Ribbon for Pickup */
+.pd-ribbon-pickup {
+  top: 36px;
+  left: -35px;
+  background-color: rgba(127, 156, 144, 1);
 }

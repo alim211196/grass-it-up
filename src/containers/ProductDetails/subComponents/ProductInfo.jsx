@@ -38,13 +38,16 @@ const ProductInfo = ({ product }) => {
           modules={[Navigation, Thumbs, Zoom]}
           className="product-slider"
         >
+          {product.availableForPickup && (
+            <div className="pd-ribbon pd-ribbon-pickup">
+              Available for Pickup
+            </div>
+          )}
           {images.map((img, index) => (
             <SwiperSlide key={index}>
               <div className="swiper-zoom-container">
                 <img src={img} alt={`Product ${index}`} loading="lazy" />
-                {product.availableForPickup && (
-                  <span className="pickup-badge">Available for Pickup</span>
-                )}
+
                 <div className="pd-wishlist-icon-div">
                   <i className="fas fa-heart"></i>
                 </div>

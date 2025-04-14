@@ -193,23 +193,6 @@
   margin-bottom: 10px;
   border: none;
 }
-.stock-badge {
-  color: #fff;
-  background: rgba(187, 151, 109, 0.7);
-  font-size: 12px;
-  font-weight: 600;
-  padding: 6px 10px;
-  border-radius: 12px;
-  white-space: nowrap;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.stock-badge:hover {
-  color: rgba(187, 151, 109, 0.7);
-  border: 1px solid rgba(187, 151, 109, 0.7);
-  background: white;
-}
 .product-collection-image {
   width: 100%;
   height: auto;
@@ -436,29 +419,6 @@
   display: block;
 }
 
-.small-pickup-tag {
-  color: #fff;
-  background: rgba(127, 156, 144, 0.7);
-  font-size: 14px;
-  padding: 2px 6px;
-  border-radius: 8px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  display: none;
-  z-index: 1;
-  cursor: pointer;
-}
-.small-pickup-tag:hover {
-  color: rgba(127, 156, 144, 0.7);
-  border: 1px solid rgba(127, 156, 144, 0.7);
-  background: white;
-}
-
-.product-collection-card:hover .small-pickup-tag {
-  display: block;
-}
-
 .wishlist-icon-div i {
   font-size: 20px;
   color: #fff;
@@ -473,4 +433,41 @@
   color: rgba(187, 151, 109, 0.7);
   border: 1px solid rgba(187, 151, 109, 0.7);
   background: white;
+}
+.product-collection-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Common ribbon style */
+.ribbon {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  padding: 4px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  transform: rotate(-45deg);
+  width: 125px;
+}
+
+/* Top Left Ribbon for Pickup */
+.ribbon-pickup {
+  top: 10px;
+  left: -38px;
+  background-color: rgba(127, 156, 144, 1);
+  display: none;
+}
+.product-collection-card:hover .ribbon-pickup {
+  display: block;
+}
+
+/* Bottom Right Ribbon for Out of Stock */
+.ribbon-outofstock {
+  bottom: 19px;
+  right: -28px;
+  background-color: rgba(187, 151, 109, 1);
+  transform: rotate(-45deg);
 }

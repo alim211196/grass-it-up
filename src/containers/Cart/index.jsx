@@ -73,6 +73,17 @@ const Cart = () => {
           <div className="cart-items" data-aos="fade-up" data-aos-delay="100">
             {cart.map((item) => (
               <div className="cart-item" key={item.id}>
+                {/* RIBBON */}
+                <div
+                  className={`cart-ribbon ${
+                    item.availableForPickup ? "pickup" : "unavailable"
+                  }`}
+                  data-label={
+                    item.availableForPickup
+                      ? "Eligible for Pickup"
+                      : "Pickup not available"
+                  }
+                ></div>
                 <div className="cart-item-div">
                   <img
                     src={item.image}
@@ -118,15 +129,6 @@ const Cart = () => {
                       </span>
                     </div>
                   </div>
-                </div>
-                <div className="cart-product-tags">
-                  {item.availableForPickup ? (
-                    <span className="pickup-tag">Eligible for Pickup</span>
-                  ) : (
-                    <span className="pickup-tag unavailable">
-                      Pickup not available
-                    </span>
-                  )}
                 </div>
               </div>
             ))}
