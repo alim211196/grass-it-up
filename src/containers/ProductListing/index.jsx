@@ -16,6 +16,8 @@ const products = [
     fprice: "$4,325",
     image:
       "https://terraoutdoor.com/cdn/shop/files/seaside-dune-sofa-1_600x.jpg",
+    availability: "In stock",
+    availableForPickup: true,
   },
   {
     id: 2,
@@ -24,6 +26,8 @@ const products = [
     fprice: "$4,325",
     image:
       "https://terraoutdoor.com/cdn/shop/files/stinson-charcoal-sofa-cast-silver-1_600x.jpg",
+    availability: "Out of stock",
+    availableForPickup: true,
   },
   {
     id: 3,
@@ -32,6 +36,8 @@ const products = [
     fprice: "$4,325",
     image:
       "https://terraoutdoor.com/cdn/shop/files/stinson-teak-sofa-quad-silver-1_600x.jpg",
+    availability: "In stock",
+    availableForPickup: false,
   },
   {
     id: 4,
@@ -40,6 +46,8 @@ const products = [
     fprice: "$4,325",
     image:
       "https://terraoutdoor.com/cdn/shop/files/bel-tk-cstsil-3k_1_d2f6e2e6-a53a-41c3-9ccf-5ad98aa5c55f_600x.jpg",
+    availability: "Out of stock",
+    availableForPickup: true,
   },
   {
     id: 5,
@@ -48,6 +56,8 @@ const products = [
     fprice: "$4,325",
     image:
       "https://terraoutdoor.com/cdn/shop/products/JKA-10562-CHR_JKA-10562C40433_BELVEDERE-SOFA---96_-METAL-CHARCOAL_v1_600x.jpg",
+    availability: "In stock",
+    availableForPickup: true,
   },
   {
     id: 6,
@@ -56,6 +66,8 @@ const products = [
     fprice: "$4,325",
     image:
       "https://terraoutdoor.com/cdn/shop/files/bel-wht-castsil-3k_1_beab8e13-6b58-4543-81f6-497aa5726d5b_600x.jpg",
+    availability: "In stock",
+    availableForPickup: true,
   },
   {
     id: 7,
@@ -64,6 +76,8 @@ const products = [
     fprice: "$4,325",
     image:
       "https://terraoutdoor.com/cdn/shop/files/SonoraCharcSofaNatural1_600x.jpg",
+    availability: "In stock",
+    availableForPickup: true,
   },
   {
     id: 8,
@@ -72,6 +86,8 @@ const products = [
     fprice: "$4,325",
     image:
       "https://terraoutdoor.com/cdn/shop/files/SonoraTeakSofaCharc1_600x.jpg",
+    availability: "In stock",
+    availableForPickup: true,
   },
   {
     id: 9,
@@ -80,6 +96,8 @@ const products = [
     fprice: "$4,325",
     image:
       "https://terraoutdoor.com/cdn/shop/products/JKA-T003-CHR_MDR-300-5402_TIBURON-SOFA91_-METAL-CHARCOAL_V1_600x.jpg",
+    availability: "In stock",
+    availableForPickup: true,
   },
   {
     id: 10,
@@ -88,6 +106,8 @@ const products = [
     fprice: "$4,325",
     image:
       "https://terraoutdoor.com/cdn/shop/products/JKA-T003-QGRY_JKA-5402_TIBURON-SOFA9_81_-METAL-QUARTZ_V1_600x.jpg",
+    availability: "In stock",
+    availableForPickup: true,
   },
   {
     id: 11,
@@ -96,6 +116,8 @@ const products = [
     fprice: "$4,325",
     image:
       "https://terraoutdoor.com/cdn/shop/files/tiburon-teak-sofa-arashi-grey-1_600x.jpg",
+    availability: "In stock",
+    availableForPickup: true,
   },
   {
     id: 12,
@@ -104,6 +126,8 @@ const products = [
     fprice: "$4,325",
     image:
       "https://terraoutdoor.com/cdn/shop/files/avila-sofa-3kopt_0_600x.jpg",
+    availability: "In stock",
+    availableForPickup: true,
   },
 ];
 const ProductListing = () => {

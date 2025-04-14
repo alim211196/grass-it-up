@@ -18,6 +18,7 @@ const Cart = () => {
       image:
         "https://cdn.accentuate.io/8846279475453/1742598540209/arroyo-teak-sofa-hazel-1.jpg", // Replace with actual image
       quantity: 1,
+      availableForPickup: true,
     },
     {
       id: 2,
@@ -29,6 +30,7 @@ const Cart = () => {
       image:
         "https://cdn.accentuate.io/8825401639165/1740006238258/seaside-dune-sofa-1.jpg", // Replace with actual image
       quantity: 1,
+      availableForPickup: false,
     },
   ]);
   const discount = 1765;
@@ -116,6 +118,15 @@ const Cart = () => {
                       </span>
                     </div>
                   </div>
+                </div>
+                <div className="cart-product-tags">
+                  {item.availableForPickup ? (
+                    <span className="pickup-tag">Eligible for Pickup</span>
+                  ) : (
+                    <span className="pickup-tag unavailable">
+                      Pickup not available
+                    </span>
+                  )}
                 </div>
               </div>
             ))}

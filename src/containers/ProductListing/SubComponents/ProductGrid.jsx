@@ -188,15 +188,23 @@ const ProductGrid = ({
                     loading="lazy"
                   />
                 </div>
-                <div className="product-details-div">
-                  <h5 className="product-collection-name">{product.name}</h5>
-                  <span className="product-collection-price">
-                    {product.price}
-                  </span>
-                  <span className="product-collection-fprice">
-                    {product.fprice}
-                  </span>
+                <div className="product-info-container">
+                  <div className="product-details-div">
+                    <h5 className="product-collection-name">{product.name}</h5>
+                    <span className="product-collection-price">
+                      {product.price}
+                    </span>
+                    <span className="product-collection-fprice">
+                      {product.fprice}
+                    </span>
+                  </div>
+                  {product.availability === "Out of stock" && (
+                    <span className="stock-badge">Out of stock</span>
+                  )}
                 </div>
+                {product.availableForPickup && (
+                  <span className="small-pickup-tag">Pickup ✔</span>
+                )}
                 <div className="wishlist-icon-div">
                   <i className="fas fa-heart"></i>
                 </div>

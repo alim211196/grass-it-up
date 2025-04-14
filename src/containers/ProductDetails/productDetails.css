@@ -695,3 +695,21 @@
   border: 1px solid rgba(187, 151, 109, 0.7);
   background: white;
 }
+
+.pickup-badge {
+  color: #fff;
+  background: rgba(127, 156, 144, 0.7);
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  cursor: pointer;
+}
+.pickup-badge:hover {
+  color: rgba(127, 156, 144, 0.7);
+  border: 1px solid rgba(127, 156, 144, 0.7);
+  background: white;
+}

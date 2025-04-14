@@ -42,6 +42,9 @@ const ProductInfo = ({ product }) => {
             <SwiperSlide key={index}>
               <div className="swiper-zoom-container">
                 <img src={img} alt={`Product ${index}`} loading="lazy" />
+                {product.availableForPickup && (
+                  <span className="pickup-badge">Available for Pickup</span>
+                )}
                 <div className="pd-wishlist-icon-div">
                   <i className="fas fa-heart"></i>
                 </div>
@@ -104,7 +107,7 @@ const ProductInfo = ({ product }) => {
               <span className="stock-check">
                 <i className="fa fa-check"></i>
               </span>
-              In stock
+              {product?.availability}
             </span>
           </div>
         </div>
@@ -122,7 +125,9 @@ const ProductInfo = ({ product }) => {
             className="add-to-cart-details"
             onClick={() => navigate("/cart")}
           >
-            Add to Cart
+            {product?.availability === "Out of stock"
+              ? "Pre Order"
+              : "Add to Cart"}
           </button>
         </div>
         <div className="fabric-div">

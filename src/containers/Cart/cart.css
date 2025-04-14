@@ -1,5 +1,5 @@
 .shopping-cart {
-  max-width: 1200px;
+  padding: 0px 80px;
   margin: 40px auto;
 
   font-family: Arial, sans-serif;
@@ -33,6 +33,7 @@
   display: flex;
   align-items: center;
   border: 1px dashed #ddd;
+  position: relative;
 }
 
 .cart-item-div {
@@ -68,6 +69,23 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.pickup-tag {
+  font-size: 14px;
+  background-color: #e6f7e6;
+  color: #7f9c90;
+  padding: 4px 10px;
+  border-radius: 12px;
+  margin-top: 8px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.pickup-tag.unavailable {
+  background-color: #fff1f0;
+  color: #bb976d;
 }
 .cart-price-div {
   display: flex;
@@ -330,8 +348,8 @@
 }
 
 .SatisfactionGuarantee-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 0px 80px;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
 }
@@ -392,7 +410,7 @@
 }
 
 .checkout-details-container {
-  max-width: 1200px;
+  padding: 0px 80px;
   margin: 40px auto;
   font-family: Arial, sans-serif;
   word-spacing: 2px;
