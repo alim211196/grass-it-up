@@ -267,7 +267,7 @@ const Chatbot = () => {
                 >
                   <div className="col-md-8 col-lg-8 column-class">
                     <div style={{ margin: "1rem 3rem 0rem" }}>
-                      <h1 className="botTitle">Welcome to GrassItUp!</h1>
+                      <h1 className="botTitle">Welcome to Grassitup!</h1>
                       <p className="botDesc">
                         Your go-to for premium outdoor furniture that blends
                         style, comfort, and nature.”

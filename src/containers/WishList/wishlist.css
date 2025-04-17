@@ -14,14 +14,14 @@
   color: #bb976d;
   margin-bottom: 10px;
   text-transform: capitalize;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .description-wishlist-listing {
   font-size: 1rem;
   color: #6c757d;
   line-height: 1.6;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 .wishlist-filter-container {
   width: 100%;
@@ -117,6 +117,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-family: Laurentian, serif;
 }
 .wishlist-collection-price {
   font-size: 12px;
@@ -124,6 +125,7 @@
   line-height: 1.5;
   letter-spacing: 0.5px;
   color: #bb976d;
+  font-family: Laurentian, serif;
 }
 .wishlist-collection-fprice {
   font-size: 12px;
@@ -133,6 +135,7 @@
   text-decoration: line-through;
   margin-left: 10px;
   color: #333;
+  font-family: Laurentian, serif;
 }
 .add-to-cart-btn {
   width: 100%;
@@ -150,6 +153,7 @@
   overflow: hidden;
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
+  font-family: Laurentian, serif;
 }
 
 .add-to-cart-btn::before {

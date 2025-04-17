@@ -9,7 +9,7 @@ const AboutUs = () => {
   return (
     <>
       <Breadcrumb
-        path={[{ label: "Home", link: "/" }, { label: "About GrassItUp" }]}
+        path={[{ label: "Home", link: "/" }, { label: "About Grassitup" }]}
       />
       <section
         className="about-container"
@@ -17,12 +17,12 @@ const AboutUs = () => {
         data-aos-delay="100"
       >
         <div className="heading-container">
-          <h1 className="about-heading">About GrassItUp</h1>
+          <h1 className="about-heading">About Grassitup</h1>
           <h6 className="about-subheading">
             Exclusively Designed Contemporary Outdoor Furniture
           </h6>
           <p className="about-description">
-            GrassItUp collaborates with an extraordinary team of designers,
+            Grassitup collaborates with an extraordinary team of designers,
             manufacturers and artisans across the globe to create exceptional
             outdoor furnishings under our exclusive brand, Ventana. Sold
             directly through our website and showrooms, our products feature
@@ -42,7 +42,7 @@ const AboutUs = () => {
           <SectionHeading title="Our" subtitle="Mission & Values" />
 
           <h5 className="mission-description">
-            At GrassItUp, our goal is to help you create beautiful, comfortable
+            At Grassitup, our goal is to help you create beautiful, comfortable
             outdoor spaces in which to gather, relax, connect and live well
             every day. We believe outdoor furniture should be just as
             thoughtfully designed and well-made as indoor furnishings. We’re
@@ -70,13 +70,13 @@ const AboutUs = () => {
               Strong relationships with our longtime manufacturing partners,
               designers, and artisans allow us to create premium goods at honest
               prices. Made from materials chosen for their beauty and
-              durability, GrassItUp products are engineered to withstand time,
+              durability, Grassitup products are engineered to withstand time,
               use, and the elements with minimal maintenance, so the style and
               comfort you invest in today will last a lifetime.
             </p>
             <h2>NO MIDDLEMAN</h2>
             <p>
-              GrassItUp goes to the source, working with our trusted design and
+              Grassitup goes to the source, working with our trusted design and
               manufacturing partners to bring exclusive furnishings and
               accessories directly to you. We only sell our assortment through
               our website and showrooms, and we ship from our warehouse using
@@ -160,7 +160,7 @@ const AboutUs = () => {
         data-aos-delay="100"
       >
         <div className="about-hero-content">
-          <SectionHeading title="Explore" subtitle="GrassItUp" />
+          <SectionHeading title="Explore" subtitle="Grassitup" />
           <button className="shopNow">Let's Shop Now</button>
         </div>
       </section>

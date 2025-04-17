@@ -3,9 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  font-family: "Segoe UI", sans-serif;
   flex-wrap: wrap;
-
+  font-family: Laurentian, serif;
   margin: auto;
 }
 
@@ -16,6 +15,7 @@
   font-size: 0.95rem;
   cursor: pointer;
   margin-bottom: 10px;
+  font-family: Laurentian, serif;
 }
 
 .breadcrumb-back:hover {
@@ -27,6 +27,7 @@
   align-items: center;
   flex-wrap: wrap;
   font-size: 0.95rem;
+  font-family: Laurentian, serif;
   color: #555;
 }
 
@@ -48,6 +49,7 @@
   font-weight: 600;
   color: #000;
   margin-left: 10px;
+  font-family: Laurentian, serif;
 }
 
 .breadcrumb-separator {

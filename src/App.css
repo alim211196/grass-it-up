@@ -75,6 +75,7 @@
   font-size: 1.5rem;
   margin-bottom: 20px;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  font-family: Laurentian, serif;
 }
 
 .btn-lg {
@@ -83,6 +84,7 @@
   font-weight: bold;
   border-radius: 30px;
   transition: all 0.3s ease-in-out;
+  font-family: Laurentian, serif;
 }
 
 .btn-lg:hover {
@@ -202,7 +204,7 @@
   color: white;
   transition: color 0.3s ease-in-out;
   position: relative;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Underline effect */
@@ -215,7 +217,7 @@
   height: 3px;
   background-color: #bb976d;
   transition: width 0.3s ease-in-out;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .active-link {
@@ -268,6 +270,7 @@
   min-width: 16px;
   text-align: center;
   line-height: 1;
+  font-family: Laurentian, serif;
 }
 
 .navIcons img:hover {
@@ -327,7 +330,7 @@
   animation: marqueeScroll 15s linear infinite;
   font-size: 24px;
   line-height: 28.8px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 @keyframes marqueeScroll {
@@ -394,14 +397,14 @@
   font-size: 14px;
   font-weight: 500;
   color: #38373d;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .productPrice {
   margin-top: 10px;
   font-size: 13px;
   color: #38373d;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .iconContainer {
@@ -453,7 +456,7 @@
   white-space: nowrap;
   font-size: 12px;
   opacity: 1;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -517,14 +520,14 @@
   font-size: 62px;
   font-weight: 700;
   color: #38373d;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .description {
   font-size: 16px;
   color: #3c474e;
   margin-top: 10px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .shopButton {
@@ -543,7 +546,7 @@
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
   cursor: pointer;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Create the hover background effect */
@@ -642,13 +645,13 @@
 
 .informative-category-section__title {
   font-size: 60px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .informative-category-section__description {
   font-size: 16px;
   color: #38373d;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .informative-category-section__buttons {
@@ -671,7 +674,7 @@
   position: relative;
   min-width: 120px;
   text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .btn-custom::after {
@@ -742,7 +745,7 @@
   font-size: clamp(12px, 1.5vw, 18px); /* Responsive font size */
   max-width: 40%; /* Responsive width */
   text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 /* end informative and category section Section */
 
@@ -778,7 +781,7 @@
   font-weight: bold;
   margin-bottom: 10px;
   position: relative;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .top-brands-title::after {
@@ -795,7 +798,7 @@
   font-size: 16px;
   color: #ccc;
   line-height: 1.5;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Right Section: Marquee Wrapper */
@@ -927,14 +930,14 @@
 .testimonial-text h5 {
   font-size: 22px;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .testimonial-text .role {
   font-size: 16px;
   color: #bbb;
   margin: 2px 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .testimonial-text .message {
@@ -945,7 +948,7 @@
   white-space: normal;
   max-height: 4.5em;
   line-height: 1.5em;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Responsive Design */
@@ -961,13 +964,13 @@
 
   .testimonial-text h5 {
     font-size: 16px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Laurentian, serif;
   }
 
   .testimonial-text .message {
     font-size: 13px;
     max-height: 3.5em;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Laurentian, serif;
   }
 }
 
@@ -984,13 +987,13 @@
 
   .testimonial-text h5 {
     font-size: 14px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Laurentian, serif;
   }
 
   .testimonial-text .message {
     font-size: 12px;
     max-height: 3em;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Laurentian, serif;
   }
 }
 
@@ -1026,7 +1029,7 @@
   font-weight: 700;
   color: #38373d;
   position: relative;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .rotating-image {
@@ -1134,7 +1137,7 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Subscription box */
@@ -1154,7 +1157,7 @@
   font-size: 1rem;
   color: #38373d;
   margin-bottom: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Animated border container */
@@ -1178,7 +1181,7 @@
   color: white;
   outline: none;
   font-size: 16px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
   padding: 12px;
   margin-right: 10px;
   position: relative;
@@ -1238,7 +1241,7 @@
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 2;
   cursor: pointer;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .beam-container button::before {
@@ -1274,7 +1277,7 @@ html,
 body {
   margin: 0;
   overflow-x: hidden;
-  font-family: "Arial", sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Container for Horizontal Scroll */
@@ -1318,7 +1321,7 @@ body {
   font-size: 3rem;
   color: #7f9c90;
   margin-bottom: 15px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Hero Images */
@@ -1383,7 +1386,7 @@ body {
   color: #38373d; /* Text color */
   margin: 20px 0px 0px 20px;
   font-size: 16px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 .image-price {
   width: 100%;
@@ -1391,7 +1394,7 @@ body {
   color: #38373d; /* Text color */
   margin: 10px 0px 0px 20px;
   font-size: 13px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 .tab-indicator {
   margin-top: 10px;
@@ -1589,7 +1592,7 @@ body {
   color: white;
   font-weight: bold;
   font-size: 14px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
   padding: 6px;
   border: none;
 }
@@ -1618,7 +1621,7 @@ body {
   font-size: 22px;
   letter-spacing: 10px;
   text-transform: uppercase;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
   color: #38373d; /* Darker shade for contrast */
 }
 
@@ -1670,7 +1673,7 @@ body {
 .footer p {
   font-size: 14px;
   margin-bottom: 8px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
   letter-spacing: 2px;
 }
 
@@ -1696,7 +1699,7 @@ body {
   border-top: 1px solid #7f9c90;
   padding-top: 10px;
   font-size: 14px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 /*end footer*/
 
@@ -1782,7 +1785,7 @@ body {
   color: white;
   font-weight: bold;
   cursor: pointer;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Smooth Pulse Effect */
@@ -1815,7 +1818,7 @@ body {
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 .trending-hotspot-dot {
   width: 20px;
@@ -1830,12 +1833,12 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 .trending-hotspot-label p {
   font-weight: 100;
   font-size: 11px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 /* Show label when hotspot is active */
 .trending-hotspot.active .trending-hotspot-label {
@@ -1862,7 +1865,7 @@ body {
   text-align: center;
   border-radius: 12px 12px 0 0;
   padding: 10px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Popover Body */
@@ -1896,7 +1899,7 @@ body {
   padding: 10px 15px;
   border-radius: 8px;
   font-size: 14px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
   font-weight: bold;
   /* transition: background 0.3s ease-in-out; */
 }
@@ -1976,12 +1979,12 @@ body {
 
 .blog-meta li {
   font-size: 14px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .blog-title {
   font-size: 16px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
   font-weight: bold;
   margin: 0;
 }
@@ -2096,6 +2099,7 @@ body {
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 24px; /* Adjust the size */
+  font-family: Laurentian, serif;
 }
 /* end video slider */
 
@@ -2130,6 +2134,7 @@ body {
   font-weight: 800;
   margin-bottom: 12px;
   color: rgb(127, 156, 144);
+  font-family: Laurentian, serif;
 }
 
 .join-now-text-content p {
@@ -2137,6 +2142,7 @@ body {
   color: #000;
   max-width: 600px;
   margin: 0 auto 20px;
+  font-family: Laurentian, serif;
 }
 
 .join-now-button {
@@ -2155,7 +2161,7 @@ body {
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
   cursor: pointer;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Create the hover background effect */
@@ -2219,6 +2225,7 @@ body {
 
   .join-now-text-content h1 {
     font-size: 36px;
+    font-family: Laurentian, serif;
   }
 }
 .custom-swiper {
@@ -2281,4 +2288,5 @@ body {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   font-weight: bold;
+  font-family: Laurentian, serif;
 }

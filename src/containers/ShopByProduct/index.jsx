@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 const sections = [
   {
-    name: "Lounging",
+    name: "lounging",
     images: [
       {
         title: "Sofas",
@@ -45,7 +45,7 @@ const sections = [
     ],
   },
   {
-    name: "Dining & Bar",
+    name: "dining & bar",
     images: [
       {
         title: "Dining Tables",
@@ -70,7 +70,7 @@ const sections = [
     ],
   },
   {
-    name: "Fire",
+    name: "fire",
     images: [
       {
         title: "Fire Tables",
@@ -95,7 +95,7 @@ const sections = [
     ],
   },
   {
-    name: "Shade",
+    name: "shade",
     images: [
       {
         title: "Market Umbrellas",
@@ -120,7 +120,7 @@ const sections = [
     ],
   },
   {
-    name: "Accessories",
+    name: "accessories",
     images: [
       {
         title: "Pillows",
@@ -200,7 +200,7 @@ const ShopByProduct = () => {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <h2>Shop All {activeSection.name}</h2>
+              <h2>Shop all {activeSection.name}</h2>
             </div>
           </div>
         </div>

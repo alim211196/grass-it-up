@@ -28,7 +28,7 @@ const CustomerReg = () => {
             <p data-aos="fade-up" data-aos-delay="100">
               Register for an account to take advantage of order tracking and
               history as well as pre-filled forms during checkout on subsequent
-              orders on GrassItUp.
+              orders on Grassitup.
             </p>
             <form>
               <div

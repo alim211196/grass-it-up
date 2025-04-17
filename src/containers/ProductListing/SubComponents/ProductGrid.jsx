@@ -95,7 +95,7 @@ const ProductGrid = ({
         "Natural Teak",
         "Natural Wicker",
         "Quartz Grey",
-        "GrassItUp Wicker",
+        "Grassitup Wicker",
         "Weathered Teak",
         "White",
       ],

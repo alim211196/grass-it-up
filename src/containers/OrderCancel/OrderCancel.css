@@ -5,7 +5,7 @@
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-family: "Arial", sans-serif;
+  font-family: Laurentian, serif;
   margin-bottom: 30px;
 }
 .cancel-order-title {
@@ -13,7 +13,7 @@
   color: #bb976d;
   margin-bottom: 10px;
   text-transform: capitalize;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
   word-spacing: 2px;
   text-align: center;
 }
@@ -43,6 +43,7 @@
   margin: 0;
   font-size: 1.1rem;
   font-weight: bold;
+  font-family: Laurentian, serif;
 }
 
 .cancel-order-product-id,
@@ -51,17 +52,20 @@
   margin: 4px 0;
   color: #555;
   font-size: 0.9rem;
+  font-family: Laurentian, serif;
 }
 
 .cancel-reason-section h4 {
   font-size: 1rem;
   margin-bottom: 0.5rem;
+  font-family: Laurentian, serif;
 }
 
 .reason-option {
   display: block;
   margin-bottom: 8px;
   font-size: 0.95rem;
+  font-family: Laurentian, serif;
 }
 
 .reason-option input {
@@ -76,6 +80,7 @@
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
+  font-family: Laurentian, serif;
 }
 
 .comment-section textarea {
@@ -105,6 +110,7 @@
   cursor: pointer;
   letter-spacing: 2px;
   border-radius: 5px;
+  font-family: Laurentian, serif;
 }
 
 /* Create the hover background effect */

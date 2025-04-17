@@ -14,14 +14,14 @@
   color: #bb976d;
   margin-bottom: 10px;
   text-transform: capitalize;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .description-product-listing {
   font-size: 1rem;
   color: #6c757d;
   line-height: 1.6;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Container layout */
@@ -53,6 +53,7 @@
 .filter-icon {
   font-size: 16px;
   color: #333;
+  font-family: Laurentian, serif;
 }
 
 .filter-text {
@@ -61,6 +62,7 @@
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
+  font-family: Laurentian, serif;
 }
 
 /* Sort Section */
@@ -76,6 +78,7 @@
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
+  font-family: Laurentian, serif;
 }
 
 .sort-dropdown {
@@ -85,6 +88,7 @@
   font-weight: 400;
   color: #333;
   cursor: pointer;
+  font-family: Laurentian, serif;
 }
 
 .sort-menu {
@@ -103,6 +107,7 @@
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
+  font-family: Laurentian, serif;
 }
 
 .view-icon {
@@ -111,6 +116,7 @@
   cursor: pointer;
   transition: color 0.3s ease;
   margin: 5px;
+  font-family: Laurentian, serif;
 }
 
 .view-icon:hover {
@@ -213,6 +219,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-family: Laurentian, serif;
 }
 .product-collection-price {
   font-size: 12px;
@@ -220,6 +227,7 @@
   line-height: 1.5;
   letter-spacing: 0.5px;
   color: #bb976d;
+  font-family: Laurentian, serif;
 }
 .product-collection-fprice {
   font-size: 12px;
@@ -229,6 +237,7 @@
   text-decoration: line-through;
   margin-left: 10px;
   color: #333;
+  font-family: Laurentian, serif;
 }
 .no-border-select {
   border: none !important;
@@ -241,6 +250,7 @@
   font-weight: 400;
   color: #333;
   cursor: pointer;
+  font-family: Laurentian, serif;
 }
 .accordion {
   width: 100%;
@@ -275,6 +285,7 @@
   line-height: 1.43;
   letter-spacing: 4px;
   text-transform: uppercase;
+  font-family: Laurentian, serif;
 
   position: relative;
   text-align: left;
@@ -290,6 +301,7 @@
   font-size: 18px;
   font-weight: 300;
   transition: transform 0.3s ease-in-out;
+  font-family: Laurentian, serif;
 }
 
 /* Hidden Checkbox to Control Expansion */
@@ -317,6 +329,7 @@
   align-items: center;
   width: 100%;
   gap: 10px;
+  font-family: Laurentian, serif;
 }
 
 /* When Checked, Expand Section */
@@ -340,7 +353,7 @@
   font-size: 35px;
   line-height: 1.57;
   letter-spacing: 0;
-  font-family: Canela, sans-serif;
+  font-family: Laurentian, serif;
   font-weight: 300;
   color: #332f2c;
   transition: color 0.2s ease-in-out;
@@ -352,6 +365,7 @@
   line-height: 1;
   color: #746d69;
   cursor: pointer;
+  font-family: Laurentian, serif;
 }
 /*product grid end*/
 
@@ -367,6 +381,7 @@
   font-weight: 300;
   line-height: 54px;
   color: #332d29;
+  font-family: Laurentian, serif;
 }
 
 .category-swiper {
@@ -403,6 +418,7 @@
   background: #f5f0eb;
   margin-top: -18px;
   position: relative;
+  font-family: Laurentian, serif;
 }
 
 .wishlist-icon-div {
@@ -451,6 +467,7 @@
   text-align: center;
   transform: rotate(-45deg);
   width: 125px;
+  font-family: Laurentian, serif;
 }
 
 /* Top Left Ribbon for Pickup */

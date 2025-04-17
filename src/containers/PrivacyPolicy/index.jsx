@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            Welcome to GrassItUp We are committed to providing you with a
+            Welcome to Grassitup We are committed to providing you with a
             seamless shopping experience and hope you enjoy everything our
             website has to offer.
           </p>
@@ -50,7 +50,7 @@ const PrivacyPolicy = () => {
               Aggregate Information
             </h2>
             <p data-aos="fade-up" data-aos-delay="100">
-              GrassItUp Living may gather aggregate information, which refers to
+              Grassitup Living may gather aggregate information, which refers to
               information your computer automatically provides to us and which
               cannot be tied back to you as a specific individual. Examples
               include referral data (the websites you visited just before and
@@ -61,8 +61,8 @@ const PrivacyPolicy = () => {
               of our sites, our servers log your IP address to create aggregate
               reports on user demographics and traffic patterns and for purposes
               of system administration. Log Files. Every time you request or
-              download a file from the website, GrassItUp Living may store data
-              about these events and your IP address in a log file. GrassItUp
+              download a file from the website, Grassitup Living may store data
+              about these events and your IP address in a log file. Grassitup
               Living may use this information to analyze trends, administer the
               website, track users’ movements, and gather broad demographic
               information for aggregate use or for other business purposes. We
@@ -77,13 +77,13 @@ const PrivacyPolicy = () => {
             <p data-aos="fade-up" data-aos-delay="100">
               Our site may use a feature of your browser to set a “cookie” on
               your computer. Cookies are small packets of information that a
-              website’s computer stores on your computer. GrassItUp Living’s
+              website’s computer stores on your computer. Grassitup Living’s
               website can then read the cookies whenever you visit our site. We
               may use cookies in a number of ways, such as to save your password
               so you don’t have to re-enter it each time you visit our site, to
               deliver content specific to your interests and to track the pages
               you’ve visited. These cookies allow us to use the information we
-              collect to customize your GrassItUp Living experience so that your
+              collect to customize your Grassitup Living experience so that your
               visit to our site is as relevant and as valuable to you as
               possible. Most browser software can be set up to deal with
               cookies. You may modify your browser preference to provide you
@@ -91,7 +91,7 @@ const PrivacyPolicy = () => {
               all cookies, to be notified when a cookie is set or to reject all
               cookies. If you choose to reject cookies, certain of the functions
               and conveniences of our website may not work properly, and you may
-              be unable to use those GrassItUp Living services that require
+              be unable to use those Grassitup Living services that require
               registration in order to participate, or you will have to
               re-register each time you visit our site. Most browsers offer
               instructions on how to reset the browser to reject cookies in the
@@ -114,9 +114,9 @@ const PrivacyPolicy = () => {
             </h2>
             <p data-aos="fade-up" data-aos-delay="100">
               Personal information is information that is associated with your
-              name or personal identity. GrassItUp Living uses personal
+              name or personal identity. Grassitup Living uses personal
               information to better understand your needs and interests and to
-              provide you with better service. On some GrassItUp Living Web
+              provide you with better service. On some Grassitup Living Web
               pages, you may be able to request information, subscribe to
               mailing lists, participate in online discussions, collaborate on
               documents, provide feedback, submit information into registries,
@@ -132,8 +132,8 @@ const PrivacyPolicy = () => {
               How We Use Your Information
             </h2>
             <p data-aos="fade-up" data-aos-delay="100">
-              GrassItUp Living may use non-personal data that is aggregated for
-              reporting about GrassItUp Living website usability, performance,
+              Grassitup Living may use non-personal data that is aggregated for
+              reporting about Grassitup Living website usability, performance,
               and effectiveness. It may be used to improve the experience,
               usability, and content of the site.
             </p>
@@ -144,16 +144,16 @@ const PrivacyPolicy = () => {
             </h2>
             <p data-aos="fade-up" data-aos-delay="100">
               We share personal information with third-party marketing partners
-              for commercial purposes. GrassItUp Living reserves the right to
+              for commercial purposes. Grassitup Living reserves the right to
               supply any such information to any organization into which
-              GrassItUp Living may merge in the future or to which it may make
+              Grassitup Living may merge in the future or to which it may make
               any transfer in order to enable a third party to continue part or
-              all of GrassItUp Living services. We also reserve the right to
+              all of Grassitup Living services. We also reserve the right to
               release personal information to protect our systems or business,
               when we reasonably believe you to be in violation of our Terms of
               Use or if we reasonably believe you to have initiated or
               participated in any illegal activity. In addition, please be aware
-              that in certain circumstances, GrassItUp Living may be obligated
+              that in certain circumstances, Grassitup Living may be obligated
               to release your personal information pursuant to judicial or other
               government subpoenas, warrants, or other orders. Please remember
               that any information (including personal information) that you
@@ -175,7 +175,7 @@ const PrivacyPolicy = () => {
               Access to and Accuracy of Member Information
             </h2>
             <p data-aos="fade-up" data-aos-delay="100">
-              GrassItUp Living is committed to keeping the personal information
+              Grassitup Living is committed to keeping the personal information
               of our participating organizations accurate. All the information
               you have submitted to us can be verified and changed. In order to
               do this, please email us a request to info@grassitupshop.com. We
@@ -184,7 +184,7 @@ const PrivacyPolicy = () => {
               time. To protect our members’ privacy and security, we also may
               take reasonable steps to verify identity, such as a user ID and
               password, before granting access to modify personal profile data.
-              Certain areas of GrassItUp Living websites may limit access to
+              Certain areas of Grassitup Living websites may limit access to
               specific individuals through the use of passwords or other
               personal identifiers; a password prompt is your indication that a
               participators-only resource is being accessed.
@@ -195,7 +195,7 @@ const PrivacyPolicy = () => {
               Security
             </h2>
             <p data-aos="fade-up" data-aos-delay="100">
-              GrassItUp Living makes every effort to protect personal
+              Grassitup Living makes every effort to protect personal
               information by users of the website, including using firewalls and
               other security measures on its servers. No server, however, is
               100% secure, and you should take this into account when submitting
@@ -204,8 +204,8 @@ const PrivacyPolicy = () => {
               used in conjunction with participation-level services such as
               collaboration and discussion, so some types of personal
               information such as your name, company affiliation, and email
-              address will be visible to other GrassItUp Living participators
-              and to the public. GrassItUp Living assumes no liability for the
+              address will be visible to other Grassitup Living participators
+              and to the public. Grassitup Living assumes no liability for the
               interception, alteration, or misuse of the information you
               provide. You alone are responsible for maintaining the secrecy of
               your personal information. Please use care when you access this
@@ -217,7 +217,7 @@ const PrivacyPolicy = () => {
               Opting Out
             </h2>
             <p data-aos="fade-up" data-aos-delay="100">
-              From time to time GrassItUp Living may email you electronic
+              From time to time Grassitup Living may email you electronic
               newsletters, announcements, surveys or other information. If you
               prefer not to receive any or all of these communications, you may
               opt out by following the directions provided within the electronic

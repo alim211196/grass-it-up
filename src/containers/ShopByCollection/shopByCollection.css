@@ -14,14 +14,14 @@
   color: #bb976d;
   margin-bottom: 10px;
   text-transform: capitalize;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .description-featured-collections {
   font-size: 1rem;
   color: #6c757d;
   line-height: 1.6;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Container layout */
@@ -48,6 +48,7 @@
   margin-bottom: 10px;
   text-transform: uppercase;
   width: 100%;
+  font-family: Laurentian, serif;
 }
 
 .collection-materials-list ul {
@@ -60,6 +61,7 @@
   letter-spacing: 0.5px;
   font-size: 12px;
   cursor: pointer;
+  font-family: Laurentian, serif;
 }
 .collection-materials-list li:hover {
   text-decoration: underline;
@@ -96,11 +98,13 @@
   font-size: 2rem;
   color: #222;
   font-weight: 300;
+  font-family: Laurentian, serif;
 }
 
 .collection-product-info p {
   color: #555;
   font-size: 0.8rem;
+  font-family: Laurentian, serif;
 }
 
 /* Image Section */

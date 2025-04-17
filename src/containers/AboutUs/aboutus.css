@@ -12,7 +12,7 @@
   color: #bb976d;
   margin-bottom: 10px;
   text-transform: capitalize;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 .about-subheading {
   text-transform: uppercase;
@@ -22,13 +22,14 @@
   margin: 20px;
   font-size: 1rem;
   color: #000;
+  font-family: Laurentian, serif;
 }
 
 .about-description {
   font-size: 1rem;
   color: #000;
   line-height: 1.6;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 .about-banner-image {
   width: 100vw;
@@ -59,6 +60,7 @@
   margin-bottom: 30px !important;
   font-size: inherit;
   text-align: center;
+  font-family: Laurentian, serif;
 }
 .mission-description {
   width: 100%;
@@ -69,6 +71,7 @@
   transition: color 0.2s ease-in-out;
   text-align: center;
   line-height: 1.6;
+  font-family: Laurentian, serif;
 }
 
 .about-section {
@@ -107,6 +110,7 @@
   margin-bottom: 10px;
   line-height: 20px;
   font-weight: 700;
+  font-family: Laurentian, serif;
 }
 
 .about-text p {
@@ -115,6 +119,7 @@
   line-height: 30px;
   margin-bottom: 20px;
   letter-spacing: 0.5px;
+  font-family: Laurentian, serif;
 }
 /* Pricing Section */
 .pricing-section {
@@ -129,7 +134,7 @@
   line-height: 1.2;
   color: #bb976d;
   text-transform: capitalize;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Subheading */
@@ -137,7 +142,7 @@
   font-size: 1rem;
   color: #000;
   line-height: 1.6;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Features Container */
@@ -173,7 +178,7 @@
   font-size: 1rem;
   color: #000;
   line-height: 1.6;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Icons */
@@ -199,6 +204,7 @@
   align-items: center !important;
   justify-content: center !important;
   text-align: center;
+  font-family: Laurentian, serif;
 }
 
 .about-parallax-bg {
@@ -220,12 +226,13 @@
   color: white;
   margin-bottom: 10px;
   text-transform: capitalize;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .about-swiper-slide .subtitle {
   font-size: 21px;
   text-align: left;
+  font-family: Laurentian, serif;
 }
 .glass-effect {
   margin: 20px;
@@ -250,6 +257,7 @@
   width: 100%;
   font-size: 1rem;
   color: white;
+  font-family: Laurentian, serif;
 }
 
 /* Full-screen hero section */
@@ -280,7 +288,7 @@
   position: relative;
   z-index: 2;
   color: black;
-  font-family: "Georgia", serif;
+  font-family: Laurentian, serif;
 }
 
 .about-hero-content h1 {
@@ -288,7 +296,7 @@
   color: #bb976d;
   margin-bottom: 10px;
   text-transform: capitalize;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .about-hero-content p {
@@ -296,6 +304,7 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: 10px;
+  font-family: Laurentian, serif;
 }
 
 /* Underline */
@@ -322,7 +331,7 @@
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
   cursor: pointer;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 /* Create the hover background effect */

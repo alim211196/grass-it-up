@@ -26,7 +26,7 @@ const CustomerLogin = () => {
               Welcome back !
             </h2>
             <p data-aos="fade-up" data-aos-delay="100">
-              Login and start purchasing on GrassItUp.
+              Login and start purchasing on Grassitup.
             </p>
             <form>
               <div

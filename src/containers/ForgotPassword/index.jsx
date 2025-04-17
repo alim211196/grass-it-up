@@ -30,7 +30,7 @@ const ForgotPassword = () => {
               Forget Password
             </h2>
             <p data-aos="fade-up" data-aos-delay="100">
-              Change your password and start purchasing on GrassItUp.
+              Change your password and start purchasing on Grassitup.
             </p>
             <form onSubmit={handleSubmit}>
               <div

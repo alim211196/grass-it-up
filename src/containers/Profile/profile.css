@@ -1,7 +1,7 @@
 .profile-page {
   display: flex;
   min-height: 100vh;
-  font-family: "Poppins", sans-serif;
+  font-family: Laurentian, serif;
   /* background-color: #f9f9f9; */
 }
 
@@ -20,6 +20,7 @@
   transition: all 0.3s ease;
   padding-left: 10px;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .sidebar-item.active {
@@ -27,6 +28,7 @@
   font-weight: 500;
   border-left: 5px solid #c3a375;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 /* Right-side content */
@@ -36,7 +38,7 @@
   background-color: #fafafa;
 }
 .profile-info {
-  font-family: "Poppins", sans-serif;
+  font-family: Laurentian, serif;
   padding: 0px 0px 40px;
   word-spacing: 2px;
 }
@@ -47,6 +49,7 @@
   color: #1e1e1e;
   margin-bottom: 4px;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .profile-role {
@@ -54,6 +57,7 @@
   font-size: 14px;
   margin-bottom: 16px;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .profile-description {
@@ -62,6 +66,7 @@
   color: #333;
   margin-bottom: 24px;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .profile-contact p {
@@ -71,6 +76,7 @@
   display: flex;
   align-items: center;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .profile-contact .icon {
@@ -78,6 +84,7 @@
   color: #c3a375;
   font-size: 18px;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .account-form-container {
@@ -108,6 +115,7 @@
   font-weight: 600;
   color: #1e1e1e;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .account-form-input,
@@ -118,6 +126,7 @@
   font-size: 15px;
   color: #333;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .account-form-textarea {
@@ -153,6 +162,7 @@
   cursor: pointer;
   word-spacing: 2px;
   border: 1px solid rgb(127, 156, 144);
+  font-family: Laurentian, serif;
 }
 
 /* Create the hover background effect */
@@ -181,7 +191,7 @@
 .order-list {
   width: 100%;
   padding: 0px 0px 40px;
-  font-family: "Poppins", sans-serif;
+  font-family: Laurentian, serif;
   word-spacing: 2px;
 }
 
@@ -207,6 +217,7 @@
   font-size: 16px;
   color: #333;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .order-product-info {
@@ -234,12 +245,14 @@
   font-weight: 500;
   margin: 2px 0 0;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .order-price {
   font-weight: 500;
   color: #1e1e1e;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .order-status {
@@ -250,6 +263,7 @@
   text-align: center;
   width: fit-content;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .order-status.completed {
@@ -275,6 +289,7 @@
   cursor: pointer;
   transition: color 0.2s ease;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .remove button:hover {
@@ -341,6 +356,7 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   transition: background 0.3s ease;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .icon-btn:hover {
@@ -365,6 +381,7 @@
   font-weight: 600;
   margin-bottom: 5px;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .wishlist-title {
@@ -372,6 +389,7 @@
   font-weight: 500;
   margin: 5px 0;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .wishlist-rating {
@@ -385,6 +403,7 @@
   margin-left: 5px;
   font-size: 13px;
   word-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .header-banner-container {
@@ -419,17 +438,20 @@
   margin-bottom: 8px;
   color: #fff;
   font-weight: 600;
+  font-family: Laurentian, serif;
 }
 
 .header-banner-breadcrumb {
   font-size: 16px;
   color: #f1f1f1;
+  font-family: Laurentian, serif;
 }
 
 .header-banner-breadcrumb a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 500;
+  font-family: Laurentian, serif;
 }
 
 .header-banner-breadcrumb span {

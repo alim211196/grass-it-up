@@ -24,7 +24,7 @@ const ThankYou = () => {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          For Shopping with GrassItUp
+          For Shopping with Grassitup
         </h1>
         <p
           className="thankyou-description"

@@ -18,7 +18,7 @@ const TermsConditions = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            Welcome to GrassItUp We are committed to providing you with a
+            Welcome to Grassitup We are committed to providing you with a
             seamless shopping experience and hope you enjoy everything our
             website has to offer.
           </p>

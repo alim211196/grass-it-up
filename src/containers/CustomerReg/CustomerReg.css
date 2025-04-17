@@ -44,6 +44,7 @@
   margin-bottom: 10px;
   line-height: 20px;
   font-weight: 700;
+  font-family: Laurentian, serif;
 }
 
 .register-form p {
@@ -52,6 +53,7 @@
   line-height: 30px;
   margin-bottom: 20px;
   letter-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 /* Form Input Styles */
 .form-group {
@@ -64,6 +66,7 @@
   margin-bottom: 5px;
   font-weight: bold;
   letter-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .form-group input {
@@ -73,6 +76,7 @@
   border: 1px solid #f0f0f0;
   background-color: #fff;
   letter-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .btn-primary {
@@ -92,6 +96,7 @@
   z-index: 1;
   cursor: pointer;
   letter-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 /* Create the hover background effect */
@@ -122,6 +127,7 @@
   margin-top: 15px;
   font-size: 14px;
   text-align: center;
+  font-family: Laurentian, serif;
 }
 
 .register-links a {
@@ -129,6 +135,7 @@
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 2px;
+  font-family: Laurentian, serif;
 }
 
 .register-links a:hover {

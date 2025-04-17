@@ -81,6 +81,7 @@
   font-weight: bold;
   cursor: pointer;
   transition: background 0.2s ease-in-out;
+  font-family: Laurentian, serif;
 }
 
 /* Chat Button (Visible on Hover) */
@@ -100,6 +101,7 @@
   position: absolute;
   bottom: 10px;
   z-index: 3;
+  font-family: Laurentian, serif;
 }
 
 .chatbot-name-close {
@@ -132,6 +134,7 @@
   background: rgba(255, 255, 255, 0.3); /* Light overlay */
   border-radius: 10px; /* Rounded corners */
   font-weight: bold;
+  font-family: Laurentian, serif;
 }
 
 /* Style for the button */
@@ -173,6 +176,7 @@
   align-items: center;
   justify-content: space-between;
   transition: background 0.3s ease-in-out;
+  font-family: Laurentian, serif;
 }
 .chatbot-avatar-small {
   width: 70px;
@@ -230,20 +234,20 @@
 }
 
 .botTitle {
-  font-family: Urbanist;
   font-weight: 700;
   font-size: 48px;
   line-height: 100%;
   letter-spacing: 0%;
   color: #7f9c90;
+  font-family: Laurentian, serif;
 }
 .botDesc {
-  font-family: Urbanist;
   font-weight: 500;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
   color: white;
+  font-family: Laurentian, serif;
 }
 .small-avatar {
   width: 40px;
@@ -320,6 +324,7 @@ body.chatbot-modal {
   margin-bottom: 0px;
   font-size: 14px;
   word-spacing: 3px;
+  font-family: Laurentian, serif;
 }
 .small-avatar {
   width: 30px;
@@ -406,6 +411,7 @@ body.chatbot-modal {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: Laurentian, serif;
 }
 
 .attach-btn img,
@@ -437,8 +443,10 @@ body.chatbot-modal {
   font-weight: bold;
   margin-bottom: 5px;
   color: white;
+  font-family: Laurentian, serif;
 }
 .bot-product-info li {
   font-size: 13px;
   color: white;
+  font-family: Laurentian, serif;
 }

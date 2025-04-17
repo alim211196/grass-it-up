@@ -22,10 +22,12 @@
   font-size: 14px;
   transition: background 0.3s;
   text-transform: uppercase;
+  font-family: Laurentian, serif;
 }
 
 .product-tab.active {
   font-weight: bold;
+  font-family: Laurentian, serif;
 }
 
 /* Content Section */
@@ -40,6 +42,7 @@
 .product-content h2 {
   font-size: 24px;
   margin-bottom: 20px;
+  font-family: Laurentian, serif;
 }
 
 /* Image Grid */
@@ -67,15 +70,15 @@
   justify-content: center;
   flex-direction: row;
   text-align: center;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   cursor: pointer;
+  font-family: Laurentian, serif;
 }
 .product-shop-all h2 {
   font-size: 3rem;
   color: #7f9c90;
   margin-bottom: 10px;
-  text-transform: capitalize;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
 
 .product-image-box img {
@@ -104,6 +107,7 @@
   white-space: nowrap; /* Keeps text in a single line */
   overflow: hidden;
   text-overflow: ellipsis;
+  font-family: Laurentian, serif;
 }
 
 /* Responsive */
@@ -143,5 +147,5 @@
   font-size: 1rem;
   color: #6c757d;
   line-height: 1.6;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Laurentian, serif;
 }
