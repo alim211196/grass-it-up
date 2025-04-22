@@ -77,8 +77,20 @@ const BannerForm = () => {
                     </div>
                   </div>
                   <div className="form-group">
+                    <label>TRN (optional)</label>
+                    <input type="number" placeholder="Enter TRN no" required />
+                  </div>
+                  <div className="form-group">
                     <label>Password *</label>
                     <input type="password" placeholder="Password" required />
+                  </div>
+                  <div className="form-group">
+                    <label>Confirm Password *</label>
+                    <input
+                      type="password"
+                      placeholder="Confirm Password"
+                      required
+                    />
                   </div>
                   <div className="form-checkbox">
                     <input
@@ -135,6 +147,10 @@ const BannerForm = () => {
                       <label htmlFor="license">Upload License</label>
                       <input type="file" id="license" required />
                     </div>
+                  </div>
+                  <div className="form-group">
+                    <label>TRN (optional)</label>
+                    <input type="number" placeholder="Enter TRN no" required />
                   </div>
                   <div className="form-group">
                     <label>Password *</label>
