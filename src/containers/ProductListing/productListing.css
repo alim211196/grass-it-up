@@ -462,7 +462,7 @@
   z-index: 2;
   color: white;
   padding: 4px 10px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   text-align: center;
   transform: rotate(-45deg);
@@ -472,8 +472,8 @@
 
 /* Top Left Ribbon for Pickup */
 .ribbon-pickup {
-  top: 10px;
-  left: -38px;
+  top: 5px;
+  left: -35px;
   background-color: rgba(127, 156, 144, 1);
   display: none;
 }

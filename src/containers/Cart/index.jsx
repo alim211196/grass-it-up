@@ -80,8 +80,8 @@ const Cart = () => {
                   }`}
                   data-label={
                     item.availableForPickup
-                      ? "Eligible for Pickup"
-                      : "Pickup not available"
+                      ? "Eligible for In-Store Collection"
+                      : "In-Store Collection is not available."
                   }
                 ></div>
                 <div className="cart-item-div">

@@ -40,7 +40,7 @@ const ProductInfo = ({ product }) => {
         >
           {product.availableForPickup && (
             <div className="pd-ribbon pd-ribbon-pickup">
-              Available for Pickup
+              In-Store Collection
             </div>
           )}
           {images.map((img, index) => (

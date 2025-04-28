@@ -182,7 +182,9 @@ const ProductGrid = ({
               <div className="product-collection-card">
                 {/* PICKUP Ribbon - Top Left */}
                 {product.availableForPickup && (
-                  <div className="ribbon ribbon-pickup">Pickup</div>
+                  <div className="ribbon ribbon-pickup">
+                    In-Store Collection
+                  </div>
                 )}
 
                 {/* OUT OF STOCK Ribbon - Bottom Right */}
