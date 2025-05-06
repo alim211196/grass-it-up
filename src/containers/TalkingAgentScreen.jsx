@@ -1,5 +1,6 @@
 // TalkingAgentScreen.jsx
 import React, { useEffect } from "react";
+import HeroBanner from "./HomePage/subComponents/HeroBanner";
 
 const TalkingAgentScreen = () => {
   useEffect(() => {
@@ -22,7 +23,11 @@ const TalkingAgentScreen = () => {
     };
   }, []);
 
-  return <div style={{ height: "100vh", background: "#f7f7f7" }}></div>;
+  return (
+    <>
+      <HeroBanner />
+    </>
+  );
 };
 
 export default TalkingAgentScreen;
