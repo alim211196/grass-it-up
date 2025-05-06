@@ -8,7 +8,7 @@ const BannerForm = () => {
     <div className="BannerFormContainer" id="videoSection">
       <div className="BannerForm">
         <video autoPlay muted loop playsInline className="BannerFormVideo">
-          <source src="/banner_video.mp4" type="video/mp4" />
+          <source src="/grassitup.mp4" type="video/mp4" />
           <img
             src="/fallback.jpg"
             className="img-fluid BannerFormImage"

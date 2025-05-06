@@ -14,10 +14,7 @@ const CustomerReg = () => {
         <div className="register-content">
           {/* Left Image Section */}
           <div className="register-image">
-            <img
-              src="https://furnixar.vercel.app/assets/register-Cnkj9wpu.jpg"
-              alt="Register Image"
-            />
+            <img src="/grassitup2.jpg" alt="Register Image" />
           </div>
 
           {/* Right Form Section */}

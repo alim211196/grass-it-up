@@ -12,11 +12,13 @@ import SectionHeading from "../../../common/SectionHeading";
 
 const CylindricalCarousel = () => {
   const images = [
-    "/blog-bg-1.jpg",
-    "/blog-bg-2.jpg",
-    "/blog-bg-3.jpg",
-    "/blog-bg-4.jpg",
-    "/blog-bg-5.jpg",
+    "/grassitup11.jpg",
+    "/grassitup13.jpg",
+    "/grassitup20.jpg",
+    "/grassitup36.jpg",
+    "/grassitup11.jpg",
+    "/grassitup4.jpg",
+    "/grassitup22.jpg",
   ];
   useEffect(() => {
     AOS.init({ duration: 1000 });

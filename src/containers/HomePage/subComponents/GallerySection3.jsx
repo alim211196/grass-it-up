@@ -9,19 +9,19 @@ import "aos/dist/aos.css";
 import SectionHeading from "../../../common/SectionHeading";
 
 const images = [
-  { src: "/blog-bg-1.jpg", name: "Modern Design" },
-  { src: "/blog-bg-2.jpg", name: "Luxury Sofa" },
-  { src: "/blog-bg-3.jpg", name: "Modern Design" },
-  { src: "/blog-bg-4.jpg", name: "Luxury Sofa" },
-  { src: "/blog-bg-5.jpg", name: "Modern Design" },
-  { src: "/trend-pro-bg-1.jpg", name: "Luxury Sofa" },
-  { src: "/trend-pro-bg-2.jpg", name: "Modern Design" },
-  { src: "/trend-pro-bg-3.jpg", name: "Modern Design" },
-  { src: "/blog-bg-1.jpg", name: "Modern Design" },
-  { src: "/blog-bg-2.jpg", name: "Luxury Sofa" },
-  { src: "/blog-bg-3.jpg", name: "Modern Design" },
-  { src: "/blog-bg-4.jpg", name: "Luxury Sofa" },
-  { src: "/blog-bg-5.jpg", name: "Modern Design" },
+  { src: "/grassitup2.jpg", name: "Modern Design" },
+  { src: "/grassitup5.jpg", name: "Luxury Sofa" },
+  { src: "/grassitup7.jpg", name: "Modern Design" },
+  { src: "/grassitup11.jpg", name: "Luxury Sofa" },
+  { src: "/grassitup12.jpg", name: "Modern Design" },
+  { src: "/grassitup13.jpg", name: "Luxury Sofa" },
+  { src: "/grassitup14.jpg", name: "Modern Design" },
+  { src: "/grassitup16.jpg", name: "Modern Design" },
+  { src: "/grassitup20.jpg", name: "Modern Design" },
+  { src: "/grassitup24.jpg", name: "Luxury Sofa" },
+  { src: "/grassitup27.jpg", name: "Modern Design" },
+  { src: "/grassitup33.jpg", name: "Luxury Sofa" },
+  { src: "/grassitup37.jpg", name: "Modern Design" },
 ];
 
 const GallerySection3 = () => {

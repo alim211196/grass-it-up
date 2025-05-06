@@ -18,10 +18,7 @@ const ResetPassword = () => {
         <div className="reset-pass-content">
           {/* Left Image Section */}
           <div className="reset-pass-image">
-            <img
-              src="https://furnixar.vercel.app/assets/portfolio-02-SqWI2KHP.jpg"
-              alt="Reset Password Image"
-            />
+            <img src="/grassitup11.jpg" alt="Reset Password Image" />
           </div>
 
           {/* Right Form Section */}

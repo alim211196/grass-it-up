@@ -58,7 +58,7 @@ const AboutUs = () => {
             data-aos="fade-left"
             data-aos-delay="100"
           >
-            <img src="/about-dining.png" alt="Dining Table Image" />
+            <img src="/grassitup39.jpg" alt="Dining Table Image" />
           </div>
           <div
             className="about-text"

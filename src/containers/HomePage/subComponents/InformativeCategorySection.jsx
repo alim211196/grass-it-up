@@ -39,7 +39,7 @@ const InformativeCategorySection = () => {
       >
         {/* First Image */}
         <img
-          src="/informative1.webp"
+          src="/grassitup40.jpg"
           alt="Outdoor Furniture"
           className={`informative-category-section__image ${
             isZoomed
@@ -116,7 +116,7 @@ const InformativeCategorySection = () => {
           data-aos-delay="100"
         >
           <img
-            src="/informative2.webp"
+            src="/grassitup39.jpg"
             alt="Outdoor Furniture"
             className={`informative-category-section__bottom-image ${
               isZoomed

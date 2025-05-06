@@ -14,10 +14,7 @@ const CustomerLogin = () => {
         <div className="login-content">
           {/* Left Image Section */}
           <div className="login-image">
-            <img
-              src="https://furnixar.vercel.app/assets/login-BM3CAJLe.jpg"
-              alt="Login Image"
-            />
+            <img src="/grassitup1.jpg" alt="Login Image" />
           </div>
 
           {/* Right Form Section */}

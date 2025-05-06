@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "../layouts/Layout";
 import SuspenseLoader from "../utils/SuspenseLoader";
+import TalkingAgentScreen from "../containers/TalkingAgentScreen";
 
 const HomePage = lazy(() => import("../containers/HomePage"));
 const ProductDetails = lazy(() => import("../containers/ProductDetails"));
@@ -84,6 +85,10 @@ const router = createBrowserRouter([
       {
         path: "/invoice",
         element: <Invoice />,
+      },
+      {
+        path: "/ai-agent",
+        element: <TalkingAgentScreen />,
       },
       {
         path: "/order-tracking",

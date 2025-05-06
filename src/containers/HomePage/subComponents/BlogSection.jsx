@@ -14,7 +14,7 @@ export const blogData = [
   {
     id: 1,
     slug: "home-office-storage-ideas-2025",
-    image: "/blog-bg-1.jpg",
+    image: "/grassitup1.jpg",
     date: "13th March 2025",
     tag: "Vase",
     title: "Home Office Storage Ideas to Boost Productivity in 2025",
@@ -30,7 +30,7 @@ export const blogData = [
   {
     id: 2,
     slug: "interior-tips-for-modern-homes",
-    image: "/blog-bg-2.jpg",
+    image: "/grassitup11.jpg",
     date: "5th May 2025",
     tag: "Interior",
     title: "Consectetur purus habitasse ut diam habitant varius",
@@ -46,7 +46,7 @@ export const blogData = [
   {
     id: 3,
     slug: "quality-sofa-components-guide",
-    image: "/blog-bg-3.jpg",
+    image: "/grassitup22.jpg",
     date: "19th June 2025",
     tag: "Furniture",
     title: "The Key Components of a Quality Sofa in 2025",
@@ -62,7 +62,7 @@ export const blogData = [
   {
     id: 4,
     slug: "creative-vase-decor-ideas",
-    image: "/blog-bg-4.jpg",
+    image: "/grassitup33.jpg",
     date: "24th July 2025",
     tag: "Vase",
     title: "Creative Ways to Style Vases in Every Room",
@@ -78,7 +78,7 @@ export const blogData = [
   {
     id: 5,
     slug: "eco-friendly-decor-trends-2025",
-    image: "/blog-bg-5.jpg",
+    image: "/grassitup25.jpg",
     date: "2nd August 2025",
     tag: "Sustainability",
     title: "Eco-Friendly Home Decor Trends That Are Changing Interiors",

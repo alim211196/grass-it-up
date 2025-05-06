@@ -11,7 +11,7 @@ const VisitOurShowroom = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
-  const images = ["/vs1.jpg", "/vs2.jpg", "/vs3.jpg"];
+  const images = ["/vs1.jpg", "/grassitup2.jpg", "/vs3.jpg"];
   return (
     <div className="visit-showroom-container">
       {/* Left Section */}

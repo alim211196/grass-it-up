@@ -69,8 +69,7 @@ export default function OurHistory() {
           slot="container-start"
           className="about-parallax-bg"
           style={{
-            "background-image":
-              "url(https://lh3.googleusercontent.com/p/AF1QipNNurZaoteL0AsfHDkAQJ49LsOpsqsrwVCo4roo=s680-w680-h510)",
+            "background-image": "url(grassitup14.jpg)",
           }}
           data-swiper-parallax="-23%"
         ></div>

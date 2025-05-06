@@ -12,50 +12,46 @@ import { OverlayTrigger, Popover } from "react-bootstrap";
 
 const images = [
   {
-    src: "/trend-pro-bg-1.jpg",
+    src: "/grassitup26.jpg",
     hotspots: [
-      { id: 1, x: "12%", y: "55%", text: "LAMP" },
-      { id: 2, x: "30%", y: "50%", text: "SOFA" },
-      { id: 3, x: "45%", y: "55%", text: "TABLE" },
-      { id: 4, x: "38%", y: "68%", text: "CHAIR" },
+      { id: 1, x: "77%", y: "35%", text: "LAMP" },
+      { id: 2, x: "52%", y: "50%", text: "TABLE" },
+      { id: 3, x: "38%", y: "60%", text: "CHAIR" },
     ],
   },
   {
-    src: "/trend-pro-bg-2.jpg",
+    src: "/grassitup20.jpg",
     hotspots: [
-      { id: 1, x: "55%", y: "45%", text: "SOFA" },
-      { id: 2, x: "50%", y: "55%", text: "TABLE" },
-      { id: 3, x: "68%", y: "60%", text: "SOFA" },
+      { id: 1, x: "10%", y: "30%", text: "SOFA" },
+      { id: 2, x: "50%", y: "45%", text: "TABLE" },
+      { id: 3, x: "65%", y: "55%", text: "PLUM" },
+      { id: 4, x: "68%", y: "30%", text: "SOFA" },
     ],
   },
   {
-    src: "/trend-pro-bg-3.jpg",
+    src: "/grassitup21.jpg",
     hotspots: [
-      { id: 1, x: "25%", y: "20%", text: "UMBRELLA" },
-      { id: 2, x: "20%", y: "65%", text: "ARMCHAIR" },
-      { id: 3, x: "23%", y: "76%", text: "SUNBED" },
-      { id: 4, x: "70%", y: "70%", text: "DINING TABLE" },
-      { id: 5, x: "76%", y: "73%", text: "OUTDOOR SOFA" },
-      { id: 6, x: "88%", y: "76%", text: "ARMCHAIR" },
-      { id: 7, x: "92%", y: "63%", text: "CIRCULAR TABLE" },
+      { id: 1, x: "50%", y: "15%", text: "UMBRELLA" },
+      { id: 2, x: "65%", y: "60%", text: "OUTDOOR SOFA" },
+      { id: 3, x: "38%", y: "62%", text: "CIRCULAR TABLE" },
     ],
   },
 
   {
-    src: "/trend-pro-bg-1.jpg",
+    src: "/grassitup27.jpg",
     hotspots: [
-      { id: 1, x: "12%", y: "55%", text: "LAMP" },
-      { id: 2, x: "30%", y: "50%", text: "SOFA" },
-      { id: 3, x: "45%", y: "55%", text: "TABLE" },
-      { id: 4, x: "38%", y: "68%", text: "CHAIR" },
+      { id: 1, x: "80%", y: "70%", text: "LAMP" },
+      { id: 2, x: "48%", y: "50%", text: "SOFA" },
+      { id: 3, x: "48%", y: "62%", text: "TABLE" },
+      { id: 4, x: "20%", y: "60%", text: "CHAIR" },
     ],
   },
   {
-    src: "/trend-pro-bg-2.jpg",
+    src: "/grassitup31.jpg",
     hotspots: [
-      { id: 1, x: "55%", y: "45%", text: "SOFA" },
-      { id: 2, x: "50%", y: "55%", text: "TABLE" },
-      { id: 3, x: "68%", y: "60%", text: "SOFA" },
+      { id: 1, x: "35%", y: "60%", text: "CHAIR" },
+      { id: 2, x: "50%", y: "67%", text: "TABLE" },
+      { id: 3, x: "65%", y: "60%", text: "CHAIR" },
     ],
   },
 ];
@@ -74,7 +70,7 @@ const TopTrending = () => {
     >
       <SectionHeading title="Featured" subtitle="Collections" />
       <Swiper
-        modules={[EffectCoverflow, Autoplay]}
+        // modules={[EffectCoverflow, Autoplay]}
         effect="coverflow"
         grabCursor={true}
         centeredSlides={true}
@@ -82,7 +78,7 @@ const TopTrending = () => {
         spaceBetween={-30}
         loop={true}
         initialSlide={3}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        // autoplay={{ delay: 3000, disableOnInteraction: false }}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,

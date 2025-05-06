@@ -101,10 +101,7 @@ export default function BenefitsSection() {
           data-aos-delay="100"
         >
           <video autoPlay muted loop playsInline className={"BannerFormVideo"}>
-            <source
-              src="https://videos.pexels.com/video-files/7578554/7578554-uhd_2560_1440_30fps.mp4"
-              type="video/mp4"
-            />
+            <source src="/grassitup.mp4" type="video/mp4" />
             <img
               src="/fallback.jpg"
               className={`img-fluid ${"BannerFormImage"}`}

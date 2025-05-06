@@ -18,10 +18,7 @@ const ForgotPassword = () => {
         <div className="forgot-pass-content">
           {/* Left Image Section */}
           <div className="forgot-pass-image">
-            <img
-              src="https://furnixar.vercel.app/assets/forget-pass-BsduFWln.jpg"
-              alt="ForgotPassword Image"
-            />
+            <img src="/grassitup12.jpg" alt="ForgotPassword Image" />
           </div>
 
           {/* Right Form Section */}

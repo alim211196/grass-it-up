@@ -6,7 +6,7 @@ const HeaderBanner = ({ activeTab }) => {
   return (
     <div
       className="header-banner-container"
-      style={{ backgroundImage: `url(/profile-header-banner.jpg)` }}
+      style={{ backgroundImage: `url(/grassitup41.jpg)` }}
     >
       <div className="header-banner-content">
         <h1>{activeTab}</h1>

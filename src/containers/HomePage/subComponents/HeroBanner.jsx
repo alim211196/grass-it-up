@@ -7,7 +7,7 @@ const HeroBanner = () => {
       {/* Video Background */}
       <div className={"hero"}>
         <video autoPlay muted loop className={"heroVideo"}>
-          <source src="/home-banner.mp4" type="video/mp4" />
+          <source src="/grassitup.mp4" type="video/mp4" />
           <img
             src="/fallback.jpg"
             className={`img-fluid ${"heroImage"}`}
