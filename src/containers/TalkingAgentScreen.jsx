@@ -22,14 +22,7 @@ const TalkingAgentScreen = () => {
     };
   }, []);
 
-  return (
-    <div style={{ height: "100vh", background: "#f7f7f7" }}>
-      <h2 style={{ textAlign: "center", paddingTop: "20px" }}>
-        Meet Your AI Assistant
-      </h2>
-      {/* D-ID script will render the agent */}
-    </div>
-  );
+  return <div style={{ height: "100vh", background: "#f7f7f7" }}></div>;
 };
 
 export default TalkingAgentScreen;
