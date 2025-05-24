@@ -18,7 +18,7 @@
   font-weight: 700;
   margin-bottom: 20px;
   color: #333;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .blogDetails-meta {
@@ -28,7 +28,7 @@
   font-size: 0.9rem;
   color: #888;
   margin-bottom: 25px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .blogDetails-meta span {
@@ -60,14 +60,14 @@
   font-weight: 500;
   color: #444;
   margin-bottom: 25px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .blogDetails-content {
   font-size: 1rem;
   color: #555;
   line-height: 1.8;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .rec_blog-details-section {
@@ -90,7 +90,7 @@
   font-weight: 700;
   margin-bottom: 20px;
   color: #333;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .rec_blog_container {
   display: flex;
@@ -147,12 +147,12 @@
 
 .rec_blog-meta li {
   font-size: 14px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .rec_blog-card_title {
   font-size: 16px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: bold;
   margin: 0;
 }

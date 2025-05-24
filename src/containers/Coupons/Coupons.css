@@ -8,7 +8,7 @@
   font-size: 24px;
   margin-bottom: 30px;
   color: #333;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .coupon-grid {
@@ -53,14 +53,14 @@
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 5px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .coupon-content p {
   font-size: 13px;
   color: #777;
   margin-bottom: 10px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .discount {
@@ -69,7 +69,7 @@
   color: #333;
   display: block;
   margin-bottom: 10px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .coupon-card button {
@@ -82,7 +82,7 @@
   cursor: pointer;
   width: 100%;
   transition: background 0.3s;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .coupon-card button:hover {
@@ -99,7 +99,7 @@
   color: #bb976d;
   margin-bottom: 10px;
   text-transform: capitalize;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .coupon-subheading {
   text-transform: uppercase;
@@ -109,12 +109,12 @@
   margin: 20px 0px;
   font-size: 1rem;
   color: #000;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .coupon-description {
   font-size: 1rem;
   color: #000;
   line-height: 1.6;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }

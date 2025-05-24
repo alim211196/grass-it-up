@@ -15,7 +15,7 @@ const CylindricalCarousel = () => {
     "/grassitup11.jpg",
     "/grassitup13.jpg",
     "/grassitup20.jpg",
-    "/grassitup36.jpg",
+    "/grassitup31.jpg",
     "/grassitup11.jpg",
     "/grassitup4.jpg",
     "/grassitup22.jpg",

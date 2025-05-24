@@ -1,7 +1,7 @@
 .shopping-cart {
   padding: 0px 80px;
   margin: 40px auto;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .cart-title {
@@ -11,7 +11,7 @@
   margin-bottom: 20px;
   text-transform: capitalize;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .cart-container {
@@ -79,7 +79,7 @@
   padding: 0.4rem 0;
   text-align: center;
   font-size: 0.75rem;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
   color: #fff;
   background: rgba(127, 156, 144, 1);
   z-index: 2;
@@ -127,7 +127,7 @@
   font-size: 8px;
   word-spacing: 2px;
   color: #bb976d;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .product-stock1 {
   display: flex;
@@ -139,7 +139,7 @@
   text-align: left;
   gap: 5px;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .cart-item-details h3 {
   font-size: 18px;
@@ -148,7 +148,7 @@
   white-space: nowrap;
   overflow: hidden;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .cart-item-details p {
@@ -157,7 +157,7 @@
   letter-spacing: 0.5px;
   line-height: 20px;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .cart-price {
@@ -167,7 +167,7 @@
   letter-spacing: 0.5px;
   line-height: 20px;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .original-price {
@@ -177,7 +177,7 @@
   letter-spacing: 0.5px;
   line-height: 20px;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .cart-quantity {
@@ -195,14 +195,14 @@
   font-size: 18px;
   cursor: pointer;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .cart-quantity span {
   margin: 0 10px;
   font-size: 16px;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .remove-btn {
@@ -213,7 +213,7 @@
   margin-top: 10px;
   font-size: 13px;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .remove-btn:hover {
   text-decoration: underline;
@@ -238,7 +238,7 @@
   line-height: 20px;
   font-weight: 700;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .order-summary p {
@@ -248,7 +248,7 @@
   letter-spacing: 0.5px;
   line-height: 20px;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .order-summary h4 {
@@ -261,7 +261,7 @@
   letter-spacing: 0.5px;
   line-height: 20px;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .discount {
@@ -285,7 +285,7 @@
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
   margin-bottom: 10px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .checkout-btn::before {
@@ -334,7 +334,7 @@
   margin: 0;
   flex: 1;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .more-cart-options {
@@ -344,7 +344,7 @@
   text-decoration: none;
   margin-right: 10px;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .more-cart-options:hover {
@@ -401,7 +401,7 @@
   color: #222;
   margin-bottom: 20px;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .SatisfactionGuarantee-content {
@@ -428,7 +428,7 @@
   line-height: 20px;
   font-weight: 700;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .SatisfactionGuarantee-card p {
@@ -438,7 +438,7 @@
   letter-spacing: 0.5px;
   line-height: 20px;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Responsive Design */
@@ -456,7 +456,7 @@
 .checkout-details-container {
   padding: 0px 80px;
   margin: 40px auto;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
   word-spacing: 2px;
   letter-spacing: 0.5px;
 }
@@ -477,7 +477,7 @@
   word-spacing: 2px;
   margin: 16px 0px;
   letter-spacing: 0.5px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .checkout-div-right {
   width: 50%;
@@ -493,7 +493,7 @@
   color: #1e1e1e;
   word-spacing: 2px;
   letter-spacing: 0.5px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .coupon-btn {
   font-size: 14px;
@@ -503,12 +503,15 @@
   cursor: pointer;
   word-spacing: 2px;
   letter-spacing: 0.5px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .checkout-section {
   gap: 10px;
   display: flex;
   flex-direction: column;
+}
+.checkout-section a {
+  color: rgb(127, 156, 144);
 }
 .payment-methods {
   gap: 1;
@@ -540,7 +543,7 @@
   overflow: hidden;
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .apply-btn::before {
@@ -580,7 +583,7 @@
   overflow: hidden;
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .place-order-btn::before {
@@ -629,7 +632,7 @@
   color: #172430;
   word-spacing: 2px;
   letter-spacing: 0.5px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .checkout-form-input,
@@ -664,7 +667,7 @@
   gap: 10px;
   font-size: 14px;
   letter-spacing: 0.5px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .form-checkbox a {

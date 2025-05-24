@@ -2,6 +2,34 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "../App.css";
 
+const products = [
+  { name: "OUTDOOR LIVING", pathname: "outdoor-living" },
+  { name: "OUTDOOR DINING", pathname: "outdoor-dining" },
+  { name: "BAR FURNITURE", pathname: "bar-furniture" },
+  { name: "SUNLOUNGER & DAYBED", pathname: "sunbed-daybed" },
+  { name: "POUFS", pathname: "poufs" },
+  { name: "SWINGS & HAMMOCK", pathname: "swings-hammocks" },
+  { name: "CARPETS", pathname: "carpets" },
+  { name: "LIGHTING", pathname: "lighting" },
+  { name: "UMBRELLAS", pathname: "umbrellas" },
+  { name: "POTS & PLANTS", pathname: "pots-plants" },
+  { name: "ACCESSORIES", pathname: "accessories" },
+  { name: "BBQ & FIRE BET", pathname: "bbq-fire-bet" },
+];
+
+const brands = [
+  { name: "Tidelli", query: "tidelli" },
+  { name: "Hofats", query: "hofats" },
+  { name: "Roolf Living", query: "roolf-living" },
+  { name: "Living Twist", query: "living-twist" },
+  { name: "Diphano", query: "diphano" },
+  { name: "Jardinico", query: "jardinico" },
+  { name: "Meroni", query: "meroni" },
+  { name: "Myyour", query: "myyour" },
+  { name: "Gv2", query: "gv2" },
+  { name: "Grassitup", query: "grassitup" },
+];
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -34,6 +62,7 @@ const Header = () => {
   ];
   const cartCount = 2;
   const wishlistCount = 3;
+
   return (
     <header
       className={`navbar ${isDarkMode ? "navbarHover" : "navbarTransparent"}`}
@@ -58,7 +87,7 @@ const Header = () => {
         {/* Navigation Links */}
         <nav className="navContainer">
           <ul className="navLinks-header">
-            <li>
+            <li className="nav-item-dropdown">
               <a
                 href="/shop-by-product"
                 className={
@@ -67,8 +96,24 @@ const Header = () => {
               >
                 Shop by Product
               </a>
+              <div className="dropdown-content">
+                {products.map((product, index) => (
+                  <a
+                    key={index}
+                    href={`/shop-by-product?category=${product.pathname}`}
+                    className={
+                      location.pathname ===
+                      `/shop-by-product?category=${product.pathname}`
+                        ? "active-link"
+                        : ""
+                    }
+                  >
+                    {product.name}
+                  </a>
+                ))}
+              </div>
             </li>
-            <li>
+            <li className="nav-item-dropdown">
               <a
                 href="/shop-by-brand"
                 className={
@@ -77,6 +122,22 @@ const Header = () => {
               >
                 Shop by Brand
               </a>
+              <div className="dropdown-content">
+                {brands.map((brand, index) => (
+                  <a
+                    key={index}
+                    href={`/shop-by-brand?brand=${brand.query}`}
+                    className={
+                      location.pathname ===
+                      `/shop-by-brand?brand=${brand.query}`
+                        ? "active-link"
+                        : ""
+                    }
+                  >
+                    {brand.name}
+                  </a>
+                ))}
+              </div>
             </li>
             <li>
               <a

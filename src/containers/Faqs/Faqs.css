@@ -10,7 +10,7 @@
   padding: 30px;
   text-transform: capitalize;
   text-align: center;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Buttons Section */
@@ -35,7 +35,7 @@
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
   cursor: pointer;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Create the hover background effect */
@@ -95,7 +95,7 @@
   text-decoration: none;
   letter-spacing: 2px;
   position: relative;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .faq-question:hover {
@@ -105,7 +105,7 @@
 
 .faq-icon {
   font-size: 20px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Expanding FAQ Answer */
@@ -115,7 +115,7 @@
   font-size: 0.8rem;
   color: #000;
   letter-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .faq-answer-container {
   overflow: hidden;

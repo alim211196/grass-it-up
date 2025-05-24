@@ -4,16 +4,16 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 const PartnerMarquee = () => {
   const partners = [
-    "partner-light-1.svg",
-    "partner-light-2.svg",
-    "partner-light-4.svg",
-    "partner-light-6.svg",
-    "partner-light-7.svg",
-    "partner-light-1.svg",
-    "partner-light-2.svg",
-    "partner-light-4.svg",
-    "partner-light-6.svg",
-    "partner-light-7.svg",
+    "tidelli_white.svg",
+    "Hofats_white.png",
+    "roolf-living_white.svg",
+    "livintwist_white.svg",
+    "diphano_white.png",
+    "jardinico_white.svg",
+    "MeroniColzani_white.png",
+    "Myyour_white.png",
+    "Gv2_white.png",
+    "Master_Logo_WHITE.png",
   ];
 
   const marqueeRef = useRef(null);

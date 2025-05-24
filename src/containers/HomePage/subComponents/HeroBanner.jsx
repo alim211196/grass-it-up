@@ -16,9 +16,9 @@ const HeroBanner = () => {
           />
         </video>
         {/* Centered Overlay Text */}
-        <div className="overlay">
+        {/* <div className="overlay">
           <h1 className="heroTitle">Elevate Your Outdoors</h1>
-        </div>
+        </div> */}
       </div>
     </div>
   );

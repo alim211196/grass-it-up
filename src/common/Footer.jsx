@@ -168,16 +168,14 @@ const Footer = () => {
                   </h6>
                   <hr />
                   <p style={{ letterSpacing: "2px" }}>
-                    <i className="fas fa-home mr-3"></i> Dubai, UAE
+                    <i className="fas fa-home mr-3"></i> JAM Tower - Sheikh
+                    Zayed Rd - Dubai - United Arab Emirates
                   </p>
                   <p>
                     <i className="fas fa-envelope mr-3"></i> Grass@Grassitup.ae
                   </p>
                   <p>
                     <i className="fas fa-phone mr-3"></i> +971 4 33 88 169
-                  </p>
-                  <p>
-                    <i className="fas fa-print mr-3"></i> +971 4 33 88 169
                   </p>
                 </div>
                 {/* Products */}

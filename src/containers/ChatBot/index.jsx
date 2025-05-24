@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Chatbot.css";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 const Chatbot = () => {
   const [open, setOpen] = useState(false);
   const [expand, setExpand] = useState(false);
@@ -139,7 +139,7 @@ const Chatbot = () => {
           animate={
             expand ? { height: "auto", width: 300 } : { height: 70, width: 210 }
           }
-          transition={{ duration: 0.3, ease: "easeInOut" }}
+          transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
         >
           {expand && (
             <motion.div
@@ -149,61 +149,79 @@ const Chatbot = () => {
               transition={{ duration: 0.3 }}
             >
               {avatarOptions.map((avatar, index) => (
-                <motion.img
-                  key={index}
-                  src={avatar.png}
-                  alt={avatar.alt}
-                  className="chatbot-avatar-small"
-                  onClick={() => handleAvatarChange(avatar)}
-                  animate={{
-                    scale: selectedImage.png === avatar.png ? 1.2 : 1,
-                  }}
-                  transition={{ duration: 0.3 }}
-                  style={{
-                    border:
-                      selectedImage.png === avatar.png
-                        ? "2px solid #7f9c90"
-                        : "none",
-                    cursor: "pointer",
-                  }}
-                />
+                <React.Fragment key={index}>
+                  <motion.img
+                    src={avatar.png}
+                    alt={avatar.alt}
+                    className="chatbot-avatar-small"
+                    onClick={() => handleAvatarChange(avatar)}
+                    animate={{
+                      scale: selectedImage.png === avatar.png ? 1.2 : 1,
+                    }}
+                    transition={{ duration: 0.3 }}
+                    style={{
+                      border:
+                        selectedImage.png === avatar.png
+                          ? "2px solid #7f9c90"
+                          : "none",
+                      cursor: "pointer",
+                    }}
+                  />
+                  {index < avatarOptions.length - 1 && (
+                    <motion.img
+                      src="/arrow.png"
+                      alt="arrow"
+                      className="avatar-arrow-img"
+                      initial={{ opacity: 0, y: -5 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.2 }}
+                    />
+                  )}
+                </React.Fragment>
               ))}
             </motion.div>
           )}
-
           <motion.div
-            className="chatbot-avatar-box-home"
-            style={{
-              backgroundImage: "url(/grassitup.webp)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              borderRadius: "10px",
-              position: "relative", // Required for overlay
-            }}
+            key={selectedImage.name} // This triggers re-animation on avatar change
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.5 }}
           >
-            <div className="chatbot-overlay"></div>
-            <div style={{ position: "relative", zIndex: 2, width: "100%" }}>
-              <motion.img
-                key={expand ? selectedImage.gif : selectedImage.png}
-                src={expand ? selectedImage.gif : selectedImage.png}
-                alt="persona"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
-                className="chatbot-avatar-home"
-              />
-              {expand && (
-                <motion.div className="chatbot-name-close">
-                  <span>{selectedImage.name}</span>
-                  <button onClick={handleMouseLeave}>
-                    <img src={"/x-circle.png"} alt="X" />
-                  </button>
-                </motion.div>
-              )}
-            </div>
+            <motion.div
+              className="chatbot-avatar-box-home"
+              style={{
+                backgroundImage: "url(/grassitup.webp)",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                borderRadius: "10px",
+                position: "relative", // Required for overlay
+              }}
+            >
+              <div className="chatbot-overlay"></div>
+              <div style={{ position: "relative", zIndex: 2, width: "100%" }}>
+                <motion.img
+                  key={expand ? selectedImage.gif : selectedImage.png}
+                  src={expand ? selectedImage.gif : selectedImage.png}
+                  alt="persona"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                  className="chatbot-avatar-home"
+                />
+                {expand && (
+                  <motion.div className="chatbot-name-close">
+                    <span>{selectedImage.name}</span>
+                    <button onClick={handleMouseLeave}>
+                      <img src={"/x-circle.png"} alt="X" />
+                    </button>
+                  </motion.div>
+                )}
+              </div>
+            </motion.div>
           </motion.div>
-
           {!expand && (
             <motion.button className="chatbot-text-box-home">
               Chat
@@ -220,143 +238,150 @@ const Chatbot = () => {
           )}
         </motion.div>
       </motion.div>
-
-      {open && (
-        <div className="chatbot-modal">
-          <div
-            className="chatbot-container"
-            style={{
-              backgroundImage: "url(/grassitup.webp)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              position: "relative", // Required for overlay
-            }}
-          >
-            {/* Dark Overlay */}
+      <AnimatePresence>
+        {open && (
+          <div className="chatbot-modal">
             <div
+              className="chatbot-container"
               style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                zIndex: 1, // Keep it above background image
-                backgroundColor: "rgba(0, 0, 0, 0.8)",
-                backdropFilter: "blur(5px)",
-                WebkitBackdropFilter: "blur(5px)",
-                boxShadow:
-                  "0px 4px 10px rgba(255, 255, 255, 0.2),0px 6px 30px rgba(0, 0, 0, 0.3)",
+                backgroundImage: "url(/grassitup.webp)",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                position: "relative", // Required for overlay
               }}
-            ></div>
-            <div style={{ position: "relative", zIndex: 2, width: "100%" }}>
-              <button className="close-btn" onClick={() => setOpen(false)}>
-                <img src={"/x-circle.png"} alt="X" />
-              </button>
+            >
+              {/* Dark Overlay */}
               <div
-                className="text-center text-md-start pt-5"
-                style={{ height: "98%" }}
-              >
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  zIndex: 1, // Keep it above background image
+                  backgroundColor: "rgba(0, 0, 0, 0.8)",
+                  backdropFilter: "blur(5px)",
+                  WebkitBackdropFilter: "blur(5px)",
+                  boxShadow:
+                    "0px 4px 10px rgba(255, 255, 255, 0.2),0px 6px 30px rgba(0, 0, 0, 0.3)",
+                }}
+              ></div>
+              <div style={{ position: "relative", zIndex: 2, width: "100%" }}>
+                <button className="close-btn" onClick={() => setOpen(false)}>
+                  <img src={"/x-circle.png"} alt="X" />
+                </button>
                 <div
-                  className="row"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    height: "100%",
-                  }}
+                  className="text-center text-md-start pt-5"
+                  style={{ height: "98%" }}
                 >
-                  <div className="col-md-8 col-lg-8 column-class">
-                    <div style={{ margin: "1rem 3rem 0rem" }}>
-                      <h1 className="botTitle">Welcome to Grassitup!</h1>
-                      <p className="botDesc">
-                        Your go-to for premium outdoor furniture that blends
-                        style, comfort, and nature.”
-                      </p>
-                    </div>
+                  <div
+                    className="row"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      height: "100%",
+                    }}
+                  >
+                    <div className="col-md-8 col-lg-8 column-class">
+                      <div style={{ margin: "1rem 3rem 0rem" }}>
+                        <h1 className="botTitle">Welcome to Grassitup!</h1>
+                        <p className="botDesc">
+                          Your go-to for premium outdoor furniture that blends
+                          style, comfort, and nature.”
+                        </p>
+                      </div>
 
-                    <div
-                      className="chatbox"
-                      style={{ margin: "1rem 3rem 0rem" }}
-                    >
-                      {messages.map((msg, index) => (
-                        <div
-                          key={index}
-                          className={`chat-item ${
-                            msg.sender === "user" ? "right" : "left"
-                          }`}
-                        >
-                          {msg.sender === "bot" && (
-                            <img
-                              src={selectedImage.png}
-                              alt="Bot Avatar"
-                              className="small-avatar"
-                            />
-                          )}
-                          <div className="msg">
-                            {msg.type === "product" ? (
-                              // Product Cards Section
-                              msg.products.map((product, pIndex) => (
-                                <div key={pIndex} className="bot-product-card">
-                                  <img
-                                    src={product.image}
-                                    alt={product.name}
-                                    className="bot-product-image"
-                                  />
-                                  <div className="bot-product-info">
-                                    <h3>{product.name}</h3>
-                                    {product.list.map((i) => (
-                                      <li key={i}>{i}</li>
-                                    ))}
-                                  </div>
-                                </div>
-                              ))
-                            ) : (
-                              <p>{renderMessage(msg.text)}</p>
+                      <div
+                        className="chatbox"
+                        style={{ margin: "1rem 3rem 0rem" }}
+                      >
+                        {messages.map((msg, index) => (
+                          <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3, delay: index * 0.05 }}
+                            className={`chat-item ${
+                              msg.sender === "user" ? "right" : "left"
+                            }`}
+                          >
+                            {msg.sender === "bot" && (
+                              <img
+                                src={selectedImage.png}
+                                alt="Bot Avatar"
+                                className="small-avatar"
+                              />
                             )}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
+                            <div className="msg">
+                              {msg.type === "product" ? (
+                                // Product Cards Section
+                                msg.products.map((product, pIndex) => (
+                                  <div
+                                    key={pIndex}
+                                    className="bot-product-card"
+                                  >
+                                    <img
+                                      src={product.image}
+                                      alt={product.name}
+                                      className="bot-product-image"
+                                    />
+                                    <div className="bot-product-info">
+                                      <h3>{product.name}</h3>
+                                      {product.list.map((i) => (
+                                        <li key={i}>{i}</li>
+                                      ))}
+                                    </div>
+                                  </div>
+                                ))
+                              ) : (
+                                <p>{renderMessage(msg.text)}</p>
+                              )}
+                            </div>
+                          </motion.div>
+                        ))}
+                      </div>
 
-                    {/* Input Box - Fixed at Bottom */}
-                    <div
-                      className="typing-area"
-                      style={{ margin: "0rem 3rem" }}
-                    >
-                      <input
-                        type="text"
-                        placeholder="Type a message..."
-                        className="chat-input"
-                      />
-                      <button className="attach-btn">
-                        <img src={"/attachment.png"} alt="attachment" />
-                      </button>
-                      <button className="emoji-btn">😊</button>
-                      <button className="send-btn">
-                        {" "}
-                        <img src={"/send.png"} alt="send" />
-                      </button>
+                      {/* Input Box - Fixed at Bottom */}
+                      <div
+                        className="typing-area"
+                        style={{ margin: "0rem 3rem" }}
+                      >
+                        <input
+                          type="text"
+                          placeholder="Type a message..."
+                          className="chat-input"
+                        />
+                        <button className="attach-btn">
+                          <img src={"/attachment.png"} alt="attachment" />
+                        </button>
+                        <button className="emoji-btn">😊</button>
+                        <button className="send-btn">
+                          {" "}
+                          <img src={"/send.png"} alt="send" />
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-md-4 col-lg-4">
-                    <div>
-                      <img
-                        src={selectedImage.gif}
-                        alt="persona"
-                        style={{
-                          width: "100%",
-                          height: "auto",
-                          objectFit: "cover",
-                        }}
-                      />
+                    <div className="col-md-4 col-lg-4">
+                      <div>
+                        <img
+                          src={selectedImage.gif}
+                          alt="persona"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "cover",
+                          }}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </AnimatePresence>
     </>
   );
 };

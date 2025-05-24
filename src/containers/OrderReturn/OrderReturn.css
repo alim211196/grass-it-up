@@ -2,7 +2,7 @@
   padding: 1.5rem;
   max-width: 700px;
   margin: auto;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .return-order-page-title {
@@ -10,7 +10,7 @@
   color: #bb976d;
   margin-bottom: 10px;
   text-transform: capitalize;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
   word-spacing: 2px;
   text-align: center;
 }
@@ -44,14 +44,14 @@
   margin: 0;
   font-size: 18px;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .return-order-product-price {
   color: #b1763c;
   font-weight: bold;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .strikethrough {
@@ -60,14 +60,14 @@
   margin-left: 8px;
   font-size: 14px;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .return-order-product-qty {
   font-size: 14px;
   margin-top: 4px;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .return-order-cancel-reason-section {
@@ -78,7 +78,7 @@
   font-weight: 600;
   margin-bottom: 0.5rem;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .return-order-radio-list {
@@ -94,7 +94,7 @@
   gap: 0.5rem;
   font-size: 15px;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .return-order-radio-option input[type="radio"] {
@@ -110,7 +110,7 @@
   display: block;
   margin-bottom: 0.5rem;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .return-order-textarea-group textarea {
@@ -122,7 +122,7 @@
   resize: vertical;
   word-spacing: 2px;
   font-size: 14px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .return-order-file-upload-group {
@@ -134,7 +134,7 @@
   display: block;
   margin-bottom: 0.5rem;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .return-order-upload-box {
@@ -151,7 +151,7 @@
   font-weight: 500;
   cursor: pointer;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .return-order-file-name {
@@ -159,5 +159,5 @@
   font-size: 14px;
   word-spacing: 2px;
   color: #555;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }

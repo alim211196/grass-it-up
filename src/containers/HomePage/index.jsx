@@ -43,7 +43,7 @@ const HomePage = () => {
       <GallerySection3 />
       <TopTrending />
       <VisitOurShowroom />
-      <HotspotImage />
+      {/* <HotspotImage /> */}
       <PartnerMarquee />
       <Suspense fallback={null}>
         <FurnitureScrollEffect />

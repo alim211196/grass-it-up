@@ -66,15 +66,15 @@ const BreakerSection = () => {
         className={`textSection ${isVisible ? "visible" : ""}`}
         ref={sectionRef}
       >
-        <span className="subTitle">New Arrival</span>
-        <h2 className="mainTitle">Premium Lounge Sofa Chair</h2>
+        <span className="subTitle">Explore</span>
+        <h2 className="mainTitle"> New Arrivals</h2>
         <p className="description">
           We offer you an extremely comfortable lounge sofa chair. Taking the
           time to relax at home or the office will be more appealing than ever
           when you choose a modern lounge sofa chair.
         </p>
         <a className="shopButton" onClick={() => navigate(`/shop-by-product`)}>
-          Let's Shop Now
+          Shop Now
         </a>
       </div>
     </div>

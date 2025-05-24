@@ -2,7 +2,7 @@
   padding: 2rem;
   max-width: 700px;
   margin: auto;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .track-order-title {
@@ -10,7 +10,7 @@
   color: #bb976d;
   margin-bottom: 10px;
   text-transform: capitalize;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
   word-spacing: 2px;
   text-align: center;
 }
@@ -46,14 +46,14 @@
   font-size: 18px;
   margin: 0;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .track-order-product-price {
   font-weight: bold;
   color: #b1763c;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .strikethrough {
@@ -61,14 +61,14 @@
   color: #aaa;
   font-size: 14px;
   margin-left: 10px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .track-order-product-qty {
   font-size: 14px;
   margin-top: 5px;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .track-order-order-details {
@@ -82,7 +82,7 @@
   margin-bottom: 1rem;
   font-weight: bold;
   word-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .track-order-status-list {

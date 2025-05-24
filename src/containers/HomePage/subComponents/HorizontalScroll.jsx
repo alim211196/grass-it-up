@@ -54,23 +54,64 @@ export default function HorizontalScroll() {
   // Data array with multiple sections
   const sections = [
     {
-      title: "CHAIRS",
-      buttonLabel: "SHOP CHAIRS",
+      title: "OUTDOOR LIVING",
+      buttonLabel: "SHOP",
       images: ["/category10.png", "/category11.png"],
     },
     {
-      title: "TABLES",
-      buttonLabel: "SHOP TABLES",
+      title: "OUTDOOR DINING",
+      buttonLabel: "SHOP",
       images: ["/category20.png", "/category21.png"],
     },
     {
-      title: "LAMPS",
-      buttonLabel: "SHOP LAMPS",
+      title: "BAR FURNITURE",
+      buttonLabel: "SHOP",
       images: ["/category30.png", "/category31.png"],
     },
     {
-      title: "SHELVES",
-      buttonLabel: "SHOP SHELVES",
+      title: "SUNLOUNGER & DAYBED",
+      buttonLabel: "SHOP",
+      images: ["/category40.webp", "/category41.webp"],
+    },
+    {
+      title: "POUFS",
+      buttonLabel: "SHOP",
+      images: ["/category10.png", "/category11.png"],
+    },
+    {
+      title: "SWINGS & HAMMOCK",
+      buttonLabel: "SHOP",
+      images: ["/category20.png", "/category21.png"],
+    },
+    {
+      title: "CARPETS",
+      buttonLabel: "SHOP",
+      images: ["/category30.png", "/category31.png"],
+    },
+    {
+      title: "LIGHTING",
+      buttonLabel: "SHOP",
+      images: ["/category40.webp", "/category41.webp"],
+    },
+
+    {
+      title: "UMBRELLAS",
+      buttonLabel: "SHOP",
+      images: ["/category10.png", "/category11.png"],
+    },
+    {
+      title: "POTS & PLANTS",
+      buttonLabel: "SHOP",
+      images: ["/category20.png", "/category21.png"],
+    },
+    {
+      title: "ACCESSORIES",
+      buttonLabel: "SHOP",
+      images: ["/category30.png", "/category31.png"],
+    },
+    {
+      title: "BBQ & FIRE BET",
+      buttonLabel: "SHOP",
       images: ["/category40.webp", "/category41.webp"],
     },
   ];

@@ -67,7 +67,7 @@
 .heroTitle {
   font-size: 3.5rem;
   font-family: "July it", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   color: white;
 }
 
@@ -75,7 +75,7 @@
   font-size: 1.5rem;
   margin-bottom: 20px;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .btn-lg {
@@ -84,7 +84,7 @@
   font-weight: bold;
   border-radius: 30px;
   transition: all 0.3s ease-in-out;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .btn-lg:hover {
@@ -204,7 +204,7 @@
   color: white;
   transition: color 0.3s ease-in-out;
   position: relative;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Underline effect */
@@ -217,7 +217,7 @@
   height: 3px;
   background-color: #bb976d;
   transition: width 0.3s ease-in-out;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .active-link {
@@ -270,7 +270,7 @@
   min-width: 16px;
   text-align: center;
   line-height: 1;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .navIcons img:hover {
@@ -306,6 +306,62 @@
     gap: 10px;
   }
 }
+.nav-item-dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+}
+
+/* Show dropdown on hover */
+.nav-item-dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 20px;
+  color: #38373d;
+  text-decoration: none;
+  font-size: 12px !important;
+  transition: background 0.2s;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.dropdown-content a:hover {
+  background-color: #f5f5f5;
+}
+@media (max-width: 768px) {
+  .dropdown-content {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .dropdown-content a {
+    padding: 8px 10px;
+  }
+
+  .nav-item-dropdown:hover .dropdown-content {
+    transform: none;
+  }
+}
 
 /* End Header Section */
 
@@ -330,7 +386,7 @@
   animation: marqueeScroll 15s linear infinite;
   font-size: 24px;
   line-height: 28.8px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 @keyframes marqueeScroll {
@@ -397,14 +453,14 @@
   font-size: 14px;
   font-weight: 500;
   color: #38373d;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .productPrice {
   margin-top: 10px;
   font-size: 13px;
   color: #38373d;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .iconContainer {
@@ -456,7 +512,7 @@
   white-space: nowrap;
   font-size: 12px;
   opacity: 1;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -512,7 +568,7 @@
 .subTitle {
   font-size: 40px;
   font-family: "July it", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   color: rgb(187, 151, 109);
 }
 
@@ -520,14 +576,14 @@
   font-size: 62px;
   font-weight: 700;
   color: #38373d;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .description {
   font-size: 16px;
   color: #3c474e;
   margin-top: 10px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .shopButton {
@@ -546,7 +602,7 @@
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
   cursor: pointer;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Create the hover background effect */
@@ -645,13 +701,13 @@
 
 .informative-category-section__title {
   font-size: 60px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .informative-category-section__description {
   font-size: 16px;
   color: #38373d;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .informative-category-section__buttons {
@@ -674,7 +730,7 @@
   position: relative;
   min-width: 120px;
   text-align: center;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .btn-custom::after {
@@ -745,7 +801,7 @@
   font-size: clamp(12px, 1.5vw, 18px); /* Responsive font size */
   max-width: 40%; /* Responsive width */
   text-align: center;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 /* end informative and category section Section */
 
@@ -781,7 +837,7 @@
   font-weight: bold;
   margin-bottom: 10px;
   position: relative;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .top-brands-title::after {
@@ -798,7 +854,7 @@
   font-size: 16px;
   color: #ccc;
   line-height: 1.5;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Right Section: Marquee Wrapper */
@@ -831,7 +887,7 @@
 
 /* Partner Logos */
 .partner-logo {
-  width: 150px;
+  width: 120px;
   height: auto;
   filter: brightness(0) invert(1); /* White logo effect */
 }
@@ -930,14 +986,14 @@
 .testimonial-text h5 {
   font-size: 22px;
   margin: 0;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .testimonial-text .role {
   font-size: 16px;
   color: #bbb;
   margin: 2px 0;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .testimonial-text .message {
@@ -948,7 +1004,7 @@
   white-space: normal;
   max-height: 4.5em;
   line-height: 1.5em;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Responsive Design */
@@ -964,13 +1020,13 @@
 
   .testimonial-text h5 {
     font-size: 16px;
-    font-family: Laurentian, serif;
+    font-family: "IBM Plex Sans", sans-serif;
   }
 
   .testimonial-text .message {
     font-size: 13px;
     max-height: 3.5em;
-    font-family: Laurentian, serif;
+    font-family: "IBM Plex Sans", sans-serif;
   }
 }
 
@@ -987,13 +1043,13 @@
 
   .testimonial-text h5 {
     font-size: 14px;
-    font-family: Laurentian, serif;
+    font-family: "IBM Plex Sans", sans-serif;
   }
 
   .testimonial-text .message {
     font-size: 12px;
     max-height: 3em;
-    font-family: Laurentian, serif;
+    font-family: "IBM Plex Sans", sans-serif;
   }
 }
 
@@ -1020,7 +1076,7 @@
 .small-text {
   font-size: 48px;
   font-family: "July it", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   color: rgb(127, 156, 144);
 }
 
@@ -1029,7 +1085,7 @@
   font-weight: 700;
   color: #38373d;
   position: relative;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .rotating-image {
@@ -1137,7 +1193,7 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Subscription box */
@@ -1157,7 +1213,7 @@
   font-size: 1rem;
   color: #38373d;
   margin-bottom: 20px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Animated border container */
@@ -1181,7 +1237,7 @@
   color: white;
   outline: none;
   font-size: 16px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
   padding: 12px;
   margin-right: 10px;
   position: relative;
@@ -1241,7 +1297,7 @@
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 2;
   cursor: pointer;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .beam-container button::before {
@@ -1277,7 +1333,7 @@ html,
 body {
   margin: 0;
   overflow-x: hidden;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Container for Horizontal Scroll */
@@ -1318,10 +1374,11 @@ body {
 }
 
 .horizontal-scroll-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #7f9c90;
   margin-bottom: 15px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
+  text-transform: uppercase;
 }
 
 /* Hero Images */
@@ -1386,7 +1443,7 @@ body {
   color: #38373d; /* Text color */
   margin: 20px 0px 0px 20px;
   font-size: 16px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .image-price {
   width: 100%;
@@ -1394,7 +1451,7 @@ body {
   color: #38373d; /* Text color */
   margin: 10px 0px 0px 20px;
   font-size: 13px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .tab-indicator {
   margin-top: 10px;
@@ -1592,7 +1649,7 @@ body {
   color: white;
   font-weight: bold;
   font-size: 14px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
   padding: 6px;
   border: none;
 }
@@ -1613,7 +1670,7 @@ body {
 .section-title {
   font-size: 56px;
   font-family: "July it", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   color: rgb(187, 151, 109);
 }
 
@@ -1621,7 +1678,7 @@ body {
   font-size: 22px;
   letter-spacing: 10px;
   text-transform: uppercase;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
   color: #38373d; /* Darker shade for contrast */
 }
 
@@ -1673,7 +1730,7 @@ body {
 .footer p {
   font-size: 14px;
   margin-bottom: 8px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -1699,7 +1756,7 @@ body {
   border-top: 1px solid #7f9c90;
   padding-top: 10px;
   font-size: 14px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 /*end footer*/
 
@@ -1785,7 +1842,7 @@ body {
   color: white;
   font-weight: bold;
   cursor: pointer;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Smooth Pulse Effect */
@@ -1818,7 +1875,7 @@ body {
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .trending-hotspot-dot {
   width: 20px;
@@ -1833,12 +1890,12 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .trending-hotspot-label p {
   font-weight: 100;
   font-size: 11px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 /* Show label when hotspot is active */
 .trending-hotspot.active .trending-hotspot-label {
@@ -1865,7 +1922,7 @@ body {
   text-align: center;
   border-radius: 12px 12px 0 0;
   padding: 10px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Popover Body */
@@ -1899,7 +1956,7 @@ body {
   padding: 10px 15px;
   border-radius: 8px;
   font-size: 14px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: bold;
   /* transition: background 0.3s ease-in-out; */
 }
@@ -1979,12 +2036,12 @@ body {
 
 .blog-meta li {
   font-size: 14px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .blog-title {
   font-size: 16px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: bold;
   margin: 0;
 }
@@ -2099,7 +2156,7 @@ body {
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 24px; /* Adjust the size */
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 /* end video slider */
 
@@ -2134,7 +2191,7 @@ body {
   font-weight: 800;
   margin-bottom: 12px;
   color: rgb(127, 156, 144);
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .join-now-text-content p {
@@ -2142,7 +2199,7 @@ body {
   color: #000;
   max-width: 600px;
   margin: 0 auto 20px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .join-now-button {
@@ -2161,7 +2218,7 @@ body {
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
   cursor: pointer;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Create the hover background effect */
@@ -2225,7 +2282,7 @@ body {
 
   .join-now-text-content h1 {
     font-size: 36px;
-    font-family: Laurentian, serif;
+    font-family: "IBM Plex Sans", sans-serif;
   }
 }
 .custom-swiper {
@@ -2288,5 +2345,5 @@ body {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   font-weight: bold;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }

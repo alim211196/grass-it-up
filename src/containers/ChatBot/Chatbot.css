@@ -50,23 +50,23 @@
 
 /* Avatar Image */
 .chatbot-avatar-home {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
 /* Expanded Avatar */
 .chatbot-box-home.expanded .chatbot-avatar-home {
-  width: 300px;
-  height: 350px;
+  width: 270px;
+  height: 320px;
   object-fit: cover;
 }
 
 /* Chat Text */
 .chatbot-text-box-home {
   padding: inherit;
-  height: 70px;
+  height: 60px;
   width: 100%;
   background: white;
   border-radius: 10px;
@@ -81,14 +81,14 @@
   font-weight: bold;
   cursor: pointer;
   transition: background 0.2s ease-in-out;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Chat Button (Visible on Hover) */
 .chatbot-button-home {
   width: 80%;
   padding: 10px;
-  height: 70px;
+  height: 60px;
   margin: 10px;
   border: none;
   border-radius: 10px;
@@ -101,7 +101,7 @@
   position: absolute;
   bottom: 10px;
   z-index: 3;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .chatbot-name-close {
@@ -134,7 +134,7 @@
   background: rgba(255, 255, 255, 0.3); /* Light overlay */
   border-radius: 10px; /* Rounded corners */
   font-weight: bold;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Style for the button */
@@ -176,12 +176,12 @@
   align-items: center;
   justify-content: space-between;
   transition: background 0.3s ease-in-out;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .chatbot-avatar-small {
-  width: 70px;
-  height: 70px;
-  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -239,7 +239,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   color: #7f9c90;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .botDesc {
   font-weight: 500;
@@ -247,7 +247,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   color: white;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .small-avatar {
   width: 40px;
@@ -324,7 +324,7 @@ body.chatbot-modal {
   margin-bottom: 0px;
   font-size: 14px;
   word-spacing: 3px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .small-avatar {
   width: 30px;
@@ -411,7 +411,7 @@ body.chatbot-modal {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .attach-btn img,
@@ -443,10 +443,16 @@ body.chatbot-modal {
   font-weight: bold;
   margin-bottom: 5px;
   color: white;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .bot-product-info li {
   font-size: 13px;
   color: white;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.avatar-arrow-img {
+  width: 20px; /* or adjust based on your arrow image */
+  height: 50px;
+  transform: rotate(0deg); /* rotate if needed */
 }

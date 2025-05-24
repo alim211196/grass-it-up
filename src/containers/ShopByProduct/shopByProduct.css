@@ -23,12 +23,12 @@
   font-size: 14px;
   transition: background 0.3s;
   text-transform: uppercase;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .product-tab.active {
   font-weight: bold;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Content Section */
@@ -43,7 +43,7 @@
 .product-content h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Image Grid */
@@ -73,13 +73,14 @@
   text-align: center;
   /* text-decoration: underline; */
   cursor: pointer;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .product-shop-all h2 {
   font-size: 3rem;
   color: #7f9c90;
   margin-bottom: 10px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
+  text-transform: lowercase;
 }
 
 .product-image-box img {
@@ -108,7 +109,7 @@
   white-space: nowrap; /* Keeps text in a single line */
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Responsive */
@@ -148,5 +149,5 @@
   font-size: 1rem;
   color: #6c757d;
   line-height: 1.6;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }

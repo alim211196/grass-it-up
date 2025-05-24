@@ -21,7 +21,7 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .thankyou-subtitle {
@@ -32,14 +32,14 @@
   margin: 20px;
   font-size: 1rem;
   color: #000;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .thankyou-description {
   font-size: 1rem;
   color: #000;
   line-height: 1.6;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .thankyou-link {
@@ -61,7 +61,7 @@
   overflow: hidden;
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Create the hover background effect */

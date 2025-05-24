@@ -91,7 +91,7 @@
 .form-group label {
   font-weight: 500;
   margin-bottom: 6px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .form-group input {
@@ -117,7 +117,7 @@
   align-items: center;
   gap: 10px;
   font-size: 14px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .form-checkbox a {
@@ -144,7 +144,7 @@
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
   cursor: pointer;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
   padding: 4px;
   border-radius: 5px;
   height: 40px;
@@ -180,14 +180,14 @@
 .register-links {
   text-align: center;
   font-size: 14px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .register-links a {
   color: #7f9c90;
   text-decoration: none;
   font-weight: 500;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 /* Hide default checkbox */
 .custom-checkbox {
@@ -237,7 +237,7 @@
   backdrop-filter: blur(5px);
   transition: all 0.3s ease-in-out;
   width: 100%;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .tab:hover {
@@ -275,7 +275,7 @@
   font-size: 16px;
   line-height: 1.7;
   color: #333;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Features Container */
@@ -313,7 +313,7 @@
   font-size: 1rem;
   color: #000;
   line-height: 1.6;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Icons */
@@ -365,7 +365,7 @@
   color: #f9c73d;
   margin-bottom: 10px;
   text-align: left;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .headline {
@@ -373,7 +373,7 @@
   font-weight: 700;
   max-width: 500px;
   text-align: left;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .better-section {
@@ -406,7 +406,7 @@
   font-weight: 800;
   margin-bottom: 12px;
   color: rgb(127, 156, 144);
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .subtitle {
@@ -414,7 +414,7 @@
   font-weight: 500;
   color: #000;
   margin-bottom: 10px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .text-content p {
@@ -422,7 +422,7 @@
   color: #000;
   max-width: 600px;
   margin: 0 auto 20px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .join-button {
@@ -441,7 +441,7 @@
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
   cursor: pointer;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Create the hover background effect */
@@ -505,7 +505,7 @@
 
   .text-content h1 {
     font-size: 36px;
-    font-family: Laurentian, serif;
+    font-family: "IBM Plex Sans", sans-serif;
   }
 }
 .custom-file-upload {
@@ -531,5 +531,5 @@
   color: #838383;
   font-weight: 500;
   margin: 0px !important;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }

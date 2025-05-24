@@ -29,20 +29,20 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: #fff;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .verify-subtext {
   font-size: 16px;
   color: #fff;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .verify-email {
   font-size: 18px;
   color: #fff;
   margin-bottom: 30px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .otp-inputs {
@@ -61,7 +61,7 @@
   /* border-radius: 8px; */
   outline: none;
   transition: border-color 0.2s;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .otp-box:focus {
@@ -72,7 +72,7 @@
   font-size: 14px;
   color: #fff;
   margin-bottom: 30px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .resend-link {
@@ -98,7 +98,7 @@
   z-index: 1;
   cursor: pointer;
   letter-spacing: 2px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Create the hover background effect */

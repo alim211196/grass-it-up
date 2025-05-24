@@ -71,7 +71,10 @@ const InformativeCategorySection = () => {
       </div>
 
       <div className="informative-category-section__text-container">
-        <SectionHeading title=" From Sunrise to" subtitle="Stargazing" />
+        <SectionHeading
+          title=" From Outdoor Lifestyle"
+          subtitle="by GrassItUp"
+        />
 
         <p
           className="informative-category-section__description"
@@ -95,19 +98,19 @@ const InformativeCategorySection = () => {
             className="btn-custom"
             onClick={() => navigate(`/shop-by-product`)}
           >
-            Dining
+            Elegant Lifestyle
           </button>
           <button
             className="btn-custom"
             onClick={() => navigate(`/shop-by-product`)}
           >
-            Lounging
+            Sophisticated Lifestyle
           </button>
           <button
             className="btn-custom"
             onClick={() => navigate(`/shop-by-product`)}
           >
-            Living
+            Casual Lifestyle
           </button>
         </div>
         <div

@@ -14,14 +14,14 @@
   margin-bottom: 10px;
   text-transform: capitalize;
   text-align: center;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .policy-description {
   font-size: 1rem;
   color: #6c757d;
   line-height: 1.6;
   text-align: center;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 /* Terms Content */
 .policy-content {
@@ -31,7 +31,7 @@
   margin-bottom: 20px;
   letter-spacing: 0.5px;
   padding: 20px 50px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Each Terms Section */
@@ -47,7 +47,7 @@
   margin-bottom: 10px;
   line-height: 30px;
   font-weight: 700;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Section Description */
@@ -60,23 +60,23 @@
   width: 100%;
   font-size: 1rem;
   color: #6c757d;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .policy-title {
     font-size: 2rem;
-    font-family: Laurentian, serif;
+    font-family: "IBM Plex Sans", sans-serif;
   }
 
   .policy-item h2 {
     font-size: 1.5rem;
-    font-family: Laurentian, serif;
+    font-family: "IBM Plex Sans", sans-serif;
   }
 
   .policy-item p {
     font-size: 1rem;
-    font-family: Laurentian, serif;
+    font-family: "IBM Plex Sans", sans-serif;
   }
 }

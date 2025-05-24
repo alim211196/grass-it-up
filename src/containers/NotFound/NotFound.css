@@ -21,7 +21,7 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .NotFound-subtitle {
@@ -32,14 +32,14 @@
   margin: 20px;
   font-size: 1rem;
   color: #000;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .NotFound-description {
   font-size: 1rem;
   color: #000;
   line-height: 1.6;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .NotFound-link {
@@ -62,7 +62,7 @@
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
   z-index: 1;
   cursor: pointer;
-  font-family: Laurentian, serif;
+  font-family: "IBM Plex Sans", sans-serif;
   background-color: #fff;
 }
 
