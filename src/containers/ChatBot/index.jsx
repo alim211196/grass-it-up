@@ -85,7 +85,7 @@ const Chatbot = () => {
   }, [open]);
 
   const [selectedImage, setSelectedImage] = useState({
-    png: "/ph9.jpg",
+    png: "/persona.png",
     gif: "/persona.gif",
     name: "Alexa",
   });
