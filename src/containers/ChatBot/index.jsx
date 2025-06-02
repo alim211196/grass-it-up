@@ -85,7 +85,7 @@ const Chatbot = () => {
   }, [open]);
 
   const [selectedImage, setSelectedImage] = useState({
-    png: "/persona.png",
+    png: "/ph9.jpg",
     gif: "/persona.gif",
     name: "Alexa",
   });
@@ -137,50 +137,10 @@ const Chatbot = () => {
           className={`chatbot-box-home ${expand ? "expanded" : ""}`}
           initial={{ height: 70, width: 210 }}
           animate={
-            expand ? { height: "auto", width: 300 } : { height: 70, width: 210 }
+            expand ? { height: "auto", width: 240 } : { height: 70, width: 210 }
           }
           transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
         >
-          {expand && (
-            <motion.div
-              className="chatbot-button-home-top"
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              {avatarOptions.map((avatar, index) => (
-                <React.Fragment key={index}>
-                  <motion.img
-                    src={avatar.png}
-                    alt={avatar.alt}
-                    className="chatbot-avatar-small"
-                    onClick={() => handleAvatarChange(avatar)}
-                    animate={{
-                      scale: selectedImage.png === avatar.png ? 1.2 : 1,
-                    }}
-                    transition={{ duration: 0.3 }}
-                    style={{
-                      border:
-                        selectedImage.png === avatar.png
-                          ? "2px solid #7f9c90"
-                          : "none",
-                      cursor: "pointer",
-                    }}
-                  />
-                  {index < avatarOptions.length - 1 && (
-                    <motion.img
-                      src="/arrow.png"
-                      alt="arrow"
-                      className="avatar-arrow-img"
-                      initial={{ opacity: 0, y: -5 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.2 }}
-                    />
-                  )}
-                </React.Fragment>
-              ))}
-            </motion.div>
-          )}
           <motion.div
             key={selectedImage.name} // This triggers re-animation on avatar change
             initial={{ opacity: 0, scale: 0.95 }}
@@ -195,12 +155,52 @@ const Chatbot = () => {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
-                borderRadius: "10px",
+                borderRadius: "6px",
                 position: "relative", // Required for overlay
               }}
             >
               <div className="chatbot-overlay"></div>
               <div style={{ position: "relative", zIndex: 2, width: "100%" }}>
+                {expand && (
+                  <motion.div
+                    className="chatbot-button-home-top"
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {avatarOptions.map((avatar, index) => (
+                      <React.Fragment key={index}>
+                        <motion.img
+                          src={avatar.png}
+                          alt={avatar.alt}
+                          className="chatbot-avatar-small"
+                          onClick={() => handleAvatarChange(avatar)}
+                          animate={{
+                            scale: selectedImage.png === avatar.png ? 1.2 : 1,
+                          }}
+                          transition={{ duration: 0.3 }}
+                          style={{
+                            border:
+                              selectedImage.png === avatar.png
+                                ? "2px solid #7f9c90"
+                                : "none",
+                            cursor: "pointer",
+                          }}
+                        />
+                        {index < avatarOptions.length - 1 && (
+                          <motion.img
+                            src="/arrow.png"
+                            alt="arrow"
+                            className="avatar-arrow-img"
+                            initial={{ opacity: 0, y: -5 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.2 }}
+                          />
+                        )}
+                      </React.Fragment>
+                    ))}
+                  </motion.div>
+                )}
                 <motion.img
                   key={expand ? selectedImage.gif : selectedImage.png}
                   src={expand ? selectedImage.gif : selectedImage.png}

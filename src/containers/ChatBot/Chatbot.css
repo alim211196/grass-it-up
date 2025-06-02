@@ -15,7 +15,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 10px;
+  border-radius: 6px;
   z-index: 1;
 }
 
@@ -32,9 +32,9 @@
 
 /* Expanded Chatbot Box */
 .chatbot-box-home.expanded {
-  border-radius: 10px;
+  border-radius: 6px;
   flex-direction: column;
-  padding: 10px;
+  /* padding: 10px; */
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -50,35 +50,35 @@
 
 /* Avatar Image */
 .chatbot-avatar-home {
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
   transition: all 0.3s ease-in-out;
 }
 
 /* Expanded Avatar */
 .chatbot-box-home.expanded .chatbot-avatar-home {
-  width: 270px;
-  height: 320px;
+  width: 240px;
+  height: 280px;
   object-fit: cover;
 }
 
 /* Chat Text */
 .chatbot-text-box-home {
   padding: inherit;
-  height: 60px;
+  height: 48px;
   width: 100%;
   background: white;
-  border-radius: 10px;
+  border-radius: 6px;
   margin-left: 10px;
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #f0f0f0;
-  color: black;
+  color: #7f9c90;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
   transition: background 0.2s ease-in-out;
   font-family: "IBM Plex Sans", sans-serif;
@@ -86,16 +86,16 @@
 
 /* Chat Button (Visible on Hover) */
 .chatbot-button-home {
-  width: 80%;
+  width: 70%;
   padding: 10px;
-  height: 60px;
+  height: 48px;
   margin: 10px;
   border: none;
-  border-radius: 10px;
+  border-radius: 6px;
   background: white;
-  color: black;
+  color: #7f9c90;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
   position: absolute;
@@ -110,7 +110,7 @@
   justify-content: space-between;
   flex-direction: "row";
   position: absolute;
-  top: 10px;
+  top: 80px;
   z-index: 3;
   padding: 5px 10px;
 }
@@ -121,7 +121,7 @@
   justify-content: space-between;
   flex-direction: row;
   position: absolute;
-  top: 10px;
+  top: 80px;
   z-index: 3;
   padding: 0px 10px;
   width: 100%;
@@ -129,10 +129,10 @@
 /* Style for the text inside */
 .chatbot-name-close span {
   padding: 4px 8px;
-  font-size: 16px;
+  font-size: 13px;
   color: white;
   background: rgba(255, 255, 255, 0.3); /* Light overlay */
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 6px; /* Rounded corners */
   font-weight: bold;
   font-family: "IBM Plex Sans", sans-serif;
 }
@@ -142,8 +142,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 20px;
+  height: 20px;
   background: rgba(255, 255, 255, 0.3); /* Light overlay */
   border: none;
   border-radius: 50%; /* Fully rounded */
@@ -164,10 +164,8 @@
 .chatbot-button-home-top {
   width: 100%;
   padding: 10px;
-  margin: 10px;
-  gap: 10px;
   border: none;
-  border-radius: 10px;
+  border-radius: 6px;
   color: black;
   font-size: 14px;
   font-weight: bold;
@@ -179,8 +177,8 @@
   font-family: "IBM Plex Sans", sans-serif;
 }
 .chatbot-avatar-small {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -208,7 +206,7 @@
   width: 90vw;
   height: 90vh;
   z-index: 1000;
-  border-radius: 10px;
+  border-radius: 6px;
   overflow: hidden;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -377,7 +375,7 @@ body.chatbot-modal {
   padding: 8px;
   display: flex;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 6px;
   z-index: 2;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
@@ -431,7 +429,7 @@ body.chatbot-modal {
 .bot-product-image {
   width: 120px;
   height: 120px;
-  border-radius: 5px;
+  border-radius: 6px;
   object-fit: cover;
 }
 .bot-product-info {
@@ -452,7 +450,7 @@ body.chatbot-modal {
 }
 
 .avatar-arrow-img {
-  width: 20px; /* or adjust based on your arrow image */
-  height: 50px;
+  width: 24px; /* or adjust based on your arrow image */
+  height: 36px;
   transform: rotate(0deg); /* rotate if needed */
 }
