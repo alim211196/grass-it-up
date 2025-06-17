@@ -6,7 +6,7 @@ const SuspenseLoader = () => {
     <div
       style={{
         textAlign: "center",
-        color: "red",
+        backgroundColor: "#edecec",
         height: "100vh",
         width: "100vw",
         display: "flex",
@@ -14,7 +14,7 @@ const SuspenseLoader = () => {
         alignItems: "center",
       }}
     >
-      <span className="loader"></span>
+      <img src="/loader1.gif" style={{ height: "100%" }} />
     </div>
   );
 };
