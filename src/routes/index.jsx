@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "../layouts/Layout";
-import SuspenseLoader from "../utils/SuspenseLoader";
+import DelayedSuspense from "../utils/DelayedSuspense";
 
 const TalkingAgentScreen = lazy(() =>
   import("../containers/TalkingAgentScreen")
@@ -41,8 +41,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <Suspense fallback={<SuspenseLoader />}>
-        <Layout />
+      <Suspense fallback={<div />}>
+        <DelayedSuspense minDelay={5000}>
+          <Layout />
+        </DelayedSuspense>
       </Suspense>
     ),
     children: [
